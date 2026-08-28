@@ -1,0 +1,5 @@
+metric,value
+feature_rows,661
+behavioral_feature_count,44
+zero_relevant_observation_windows,175
+outage_incident_active_zero_relevant_windows,72

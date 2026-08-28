@@ -1,0 +1,45 @@
+feature_name,row_count,missing_count,missing_percent,zero_count,zero_percent,minimum,median,mean,95th_percentile,maximum,unique_value_count,constant_feature,extremely_sparse,invalid_value_count,status,notes
+update_count,661,0,0.0,175,26.475,0.0,155.0,1172.9500756429652,3273.0,90904.0,379,False,False,0,PASS,
+announcement_count,661,0,0.0,175,26.475,0.0,155.0,1169.6111951588503,3273.0,90904.0,366,False,False,0,PASS,
+withdrawal_count,661,0,0.0,590,89.259,0.0,0.0,3.3388804841149775,6.0,1259.0,26,False,False,0,PASS,
+update_rate_per_minute,661,0,0.0,175,26.475,0.0,31.0,234.59001512859302,654.6,18180.8,379,False,False,0,PASS,
+announcement_rate_per_minute,661,0,0.0,175,26.475,0.0,31.0,233.92223903177003,654.6,18180.8,366,False,False,0,PASS,
+withdrawal_rate_per_minute,661,0,0.0,590,89.259,0.0,0.0,0.6677760968229954,1.2,251.8,26,False,False,0,PASS,
+announcement_ratio,661,175,26.475,0,0.0,0.7935050024602264,1.0,0.9948035902472881,1.0,1.0,70,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+withdrawal_ratio,661,175,26.475,415,62.784,0.0,0.0,0.00519640975271182,0.0308486005288108,0.20649499753977366,70,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+announcement_to_withdrawal_ratio,661,590,89.259,0,0.0,3.8427323272438443,38.75,72.11660812714544,158.66666666666669,1024.0,69,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+unique_prefix_count,661,0,0.0,175,26.475,0.0,7.0,94.81543116490167,542.0,7519.0,162,False,False,0,PASS,
+unique_announced_prefix_count,661,0,0.0,175,26.475,0.0,7.0,94.72465960665659,542.0,7519.0,162,False,False,0,PASS,
+unique_withdrawn_prefix_count,661,0,0.0,590,89.259,0.0,0.0,0.6066565809379728,1.0,61.0,11,False,False,0,PASS,
+prefix_churn_count,661,0,0.0,175,26.475,0.0,8.0,95.33131618759455,542.0,7519.0,166,False,False,0,PASS,
+prefix_with_both_announce_withdraw_count,661,0,0.0,592,89.561,0.0,0.0,0.5158850226928896,1.0,61.0,11,False,False,0,PASS,
+unique_peer_asn_count,661,0,0.0,175,26.475,0.0,14.0,12.580937972768533,31.0,31.0,32,False,False,0,PASS,
+unique_origin_asn_count,661,0,0.0,175,26.475,0.0,1.0,9.307110438729199,43.0,746.0,70,False,False,0,PASS,
+origin_diversity_ratio,661,175,26.475,0,0.0,0.0013157894736842105,0.17129629629629628,0.32942181325967523,1.0,2.0,214,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+moas_prefix_count,661,0,0.0,628,95.008,0.0,0.0,0.2632375189107413,0.0,57.0,6,False,True,0,REVIEW,extremely sparse in pilot
+moas_prefix_ratio,661,175,26.475,453,68.533,0.0,0.0,0.02007858854635779,0.0734126984126984,1.0,23,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+origin_change_event_count,661,0,0.0,628,95.008,0.0,0.0,0.2632375189107413,0.0,57.0,6,False,True,0,REVIEW,extremely sparse in pilot
+unique_as_path_count,661,0,0.0,175,26.475,0.0,32.0,109.31316187594554,359.0,2398.0,244,False,False,0,PASS,
+as_path_length_min,661,175,26.475,0,0.0,2.0,3.0,3.4670781893004117,5.75,9.0,8,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+as_path_length_max,661,175,26.475,0,0.0,3.0,8.0,11.195473251028806,24.0,60.0,29,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+as_path_length_mean,661,175,26.475,0,0.0,2.203931203931204,5.3427744748315495,5.727049772097872,9.429264346085048,13.180851063829786,441,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+as_path_length_median,661,175,26.475,0,0.0,2.0,5.0,5.484567901234568,9.0,15.0,17,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+as_path_length_std,661,175,26.475,31,4.69,0.0,1.0248122156424682,1.5175083475398004,4.316411930626827,5.904898334129388,444,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+as_path_length_p95,661,175,26.475,0,0.0,3.0,7.0,8.15216049382716,16.0,20.0,54,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+as_path_length_range,661,175,26.475,31,4.69,0.0,6.0,7.728395061728395,20.0,57.0,27,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+path_prepending_observation_count,661,0,0.0,262,39.637,0.0,8.0,184.0877458396369,905.0,12738.0,211,False,False,0,PASS,
+path_prepending_ratio,661,175,26.475,87,13.162,0.0,0.13756205789735884,0.25315258249019806,0.8908253205128205,1.0,372,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+prepended_asn_repetition_count,661,0,0.0,262,39.637,0.0,13.0,947.1770045385779,3153.0,76536.0,267,False,False,0,PASS,
+multi_path_prefix_count,661,0,0.0,226,34.191,0.0,3.0,26.65809379727685,90.0,869.0,95,False,False,0,PASS,
+path_diversity_mean_per_prefix,661,175,26.475,0,0.0,1.0,7.897058823529411,16.64814488453244,52.21988636363636,118.0,385,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+peer_prefix_pair_count,661,0,0.0,175,26.475,0.0,47.0,367.7125567322239,1069.0,15795.0,291,False,False,0,PASS,
+peer_origin_pair_count,661,0,0.0,175,26.475,0.0,17.0,35.10136157337367,129.0,831.0,125,False,False,0,PASS,
+peer_as_path_pair_count,661,0,0.0,175,26.475,0.0,32.0,109.31316187594554,359.0,2398.0,244,False,False,0,PASS,
+unique_next_hop_count,661,0,0.0,175,26.475,0.0,14.0,12.989409984871408,33.0,33.0,34,False,False,0,PASS,
+community_observation_count,661,0,0.0,203,30.711,0.0,64.0,823.9939485627837,2418.0,67814.0,325,False,False,0,PASS,
+community_observation_ratio,661,175,26.475,28,4.236,0.0,0.7272727272727273,0.6397388318896758,1.0,1.0,388,False,False,0,PASS,missing values are expected where denominator/statistic is undefined
+unique_community_count,661,0,0.0,203,30.711,0.0,62.0,130.78063540090773,452.0,765.0,271,False,False,0,PASS,
+med_observation_count,661,0,0.0,175,26.475,0.0,155.0,1169.6111951588503,3273.0,90904.0,366,False,False,0,PASS,
+unique_med_count,661,0,0.0,175,26.475,0.0,1.0,0.735249621785174,1.0,1.0,2,False,False,0,PASS,
+local_pref_observation_count,661,0,0.0,175,26.475,0.0,155.0,1169.6111951588503,3273.0,90904.0,366,False,False,0,PASS,
+atomic_aggregate_count,661,0,0.0,461,69.743,0.0,0.0,24.95461422087746,96.0,3783.0,97,False,False,0,PASS,
