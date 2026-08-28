@@ -1,0 +1,4 @@
+partition,incident_count,year_count,country_count,asn_count,prefix_count,duration_median
+train,993,5,218,1963,12635,930.0
+validation,213,5,157,1505,6828,827.0
+holdout,213,5,166,1416,2456,1080.0

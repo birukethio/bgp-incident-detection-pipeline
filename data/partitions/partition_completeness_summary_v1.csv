@@ -1,0 +1,13 @@
+category,partition,incident_count,with_asn,without_asn,with_asn_pct,with_prefix,without_prefix,with_prefix_pct,with_source_url,without_source_url,with_source_url_pct
+Hijack,ALL,473,473,0,100.0,473,0,100.0,0,473,0.0
+Hijack,train,331,331,0,100.0,331,0,100.0,0,331,0.0
+Hijack,validation,71,71,0,100.0,71,0,100.0,0,71,0.0
+Hijack,holdout,71,71,0,100.0,71,0,100.0,0,71,0.0
+Leak,ALL,473,473,0,100.0,0,473,0.0,0,473,0.0
+Leak,train,331,331,0,100.0,0,331,0.0,0,331,0.0
+Leak,validation,71,71,0,100.0,0,71,0.0,0,71,0.0
+Leak,holdout,71,71,0,100.0,0,71,0.0,0,71,0.0
+Outage,ALL,473,473,0,100.0,0,473,0.0,473,0,100.0
+Outage,train,331,331,0,100.0,0,331,0.0,331,0,100.0
+Outage,validation,71,71,0,100.0,0,71,0.0,71,0,100.0
+Outage,holdout,71,71,0,100.0,0,71,0.0,71,0,100.0

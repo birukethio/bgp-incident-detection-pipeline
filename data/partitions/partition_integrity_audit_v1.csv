@@ -1,0 +1,15 @@
+check_name,result,count,status,interpretation,action_required
+incident UID uniqueness,PASS,0,PASS,incident_uid uniquely identifies the experimental unit,none
+partition overlap,PASS,0,PASS,no incident_uid may appear in more than one partition,none
+manifest match,PASS,0,PASS,partition CSV rows must match frozen manifest,none
+duplicate-event risk,REVIEW,389,REVIEW,possible real-world duplicate incidents are diagnostic only,manual review flagged pairs
+timestamp validity,PASS,0,PASS,"timestamps parse, start precedes end, duration matches",review timestamp rows
+extreme-duration events,REVIEW,601,REVIEW,very short and long incidents are retained but flagged,review before selecting windows
+ASN completeness,PASS,0,PASS,missing ASN reduces BGP feature anchoring confidence,review incidents without ASN
+prefix completeness,REVIEW,946,REVIEW,prefix may be absent for outage labels,review incidents without prefix
+source/reference completeness,REVIEW,946,REVIEW,source URLs improve label traceability,review incidents without source URL
+ASN overlap,REVIEW,1081,REVIEW,"same ASN across partitions is diagnostic, not automatic leakage",review overlapping-time ASN pairs separately
+prefix overlap,REVIEW,4372,REVIEW,same or related prefixes across partitions are diagnostic,review exact and subnet/supernet overlaps
+temporal overlap,REVIEW,4276,REVIEW,simultaneous events can be independent or related,review holdout-related overlaps
+partition diversity,PASS,3,PASS,partition duration/year/country/ASN/prefix distributions are comparable enough for pre-MRT stage,inspect notebook plots
+quality audit row count,PASS,1419,PASS,one quality row per incident_uid,none

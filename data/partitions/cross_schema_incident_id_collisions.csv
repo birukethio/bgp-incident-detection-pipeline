@@ -1,0 +1,9 @@
+incident_id,incident_uid,category,partition
+431,Hijack:431,Hijack,train
+431,Outage:431,Outage,train
+643,Hijack:643,Hijack,train
+643,Outage:643,Outage,train
+646,Hijack:646,Hijack,train
+646,Outage:646,Outage,train
+1415,Hijack:1415,Hijack,train
+1415,Outage:1415,Outage,validation

@@ -55,6 +55,23 @@ Partition files live in `data/partitions/`. The frozen manifest is `data/partiti
 
 No fixed `max_windows_per_incident` is defined yet. The window cap will be determined later from the observed duration and 5-minute window-count distribution after the incident roster is frozen and before model training.
 
+## Pre-MRT Incident Integrity Audit
+
+Incident partitions are frozen before feature generation, then audited for duplicate-event risk, timestamp integrity, ASN/prefix overlap, and partition diversity before raw BGP data collection.
+
+The audit is diagnostic only:
+
+- Do not re-split the data.
+- Do not automatically remove incidents.
+- Do not change labels.
+- Do not download MRT data yet.
+- Do not create Normal labels yet.
+- Do not introduce a window cap.
+- Treat ASN/prefix overlap as a diagnostic, not automatically as leakage.
+- Treat the real-world incident as the independent experimental unit.
+
+The current pre-MRT audit status is `REVIEW`: the frozen partition mechanics pass, but possible duplicate-event pairs, extreme-duration events, and completeness diagnostics should be reviewed before MRT acquisition.
+
 ## Important Files
 
 | File | Purpose |
@@ -69,6 +86,10 @@ No fixed `max_windows_per_incident` is defined yet. The window cap will be deter
 | `cloudflare_incidents/timed_external_bgp_route_leak_label_candidates.csv` | External timed leak-label candidates used for spot validation |
 | `data/partitions/frozen_partition_manifest.csv` | Frozen incident-level train/validation/holdout assignment |
 | `notebooks/02_incident_partitioning.ipynb` | Reproducible incident partitioning notebook |
+| `notebooks/03_partition_integrity_and_roster_audit.ipynb` | Pre-MRT partition integrity and roster audit notebook |
+| `data/partitions/partition_integrity_audit_v1.csv` | PASS / REVIEW / FAIL audit summary |
+| `data/partitions/incident_quality_audit_v1.csv` | One-row-per-incident quality audit |
+| `data/partitions/possible_duplicate_incidents.csv` | Possible real-world duplicate-event pairs for manual review |
 
 ## Rebuild Scripts
 
@@ -80,6 +101,7 @@ No fixed `max_windows_per_incident` is defined yet. The window cap will be deter
 | `cloudflare_incidents/build_quality_controlled_outage_roster.mjs` | Build the initial outage QC roster |
 | `cloudflare_incidents/build_stratified_quality_leak_hijack_samples.mjs` | Build stratified leak/hijack samples and combined balanced roster |
 | `src/bgp_incident_detection/partitioning.py` | Validate and freeze incident-level partitions |
+| `src/bgp_incident_detection/audit.py` | Audit frozen partitions before MRT acquisition |
 
 ## Next Pipeline Steps
 
