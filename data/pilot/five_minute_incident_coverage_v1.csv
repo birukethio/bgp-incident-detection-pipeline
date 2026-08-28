@@ -1,0 +1,10 @@
+incident_uid,category,partition,total_windows,incident_active_windows,active_windows_with_evidence,active_windows_with_zero_relevant_observations,empty_windows,empty_incident_active_windows,empty_pre_context_windows,empty_post_context_windows,empty_unknown_windows,observations_visible_during_expected_active_window,routeviews_supports_candidate_active_segments,notes
+Hijack:125889,Hijack,train,61,2,2,0,0,0,0,0,0,YES,YES,candidate active segments have RouteViews-relevant observations
+Hijack:58159,Hijack,train,62,2,2,0,5,0,0,4,1,YES,YES,candidate active segments have RouteViews-relevant observations
+Hijack:97511,Hijack,train,62,2,2,0,54,0,14,15,25,YES,YES,candidate active segments have RouteViews-relevant observations
+Leak:291102,Leak,train,34,6,6,0,1,0,0,1,0,YES,YES,candidate active segments have RouteViews-relevant observations
+Leak:426483,Leak,train,62,2,2,0,2,0,0,1,1,YES,YES,candidate active segments have RouteViews-relevant observations
+Leak:426871,Leak,train,62,2,2,0,8,0,6,1,1,YES,YES,candidate active segments have RouteViews-relevant observations
+Outage:1014,Outage,train,43,15,15,0,11,0,9,2,0,YES,YES,documented outage interval has RouteViews observations involving affected ASN metadata
+Outage:207,Outage,train,208,180,145,35,42,35,2,5,0,YES,YES,documented outage interval has RouteViews observations involving affected ASN metadata
+Outage:525,Outage,train,67,39,2,37,52,37,11,4,0,YES,YES,documented outage interval has RouteViews observations involving affected ASN metadata

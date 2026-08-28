@@ -1,0 +1,10 @@
+incident_uid,category,partition,five_minute_windows,incident_active_windows,pre_context_windows,post_context_windows,unknown_windows,minimum_observations_per_window,median_observations_per_window,mean_observations_per_window,p90_observations_per_window,maximum_observations_per_window
+Hijack:125889,Hijack,train,61,2,13,17,29,1,221,241.754,531.0,701
+Hijack:58159,Hijack,train,62,2,13,17,30,0,288.0,514.935,964.4,6097
+Hijack:97511,Hijack,train,62,2,14,16,30,0,0.0,3.758,3.9,79
+Leak:291102,Leak,train,34,6,12,16,0,0,718.0,7877,15377.0,90904
+Leak:426483,Leak,train,62,2,12,18,30,0,499.0,994.71,1536.5,8748
+Leak:426871,Leak,train,62,2,12,18,30,0,210.0,227.097,408.1,1028
+Outage:1014,Outage,train,43,15,12,16,0,0,37,1472.698,5042.2,5655
+Outage:207,Outage,train,208,180,12,16,0,0,128.0,1271.399,2325.8,48029
+Outage:525,Outage,train,67,39,12,16,0,0,0,851.746,114.0,29762
