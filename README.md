@@ -9,9 +9,9 @@ The current repository starts with quality-controlled Cloudflare incident labels
 
 ## Current Label Pool
 
-The balanced incident-level roster is:
+The authoritative frozen incident corpus is Roster v2:
 
-`cloudflare_incidents/balanced_incident_level_roster_473_each_leak_hijack_outage.csv`
+`data/roster_v2/frozen_incident_roster_v2.csv`
 
 It contains:
 
@@ -22,7 +22,9 @@ It contains:
 | Outage | 473 |
 | **Total** | **1,419** |
 
-Leak and Hijack were selected using stratified, quality-focused sampling across year, ASN/network, country, duration, prefix count, and visibility metrics. Outages use the quality-controlled Cloudflare outage pool with affected ASNs listed where Cloudflare provides them.
+Roster v2 contains 1,419 independent incidents after duplicate remediation, timestamp-semantics review, and Leak prefix disposition review. v1 is retained only for audit history.
+
+Leak and Hijack were selected using stratified, quality-focused sampling across year, ASN/network, country, duration, prefix count where available, and visibility metrics. Outages use the quality-controlled Cloudflare outage pool with affected ASNs listed where Cloudflare provides them.
 
 ## Core Design Rules
 
@@ -38,9 +40,9 @@ Leak and Hijack were selected using stratified, quality-focused sampling across 
 
 ## Frozen Incident Partitions
 
-The authoritative balanced roster is split once at the incident level using fixed random seed `20260828` and split version `v1`.
+The authoritative Roster v2 corpus is split once at the incident level using fixed random seed `20260828` and split version `v2`.
 
-The raw Cloudflare `incident_id` is preserved in the partition outputs. Because Cloudflare IDs are source-schema scoped, four raw IDs collide across different categories; the frozen experimental unit is therefore `incident_uid = category:incident_id`.
+The source `incident_id` is preserved in the partition outputs. Because source IDs may be schema-scoped, the frozen experimental unit is `incident_uid`.
 
 | Partition | Hijack | Leak | Outage | Total |
 |---|---:|---:|---:|---:|
@@ -49,7 +51,21 @@ The raw Cloudflare `incident_id` is preserved in the partition outputs. Because 
 | Final Holdout | 71 | 71 | 71 | 213 |
 | **Total** | **473** | **473** | **473** | **1,419** |
 
-Partition files live in `data/partitions/`. The frozen manifest is `data/partitions/frozen_partition_manifest.csv`.
+The v2 partition files live in `data/partitions_v2/`. The authoritative experimental manifest is `data/partitions_v2/frozen_partition_manifest_v2.csv`.
+
+v1 partition files in `data/partitions/` are retained only for audit history and must not be used as the final experimental split.
+
+## Final Holdout Protection
+
+The Final Holdout is used only after the complete pipeline is frozen. It must never be used for:
+
+- feature selection
+- feature ablation decisions
+- Normal-rule threshold tuning
+- class/window balancing decisions
+- hyperparameter tuning
+- Stage 1 threshold selection
+- model selection
 
 ## Window Cap Status
 
@@ -77,7 +93,11 @@ The current pre-MRT audit status is `REVIEW`: the frozen partition mechanics pas
 | File | Purpose |
 |---|---|
 | `cloudflare_incidents/TRAINING_READY_INCIDENT_SCHEMA.md` | Canonical normalized schema and mapping rules |
-| `cloudflare_incidents/balanced_incident_level_roster_473_each_leak_hijack_outage.csv` | Current balanced roster for model development |
+| `data/roster_v2/frozen_incident_roster_v2.csv` | Authoritative frozen Roster v2 incident corpus |
+| `data/partitions_v2/frozen_partition_manifest_v2.csv` | Authoritative v2 incident-level train/validation/holdout assignment |
+| `data/partitions_v2/partition_v2_quality_audit.csv` | PASS / REVIEW / FAIL audit for v2 partition mechanics and secondary balance |
+| `data/partitions_v2/partition_v2_distribution_summary.csv` | Duration, year, ASN/network, and country summaries by partition |
+| `cloudflare_incidents/balanced_incident_level_roster_473_each_leak_hijack_outage.csv` | v1 balanced roster retained for audit history |
 | `cloudflare_incidents/stratified_quality_leak_sample_473.csv` | Leak sample |
 | `cloudflare_incidents/stratified_quality_hijack_sample_473.csv` | Hijack sample |
 | `cloudflare_incidents/clean_cloudflare_outage_recommended_final_pool_all_asns.csv` | Outage pool with ASN lists |
@@ -87,6 +107,7 @@ The current pre-MRT audit status is `REVIEW`: the frozen partition mechanics pas
 | `data/partitions/frozen_partition_manifest.csv` | Frozen incident-level train/validation/holdout assignment |
 | `notebooks/02_incident_partitioning.ipynb` | Reproducible incident partitioning notebook |
 | `notebooks/03_partition_integrity_and_roster_audit.ipynb` | Pre-MRT partition integrity and roster audit notebook |
+| `notebooks/05_freeze_roster_v2_and_partition.ipynb` | Freeze Roster v2 and create the final v2 incident-level partitions |
 | `data/partitions/partition_integrity_audit_v1.csv` | PASS / REVIEW / FAIL audit summary |
 | `data/partitions/incident_quality_audit_v1.csv` | One-row-per-incident quality audit |
 | `data/partitions/possible_duplicate_incidents.csv` | Possible real-world duplicate-event pairs for manual review |
@@ -101,6 +122,7 @@ The current pre-MRT audit status is `REVIEW`: the frozen partition mechanics pas
 | `cloudflare_incidents/build_quality_controlled_outage_roster.mjs` | Build the initial outage QC roster |
 | `cloudflare_incidents/build_stratified_quality_leak_hijack_samples.mjs` | Build stratified leak/hijack samples and combined balanced roster |
 | `src/bgp_incident_detection/partitioning.py` | Validate and freeze incident-level partitions |
+| `src/bgp_incident_detection/partitioning_v2.py` | Freeze Roster v2 and create the final v2 incident-level partitions |
 | `src/bgp_incident_detection/audit.py` | Audit frozen partitions before MRT acquisition |
 
 ## Next Pipeline Steps

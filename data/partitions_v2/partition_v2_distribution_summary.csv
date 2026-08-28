@@ -1,0 +1,4 @@
+partition,incident_count,class_counts,duration_min,duration_median,duration_mean,duration_p90,duration_max,year_distribution,asn_network_diversity,country_diversity
+train,993,"{""Hijack"": 331, ""Leak"": 331, ""Outage"": 331}",1.0,900.0,4859.25,10422.4,119968.0,"{""2022"": 31, ""2023"": 153, ""2024"": 271, ""2025"": 405, ""2026"": 133}",1823,205
+validation,213,"{""Hijack"": 71, ""Leak"": 71, ""Outage"": 71}",3.0,807.0,6235.86,16600.6,119500.0,"{""2022"": 6, ""2023"": 26, ""2024"": 71, ""2025"": 92, ""2026"": 18}",1011,140
+holdout,213,"{""Hijack"": 71, ""Leak"": 71, ""Outage"": 71}",1.0,1020.0,6945.46,17662.8,161656.0,"{""2022"": 8, ""2023"": 26, ""2024"": 53, ""2025"": 92, ""2026"": 34}",1055,147

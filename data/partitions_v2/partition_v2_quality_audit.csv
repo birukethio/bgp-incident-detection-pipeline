@@ -1,0 +1,9 @@
+check_name,result,count,status,interpretation,action_required
+total_incident_count,PASS,1419,PASS,"exactly 1,419 incidents required",none
+class_balance,PASS,473,PASS,473 incidents per class,none
+partition_counts,PASS,1419,PASS,"{""holdout"": 213, ""train"": 993, ""validation"": 213}",none
+partition_class_counts,PASS,0,PASS,331/71/71 per class satisfied,none
+cross_partition_overlap,PASS,0,PASS,"{""TRAIN \u2229 HOLDOUT"": 0, ""TRAIN \u2229 VALIDATION"": 0, ""VALIDATION \u2229 HOLDOUT"": 0}",none
+incident_uid_once,PASS,1419,PASS,every incident appears exactly once,none
+duration_distribution_balance,PASS,1.264,PASS,secondary check only; do not re-split unless class counts fail,none
+final_holdout_protection,PASS,1,PASS,holdout reserved until complete pipeline is frozen,none
