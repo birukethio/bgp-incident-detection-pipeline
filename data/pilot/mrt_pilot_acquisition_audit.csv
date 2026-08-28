@@ -1,0 +1,55 @@
+incident_uid,category,partition,check_name,status,evidence
+Hijack:58159,Hijack,train,incident_belongs_to_train,PASS,partition=train
+Hijack:58159,Hijack,train,valid_utc_timestamps,PASS,start=2024-07-29T13:20:40.317Z end=2024-07-29T16:24:56.976Z
+Hijack:58159,Hijack,train,acquisition_window_valid,PASS,collection_start=2024-07-29T12:15:00Z collection_end=2024-07-29T17:30:00Z
+Hijack:58159,Hijack,train,routeviews_url_generation_valid,PASS,expected_file_count=22
+Hijack:58159,Hijack,train,expected_mrt_files_found_available,REVIEW,dry-run only; remote HEAD availability not checked and no MRT files downloaded
+Hijack:58159,Hijack,train,no_validation_holdout_incident_used,PASS,pilot selection restricted to TRAIN
+Hijack:97511,Hijack,train,incident_belongs_to_train,PASS,partition=train
+Hijack:97511,Hijack,train,valid_utc_timestamps,PASS,start=2025-05-12T18:58:21.133Z end=2025-05-14T03:26:02.652Z
+Hijack:97511,Hijack,train,acquisition_window_valid,PASS,collection_start=2025-05-12T17:45:00Z collection_end=2025-05-14T04:30:00Z
+Hijack:97511,Hijack,train,routeviews_url_generation_valid,PASS,expected_file_count=140
+Hijack:97511,Hijack,train,expected_mrt_files_found_available,REVIEW,dry-run only; remote HEAD availability not checked and no MRT files downloaded
+Hijack:97511,Hijack,train,no_validation_holdout_incident_used,PASS,pilot selection restricted to TRAIN
+Hijack:125889,Hijack,train,incident_belongs_to_train,PASS,partition=train
+Hijack:125889,Hijack,train,valid_utc_timestamps,PASS,start=2025-12-01T18:50:40.533Z end=2025-12-15T15:35:27.182Z
+Hijack:125889,Hijack,train,acquisition_window_valid,PASS,collection_start=2025-12-01T17:45:00Z collection_end=2025-12-15T16:45:00Z
+Hijack:125889,Hijack,train,routeviews_url_generation_valid,PASS,expected_file_count=1341
+Hijack:125889,Hijack,train,expected_mrt_files_found_available,REVIEW,dry-run only; remote HEAD availability not checked and no MRT files downloaded
+Hijack:125889,Hijack,train,no_validation_holdout_incident_used,PASS,pilot selection restricted to TRAIN
+Leak:291102,Leak,train,incident_belongs_to_train,PASS,partition=train
+Leak:291102,Leak,train,valid_utc_timestamps,PASS,start=2025-03-31T08:47:02.000Z end=2025-03-31T09:10:04.000Z
+Leak:291102,Leak,train,acquisition_window_valid,PASS,collection_start=2025-03-31T07:45:00Z collection_end=2025-03-31T10:15:00Z
+Leak:291102,Leak,train,routeviews_url_generation_valid,PASS,expected_file_count=11
+Leak:291102,Leak,train,expected_mrt_files_found_available,REVIEW,dry-run only; remote HEAD availability not checked and no MRT files downloaded
+Leak:291102,Leak,train,no_validation_holdout_incident_used,PASS,pilot selection restricted to TRAIN
+Leak:426871,Leak,train,incident_belongs_to_train,PASS,partition=train
+Leak:426871,Leak,train,valid_utc_timestamps,PASS,start=2025-10-30T14:45:45.000Z end=2025-11-01T10:03:55.000Z
+Leak:426871,Leak,train,acquisition_window_valid,PASS,collection_start=2025-10-30T13:45:00Z collection_end=2025-11-01T11:15:00Z
+Leak:426871,Leak,train,routeviews_url_generation_valid,PASS,expected_file_count=183
+Leak:426871,Leak,train,expected_mrt_files_found_available,REVIEW,dry-run only; remote HEAD availability not checked and no MRT files downloaded
+Leak:426871,Leak,train,no_validation_holdout_incident_used,PASS,pilot selection restricted to TRAIN
+Leak:426483,Leak,train,incident_belongs_to_train,PASS,partition=train
+Leak:426483,Leak,train,valid_utc_timestamps,PASS,start=2025-10-30T06:02:45.000Z end=2025-11-08T04:31:17.000Z
+Leak:426483,Leak,train,acquisition_window_valid,PASS,collection_start=2025-10-30T05:00:00Z collection_end=2025-11-08T05:45:00Z
+Leak:426483,Leak,train,routeviews_url_generation_valid,PASS,expected_file_count=868
+Leak:426483,Leak,train,expected_mrt_files_found_available,REVIEW,dry-run only; remote HEAD availability not checked and no MRT files downloaded
+Leak:426483,Leak,train,no_validation_holdout_incident_used,PASS,pilot selection restricted to TRAIN
+Outage:1014,Outage,train,incident_belongs_to_train,PASS,partition=train
+Outage:1014,Outage,train,valid_utc_timestamps,PASS,start=2024-09-07T09:45:00.000Z end=2024-09-07T11:00:00.000Z
+Outage:1014,Outage,train,acquisition_window_valid,PASS,collection_start=2024-09-07T08:45:00Z collection_end=2024-09-07T12:00:00Z
+Outage:1014,Outage,train,routeviews_url_generation_valid,PASS,expected_file_count=14
+Outage:1014,Outage,train,expected_mrt_files_found_available,REVIEW,dry-run only; remote HEAD availability not checked and no MRT files downloaded
+Outage:1014,Outage,train,no_validation_holdout_incident_used,PASS,pilot selection restricted to TRAIN
+Outage:525,Outage,train,incident_belongs_to_train,PASS,partition=train
+Outage:525,Outage,train,valid_utc_timestamps,PASS,start=2023-08-13T02:00:00.000Z end=2023-08-13T05:15:00.000Z
+Outage:525,Outage,train,acquisition_window_valid,PASS,collection_start=2023-08-13T01:00:00Z collection_end=2023-08-13T06:15:00Z
+Outage:525,Outage,train,routeviews_url_generation_valid,PASS,expected_file_count=22
+Outage:525,Outage,train,expected_mrt_files_found_available,REVIEW,dry-run only; remote HEAD availability not checked and no MRT files downloaded
+Outage:525,Outage,train,no_validation_holdout_incident_used,PASS,pilot selection restricted to TRAIN
+Outage:207,Outage,train,incident_belongs_to_train,PASS,partition=train
+Outage:207,Outage,train,valid_utc_timestamps,PASS,start=2022-03-28T08:00:00.000Z end=2022-03-28T23:00:00.000Z
+Outage:207,Outage,train,acquisition_window_valid,PASS,collection_start=2022-03-28T07:00:00Z collection_end=2022-03-29T00:00:00Z
+Outage:207,Outage,train,routeviews_url_generation_valid,PASS,expected_file_count=69
+Outage:207,Outage,train,expected_mrt_files_found_available,REVIEW,dry-run only; remote HEAD availability not checked and no MRT files downloaded
+Outage:207,Outage,train,no_validation_holdout_incident_used,PASS,pilot selection restricted to TRAIN
