@@ -1,0 +1,10 @@
+incident_uid,planned_files,downloaded_files,missing_files,corrupted_files,duplicate_files,total_bytes,availability_percent,status
+Hijack:125889,20,20,0,0,0,22056993,100.0,PASS
+Hijack:58159,20,20,0,0,0,36034597,100.0,PASS
+Hijack:97511,20,20,0,0,0,25106540,100.0,PASS
+Leak:291102,11,11,0,0,0,11307405,100.0,PASS
+Leak:426483,20,20,0,0,0,21332042,100.0,PASS
+Leak:426871,20,20,0,0,0,33941042,100.0,PASS
+Outage:1014,14,14,0,0,0,23606054,100.0,PASS
+Outage:207,69,69,0,0,0,116844706,100.0,PASS
+Outage:525,22,22,0,0,0,27990247,100.0,PASS
