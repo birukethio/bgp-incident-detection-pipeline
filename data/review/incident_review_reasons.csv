@@ -1,0 +1,821 @@
+incident_uid,category,partition,review_reasons,review_reason_count,source_system,source_record_id,source_url,source_provenance_available
+Hijack:646,Hijack,train,extreme duration;cross-partition prefix overlap,2,Cloudflare Radar BGP monitoring API,646,,True
+Hijack:643,Hijack,train,extreme duration,1,Cloudflare Radar BGP monitoring API,643,,True
+Hijack:944,Hijack,train,extreme duration,1,Cloudflare Radar BGP monitoring API,944,,True
+Hijack:1406,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,1406,,True
+Hijack:1415,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,1415,,True
+Hijack:1489,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,1489,,True
+Hijack:1961,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,1961,,True
+Hijack:2345,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,2345,,True
+Hijack:5268,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,5268,,True
+Hijack:9724,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,9724,,True
+Hijack:10325,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,10325,,True
+Hijack:10597,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,10597,,True
+Hijack:11762,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,11762,,True
+Hijack:13430,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,13430,,True
+Hijack:13797,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,13797,,True
+Hijack:14410,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,14410,,True
+Hijack:14672,Hijack,train,extreme duration,1,Cloudflare Radar BGP monitoring API,14672,,True
+Hijack:16867,Hijack,train,extreme duration,1,Cloudflare Radar BGP monitoring API,16867,,True
+Hijack:18720,Hijack,train,extreme duration;cross-partition prefix overlap,2,Cloudflare Radar BGP monitoring API,18720,,True
+Hijack:18956,Hijack,train,extreme duration,1,Cloudflare Radar BGP monitoring API,18956,,True
+Hijack:20028,Hijack,train,extreme duration;cross-partition prefix overlap,2,Cloudflare Radar BGP monitoring API,20028,,True
+Hijack:20211,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,20211,,True
+Hijack:20504,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,20504,,True
+Hijack:20888,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,20888,,True
+Hijack:20981,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,20981,,True
+Hijack:21517,Hijack,train,extreme duration,1,Cloudflare Radar BGP monitoring API,21517,,True
+Hijack:22010,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,22010,,True
+Hijack:23039,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,23039,,True
+Hijack:24332,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,24332,,True
+Hijack:25205,Hijack,train,extreme duration;cross-partition prefix overlap,2,Cloudflare Radar BGP monitoring API,25205,,True
+Hijack:27287,Hijack,train,extreme duration,1,Cloudflare Radar BGP monitoring API,27287,,True
+Hijack:27741,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,27741,,True
+Hijack:30602,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,30602,,True
+Hijack:30884,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,30884,,True
+Hijack:31249,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,31249,,True
+Hijack:31292,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,31292,,True
+Hijack:31660,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,31660,,True
+Hijack:31840,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,31840,,True
+Hijack:31867,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,31867,,True
+Hijack:33523,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,33523,,True
+Hijack:33618,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,33618,,True
+Hijack:33621,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,33621,,True
+Hijack:33805,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,33805,,True
+Hijack:34397,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,34397,,True
+Hijack:34882,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,34882,,True
+Hijack:34943,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,34943,,True
+Hijack:35196,Hijack,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,35196,,True
+Hijack:35219,Hijack,train,possible duplicate;cross-partition prefix overlap,2,Cloudflare Radar BGP monitoring API,35219,,True
+Hijack:36291,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,36291,,True
+Hijack:36388,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,36388,,True
+Hijack:37132,Hijack,train,extreme duration;cross-partition prefix overlap,2,Cloudflare Radar BGP monitoring API,37132,,True
+Hijack:37225,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,37225,,True
+Hijack:37251,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,37251,,True
+Hijack:37408,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,37408,,True
+Hijack:37745,Hijack,train,extreme duration,1,Cloudflare Radar BGP monitoring API,37745,,True
+Hijack:37902,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,37902,,True
+Hijack:38200,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,38200,,True
+Hijack:38567,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,38567,,True
+Hijack:38996,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,38996,,True
+Hijack:39126,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,39126,,True
+Hijack:41035,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,41035,,True
+Hijack:41120,Hijack,train,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,41120,,True
+Hijack:41173,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,41173,,True
+Hijack:41873,Hijack,train,extreme duration,1,Cloudflare Radar BGP monitoring API,41873,,True
+Hijack:43006,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,43006,,True
+Hijack:43594,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,43594,,True
+Hijack:43601,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,43601,,True
+Hijack:44477,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,44477,,True
+Hijack:45303,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,45303,,True
+Hijack:45876,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,45876,,True
+Hijack:45908,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,45908,,True
+Hijack:46182,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,46182,,True
+Hijack:50134,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,50134,,True
+Hijack:50133,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,50133,,True
+Hijack:50384,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,50384,,True
+Hijack:50734,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,50734,,True
+Hijack:50867,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,50867,,True
+Hijack:50937,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,50937,,True
+Hijack:50960,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,50960,,True
+Hijack:51440,Hijack,train,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,51440,,True
+Hijack:52623,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,52623,,True
+Hijack:53109,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,53109,,True
+Hijack:53573,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,53573,,True
+Hijack:54116,Hijack,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,54116,,True
+Hijack:54258,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,54258,,True
+Hijack:54390,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,54390,,True
+Hijack:55034,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,55034,,True
+Hijack:55379,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,55379,,True
+Hijack:56206,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,56206,,True
+Hijack:56294,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,56294,,True
+Hijack:56338,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,56338,,True
+Hijack:57044,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,57044,,True
+Hijack:58164,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,58164,,True
+Hijack:58617,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,58617,,True
+Hijack:59027,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,59027,,True
+Hijack:60465,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,60465,,True
+Hijack:60769,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,60769,,True
+Hijack:61327,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,61327,,True
+Hijack:61422,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,61422,,True
+Hijack:61512,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,61512,,True
+Hijack:62094,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,62094,,True
+Hijack:62222,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,62222,,True
+Hijack:62223,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,62223,,True
+Hijack:65242,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,65242,,True
+Hijack:66015,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,66015,,True
+Hijack:66356,Hijack,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,66356,,True
+Hijack:67190,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,67190,,True
+Hijack:68486,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,68486,,True
+Hijack:68538,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,68538,,True
+Hijack:68914,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,68914,,True
+Hijack:68984,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,68984,,True
+Hijack:69239,Hijack,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,69239,,True
+Hijack:69502,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,69502,,True
+Hijack:69686,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,69686,,True
+Hijack:69765,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,69765,,True
+Hijack:70047,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,70047,,True
+Hijack:70098,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,70098,,True
+Hijack:70335,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,70335,,True
+Hijack:71010,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,71010,,True
+Hijack:71339,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,71339,,True
+Hijack:71828,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,71828,,True
+Hijack:72017,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,72017,,True
+Hijack:72779,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,72779,,True
+Hijack:72781,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,72781,,True
+Hijack:72820,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,72820,,True
+Hijack:72841,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,72841,,True
+Hijack:73712,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,73712,,True
+Hijack:74345,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,74345,,True
+Hijack:75228,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,75228,,True
+Hijack:75722,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,75722,,True
+Hijack:75986,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,75986,,True
+Hijack:76498,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,76498,,True
+Hijack:76755,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,76755,,True
+Hijack:77535,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,77535,,True
+Hijack:77825,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,77825,,True
+Hijack:80960,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,80960,,True
+Hijack:83447,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,83447,,True
+Hijack:83457,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,83457,,True
+Hijack:83597,Hijack,train,extreme duration;cross-partition prefix overlap,2,Cloudflare Radar BGP monitoring API,83597,,True
+Hijack:86836,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,86836,,True
+Hijack:86939,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,86939,,True
+Hijack:87179,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,87179,,True
+Hijack:87600,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,87600,,True
+Hijack:88054,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,88054,,True
+Hijack:89075,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,89075,,True
+Hijack:89656,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,89656,,True
+Hijack:89788,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,89788,,True
+Hijack:90841,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,90841,,True
+Hijack:92049,Hijack,train,extreme duration,1,Cloudflare Radar BGP monitoring API,92049,,True
+Hijack:94314,Hijack,train,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,94314,,True
+Hijack:95223,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,95223,,True
+Hijack:96554,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,96554,,True
+Hijack:97190,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,97190,,True
+Hijack:97511,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,97511,,True
+Hijack:97934,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,97934,,True
+Hijack:97951,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,97951,,True
+Hijack:98065,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,98065,,True
+Hijack:98570,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,98570,,True
+Hijack:98608,Hijack,train,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,98608,,True
+Hijack:100048,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,100048,,True
+Hijack:100886,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,100886,,True
+Hijack:100968,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,100968,,True
+Hijack:101680,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,101680,,True
+Hijack:103126,Hijack,train,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,103126,,True
+Hijack:103378,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,103378,,True
+Hijack:103389,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,103389,,True
+Hijack:103612,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,103612,,True
+Hijack:103663,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,103663,,True
+Hijack:104140,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,104140,,True
+Hijack:104764,Hijack,train,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,104764,,True
+Hijack:105065,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,105065,,True
+Hijack:105062,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,105062,,True
+Hijack:105080,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,105080,,True
+Hijack:105145,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,105145,,True
+Hijack:105503,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,105503,,True
+Hijack:105070,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,105070,,True
+Hijack:106814,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,106814,,True
+Hijack:107518,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,107518,,True
+Hijack:108138,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,108138,,True
+Hijack:108786,Hijack,train,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,108786,,True
+Hijack:109310,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,109310,,True
+Hijack:110488,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,110488,,True
+Hijack:111425,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,111425,,True
+Hijack:112683,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,112683,,True
+Hijack:112686,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,112686,,True
+Hijack:112831,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,112831,,True
+Hijack:115227,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,115227,,True
+Hijack:116420,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,116420,,True
+Hijack:116840,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,116840,,True
+Hijack:116856,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,116856,,True
+Hijack:119652,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,119652,,True
+Hijack:119669,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,119669,,True
+Hijack:119673,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,119673,,True
+Hijack:119824,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,119824,,True
+Hijack:120073,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,120073,,True
+Hijack:120325,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,120325,,True
+Hijack:121380,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,121380,,True
+Hijack:121952,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,121952,,True
+Hijack:122336,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,122336,,True
+Hijack:122335,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,122335,,True
+Hijack:123124,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,123124,,True
+Hijack:123175,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,123175,,True
+Hijack:123388,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,123388,,True
+Hijack:124251,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,124251,,True
+Hijack:124263,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,124263,,True
+Hijack:124293,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,124293,,True
+Hijack:123174,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,123174,,True
+Hijack:124352,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,124352,,True
+Hijack:124685,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,124685,,True
+Hijack:125016,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,125016,,True
+Hijack:125603,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,125603,,True
+Hijack:125889,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,125889,,True
+Hijack:125815,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,125815,,True
+Hijack:128051,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,128051,,True
+Hijack:129951,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,129951,,True
+Hijack:130023,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,130023,,True
+Hijack:130194,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,130194,,True
+Hijack:130533,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,130533,,True
+Hijack:130734,Hijack,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,130734,,True
+Hijack:131916,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,131916,,True
+Hijack:132690,Hijack,train,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,132690,,True
+Hijack:132790,Hijack,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,132790,,True
+Hijack:132931,Hijack,train,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,132931,,True
+Leak:218947,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,218947,,True
+Leak:219109,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,219109,,True
+Leak:219381,Leak,train,extreme duration,1,Cloudflare Radar BGP monitoring API,219381,,True
+Leak:227604,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,227604,,True
+Leak:227774,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,227774,,True
+Leak:229210,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,229210,,True
+Leak:230460,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,230460,,True
+Leak:232936,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,232936,,True
+Leak:233496,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,233496,,True
+Leak:233515,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,233515,,True
+Leak:233513,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,233513,,True
+Leak:237181,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,237181,,True
+Leak:238181,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,238181,,True
+Leak:239330,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,239330,,True
+Leak:240348,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,240348,,True
+Leak:240505,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,240505,,True
+Leak:240812,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,240812,,True
+Leak:245079,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,245079,,True
+Leak:245629,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,245629,,True
+Leak:246836,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,246836,,True
+Leak:247290,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,247290,,True
+Leak:248427,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,248427,,True
+Leak:248595,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,248595,,True
+Leak:248684,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,248684,,True
+Leak:250707,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,250707,,True
+Leak:252436,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,252436,,True
+Leak:253809,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,253809,,True
+Leak:274316,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,274316,,True
+Leak:274438,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,274438,,True
+Leak:274764,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,274764,,True
+Leak:275187,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,275187,,True
+Leak:277066,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,277066,,True
+Leak:279177,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,279177,,True
+Leak:281811,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,281811,,True
+Leak:282922,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,282922,,True
+Leak:283108,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,283108,,True
+Leak:283590,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,283590,,True
+Leak:283790,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,283790,,True
+Leak:286462,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,286462,,True
+Leak:286830,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,286830,,True
+Leak:287482,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,287482,,True
+Leak:288366,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,288366,,True
+Leak:290633,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,290633,,True
+Leak:291677,Leak,train,possible duplicate;extreme duration,2,Cloudflare Radar BGP monitoring API,291677,,True
+Leak:298254,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,298254,,True
+Leak:298382,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,298382,,True
+Leak:298533,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,298533,,True
+Leak:300388,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,300388,,True
+Leak:301318,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,301318,,True
+Leak:303444,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,303444,,True
+Leak:303661,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,303661,,True
+Leak:306914,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,306914,,True
+Leak:307077,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,307077,,True
+Leak:307174,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,307174,,True
+Leak:307159,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,307159,,True
+Leak:307169,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,307169,,True
+Leak:307175,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,307175,,True
+Leak:307165,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,307165,,True
+Leak:307164,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,307164,,True
+Leak:307184,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,307184,,True
+Leak:307183,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,307183,,True
+Leak:307198,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,307198,,True
+Leak:308666,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,308666,,True
+Leak:308913,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,308913,,True
+Leak:311222,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,311222,,True
+Leak:311790,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,311790,,True
+Leak:313050,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,313050,,True
+Leak:313126,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,313126,,True
+Leak:313601,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,313601,,True
+Leak:313917,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,313917,,True
+Leak:313949,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,313949,,True
+Leak:316205,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,316205,,True
+Leak:316893,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,316893,,True
+Leak:317327,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,317327,,True
+Leak:317434,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,317434,,True
+Leak:319748,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,319748,,True
+Leak:320350,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,320350,,True
+Leak:320422,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,320422,,True
+Leak:322973,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,322973,,True
+Leak:325195,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,325195,,True
+Leak:326158,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,326158,,True
+Leak:326458,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,326458,,True
+Leak:329008,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,329008,,True
+Leak:330103,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,330103,,True
+Leak:330205,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,330205,,True
+Leak:335020,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,335020,,True
+Leak:335066,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,335066,,True
+Leak:337138,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,337138,,True
+Leak:337776,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,337776,,True
+Leak:341096,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,341096,,True
+Leak:341248,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,341248,,True
+Leak:341100,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,341100,,True
+Leak:341218,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,341218,,True
+Leak:341255,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,341255,,True
+Leak:341194,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,341194,,True
+Leak:348662,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,348662,,True
+Leak:349436,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,349436,,True
+Leak:350085,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,350085,,True
+Leak:350822,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,350822,,True
+Leak:354513,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,354513,,True
+Leak:354787,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,354787,,True
+Leak:355400,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,355400,,True
+Leak:357469,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,357469,,True
+Leak:358447,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,358447,,True
+Leak:360135,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,360135,,True
+Leak:360563,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,360563,,True
+Leak:362162,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,362162,,True
+Leak:363620,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,363620,,True
+Leak:364286,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,364286,,True
+Leak:365973,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,365973,,True
+Leak:366263,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,366263,,True
+Leak:366968,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,366968,,True
+Leak:367438,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,367438,,True
+Leak:367696,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,367696,,True
+Leak:367716,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,367716,,True
+Leak:368959,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,368959,,True
+Leak:369166,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,369166,,True
+Leak:369157,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,369157,,True
+Leak:374085,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,374085,,True
+Leak:374103,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,374103,,True
+Leak:376569,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,376569,,True
+Leak:376571,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,376571,,True
+Leak:378463,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,378463,,True
+Leak:380585,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,380585,,True
+Leak:384422,Leak,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,384422,,True
+Leak:385591,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,385591,,True
+Leak:386821,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,386821,,True
+Leak:387904,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,387904,,True
+Leak:387931,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,387931,,True
+Leak:388146,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,388146,,True
+Leak:388345,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,388345,,True
+Leak:388901,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,388901,,True
+Leak:388897,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,388897,,True
+Leak:388961,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,388961,,True
+Leak:390162,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,390162,,True
+Leak:393810,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,393810,,True
+Leak:394005,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,394005,,True
+Leak:393992,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,393992,,True
+Leak:396112,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,396112,,True
+Leak:396189,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,396189,,True
+Leak:400238,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,400238,,True
+Leak:402215,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,402215,,True
+Leak:403508,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,403508,,True
+Leak:404266,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,404266,,True
+Leak:404613,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,404613,,True
+Leak:410029,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,410029,,True
+Leak:410142,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,410142,,True
+Leak:410925,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,410925,,True
+Leak:410927,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,410927,,True
+Leak:412656,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,412656,,True
+Leak:414652,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,414652,,True
+Leak:417252,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,417252,,True
+Leak:417253,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,417253,,True
+Leak:417724,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,417724,,True
+Leak:420124,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,420124,,True
+Leak:422789,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,422789,,True
+Leak:426365,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,426365,,True
+Leak:426442,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,426442,,True
+Leak:426483,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,426483,,True
+Leak:426549,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,426549,,True
+Leak:426871,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,426871,,True
+Leak:427059,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,427059,,True
+Leak:427337,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,427337,,True
+Leak:428788,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,428788,,True
+Leak:429587,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,429587,,True
+Leak:433270,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,433270,,True
+Leak:433508,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,433508,,True
+Leak:433422,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,433422,,True
+Leak:434797,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,434797,,True
+Leak:436224,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,436224,,True
+Leak:437592,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,437592,,True
+Leak:439376,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,439376,,True
+Leak:440301,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,440301,,True
+Leak:440550,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,440550,,True
+Leak:442710,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,442710,,True
+Leak:443098,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,443098,,True
+Leak:444143,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,444143,,True
+Leak:444142,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,444142,,True
+Leak:445109,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,445109,,True
+Leak:444616,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,444616,,True
+Leak:449245,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,449245,,True
+Leak:450444,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,450444,,True
+Leak:450562,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,450562,,True
+Leak:453637,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,453637,,True
+Leak:454537,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,454537,,True
+Leak:454666,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,454666,,True
+Leak:454767,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,454767,,True
+Leak:455084,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,455084,,True
+Leak:455291,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,455291,,True
+Leak:456854,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,456854,,True
+Leak:457177,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,457177,,True
+Leak:457512,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,457512,,True
+Leak:457516,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,457516,,True
+Leak:457613,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,457613,,True
+Leak:457719,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,457719,,True
+Leak:458244,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,458244,,True
+Leak:458781,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,458781,,True
+Leak:459006,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,459006,,True
+Leak:459271,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,459271,,True
+Leak:459625,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,459625,,True
+Leak:459829,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,459829,,True
+Leak:459713,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,459713,,True
+Leak:460085,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,460085,,True
+Leak:460763,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,460763,,True
+Leak:460887,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,460887,,True
+Leak:461475,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,461475,,True
+Leak:461599,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,461599,,True
+Leak:462412,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,462412,,True
+Leak:462510,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,462510,,True
+Leak:462509,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,462509,,True
+Leak:463906,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,463906,,True
+Leak:464236,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,464236,,True
+Leak:464614,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,464614,,True
+Leak:464622,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,464622,,True
+Leak:465215,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,465215,,True
+Leak:465234,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,465234,,True
+Leak:465428,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,465428,,True
+Leak:465577,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,465577,,True
+Leak:465687,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,465687,,True
+Leak:465739,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,465739,,True
+Leak:466122,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,466122,,True
+Leak:466305,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,466305,,True
+Leak:466385,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,466385,,True
+Leak:466421,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,466421,,True
+Leak:466646,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,466646,,True
+Leak:466722,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,466722,,True
+Leak:466928,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,466928,,True
+Leak:467133,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,467133,,True
+Leak:467598,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,467598,,True
+Leak:467697,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,467697,,True
+Leak:467319,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,467319,,True
+Leak:467473,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,467473,,True
+Leak:467261,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,467261,,True
+Leak:467517,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,467517,,True
+Leak:467400,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,467400,,True
+Leak:468179,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,468179,,True
+Leak:468447,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,468447,,True
+Leak:468453,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,468453,,True
+Leak:468454,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,468454,,True
+Leak:468615,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,468615,,True
+Leak:468665,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,468665,,True
+Leak:468731,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,468731,,True
+Leak:468869,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,468869,,True
+Leak:468917,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,468917,,True
+Leak:468762,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,468762,,True
+Leak:468733,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,468733,,True
+Leak:468891,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,468891,,True
+Leak:469338,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,469338,,True
+Leak:469951,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,469951,,True
+Leak:469954,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,469954,,True
+Leak:470359,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,470359,,True
+Leak:470537,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,470537,,True
+Leak:470616,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,470616,,True
+Leak:470937,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,470937,,True
+Leak:471151,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,471151,,True
+Leak:471621,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,471621,,True
+Leak:471812,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,471812,,True
+Leak:471791,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,471791,,True
+Leak:472146,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,472146,,True
+Leak:471995,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,471995,,True
+Leak:472155,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,472155,,True
+Leak:472271,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,472271,,True
+Leak:472349,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,472349,,True
+Leak:472366,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,472366,,True
+Leak:472485,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,472485,,True
+Leak:472464,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,472464,,True
+Leak:473404,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,473404,,True
+Leak:473405,Leak,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,473405,,True
+Leak:473648,Leak,train,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,473648,,True
+Leak:473694,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,473694,,True
+Leak:473757,Leak,train,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,473757,,True
+Outage:210,Outage,train,other,1,Cloudflare Radar BGP monitoring API,210,https://twitter.com/CloudflareRadar/status/1507078068992679944,True
+Outage:209,Outage,train,other,1,Cloudflare Radar BGP monitoring API,209,https://twitter.com/CloudflareRadar/status/1507023169651200000,True
+Outage:124,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,124,https://twitter.com/CloudflareRadar/status/1570389349723684865,True
+Outage:120,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,120,https://blog.cloudflare.com/protests-internet-disruption-ir/,True
+Outage:235,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,235,https://twitter.com/CloudflareRadar/status/1575893549245255681,True
+Outage:249,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,249,https://twitter.com/CloudflareRadar/status/1578840116239290368,True
+Outage:251,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,251,https://twitter.com/CloudflareRadar/status/1578840116239290368,True
+Outage:259,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,259,https://twitter.com/CloudflareRadar/status/1581277674819158016,True
+Outage:349,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,349,https://twitter.com/CloudflareRadar/status/1644041192743530511,True
+Outage:351,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,351,https://twitter.com/CloudflareRadar/status/1644093805040132097,True
+Outage:350,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,350,https://twitter.com/CloudflareRadar/status/1644040013686906880,True
+Outage:428,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,428,https://twitter.com/CloudflareRadar/status/1665512503197982721,True
+Outage:379,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,379,https://twitter.com/CloudflareRadar/status/1665794065345003523,True
+Outage:393,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,393,https://blog.cloudflare.com/exam-internet-shutdowns-iraq-algeria/,True
+Outage:394,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,394,https://blog.cloudflare.com/exam-internet-shutdowns-iraq-algeria/,True
+Outage:400,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,400,https://blog.cloudflare.com/exam-internet-shutdowns-iraq-algeria/,True
+Outage:401,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,401,https://blog.cloudflare.com/exam-internet-shutdowns-iraq-algeria/,True
+Outage:406,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,406,https://blog.cloudflare.com/exam-internet-shutdowns-iraq-algeria/,True
+Outage:412,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,412,https://blog.cloudflare.com/exam-internet-shutdowns-iraq-algeria/,True
+Outage:468,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,468,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:469,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,469,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:470,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,470,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:503,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,503,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:505,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,505,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:506,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,506,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:507,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,507,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:508,Outage,train,possible duplicate,1,Cloudflare Radar BGP monitoring API,508,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:510,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,510,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:517,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,517,https://twitter.com/CloudflareRadar/status/1689626100660330498,True
+Outage:525,Outage,train,other,1,Cloudflare Radar BGP monitoring API,525,https://twitter.com/CloudflareRadar/status/1689626100660330498,True
+Outage:527,Outage,train,other,1,Cloudflare Radar BGP monitoring API,527,https://twitter.com/CloudflareRadar/status/1689267031961378816,True
+Outage:538,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,538,https://twitter.com/CloudflareRadar/status/1689626100660330498,True
+Outage:561,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,561,https://twitter.com/CloudflareRadar/status/1703230002303476058,True
+Outage:705,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,705,https://twitter.com/CloudflareRadar/status/1755435530873888990,True
+Outage:875,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,875,https://twitter.com/CloudflareRadar/status/1786064975074594952,True
+Outage:959,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,959,https://twitter.com/CloudflareRadar/status/1786064975074594952,True
+Outage:895,Outage,train,other,1,Cloudflare Radar BGP monitoring API,895,https://x.com/CloudflareRadar/status/1794310601340342494,True
+Outage:896,Outage,train,other,1,Cloudflare Radar BGP monitoring API,896,https://x.com/CloudflareRadar/status/1794683020236218679,True
+Outage:900,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,900,https://x.com/CloudflareRadar/status/1795787583038857515,True
+Outage:902,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,902,https://x.com/CloudflareRadar/status/1795787583038857515,True
+Outage:903,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,903,https://x.com/CloudflareRadar/status/1795787583038857515,True
+Outage:906,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,906,https://x.com/CloudflareRadar/status/1795787583038857515,True
+Outage:907,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,907,https://x.com/CloudflareRadar/status/1795787583038857515,True
+Outage:912,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,912,https://x.com/CloudflareRadar/status/1795787583038857515,True
+Outage:913,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,913,https://x.com/CloudflareRadar/status/1795787583038857515,True
+Outage:914,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,914,https://x.com/CloudflareRadar/status/1798546000258417082,True
+Outage:915,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,915,https://x.com/CloudflareRadar/status/1798546000258417082,True
+Outage:917,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,917,https://twitter.com/free_senegal/status/1798735079411499017,True
+Outage:919,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,919,https://x.com/CloudflareRadar/status/1798337167124775034,True
+Outage:920,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,920,https://x.com/CloudflareRadar/status/1798337167124775034,True
+Outage:921,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,921,https://x.com/CloudflareRadar/status/1798337167124775034,True
+Outage:922,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,922,https://x.com/CloudflareRadar/status/1799838521815162896,True
+Outage:927,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,927,https://x.com/CloudflareRadar/status/1798337167124775034,True
+Outage:928,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,928,https://x.com/CloudflareRadar/status/1798337167124775034,True
+Outage:929,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,929,https://x.com/CloudflareRadar/status/1799838521815162896,True
+Outage:935,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,935,https://x.com/CloudflareRadar/status/1798337167124775034,True
+Outage:936,Outage,train,temporal overlap,1,Cloudflare Radar BGP monitoring API,936,https://x.com/CloudflareRadar/status/1798337167124775034,True
+Outage:1034,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1034,https://x.com/CloudflareRadar/status/1820086506242863532,True
+Outage:977,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,977,https://x.com/CloudflareRadar/status/1820086506242863532,True
+Outage:1036,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1036,https://noc.social/@cloudflareradar/113369286213418863,True
+Outage:1037,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1037,https://noc.social/@cloudflareradar/113369286213418863,True
+Outage:1038,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1038,https://noc.social/@cloudflareradar/113369286213418863,True
+Outage:1090,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1090,https://blog.cloudflare.com/how-power-outage-in-portugal-spain-impacted-internet/#impacts-in-other-european-countries,True
+Outage:1128,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1128,https://bsky.app/profile/radar.cloudflare.com/post/3lpk7cnjknk2n,True
+Outage:1132,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1132,https://bsky.app/profile/radar.cloudflare.com/post/3lpk7cnjknk2n,True
+Outage:1130,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1130,https://bsky.app/profile/radar.cloudflare.com/post/3lpk7cnjknk2n,True
+Outage:1129,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1129,https://bsky.app/profile/radar.cloudflare.com/post/3lpk7cnjknk2n,True
+Outage:1225,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1225,https://bsky.app/profile/radar.cloudflare.com/post/3lrsqwvlqa226,True
+Outage:1227,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1227,https://bsky.app/profile/radar.cloudflare.com/post/3lrsqwvlqa226,True
+Outage:1228,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1228,https://bsky.app/profile/radar.cloudflare.com/post/3lrsqwvlqa226,True
+Outage:1229,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1229,https://bsky.app/profile/radar.cloudflare.com/post/3lrsqwvlqa226,True
+Outage:1236,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1236,https://bsky.app/profile/radar.cloudflare.com/post/3lrq46mrar22p,True
+Outage:1238,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1238,https://bsky.app/profile/radar.cloudflare.com/post/3lqsedmimoc2b,True
+Outage:1241,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1241,https://bsky.app/profile/radar.cloudflare.com/post/3lqsedmimoc2b,True
+Outage:1250,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1250,https://bsky.app/profile/radar.cloudflare.com/post/3lrq46mrar22p,True
+Outage:1251,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1251,https://bsky.app/profile/radar.cloudflare.com/post/3lqsedmimoc2b,True
+Outage:1322,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1322,https://x.com/CloudflareRadar/status/1960329607892066370,True
+Outage:1323,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1323,https://x.com/CloudflareRadar/status/1960324662740529354,True
+Outage:1329,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1329,https://x.com/CloudflareRadar/status/1960329607892066370,True
+Outage:1325,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1325,https://x.com/CloudflareRadar/status/1960324662740529354,True
+Outage:1331,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1331,https://x.com/CloudflareRadar/status/1960329607892066370,True
+Outage:1333,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1333,https://x.com/CloudflareRadar/status/1960329607892066370,True
+Outage:1338,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1338,https://x.com/CloudflareRadar/status/1960329607892066370,True
+Outage:1335,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1335,https://x.com/CloudflareRadar/status/1960324662740529354,True
+Outage:1412,Outage,train,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1412,https://bsky.app/profile/radar.cloudflare.com/post/3lzlihqopbc2a,True
+Hijack:2238,Hijack,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,2238,,True
+Hijack:3822,Hijack,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,3822,,True
+Hijack:4071,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,4071,,True
+Hijack:7783,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,7783,,True
+Hijack:10579,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,10579,,True
+Hijack:11589,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,11589,,True
+Hijack:17628,Hijack,validation,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,17628,,True
+Hijack:17853,Hijack,validation,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,17853,,True
+Hijack:20307,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,20307,,True
+Hijack:36416,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,36416,,True
+Hijack:44302,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,44302,,True
+Hijack:49466,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,49466,,True
+Hijack:50137,Hijack,validation,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,50137,,True
+Hijack:55137,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,55137,,True
+Hijack:59573,Hijack,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,59573,,True
+Hijack:61453,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,61453,,True
+Hijack:63876,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,63876,,True
+Hijack:64376,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,64376,,True
+Hijack:68512,Hijack,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,68512,,True
+Hijack:68536,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,68536,,True
+Hijack:69390,Hijack,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,69390,,True
+Hijack:71136,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,71136,,True
+Hijack:72746,Hijack,validation,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,72746,,True
+Hijack:73231,Hijack,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,73231,,True
+Hijack:75965,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,75965,,True
+Hijack:78551,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,78551,,True
+Hijack:78933,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,78933,,True
+Hijack:84027,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,84027,,True
+Hijack:84274,Hijack,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,84274,,True
+Hijack:86665,Hijack,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,86665,,True
+Hijack:97493,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,97493,,True
+Hijack:99058,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,99058,,True
+Hijack:100178,Hijack,validation,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,100178,,True
+Hijack:102712,Hijack,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,102712,,True
+Hijack:109538,Hijack,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,109538,,True
+Hijack:113491,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,113491,,True
+Hijack:114797,Hijack,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,114797,,True
+Hijack:115105,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,115105,,True
+Hijack:115187,Hijack,validation,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,115187,,True
+Hijack:123107,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,123107,,True
+Hijack:124278,Hijack,validation,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,124278,,True
+Hijack:124265,Hijack,validation,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,124265,,True
+Hijack:124335,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,124335,,True
+Hijack:125810,Hijack,validation,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,125810,,True
+Hijack:126112,Hijack,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,126112,,True
+Hijack:126735,Hijack,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,126735,,True
+Hijack:130022,Hijack,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,130022,,True
+Leak:219869,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,219869,,True
+Leak:219922,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,219922,,True
+Leak:225383,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,225383,,True
+Leak:240474,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,240474,,True
+Leak:244800,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,244800,,True
+Leak:245502,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,245502,,True
+Leak:248715,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,248715,,True
+Leak:274533,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,274533,,True
+Leak:276264,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,276264,,True
+Leak:278412,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,278412,,True
+Leak:288742,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,288742,,True
+Leak:290926,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,290926,,True
+Leak:297327,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,297327,,True
+Leak:299395,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,299395,,True
+Leak:299800,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,299800,,True
+Leak:302513,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,302513,,True
+Leak:303655,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,303655,,True
+Leak:307167,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,307167,,True
+Leak:313046,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,313046,,True
+Leak:316419,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,316419,,True
+Leak:328843,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,328843,,True
+Leak:328953,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,328953,,True
+Leak:341398,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,341398,,True
+Leak:362282,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,362282,,True
+Leak:363170,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,363170,,True
+Leak:365476,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,365476,,True
+Leak:369768,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,369768,,True
+Leak:388282,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,388282,,True
+Leak:389462,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,389462,,True
+Leak:396148,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,396148,,True
+Leak:412317,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,412317,,True
+Leak:420176,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,420176,,True
+Leak:428622,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,428622,,True
+Leak:428645,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,428645,,True
+Leak:435038,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,435038,,True
+Leak:436310,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,436310,,True
+Leak:440808,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,440808,,True
+Leak:440851,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,440851,,True
+Leak:447079,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,447079,,True
+Leak:453199,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,453199,,True
+Leak:455147,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,455147,,True
+Leak:455730,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,455730,,True
+Leak:455789,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,455789,,True
+Leak:455788,Leak,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,455788,,True
+Leak:455886,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,455886,,True
+Leak:456013,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,456013,,True
+Leak:459040,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,459040,,True
+Leak:461851,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,461851,,True
+Leak:462540,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,462540,,True
+Leak:467475,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,467475,,True
+Leak:469934,Leak,validation,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,469934,,True
+Leak:470667,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,470667,,True
+Leak:471818,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,471818,,True
+Leak:471768,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,471768,,True
+Leak:472790,Leak,validation,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,472790,,True
+Outage:119,Outage,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,119,https://blog.cloudflare.com/protests-internet-disruption-ir/,True
+Outage:237,Outage,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,237,https://twitter.com/CloudflareRadar/status/1575893549245255681,True
+Outage:257,Outage,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,257,https://twitter.com/CloudflareRadar/status/1581277674819158016,True
+Outage:559,Outage,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,559,https://twitter.com/CloudflareRadar/status/1703230002303476058,True
+Outage:899,Outage,validation,temporal overlap,1,Cloudflare Radar BGP monitoring API,899,https://x.com/CloudflareRadar/status/1795787583038857515,True
+Outage:909,Outage,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,909,https://myrepublica.nagariknetwork.com/news/internet-slowdown-across-nepal-due-to-airtel-network-issues/,True
+Outage:918,Outage,validation,temporal overlap,1,Cloudflare Radar BGP monitoring API,918,https://x.com/CloudflareRadar/status/1798337167124775034,True
+Outage:937,Outage,validation,temporal overlap,1,Cloudflare Radar BGP monitoring API,937,https://x.com/CloudflareRadar/status/1799838521815162896,True
+Outage:1127,Outage,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1127,https://bsky.app/profile/radar.cloudflare.com/post/3lpk7cnjknk2n,True
+Outage:1240,Outage,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1240,https://bsky.app/profile/radar.cloudflare.com/post/3lrq46mrar22p,True
+Outage:1246,Outage,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1246,https://bsky.app/profile/radar.cloudflare.com/post/3lqsedmimoc2b,True
+Outage:1340,Outage,validation,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1340,https://x.com/CloudflareRadar/status/1960329607892066370,True
+Hijack:6,Hijack,holdout,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,6,,True
+Hijack:7,Hijack,holdout,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,7,,True
+Hijack:2955,Hijack,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,2955,,True
+Hijack:3011,Hijack,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,3011,,True
+Hijack:5136,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,5136,,True
+Hijack:5225,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,5225,,True
+Hijack:6722,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,6722,,True
+Hijack:9928,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,9928,,True
+Hijack:17677,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,17677,,True
+Hijack:24189,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,24189,,True
+Hijack:30489,Hijack,holdout,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,30489,,True
+Hijack:32856,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,32856,,True
+Hijack:34967,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,34967,,True
+Hijack:41118,Hijack,holdout,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,41118,,True
+Hijack:44460,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,44460,,True
+Hijack:45308,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,45308,,True
+Hijack:46633,Hijack,holdout,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,46633,,True
+Hijack:46751,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,46751,,True
+Hijack:48235,Hijack,holdout,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,48235,,True
+Hijack:51528,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,51528,,True
+Hijack:54693,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,54693,,True
+Hijack:55438,Hijack,holdout,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,55438,,True
+Hijack:56271,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,56271,,True
+Hijack:56291,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,56291,,True
+Hijack:58475,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,58475,,True
+Hijack:59892,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,59892,,True
+Hijack:64033,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,64033,,True
+Hijack:64382,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,64382,,True
+Hijack:64460,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,64460,,True
+Hijack:68493,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,68493,,True
+Hijack:68483,Hijack,holdout,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,68483,,True
+Hijack:69714,Hijack,holdout,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,69714,,True
+Hijack:70810,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,70810,,True
+Hijack:72285,Hijack,holdout,possible duplicate;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,72285,,True
+Hijack:79050,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,79050,,True
+Hijack:80689,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,80689,,True
+Hijack:82076,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,82076,,True
+Hijack:87117,Hijack,holdout,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,87117,,True
+Hijack:87858,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,87858,,True
+Hijack:95256,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,95256,,True
+Hijack:96212,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,96212,,True
+Hijack:101261,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,101261,,True
+Hijack:103341,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,103341,,True
+Hijack:103976,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,103976,,True
+Hijack:112673,Hijack,holdout,possible duplicate;extreme duration;cross-partition prefix overlap;temporal overlap,4,Cloudflare Radar BGP monitoring API,112673,,True
+Hijack:114648,Hijack,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,114648,,True
+Hijack:130021,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,130021,,True
+Hijack:132863,Hijack,holdout,extreme duration;cross-partition prefix overlap;temporal overlap,3,Cloudflare Radar BGP monitoring API,132863,,True
+Leak:225678,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,225678,,True
+Leak:230461,Leak,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,230461,,True
+Leak:246344,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,246344,,True
+Leak:246457,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,246457,,True
+Leak:246987,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,246987,,True
+Leak:253329,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,253329,,True
+Leak:254255,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,254255,,True
+Leak:274384,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,274384,,True
+Leak:295229,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,295229,,True
+Leak:312823,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,312823,,True
+Leak:317863,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,317863,,True
+Leak:325305,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,325305,,True
+Leak:328980,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,328980,,True
+Leak:341654,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,341654,,True
+Leak:350090,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,350090,,True
+Leak:352124,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,352124,,True
+Leak:364862,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,364862,,True
+Leak:374046,Leak,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,374046,,True
+Leak:387807,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,387807,,True
+Leak:389029,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,389029,,True
+Leak:393818,Leak,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,393818,,True
+Leak:403501,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,403501,,True
+Leak:406898,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,406898,,True
+Leak:412458,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,412458,,True
+Leak:413202,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,413202,,True
+Leak:414320,Leak,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,414320,,True
+Leak:426443,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,426443,,True
+Leak:430107,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,430107,,True
+Leak:443101,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,443101,,True
+Leak:447312,Leak,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,447312,,True
+Leak:449138,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,449138,,True
+Leak:453612,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,453612,,True
+Leak:454378,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,454378,,True
+Leak:454429,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,454429,,True
+Leak:454854,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,454854,,True
+Leak:456243,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,456243,,True
+Leak:456823,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,456823,,True
+Leak:457657,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,457657,,True
+Leak:459184,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,459184,,True
+Leak:460042,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,460042,,True
+Leak:460693,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,460693,,True
+Leak:462292,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,462292,,True
+Leak:462322,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,462322,,True
+Leak:462822,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,462822,,True
+Leak:463455,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,463455,,True
+Leak:463502,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,463502,,True
+Leak:463538,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,463538,,True
+Leak:463600,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,463600,,True
+Leak:464680,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,464680,,True
+Leak:464912,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,464912,,True
+Leak:465834,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,465834,,True
+Leak:465910,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,465910,,True
+Leak:466538,Leak,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,466538,,True
+Leak:466968,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,466968,,True
+Leak:467067,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,467067,,True
+Leak:467171,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,467171,,True
+Leak:467305,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,467305,,True
+Leak:468388,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,468388,,True
+Leak:471324,Leak,holdout,extreme duration;temporal overlap,2,Cloudflare Radar BGP monitoring API,471324,,True
+Leak:473837,Leak,holdout,possible duplicate;extreme duration;temporal overlap,3,Cloudflare Radar BGP monitoring API,473837,,True
+Outage:125,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,125,https://twitter.com/CloudflareRadar/status/1570389349723684865,True
+Outage:118,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,118,https://blog.cloudflare.com/protests-internet-disruption-ir/,True
+Outage:471,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,471,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:504,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,504,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:509,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,509,https://twitter.com/CloudflareRadar/status/1685990988773212162,True
+Outage:516,Outage,holdout,temporal overlap,1,Cloudflare Radar BGP monitoring API,516,https://twitter.com/CloudflareRadar/status/1689267031961378816,True
+Outage:537,Outage,holdout,temporal overlap,1,Cloudflare Radar BGP monitoring API,537,https://twitter.com/CloudflareRadar/status/1693451780963618945,True
+Outage:540,Outage,holdout,temporal overlap,1,Cloudflare Radar BGP monitoring API,540,https://twitter.com/CloudflareRadar/status/1693451780963618945,True
+Outage:546,Outage,holdout,temporal overlap,1,Cloudflare Radar BGP monitoring API,546,https://twitter.com/CloudflareRadar/status/1689626100660330498,True
+Outage:706,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,706,https://twitter.com/CloudflareRadar/status/1755435530873888990,True
+Outage:908,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,908,https://myrepublica.nagariknetwork.com/news/internet-slowdown-across-nepal-due-to-airtel-network-issues/,True
+Outage:931,Outage,holdout,temporal overlap,1,Cloudflare Radar BGP monitoring API,931,https://x.com/CloudflareRadar/status/1798337167124775034,True
+Outage:934,Outage,holdout,temporal overlap,1,Cloudflare Radar BGP monitoring API,934,https://x.com/CloudflareRadar/status/1798337167124775034,True
+Outage:1230,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1230,https://bsky.app/profile/radar.cloudflare.com/post/3lrsqwvlqa226,True
+Outage:1245,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1245,https://bsky.app/profile/radar.cloudflare.com/post/3lrq46mrar22p,True
+Outage:1326,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1326,https://x.com/CloudflareRadar/status/1960324662740529354,True
+Outage:1327,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1327,https://x.com/CloudflareRadar/status/1960324662740529354,True
+Outage:1336,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1336,https://x.com/CloudflareRadar/status/1960324662740529354,True
+Outage:1413,Outage,holdout,possible duplicate;temporal overlap,2,Cloudflare Radar BGP monitoring API,1413,https://bsky.app/profile/radar.cloudflare.com/post/3lzlihqopbc2a,True

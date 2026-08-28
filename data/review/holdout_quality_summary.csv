@@ -1,0 +1,4 @@
+category,holdout_incidents,duplicate_risk,duration_concern,provenance_available,asn_available,prefix_available,timestamp_confidence
+Hijack,71,14,45,71,71,71,71
+Leak,71,26,54,71,71,0,71
+Outage,71,13,0,71,71,0,71

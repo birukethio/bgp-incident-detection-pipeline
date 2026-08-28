@@ -1,0 +1,4 @@
+category,incident_count,incidents_with_prefix_list,incidents_without_prefix_list,incidents_with_prefix_count,prefix_requirement,actual_prefix_lists_recoverable,assessment,sufficient_for_routeviews_extraction
+Hijack,473,473,0,473,required_quality_field,already_present,prefix lists are expected and present in the frozen roster,True
+Leak,473,0,473,473,important_but_currently_count_only,not_from_current_normalized_roster; likely_not_from_current_raw_leak_dump,"Cloudflare leak raw schema exposes prefix_count, leak_seg, leak_asn, origins/countries, but sampled raw records do not show actual affected prefix lists in the stored API response",True
+Outage,473,0,473,0,not_required_for_label_if_asn_interval_available,not_required_before_MRT,outage labels are network/ASN plus reported interval; affected prefixes can be derived later from MRT/RIB context if needed,True

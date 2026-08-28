@@ -1,0 +1,71 @@
+dimension,value,review_reason,incident_count,review_incident_count,percent_of_reviewed
+ALL,ALL,possible duplicate,387,820,47.2
+ALL,ALL,extreme duration,598,820,72.93
+ALL,ALL,missing source/provenance,0,820,0.0
+ALL,ALL,missing prefix,0,820,0.0
+ALL,ALL,missing ASN,0,820,0.0
+ALL,ALL,timestamp concern,0,820,0.0
+ALL,ALL,cross-partition ASN overlap,0,820,0.0
+ALL,ALL,cross-partition prefix overlap,162,820,19.76
+ALL,ALL,temporal overlap,782,820,95.37
+ALL,ALL,other,6,820,0.73
+category,Hijack,possible duplicate,85,318,26.73
+category,Hijack,extreme duration,298,318,93.71
+category,Hijack,missing source/provenance,0,318,0.0
+category,Hijack,missing prefix,0,318,0.0
+category,Hijack,missing ASN,0,318,0.0
+category,Hijack,timestamp concern,0,318,0.0
+category,Hijack,cross-partition ASN overlap,0,318,0.0
+category,Hijack,cross-partition prefix overlap,162,318,50.94
+category,Hijack,temporal overlap,300,318,94.34
+category,Hijack,other,0,318,0.0
+category,Leak,possible duplicate,220,386,56.99
+category,Leak,extreme duration,300,386,77.72
+category,Leak,missing source/provenance,0,386,0.0
+category,Leak,missing prefix,0,386,0.0
+category,Leak,missing ASN,0,386,0.0
+category,Leak,timestamp concern,0,386,0.0
+category,Leak,cross-partition ASN overlap,0,386,0.0
+category,Leak,cross-partition prefix overlap,0,386,0.0
+category,Leak,temporal overlap,384,386,99.48
+category,Leak,other,0,386,0.0
+category,Outage,possible duplicate,82,116,70.69
+category,Outage,extreme duration,0,116,0.0
+category,Outage,missing source/provenance,0,116,0.0
+category,Outage,missing prefix,0,116,0.0
+category,Outage,missing ASN,0,116,0.0
+category,Outage,timestamp concern,0,116,0.0
+category,Outage,cross-partition ASN overlap,0,116,0.0
+category,Outage,cross-partition prefix overlap,0,116,0.0
+category,Outage,temporal overlap,98,116,84.48
+category,Outage,other,6,116,5.17
+partition,train,possible duplicate,277,579,47.84
+partition,train,extreme duration,414,579,71.5
+partition,train,missing source/provenance,0,579,0.0
+partition,train,missing prefix,0,579,0.0
+partition,train,missing ASN,0,579,0.0
+partition,train,timestamp concern,0,579,0.0
+partition,train,cross-partition ASN overlap,0,579,0.0
+partition,train,cross-partition prefix overlap,99,579,17.1
+partition,train,temporal overlap,541,579,93.44
+partition,train,other,6,579,1.04
+partition,validation,possible duplicate,57,114,50.0
+partition,validation,extreme duration,85,114,74.56
+partition,validation,missing source/provenance,0,114,0.0
+partition,validation,missing prefix,0,114,0.0
+partition,validation,missing ASN,0,114,0.0
+partition,validation,timestamp concern,0,114,0.0
+partition,validation,cross-partition ASN overlap,0,114,0.0
+partition,validation,cross-partition prefix overlap,33,114,28.95
+partition,validation,temporal overlap,114,114,100.0
+partition,validation,other,0,114,0.0
+partition,holdout,possible duplicate,53,127,41.73
+partition,holdout,extreme duration,99,127,77.95
+partition,holdout,missing source/provenance,0,127,0.0
+partition,holdout,missing prefix,0,127,0.0
+partition,holdout,missing ASN,0,127,0.0
+partition,holdout,timestamp concern,0,127,0.0
+partition,holdout,cross-partition ASN overlap,0,127,0.0
+partition,holdout,cross-partition prefix overlap,30,127,23.62
+partition,holdout,temporal overlap,127,127,100.0
+partition,holdout,other,0,127,0.0

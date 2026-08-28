@@ -1,0 +1,121 @@
+duplicate_group_id,incident_count,incident_uids,categories,high_confidence_pair_count,possible_pair_count,recommended_action
+dup_group_0001,2,"[""Hijack:104140"", ""Hijack:104764""]","[""Hijack""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0002,2,"[""Hijack:112673"", ""Hijack:112686""]","[""Hijack""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0003,4,"[""Hijack:115187"", ""Leak:394005"", ""Leak:410029"", ""Leak:410142""]","[""Hijack"", ""Leak""]",0,3,manual_review_group_do_not_merge_automatically
+dup_group_0004,2,"[""Hijack:119652"", ""Leak:422789""]","[""Hijack"", ""Leak""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0005,3,"[""Hijack:124265"", ""Hijack:124278"", ""Leak:442710""]","[""Hijack"", ""Leak""]",1,1,manual_review_group_do_not_merge_automatically
+dup_group_0006,2,"[""Hijack:124685"", ""Hijack:125889""]","[""Hijack""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0007,2,"[""Hijack:125603"", ""Hijack:126112""]","[""Hijack""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0008,2,"[""Hijack:129951"", ""Hijack:130734""]","[""Hijack""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0009,6,"[""Hijack:1415"", ""Hijack:1489"", ""Hijack:2345"", ""Hijack:2955"", ""Hijack:3011"", ""Hijack:3822""]","[""Hijack""]",6,1,manual_review_group_do_not_merge_automatically
+dup_group_0010,2,"[""Hijack:17628"", ""Outage:559""]","[""Hijack"", ""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0011,2,"[""Hijack:17853"", ""Outage:561""]","[""Hijack"", ""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0012,2,"[""Hijack:30489"", ""Hijack:30602""]","[""Hijack""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0013,2,"[""Hijack:35196"", ""Hijack:35219""]","[""Hijack""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0014,3,"[""Hijack:41035"", ""Hijack:41118"", ""Hijack:41120""]","[""Hijack""]",3,0,manual_review_group_do_not_merge_automatically
+dup_group_0015,3,"[""Hijack:43594"", ""Hijack:43601"", ""Hijack:46633""]","[""Hijack""]",2,0,manual_review_group_do_not_merge_automatically
+dup_group_0016,2,"[""Hijack:46182"", ""Hijack:48235""]","[""Hijack""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0017,2,"[""Hijack:50133"", ""Hijack:50867""]","[""Hijack""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0018,4,"[""Hijack:50137"", ""Hijack:51440"", ""Hijack:54258"", ""Hijack:58164""]","[""Hijack""]",1,2,manual_review_group_do_not_merge_automatically
+dup_group_0019,2,"[""Hijack:53573"", ""Hijack:54116""]","[""Hijack""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0020,2,"[""Hijack:55379"", ""Hijack:55438""]","[""Hijack""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0021,2,"[""Hijack:6"", ""Hijack:7""]","[""Hijack""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0022,2,"[""Hijack:66015"", ""Hijack:66356""]","[""Hijack""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0023,2,"[""Hijack:68538"", ""Hijack:70047""]","[""Hijack""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0024,2,"[""Hijack:68914"", ""Hijack:69239""]","[""Hijack""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0025,6,"[""Hijack:68483"", ""Hijack:68512"", ""Hijack:69390"", ""Hijack:69686"", ""Hijack:69714"", ""Hijack:72841""]","[""Hijack""]",5,0,manual_review_group_do_not_merge_automatically
+dup_group_0026,3,"[""Hijack:71828"", ""Hijack:72285"", ""Hijack:72746""]","[""Hijack""]",2,0,manual_review_group_do_not_merge_automatically
+dup_group_0027,2,"[""Hijack:72779"", ""Hijack:72781""]","[""Hijack""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0028,2,"[""Hijack:83447"", ""Hijack:83457""]","[""Hijack""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0029,3,"[""Hijack:87117"", ""Hijack:89656"", ""Hijack:89788""]","[""Hijack""]",0,2,manual_review_group_do_not_merge_automatically
+dup_group_0030,2,"[""Leak:230460"", ""Leak:230461""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0031,3,"[""Leak:233496"", ""Leak:233513"", ""Leak:233515""]","[""Leak""]",3,0,manual_review_group_do_not_merge_automatically
+dup_group_0032,2,"[""Leak:240474"", ""Leak:240505""]","[""Leak""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0033,7,"[""Hijack:71010"", ""Leak:245079"", ""Leak:245502"", ""Leak:245629"", ""Leak:246457"", ""Leak:246836"", ""Leak:246987""]","[""Hijack"", ""Leak""]",3,5,manual_review_group_do_not_merge_automatically
+dup_group_0034,3,"[""Hijack:76755"", ""Leak:248684"", ""Leak:252436""]","[""Hijack"", ""Leak""]",1,1,manual_review_group_do_not_merge_automatically
+dup_group_0035,2,"[""Hijack:94314"", ""Leak:274316""]","[""Hijack"", ""Leak""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0036,3,"[""Leak:274533"", ""Leak:277066"", ""Leak:278412""]","[""Leak""]",1,1,manual_review_group_do_not_merge_automatically
+dup_group_0037,5,"[""Leak:282922"", ""Leak:283590"", ""Leak:298254"", ""Leak:300388"", ""Leak:302513""]","[""Leak""]",4,0,manual_review_group_do_not_merge_automatically
+dup_group_0038,3,"[""Leak:288366"", ""Leak:290633"", ""Leak:291677""]","[""Leak""]",3,0,manual_review_group_do_not_merge_automatically
+dup_group_0039,2,"[""Leak:303655"", ""Leak:303661""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0040,2,"[""Leak:307077"", ""Outage:1090""]","[""Leak"", ""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0041,38,"[""Hijack:100048"", ""Hijack:100178"", ""Hijack:100968"", ""Hijack:98570"", ""Hijack:98608"", ""Leak:274764"", ""Leak:279177"", ""Leak:283790"", ""Leak:286462"", ""Leak:290926"", ""Leak:298533"", ""Leak:299800"", ""Leak:301318"", ""Leak:306914"", ""Leak:307159"", ""Leak:307164"", ""Leak:307165"", ""Leak:307167"", ""Leak:307169"", ""Leak:307174"", ""Leak:307175"", ""Leak:307183"", ""Leak:307184"", ""Leak:307198"", ""Leak:308666"", ""Leak:313046"", ""Leak:313050"", ""Leak:313126"", ""Leak:313917"", ""Leak:313949"", ""Leak:316419"", ""Leak:317327"", ""Leak:319748"", ""Leak:320422"", ""Leak:325195"", ""Leak:325305"", ""Leak:328843"", ""Leak:335066""]","[""Hijack"", ""Leak""]",81,11,manual_review_group_do_not_merge_automatically
+dup_group_0042,2,"[""Leak:326158"", ""Leak:326458""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0043,5,"[""Hijack:103126"", ""Leak:328953"", ""Leak:329008"", ""Leak:330103"", ""Leak:337138""]","[""Hijack"", ""Leak""]",0,4,manual_review_group_do_not_merge_automatically
+dup_group_0044,37,"[""Hijack:105062"", ""Hijack:105065"", ""Hijack:105503"", ""Hijack:108786"", ""Hijack:109310"", ""Hijack:109538"", ""Leak:341096"", ""Leak:341100"", ""Leak:341218"", ""Leak:341248"", ""Leak:341398"", ""Leak:341654"", ""Leak:348662"", ""Leak:350822"", ""Leak:355400"", ""Leak:357469"", ""Leak:360135"", ""Leak:360563"", ""Leak:362162"", ""Leak:363620"", ""Leak:365476"", ""Leak:366263"", ""Leak:366968"", ""Leak:367438"", ""Leak:367696"", ""Leak:367716"", ""Leak:368959"", ""Leak:369157"", ""Leak:369768"", ""Leak:374085"", ""Leak:376569"", ""Leak:376571"", ""Leak:385591"", ""Leak:386821"", ""Leak:387904"", ""Leak:388897"", ""Leak:388901""]","[""Hijack"", ""Leak""]",45,4,manual_review_group_do_not_merge_automatically
+dup_group_0045,2,"[""Leak:374046"", ""Leak:374103""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0046,3,"[""Leak:380585"", ""Leak:387807"", ""Leak:390162""]","[""Leak""]",1,1,manual_review_group_do_not_merge_automatically
+dup_group_0047,2,"[""Leak:388146"", ""Leak:389029""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0048,2,"[""Leak:393810"", ""Leak:393818""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0049,2,"[""Leak:396189"", ""Leak:403508""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0050,2,"[""Leak:410925"", ""Leak:410927""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0051,2,"[""Leak:414320"", ""Leak:414652""]","[""Leak""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0052,2,"[""Leak:420176"", ""Leak:427059""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0053,2,"[""Leak:426483"", ""Leak:426549""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0054,14,"[""Hijack:122335"", ""Leak:402215"", ""Leak:406898"", ""Leak:417252"", ""Leak:417253"", ""Leak:420124"", ""Leak:426365"", ""Leak:426442"", ""Leak:426443"", ""Leak:427337"", ""Leak:428622"", ""Leak:428645"", ""Leak:428788"", ""Leak:429587""]","[""Hijack"", ""Leak""]",12,4,manual_review_group_do_not_merge_automatically
+dup_group_0055,3,"[""Leak:433422"", ""Leak:434797"", ""Leak:435038""]","[""Leak""]",2,1,manual_review_group_do_not_merge_automatically
+dup_group_0056,2,"[""Leak:436310"", ""Leak:437592""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0057,4,"[""Leak:440301"", ""Leak:443098"", ""Leak:443101"", ""Leak:445109""]","[""Leak""]",2,1,manual_review_group_do_not_merge_automatically
+dup_group_0058,2,"[""Leak:444142"", ""Leak:444143""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0059,2,"[""Leak:447079"", ""Leak:447312""]","[""Leak""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0060,2,"[""Leak:450444"", ""Leak:450562""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0061,2,"[""Leak:453612"", ""Leak:453637""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0062,4,"[""Leak:454378"", ""Leak:455147"", ""Leak:455886"", ""Leak:456243""]","[""Leak""]",0,4,manual_review_group_do_not_merge_automatically
+dup_group_0063,3,"[""Leak:455084"", ""Leak:456013"", ""Leak:456823""]","[""Leak""]",0,2,manual_review_group_do_not_merge_automatically
+dup_group_0064,2,"[""Leak:455788"", ""Leak:455789""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0065,5,"[""Leak:456854"", ""Leak:457177"", ""Leak:457613"", ""Leak:457719"", ""Leak:458781""]","[""Leak""]",1,6,manual_review_group_do_not_merge_automatically
+dup_group_0066,2,"[""Leak:457512"", ""Leak:457516""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0067,3,"[""Leak:459040"", ""Leak:459829"", ""Leak:460042""]","[""Leak""]",0,2,manual_review_group_do_not_merge_automatically
+dup_group_0068,2,"[""Leak:461851"", ""Leak:462412""]","[""Leak""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0069,3,"[""Leak:462509"", ""Leak:462510"", ""Leak:462540""]","[""Leak""]",3,0,manual_review_group_do_not_merge_automatically
+dup_group_0070,2,"[""Leak:463502"", ""Leak:463538""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0071,2,"[""Leak:464236"", ""Leak:465234""]","[""Leak""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0072,5,"[""Leak:464614"", ""Leak:464622"", ""Leak:465215"", ""Leak:465739"", ""Leak:466538""]","[""Leak""]",2,2,manual_review_group_do_not_merge_automatically
+dup_group_0073,3,"[""Leak:466722"", ""Leak:467517"", ""Leak:467598""]","[""Leak""]",0,2,manual_review_group_do_not_merge_automatically
+dup_group_0074,2,"[""Leak:467133"", ""Leak:467475""]","[""Leak""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0075,2,"[""Leak:467171"", ""Leak:467305""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0076,2,"[""Leak:467261"", ""Leak:467400""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0077,3,"[""Leak:468388"", ""Leak:468762"", ""Leak:468917""]","[""Leak""]",3,0,manual_review_group_do_not_merge_automatically
+dup_group_0078,2,"[""Leak:468447"", ""Leak:468453""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0079,3,"[""Leak:468454"", ""Leak:468891"", ""Leak:469954""]","[""Leak""]",0,2,manual_review_group_do_not_merge_automatically
+dup_group_0080,2,"[""Hijack:132690"", ""Leak:470667""]","[""Hijack"", ""Leak""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0081,3,"[""Leak:470937"", ""Leak:471791"", ""Leak:471812""]","[""Leak""]",1,1,manual_review_group_do_not_merge_automatically
+dup_group_0082,2,"[""Leak:471768"", ""Leak:472349""]","[""Leak""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0083,6,"[""Leak:471621"", ""Leak:471818"", ""Leak:471995"", ""Leak:472790"", ""Leak:473648"", ""Leak:473837""]","[""Leak""]",1,6,manual_review_group_do_not_merge_automatically
+dup_group_0084,2,"[""Leak:472155"", ""Leak:472366""]","[""Leak""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0085,2,"[""Leak:473404"", ""Leak:473405""]","[""Leak""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0086,2,"[""Outage:1034"", ""Outage:977""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0087,3,"[""Outage:1036"", ""Outage:1037"", ""Outage:1038""]","[""Outage""]",0,3,manual_review_group_do_not_merge_automatically
+dup_group_0088,5,"[""Outage:1127"", ""Outage:1128"", ""Outage:1129"", ""Outage:1130"", ""Outage:1132""]","[""Outage""]",1,9,manual_review_group_do_not_merge_automatically
+dup_group_0089,3,"[""Outage:118"", ""Outage:119"", ""Outage:120""]","[""Outage""]",0,3,manual_review_group_do_not_merge_automatically
+dup_group_0090,5,"[""Outage:1225"", ""Outage:1227"", ""Outage:1228"", ""Outage:1229"", ""Outage:1230""]","[""Outage""]",0,10,manual_review_group_do_not_merge_automatically
+dup_group_0091,2,"[""Outage:1236"", ""Outage:1238""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0092,2,"[""Outage:124"", ""Outage:125""]","[""Outage""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0093,2,"[""Outage:1240"", ""Outage:1241""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0094,2,"[""Outage:1245"", ""Outage:1246""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0095,2,"[""Outage:1250"", ""Outage:1251""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0096,2,"[""Outage:1322"", ""Outage:1323""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0097,2,"[""Outage:1325"", ""Outage:1329""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0098,2,"[""Outage:1326"", ""Outage:1331""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0099,2,"[""Outage:1327"", ""Outage:1333""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0100,2,"[""Outage:1335"", ""Outage:1338""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0101,2,"[""Outage:1336"", ""Outage:1340""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0102,2,"[""Outage:1412"", ""Outage:1413""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0103,2,"[""Outage:235"", ""Outage:237""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0104,2,"[""Outage:249"", ""Outage:251""]","[""Outage""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0105,2,"[""Outage:257"", ""Outage:259""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0106,3,"[""Outage:349"", ""Outage:350"", ""Outage:351""]","[""Outage""]",1,2,manual_review_group_do_not_merge_automatically
+dup_group_0107,2,"[""Outage:393"", ""Outage:394""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0108,2,"[""Outage:400"", ""Outage:401""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0109,2,"[""Outage:406"", ""Outage:412""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0110,2,"[""Outage:379"", ""Outage:428""]","[""Outage""]",1,0,manual_review_group_do_not_merge_automatically
+dup_group_0111,2,"[""Outage:468"", ""Outage:469""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0112,2,"[""Outage:470"", ""Outage:471""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0113,2,"[""Outage:503"", ""Outage:504""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0114,2,"[""Outage:505"", ""Outage:506""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0115,2,"[""Outage:507"", ""Outage:508""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0116,2,"[""Outage:509"", ""Outage:510""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0117,2,"[""Outage:705"", ""Outage:706""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0118,2,"[""Outage:875"", ""Outage:959""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0119,2,"[""Outage:908"", ""Outage:909""]","[""Outage""]",0,1,manual_review_group_do_not_merge_automatically
+dup_group_0120,2,"[""Outage:914"", ""Outage:915""]","[""Outage""]",1,0,manual_review_group_do_not_merge_automatically

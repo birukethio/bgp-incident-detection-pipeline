@@ -1,0 +1,13 @@
+category,source_field,current_use,likely_semantic_meaning,safe_for_label_window,evidence/notes
+Hijack,min_hijack_ts,start_utc,first timestamp where Cloudflare detector observed hijack evidence,yes_for_start,Represents first hijack evidence in raw hijack schema.
+Hijack,max_hijack_ts,end_utc,last timestamp where Cloudflare detector observed hijack evidence,yes_for_end_with_review_for_long_events,Used instead of max_msg_ts by design.
+Hijack,max_msg_ts,preserved in raw source only,last detector message timestamp; may include unrelated/non-hijack detector persistence,no,Must not be used as hijack end time.
+Hijack,duration,raw diagnostic only,detector/event persistence field from source,review,Normalized duration is calculated from max_hijack_ts - min_hijack_ts.
+Leak,detected_ts,fallback start_utc if min_ts unavailable,detector creation/detection time,fallback_only,Usually close to min_ts but not necessarily full event start.
+Leak,min_ts,start_utc,first observation associated with the leak detector event,yes_for_start,Best available leak start in Cloudflare route-leak schema.
+Leak,max_ts,end_utc,last observation associated with the detector event; may not prove continuous leaking for the whole interval,review_for_end,Long leak intervals should be reviewed before defining feature windows.
+Leak,finished,raw diagnostic only,detector marked event as finished,supporting_context_only,Does not by itself define the start/end timestamps.
+Outage,startDate,start_utc,reported outage start interval,yes,Cloudflare outage records are explicit reported event intervals.
+Outage,endDate,end_utc,reported outage end interval,yes_with_review_for_very_long_events,Long outages may need reviewed collection windows but should not be auto-changed.
+Outage,duration_minutes,duration_minutes,reported or normalized outage interval length,yes,Checked against startDate/endDate during partition audit.
+Outage,outageCause/outageType,notes/source context,reported outage cause and scope/type,context_only,Useful for review but not a timestamp.
