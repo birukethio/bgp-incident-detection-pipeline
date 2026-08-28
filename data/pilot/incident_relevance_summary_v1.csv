@@ -1,0 +1,10 @@
+incident_uid,total_parsed_observations,directly_matching_observations,match_percent,matching_asn_count,matching_prefix_count,notes
+Hijack:125889,4042808,14747,0.365,67,31,direct match uses incident ASN/path/prefix metadata; nonmatching feed observations are preserved
+Hijack:58159,8915481,31926,0.358,89,407,direct match uses incident ASN/path/prefix metadata; nonmatching feed observations are preserved
+Hijack:97511,3923773,233,0.006,34,4,direct match uses incident ASN/path/prefix metadata; nonmatching feed observations are preserved
+Leak:291102,1980268,267818,13.524,471,2117,direct match uses incident ASN/path/prefix metadata; nonmatching feed observations are preserved
+Leak:426483,3155276,61672,1.955,1411,8727,direct match uses incident ASN/path/prefix metadata; nonmatching feed observations are preserved
+Leak:426871,5732573,14080,0.246,92,700,direct match uses incident ASN/path/prefix metadata; nonmatching feed observations are preserved
+Outage:1014,7236549,63326,0.875,57,53,direct match uses incident ASN/path/prefix metadata; nonmatching feed observations are preserved
+Outage:207,18140533,264451,1.458,122,3226,direct match uses incident ASN/path/prefix metadata; nonmatching feed observations are preserved
+Outage:525,4938728,57067,1.155,68,351,direct match uses incident ASN/path/prefix metadata; nonmatching feed observations are preserved

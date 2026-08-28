@@ -1,0 +1,10 @@
+incident_uid,mrt_files,parsed_observations,status,mrt_files_parse_successfully,zero_byte_outputs,malformed_records,timestamp_parsing_errors,missing_peer_asn,missing_prefix,malformed_as_path
+Hijack:125889,20,4042808,PASS,0,0,0,0,0,0,0
+Hijack:58159,20,8915481,PASS,0,0,0,0,0,0,0
+Hijack:97511,20,3923773,PASS,0,0,0,0,0,0,0
+Leak:291102,11,1980268,PASS,0,0,0,0,0,0,0
+Leak:426483,20,3155276,PASS,0,0,0,0,0,0,0
+Leak:426871,20,5732573,PASS,0,0,0,0,0,0,0
+Outage:1014,14,7236549,PASS,0,0,0,0,0,0,0
+Outage:207,69,18140533,PASS,0,0,0,0,0,0,0
+Outage:525,22,4938728,PASS,0,0,0,0,0,0,0

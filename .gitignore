@@ -22,6 +22,7 @@ pnpm-debug.log*
 # Raw BGP archives and feature matrices
 data/raw/
 data/raw_mrt/
+data/parsed_mrt/
 data/features/
 *.mrt
 *.mrt.gz
