@@ -1,0 +1,13 @@
+check_name,result,count,status,interpretation,action_required
+total_incident_count,PASS,1419,PASS,"exactly 1,419 incidents required",none
+class_balance,PASS,473,PASS,"{""Hijack"": 473, ""Leak"": 473, ""Outage"": 473}",none
+incident_uid_uniqueness,PASS,0,PASS,incident_uid must be unique,none
+known_true_duplicates_excluded,PASS,0,PASS,non-canonical true duplicate members should not appear in v2,none
+timestamp_completeness,PASS,0,PASS,start/end timestamps must exist,none
+timestamp_validity,PASS,0,PASS,start < end and duration should match,none
+ASN_completeness,PASS,0,PASS,all selected v2 incidents should have ASN evidence,none
+Hijack_prefix_completeness,PASS,0,PASS,Hijack prefix list is expected,none
+Leak_prefix_completeness,REVIEW,473,REVIEW,Leak source currently provides counts/segments but not actual prefix lists,review_before_freeze
+Outage_prefix_completeness,PASS,473,PASS,Outage can be ASN/network interval based; prefix list not required before MRT,none
+provenance_completeness,PASS,0,PASS,Cloudflare event ID counts as provenance even without URL,none
+v2_split_required,REVIEW,1,REVIEW,v1 partitions must not be reused; create a new incident-level split after v2 QC passes,review_before_freeze

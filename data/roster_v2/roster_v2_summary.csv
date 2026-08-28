@@ -1,0 +1,14 @@
+metric,value
+post_duplicate_collapse_Hijack,443
+post_duplicate_collapse_Leak,416
+post_duplicate_collapse_Outage,464
+replacements_needed_Hijack,30
+replacements_needed_Leak,57
+replacements_needed_Outage,9
+replacements_found_Hijack,30
+replacements_found_Leak,57
+replacements_found_Outage,9
+v2_total,1419
+v2_Hijack,473
+v2_Leak,473
+v2_Outage,473
