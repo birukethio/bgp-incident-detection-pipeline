@@ -1,0 +1,7 @@
+incident_uid,category,gap_rule,original_planned_file_count,active_window_planned_file_count,absolute_reduction,percentage_reduction,caution
+Hijack:125889,Hijack,max_gap_between_active_bins<=60m,1341,20,1321,98.509,boundary-only observations; file-count reduction is not a final label-window decision
+Hijack:58159,Hijack,max_gap_between_active_bins<=60m,22,20,2,9.091,boundary-only observations; file-count reduction is not a final label-window decision
+Hijack:97511,Hijack,max_gap_between_active_bins<=60m,140,20,120,85.714,boundary-only observations; file-count reduction is not a final label-window decision
+Leak:291102,Leak,max_gap_between_active_bins<=60m,11,11,0,0.0,boundary-only observations; file-count reduction is not a final label-window decision
+Leak:426483,Leak,max_gap_between_active_bins<=60m,868,20,848,97.696,boundary-only observations; file-count reduction is not a final label-window decision
+Leak:426871,Leak,max_gap_between_active_bins<=60m,183,20,163,89.071,boundary-only observations; file-count reduction is not a final label-window decision

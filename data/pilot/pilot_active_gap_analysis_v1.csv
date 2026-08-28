@@ -1,0 +1,7 @@
+incident_uid,category,observation_count,active_5min_bin_count,silent_5min_bin_count,maximum_silent_gap_minutes,median_gap_between_observations_minutes,p90_gap_between_observations_minutes,total_first_to_last_detector_span_minutes,total_evidence_active_duration_minutes,evidence_limitation
+Hijack:125889,Hijack,2,2,3992,19964.77748333333,19964.77748333333,19964.77748333333,19964.777,10,boundary_only_source_record; dense event observation timestamps unavailable locally
+Hijack:58159,Hijack,2,2,35,184.27765,184.27765,184.27765,184.278,10,boundary_only_source_record; dense event observation timestamps unavailable locally
+Hijack:97511,Hijack,2,2,389,1947.6919833333334,1947.6919833333334,1947.6919833333334,1947.692,10,boundary_only_source_record; dense event observation timestamps unavailable locally
+Leak:291102,Leak,3,2,4,23.033333333333335,11.516666666666667,20.73,23.033,10,boundary_only_source_record; dense event observation timestamps unavailable locally
+Leak:426483,Leak,3,2,2573,12868.516666666666,6434.266666666666,11581.666666666668,12868.533,10,boundary_only_source_record; dense event observation timestamps unavailable locally
+Leak:426871,Leak,3,2,518,2598.1666666666665,1299.0833333333333,2338.35,2598.167,10,boundary_only_source_record; dense event observation timestamps unavailable locally

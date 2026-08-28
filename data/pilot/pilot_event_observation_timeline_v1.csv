@@ -1,0 +1,16 @@
+incident_uid,category,observation_timestamp,observation_type,asn,prefix,source_record_id
+Hijack:125889,Hijack,2025-12-01T18:50:40.533Z,first_hijack_evidence;detector_boundary,36873,41.76.152.0/24,125889
+Hijack:125889,Hijack,2025-12-15T15:35:27.182Z,last_hijack_evidence;detector_boundary,36873,41.76.152.0/24,125889
+Hijack:58159,Hijack,2024-07-29T13:20:40.317Z,first_hijack_evidence;detector_boundary,45899,14.225.192.0/24,58159
+Hijack:58159,Hijack,2024-07-29T16:24:56.976Z,last_hijack_evidence;detector_boundary,45899,14.225.192.0/24,58159
+Hijack:97511,Hijack,2025-05-12T18:58:21.133Z,first_hijack_evidence;detector_boundary,139515,103.195.72.0/24,97511
+Hijack:97511,Hijack,2025-05-14T03:26:02.652Z,last_hijack_evidence;detector_boundary,139515,103.195.72.0/24,97511
+Leak:291102,Leak,2025-03-31T08:47:02.000Z,detected_ts;detector_boundary,135817,,291102
+Leak:291102,Leak,2025-03-31T08:47:02.000Z,first_leak_evidence;detector_boundary,135817,,291102
+Leak:291102,Leak,2025-03-31T09:10:04.000Z,last_leak_evidence;detector_boundary,135817,,291102
+Leak:426483,Leak,2025-10-30T06:02:45.000Z,first_leak_evidence;detector_boundary,134078,,426483
+Leak:426483,Leak,2025-10-30T06:02:46.000Z,detected_ts;detector_boundary,134078,,426483
+Leak:426483,Leak,2025-11-08T04:31:17.000Z,last_leak_evidence;detector_boundary,134078,,426483
+Leak:426871,Leak,2025-10-30T14:45:45.000Z,detected_ts;detector_boundary,328543,,426871
+Leak:426871,Leak,2025-10-30T14:45:45.000Z,first_leak_evidence;detector_boundary,328543,,426871
+Leak:426871,Leak,2025-11-01T10:03:55.000Z,last_leak_evidence;detector_boundary,328543,,426871
