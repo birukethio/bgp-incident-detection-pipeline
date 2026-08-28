@@ -1,0 +1,10 @@
+incident_uid,category,pilot_duration_bucket,incident_duration_minutes,collection_duration_minutes,expected_file_count,percent_of_total_pilot_files,detector_span_caution,notes
+Hijack:58159,Hijack,short,185.0,315.0,22,0.824,False,shorter detector evidence span
+Hijack:97511,Hijack,median,1948.0,2085.0,140,5.243,True,Hijack/Leak first-to-last detector evidence span; do not assume continuous activity
+Hijack:125889,Hijack,long,19965.0,20100.0,1341,50.225,True,Hijack/Leak first-to-last detector evidence span; do not assume continuous activity
+Leak:291102,Leak,short,24.0,150.0,11,0.412,False,shorter detector evidence span
+Leak:426871,Leak,median,2599.0,2730.0,183,6.854,True,Hijack/Leak first-to-last detector evidence span; do not assume continuous activity
+Leak:426483,Leak,long,12869.0,13005.0,868,32.509,True,Hijack/Leak first-to-last detector evidence span; do not assume continuous activity
+Outage:1014,Outage,short,75.0,195.0,14,0.524,False,documented outage interval
+Outage:525,Outage,median,195.0,315.0,22,0.824,False,documented outage interval
+Outage:207,Outage,long,900.0,1020.0,69,2.584,False,documented outage interval

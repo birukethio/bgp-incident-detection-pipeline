@@ -1,0 +1,10 @@
+incident_uid,category,planned_file_count,available_file_count,missing_file_count,availability_percent,status
+Hijack:58159,Hijack,22,22,0,100.0,PASS
+Hijack:97511,Hijack,140,140,0,100.0,PASS
+Hijack:125889,Hijack,1341,1341,0,100.0,PASS
+Leak:291102,Leak,11,11,0,100.0,PASS
+Leak:426871,Leak,183,183,0,100.0,PASS
+Leak:426483,Leak,868,868,0,100.0,PASS
+Outage:1014,Outage,14,14,0,100.0,PASS
+Outage:525,Outage,22,22,0,100.0,PASS
+Outage:207,Outage,69,69,0,100.0,PASS

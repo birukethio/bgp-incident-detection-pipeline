@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import sys
+import csv
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -18,6 +19,11 @@ from bgp_incident_detection.mrt_acquisition import (  # noqa: E402
     routeviews_update_url,
     select_pilot_incidents,
 )
+
+
+def _read_csv(path: Path) -> list[dict[str, str]]:
+    with path.open(newline="", encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
 
 
 def test_pilot_selects_three_train_incidents_per_class() -> None:
@@ -71,3 +77,26 @@ def test_pilot_manifest_preserves_leak_segment_without_inventing_prefixes() -> N
     assert all(row["leak_asn"] for row in leak_rows)
     assert all(row["leak_seg"] == row["affected_asns"] for row in leak_rows)
     assert all(row["affected_prefixes"] == "" for row in leak_rows)
+
+
+def test_remote_availability_outputs_cover_all_planned_urls() -> None:
+    availability = _read_csv(ROOT / "data/pilot/mrt_pilot_remote_availability_v1.csv")
+    summary = _read_csv(ROOT / "data/pilot/mrt_pilot_remote_availability_summary_v1.csv")
+    planned_total = sum(int(row["planned_file_count"]) for row in summary)
+
+    assert len(availability) == planned_total == 2670
+    assert {row["available"] for row in availability} == {"True"}
+    assert {row["status"] for row in summary} == {"PASS"}
+    assert sum(int(row["available_file_count"]) for row in summary) == 2670
+
+
+def test_window_size_analysis_identifies_volume_dominance() -> None:
+    rows = _read_csv(ROOT / "data/pilot/mrt_pilot_window_size_analysis_v1.csv")
+    by_uid = {row["incident_uid"]: row for row in rows}
+
+    assert len(rows) == 9
+    assert by_uid["Hijack:125889"]["expected_file_count"] == "1341"
+    assert by_uid["Hijack:125889"]["percent_of_total_pilot_files"] == "50.225"
+    assert by_uid["Leak:426483"]["expected_file_count"] == "868"
+    assert by_uid["Leak:426483"]["percent_of_total_pilot_files"] == "32.509"
+    assert by_uid["Outage:207"]["detector_span_caution"] == "False"
