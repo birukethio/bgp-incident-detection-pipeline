@@ -1,0 +1,9 @@
+metric,value,notes
+safe_current_timestamps,821,usable with current timestamps under current diagnostic rule
+need_redefined_label_interval,598,mostly long/sparse Hijack and Leak intervals
+undefensible_window,0,missing or invalid duration/timestamp evidence
+true_duplicate_groups,56,recommend collapse only in roster v2 after manual confirmation
+same_broad_event_component_groups,23,"related broader event, not automatically duplicate"
+distinct_incident_groups,1,candidate group appears separable
+unresolved_duplicate_groups,40,manual evidence needed
+incidents_removed_if_true_duplicates_collapsed,96,"{""Hijack"": 30, ""Leak"": 57, ""Outage"": 9}"
