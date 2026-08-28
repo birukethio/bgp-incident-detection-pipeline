@@ -1,0 +1,4 @@
+category,raw_count,eligible_count,selected_count,target
+Leak,125051,125051,473,473
+Hijack,112290,112290,473,473
+Outage,,473,473,473

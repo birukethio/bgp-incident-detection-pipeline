@@ -1,0 +1,42 @@
+# Secrets and local environment
+.env
+.env.*
+*.key
+*.pem
+*.token
+
+# Python / notebooks
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+
+# Raw BGP archives and feature matrices
+data/raw/
+data/features/
+*.mrt
+*.mrt.gz
+*.bz2
+*.parquet
+*.feather
+
+# Large Cloudflare/API dumps generated during exploration
+cloudflare_incidents/raw_*.json
+cloudflare_incidents/all_*.csv
+cloudflare_incidents/*_audit_incidents_*.csv
+cloudflare_incidents/*_audit_*.csv
+cloudflare_incidents/*missing_unverified*.csv
+cloudflare_incidents/training_ready_bgp_incident_roster_all_available_to_2026-01.csv
+cloudflare_incidents/training_ready_bgp_incident_roster_all_available_to_2026-01_window_counts.csv
+
+# OS/editor noise
+.DS_Store
+*.swp

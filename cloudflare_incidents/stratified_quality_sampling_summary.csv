@@ -1,0 +1,23 @@
+category,metric,value
+Leak,universe_count_after_basic_quality_filter,125051
+Leak,sample_count,473
+Leak,unique_years_in_sample,3
+Leak,unique_primary_asns_in_sample,200
+Leak,unique_countries_in_sample,81
+Leak,unique_strata_in_sample,473
+Leak,median_duration_minutes_in_sample,2676
+Leak,max_duration_minutes_in_sample,161656
+Leak,median_quality_score_in_sample,39.208843
+Hijack,universe_count_after_basic_quality_filter,112290
+Hijack,sample_count,473
+Hijack,unique_years_in_sample,4
+Hijack,unique_primary_asns_in_sample,254
+Hijack,unique_countries_in_sample,156
+Hijack,unique_strata_in_sample,473
+Hijack,median_duration_minutes_in_sample,2523
+Hijack,max_duration_minutes_in_sample,100918
+Hijack,median_quality_score_in_sample,53.321371
+Outage,recommended_final_pool_count,473
+ALL,combined_balanced_roster_count,1419
+ALL,sampling_method,"one high-quality incident per stratum first, then round-robin by next-best quality within strata until target count"
+ALL,sample_target_per_leak_and_hijack,473
