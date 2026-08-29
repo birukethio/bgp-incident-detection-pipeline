@@ -1,0 +1,9 @@
+candidate_period_id,associated_incident_uid,category,affected_asn,affected_prefix,candidate_start,candidate_end,candidate_duration_minutes,collector,candidate_source,prescreen_status
+Leak_291102_offset_-14_20250317T084500Z,Leak:291102,Leak,135817,,2025-03-17T08:45:00Z,2025-03-17T09:15:00Z,30,route-views2,existing_rib_prescreen_v1,UPDATE_READY
+Leak_291102_offset_+14_20250414T084500Z,Leak:291102,Leak,135817,,2025-04-14T08:45:00Z,2025-04-14T09:15:00Z,30,route-views2,existing_rib_prescreen_v1,UPDATE_READY
+Leak_291102_offset_-7_20250324T084500Z,Leak:291102,Leak,135817,,2025-03-24T08:45:00Z,2025-03-24T09:15:00Z,30,route-views2,existing_rib_prescreen_v1,UPDATE_READY
+Leak_291102_offset_+7_20250407T084500Z,Leak:291102,Leak,135817,,2025-04-07T08:45:00Z,2025-04-07T09:15:00Z,30,route-views2,existing_rib_prescreen_v1,UPDATE_READY
+Hijack_58159_14_225_192_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,23456,14.225.192.0/24,2024-07-28T13:20:00Z,2024-07-28T13:50:00Z,30,route-views2,additional_search_v3,UPDATE_READY
+Hijack_58159_14_225_193_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,23456,14.225.193.0/24,2024-07-28T13:20:00Z,2024-07-28T13:50:00Z,30,route-views2,additional_search_v3,UPDATE_READY
+Hijack_58159_14_225_194_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,23456,14.225.194.0/24,2024-07-28T13:20:00Z,2024-07-28T13:50:00Z,30,route-views2,additional_search_v3,UPDATE_READY
+Leak_426483_asn_s1_offset_+30_20251129T060000Z,Leak:426483,Leak,134078,,2025-11-29T06:00:00Z,2025-11-29T06:30:00Z,30,route-views2,additional_search_v3,UPDATE_READY
