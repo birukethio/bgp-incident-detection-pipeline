@@ -1,0 +1,3 @@
+method,candidate_windows,verified_normal_windows,unknown_windows,false_rejection_risk,methodological_interpretation
+A_UPDATE_EVIDENCE_ONLY,63,0,63,HIGH,"UPDATE archives record changes, so silent stable routing can be incorrectly rejected without RIB state"
+B_RIB_STATE_PLUS_UPDATE_ACTIVITY,63,53,10,LOWER_BUT_DEPENDS_ON_RIB_VISIBILITY,RIB state can validate stable silence when before/after routing state is visible and origin-stable

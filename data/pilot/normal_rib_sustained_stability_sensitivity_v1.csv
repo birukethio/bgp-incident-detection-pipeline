@@ -1,0 +1,4 @@
+sustained_stability_minutes,minimum_consecutive_windows,verified_windows,unknown_windows,verified_periods,interpretation
+15,3,58,5,3,pilot sensitivity only; not a frozen Normal-label rule
+30,6,53,10,2,pilot sensitivity only; not a frozen Normal-label rule
+60,12,53,10,2,pilot sensitivity only; not a frozen Normal-label rule

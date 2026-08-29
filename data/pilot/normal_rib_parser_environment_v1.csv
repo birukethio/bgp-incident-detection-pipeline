@@ -1,0 +1,2 @@
+tool_or_library,version,exact_command_or_function,input_format,output_fields,row_granularity
+bgpdump,1.6.2,bgpdump -q -m <routeviews-rib-file.bz2>,RouteViews MRT RIB .bz2,timestamp|prefix|peer_asn|peer_ip|as_path|origin_asn,one RouteViews RIB route entry visible from one peer
