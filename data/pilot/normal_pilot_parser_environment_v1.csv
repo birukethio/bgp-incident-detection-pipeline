@@ -1,0 +1,2 @@
+tool_or_library,version,exact_command_or_function,input_format,output_fields,row_granularity
+bgpdump,1.6.2,bgpdump -q -m <normal-pilot-file.bz2>,RouteViews MRT UPDATE .bz2,incident_uid|source_mrt_filename|collector|bgp_timestamp_utc|peer_ip|peer_asn|message_update_type|announcement_or_withdrawal|prefix|as_path|origin_asn|next_hop|communities|med|local_pref|atomic_aggregate|aggregator|raw_bgpdump_line,one prefix-level announcement or withdrawal observation emitted by bgpdump -m

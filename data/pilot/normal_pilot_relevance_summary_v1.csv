@@ -1,0 +1,7 @@
+candidate_period_id,associated_incident_uid,associated_category,total_parsed_observations,directly_matching_observations,match_percent,matching_asn_count,matching_prefix_count,notes
+Hijack_58159_offset_-7_20240722T132000Z,Hijack:58159,Hijack,6386729,0,0.0,0,0,direct Normal relevance uses associated ASN/network and representative prefix where available
+Hijack_97511_offset_+3_20250515T185500Z,Hijack:97511,Hijack,1918173,0,0.0,0,0,direct Normal relevance uses associated ASN/network and representative prefix where available
+Leak_291102_offset_-1_20250330T084500Z,Leak:291102,Leak,1535499,103,0.007,22,5,direct Normal relevance uses associated ASN/network and representative prefix where available
+Leak_426483_offset_+7_20251106T060000Z,Leak:426483,Leak,2716843,3,0.0,6,1,direct Normal relevance uses associated ASN/network and representative prefix where available
+Outage_1014_offset_+3_20240910T094500Z,Outage:1014,Outage,9722792,17,0.0,5,17,direct Normal relevance uses associated ASN/network and representative prefix where available
+Outage_525_offset_+7_20230820T020000Z,Outage:525,Outage,3985263,107,0.003,11,107,direct Normal relevance uses associated ASN/network and representative prefix where available

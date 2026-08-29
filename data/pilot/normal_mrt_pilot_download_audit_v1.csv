@@ -1,0 +1,7 @@
+candidate_period_id,associated_incident_uid,planned_files,downloaded_files,missing_files,corrupted_files,duplicate_files,total_bytes,availability_percent,status
+Hijack_58159_offset_-7_20240722T132000Z,Hijack:58159,10,10,0,0,0,24097991,100.0,PASS
+Hijack_97511_offset_+3_20250515T185500Z,Hijack:97511,10,10,0,0,0,12857853,100.0,PASS
+Leak_291102_offset_-1_20250330T084500Z,Leak:291102,11,11,0,0,0,9885993,100.0,PASS
+Leak_426483_offset_+7_20251106T060000Z,Leak:426483,10,10,0,0,0,16842133,100.0,PASS
+Outage_1014_offset_+3_20240910T094500Z,Outage:1014,14,14,0,0,0,37213906,100.0,PASS
+Outage_525_offset_+7_20230820T020000Z,Outage:525,22,22,0,0,0,25583797,100.0,PASS
