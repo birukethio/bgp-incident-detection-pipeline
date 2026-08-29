@@ -1,0 +1,5 @@
+candidate_period_id,collector,historically_available,asn_visible,prefix_visible,selected,selection_reason
+Leak_291102_offset_-14_20250317T084500Z,route-views2,True,True,NOT_APPLICABLE,True,selected first collector in deterministic sequence with positive RIB ASN/origin visibility
+Leak_291102_offset_+14_20250414T084500Z,route-views2,True,True,NOT_APPLICABLE,True,selected first collector in deterministic sequence with positive RIB ASN/origin visibility
+Leak_291102_offset_-7_20250324T084500Z,route-views2,True,True,NOT_APPLICABLE,True,selected first collector in deterministic sequence with positive RIB ASN/origin visibility
+Leak_291102_offset_+7_20250407T084500Z,route-views2,True,True,NOT_APPLICABLE,True,selected first collector in deterministic sequence with positive RIB ASN/origin visibility
