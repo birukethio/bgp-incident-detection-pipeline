@@ -1,0 +1,4 @@
+incident_exclusion_buffer_minutes,candidate_periods,normal_candidate_periods,known_overlap_rejections,buffer_rejections,recommendation,notes
+30,112,105,7,0,sensitivity_only,"buffer applies around known related incidents; rejected windows remain UNKNOWN, not NORMAL"
+60,112,105,7,0,PROVISIONAL_NORMAL_PILOT,"buffer applies around known related incidents; rejected windows remain UNKNOWN, not NORMAL"
+120,112,105,7,0,sensitivity_only,"buffer applies around known related incidents; rejected windows remain UNKNOWN, not NORMAL"

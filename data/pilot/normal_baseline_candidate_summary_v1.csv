@@ -1,0 +1,10 @@
+incident_uid,affected_asn,candidate_period_count,candidate_window_count,known_overlap_rejections,buffer_rejections,provisional_normal_candidates,status
+Hijack:125889,37020,16,16,0,0,16,PASS
+Hijack:58159,23456,16,14,2,0,14,PASS
+Hijack:97511,134340,16,16,0,0,16,PASS
+Leak:291102,135817,8,48,0,0,8,PASS
+Leak:426483,134078,16,15,1,0,15,PASS
+Leak:426871,328543,16,15,1,0,15,PASS
+Outage:1014,37233,8,120,0,0,8,PASS
+Outage:207,6849,8,1440,0,0,8,PASS
+Outage:525,29256,8,195,3,0,5,PASS

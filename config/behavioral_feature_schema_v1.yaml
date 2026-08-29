@@ -1,0 +1,401 @@
+behavioral_feature_version: v1
+behavioral_feature_count: 44
+status: FROZEN_FOR_PILOT
+notes: Schema freezes the 44 reproducible behavioral features from the TRAIN pilot; sparse REVIEW features remain included for full-corpus reassessment.
+features:
+  - order: 1
+    feature_name: update_count
+    feature_group: Behavioral
+    definition: "Incident-relevant prefix-level UPDATE observations in the window."
+    formula: "announcements + withdrawals"
+    source_fields: "announcement_or_withdrawal"
+    aggregation_method: "count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 2
+    feature_name: announcement_count
+    feature_group: Behavioral
+    definition: "Incident-relevant announcement observations."
+    formula: "count(type == announcement)"
+    source_fields: "announcement_or_withdrawal"
+    aggregation_method: "count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 3
+    feature_name: withdrawal_count
+    feature_group: Behavioral
+    definition: "Incident-relevant withdrawal observations."
+    formula: "count(type == withdrawal)"
+    source_fields: "announcement_or_withdrawal"
+    aggregation_method: "count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 4
+    feature_name: update_rate_per_minute
+    feature_group: Behavioral
+    definition: "Incident-relevant UPDATE observation rate."
+    formula: "update_count / 5"
+    source_fields: "announcement_or_withdrawal"
+    aggregation_method: "rate over 5 minutes"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 5
+    feature_name: announcement_rate_per_minute
+    feature_group: Behavioral
+    definition: "Announcement observation rate."
+    formula: "announcement_count / 5"
+    source_fields: "announcement_or_withdrawal"
+    aggregation_method: "rate over 5 minutes"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 6
+    feature_name: withdrawal_rate_per_minute
+    feature_group: Behavioral
+    definition: "Withdrawal observation rate."
+    formula: "withdrawal_count / 5"
+    source_fields: "announcement_or_withdrawal"
+    aggregation_method: "rate over 5 minutes"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 7
+    feature_name: announcement_ratio
+    feature_group: Behavioral
+    definition: "Share of relevant observations that are announcements."
+    formula: "announcement_count / update_count"
+    source_fields: "announcement_or_withdrawal"
+    aggregation_method: "ratio"
+    zero_window_behavior: "NaN when update_count=0"
+    verification_status: REPRODUCIBLE
+  - order: 8
+    feature_name: withdrawal_ratio
+    feature_group: Behavioral
+    definition: "Share of relevant observations that are withdrawals."
+    formula: "withdrawal_count / update_count"
+    source_fields: "announcement_or_withdrawal"
+    aggregation_method: "ratio"
+    zero_window_behavior: "NaN when update_count=0"
+    verification_status: REPRODUCIBLE
+  - order: 9
+    feature_name: announcement_to_withdrawal_ratio
+    feature_group: Behavioral
+    definition: "Announcement-to-withdrawal balance."
+    formula: "announcement_count / withdrawal_count"
+    source_fields: "announcement_or_withdrawal"
+    aggregation_method: "ratio"
+    zero_window_behavior: "NaN when withdrawal_count=0"
+    verification_status: REPRODUCIBLE
+  - order: 10
+    feature_name: unique_prefix_count
+    feature_group: Behavioral
+    definition: "Distinct prefixes among incident-relevant observations."
+    formula: "count_distinct(prefix)"
+    source_fields: "prefix"
+    aggregation_method: "distinct count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 11
+    feature_name: unique_announced_prefix_count
+    feature_group: Behavioral
+    definition: "Distinct prefixes announced in relevant observations."
+    formula: "count_distinct(prefix where type=announcement)"
+    source_fields: "prefix, announcement_or_withdrawal"
+    aggregation_method: "distinct count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 12
+    feature_name: unique_withdrawn_prefix_count
+    feature_group: Behavioral
+    definition: "Distinct prefixes withdrawn in relevant observations."
+    formula: "count_distinct(prefix where type=withdrawal)"
+    source_fields: "prefix, announcement_or_withdrawal"
+    aggregation_method: "distinct count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 13
+    feature_name: prefix_churn_count
+    feature_group: Behavioral
+    definition: "Total distinct announced and withdrawn prefix activity."
+    formula: "unique_announced_prefix_count + unique_withdrawn_prefix_count"
+    source_fields: "prefix, announcement_or_withdrawal"
+    aggregation_method: "derived count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 14
+    feature_name: prefix_with_both_announce_withdraw_count
+    feature_group: Behavioral
+    definition: "Prefixes both announced and withdrawn in the same window."
+    formula: "count(prefix in announced_prefixes intersect withdrawn_prefixes)"
+    source_fields: "prefix, announcement_or_withdrawal"
+    aggregation_method: "set intersection"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 15
+    feature_name: unique_peer_asn_count
+    feature_group: Behavioral
+    definition: "Distinct RouteViews peer ASNs seeing relevant observations."
+    formula: "count_distinct(peer_asn)"
+    source_fields: "peer_asn"
+    aggregation_method: "distinct count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 16
+    feature_name: unique_origin_asn_count
+    feature_group: Behavioral
+    definition: "Distinct origin ASNs in relevant announcements."
+    formula: "count_distinct(origin_asn)"
+    source_fields: "origin_asn, as_path"
+    aggregation_method: "distinct count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 17
+    feature_name: origin_diversity_ratio
+    feature_group: Behavioral
+    definition: "Origin diversity normalized by prefix count."
+    formula: "unique_origin_asn_count / unique_prefix_count"
+    source_fields: "origin_asn, prefix"
+    aggregation_method: "ratio"
+    zero_window_behavior: "NaN when unique_prefix_count=0"
+    verification_status: REPRODUCIBLE
+  - order: 18
+    feature_name: moas_prefix_count
+    feature_group: Behavioral
+    definition: "Prefixes with more than one observed origin ASN in the window."
+    formula: "count(prefix where distinct origins > 1)"
+    source_fields: "prefix, origin_asn"
+    aggregation_method: "grouped distinct count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 19
+    feature_name: moas_prefix_ratio
+    feature_group: Behavioral
+    definition: "Share of prefixes with multiple origins."
+    formula: "moas_prefix_count / unique_prefix_count"
+    source_fields: "prefix, origin_asn"
+    aggregation_method: "ratio"
+    zero_window_behavior: "NaN when unique_prefix_count=0"
+    verification_status: REPRODUCIBLE
+  - order: 20
+    feature_name: origin_change_event_count
+    feature_group: Behavioral
+    definition: "Additional origin alternatives beyond one per prefix."
+    formula: "sum(max(0, origin_count_per_prefix - 1))"
+    source_fields: "prefix, origin_asn"
+    aggregation_method: "grouped count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 21
+    feature_name: unique_as_path_count
+    feature_group: Behavioral
+    definition: "Distinct AS_PATH strings in relevant announcements."
+    formula: "count_distinct(as_path)"
+    source_fields: "as_path"
+    aggregation_method: "distinct count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 22
+    feature_name: as_path_length_min
+    feature_group: Behavioral
+    definition: "Minimum AS_PATH length."
+    formula: "min(len(as_path))"
+    source_fields: "as_path"
+    aggregation_method: "summary statistic"
+    zero_window_behavior: "NaN when no AS_PATH exists"
+    verification_status: REPRODUCIBLE
+  - order: 23
+    feature_name: as_path_length_max
+    feature_group: Behavioral
+    definition: "Maximum AS_PATH length."
+    formula: "max(len(as_path))"
+    source_fields: "as_path"
+    aggregation_method: "summary statistic"
+    zero_window_behavior: "NaN when no AS_PATH exists"
+    verification_status: REPRODUCIBLE
+  - order: 24
+    feature_name: as_path_length_mean
+    feature_group: Behavioral
+    definition: "Mean AS_PATH length."
+    formula: "mean(len(as_path))"
+    source_fields: "as_path"
+    aggregation_method: "summary statistic"
+    zero_window_behavior: "NaN when no AS_PATH exists"
+    verification_status: REPRODUCIBLE
+  - order: 25
+    feature_name: as_path_length_median
+    feature_group: Behavioral
+    definition: "Median AS_PATH length."
+    formula: "median(len(as_path))"
+    source_fields: "as_path"
+    aggregation_method: "summary statistic"
+    zero_window_behavior: "NaN when no AS_PATH exists"
+    verification_status: REPRODUCIBLE
+  - order: 26
+    feature_name: as_path_length_std
+    feature_group: Behavioral
+    definition: "Population standard deviation of AS_PATH length."
+    formula: "pstdev(len(as_path))"
+    source_fields: "as_path"
+    aggregation_method: "summary statistic"
+    zero_window_behavior: "NaN when no AS_PATH exists"
+    verification_status: REPRODUCIBLE
+  - order: 27
+    feature_name: as_path_length_p95
+    feature_group: Behavioral
+    definition: "95th percentile AS_PATH length."
+    formula: "percentile_95(len(as_path))"
+    source_fields: "as_path"
+    aggregation_method: "summary statistic"
+    zero_window_behavior: "NaN when no AS_PATH exists"
+    verification_status: REPRODUCIBLE
+  - order: 28
+    feature_name: as_path_length_range
+    feature_group: Behavioral
+    definition: "Range of AS_PATH lengths."
+    formula: "max(len(as_path)) - min(len(as_path))"
+    source_fields: "as_path"
+    aggregation_method: "summary statistic"
+    zero_window_behavior: "NaN when no AS_PATH exists"
+    verification_status: REPRODUCIBLE
+  - order: 29
+    feature_name: path_prepending_observation_count
+    feature_group: Behavioral
+    definition: "Relevant announcements whose AS_PATH contains repeated ASNs."
+    formula: "count(path where len(path) > len(unique(path)))"
+    source_fields: "as_path"
+    aggregation_method: "count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 30
+    feature_name: path_prepending_ratio
+    feature_group: Behavioral
+    definition: "Share of relevant announcements with path prepending."
+    formula: "path_prepending_observation_count / announcement_count"
+    source_fields: "as_path, announcement_or_withdrawal"
+    aggregation_method: "ratio"
+    zero_window_behavior: "NaN when announcement_count=0"
+    verification_status: REPRODUCIBLE
+  - order: 31
+    feature_name: prepended_asn_repetition_count
+    feature_group: Behavioral
+    definition: "Total repeated ASN positions beyond unique ASNs across paths."
+    formula: "sum(len(path) - len(unique(path)))"
+    source_fields: "as_path"
+    aggregation_method: "sum"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 32
+    feature_name: multi_path_prefix_count
+    feature_group: Behavioral
+    definition: "Prefixes with more than one observed AS_PATH."
+    formula: "count(prefix where distinct AS_PATHs > 1)"
+    source_fields: "prefix, as_path"
+    aggregation_method: "grouped distinct count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 33
+    feature_name: path_diversity_mean_per_prefix
+    feature_group: Behavioral
+    definition: "Average number of distinct AS_PATHs per prefix."
+    formula: "mean(distinct_as_paths_per_prefix)"
+    source_fields: "prefix, as_path"
+    aggregation_method: "grouped mean"
+    zero_window_behavior: "NaN when no prefix/path exists"
+    verification_status: REPRODUCIBLE
+  - order: 34
+    feature_name: peer_prefix_pair_count
+    feature_group: Behavioral
+    definition: "Distinct peer ASN and prefix pairs."
+    formula: "count_distinct(peer_asn, prefix)"
+    source_fields: "peer_asn, prefix"
+    aggregation_method: "distinct pair count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 35
+    feature_name: peer_origin_pair_count
+    feature_group: Behavioral
+    definition: "Distinct peer ASN and origin ASN pairs."
+    formula: "count_distinct(peer_asn, origin_asn)"
+    source_fields: "peer_asn, origin_asn"
+    aggregation_method: "distinct pair count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 36
+    feature_name: peer_as_path_pair_count
+    feature_group: Behavioral
+    definition: "Distinct peer ASN and AS_PATH pairs."
+    formula: "count_distinct(peer_asn, as_path)"
+    source_fields: "peer_asn, as_path"
+    aggregation_method: "distinct pair count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 37
+    feature_name: unique_next_hop_count
+    feature_group: Behavioral
+    definition: "Distinct NEXT_HOP values in relevant announcements."
+    formula: "count_distinct(next_hop)"
+    source_fields: "next_hop"
+    aggregation_method: "distinct count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 38
+    feature_name: community_observation_count
+    feature_group: Behavioral
+    definition: "Relevant observations carrying at least one BGP community value."
+    formula: "count(communities not empty)"
+    source_fields: "communities"
+    aggregation_method: "count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 39
+    feature_name: community_observation_ratio
+    feature_group: Behavioral
+    definition: "Share of relevant observations carrying communities."
+    formula: "community_observation_count / update_count"
+    source_fields: "communities"
+    aggregation_method: "ratio"
+    zero_window_behavior: "NaN when update_count=0"
+    verification_status: REPRODUCIBLE
+  - order: 40
+    feature_name: unique_community_count
+    feature_group: Behavioral
+    definition: "Distinct BGP community tokens observed."
+    formula: "count_distinct(split(communities))"
+    source_fields: "communities"
+    aggregation_method: "distinct count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 41
+    feature_name: med_observation_count
+    feature_group: Behavioral
+    definition: "Relevant announcements with MED populated."
+    formula: "count(med not empty)"
+    source_fields: "med"
+    aggregation_method: "count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 42
+    feature_name: unique_med_count
+    feature_group: Behavioral
+    definition: "Distinct MED values observed."
+    formula: "count_distinct(med)"
+    source_fields: "med"
+    aggregation_method: "distinct count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 43
+    feature_name: local_pref_observation_count
+    feature_group: Behavioral
+    definition: "Relevant announcements with LOCAL_PREF populated by parser."
+    formula: "count(local_pref not empty)"
+    source_fields: "local_pref"
+    aggregation_method: "count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE
+  - order: 44
+    feature_name: atomic_aggregate_count
+    feature_group: Behavioral
+    definition: "Relevant announcements carrying an atomic aggregate marker other than NAG/empty."
+    formula: "count(atomic_aggregate not empty and != NAG)"
+    source_fields: "atomic_aggregate"
+    aggregation_method: "count"
+    zero_window_behavior: "0"
+    verification_status: REPRODUCIBLE

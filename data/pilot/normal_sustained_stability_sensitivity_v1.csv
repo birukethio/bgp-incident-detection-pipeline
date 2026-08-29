@@ -1,0 +1,4 @@
+minimum_consecutive_stable_windows,minimum_stable_minutes,normal_candidate_periods,candidate_periods_long_enough,candidate_windows_in_long_enough_periods,total_candidate_windows,recommendation,notes
+3,15,105,29,1803,1879,sensitivity_only,feasibility only; behavioral stability cannot be verified until Normal MRT data are downloaded and parsed
+6,30,105,29,1803,1879,PROVISIONAL_NORMAL_PILOT,feasibility only; behavioral stability cannot be verified until Normal MRT data are downloaded and parsed
+12,60,105,21,1755,1879,sensitivity_only,feasibility only; behavioral stability cannot be verified until Normal MRT data are downloaded and parsed
