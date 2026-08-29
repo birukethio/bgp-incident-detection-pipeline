@@ -1,0 +1,9 @@
+candidate_period_id,associated_incident_uid,category,total_windows,normal_verified_windows,unknown_windows,normal_yield_percent,longest_stable_block_minutes,candidate_final_status,failure_reason_if_any
+Hijack_58159_14_225_192_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,6,6,0,100.0,30,PASS,
+Hijack_58159_14_225_193_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,6,6,0,100.0,30,PASS,
+Hijack_58159_14_225_194_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,6,6,0,100.0,30,PASS,
+Leak_291102_offset_+14_20250414T084500Z,Leak:291102,Leak,6,0,6,0.0,20,REVIEW,no_major_as_path_instability;no_suspicious_relevant_update_activity
+Leak_291102_offset_+7_20250407T084500Z,Leak:291102,Leak,6,0,6,0.0,10,REVIEW,no_major_as_path_instability;no_suspicious_relevant_update_activity
+Leak_291102_offset_-14_20250317T084500Z,Leak:291102,Leak,6,0,6,0.0,25,REVIEW,no_major_as_path_instability;no_suspicious_relevant_update_activity
+Leak_291102_offset_-7_20250324T084500Z,Leak:291102,Leak,6,6,0,100.0,30,PASS,
+Leak_426483_asn_s1_offset_+30_20251129T060000Z,Leak:426483,Leak,6,0,6,0.0,10,REVIEW,no_major_as_path_instability;no_suspicious_prefix_deaggregation;no_suspicious_relevant_update_activity

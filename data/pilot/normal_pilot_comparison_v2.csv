@@ -1,0 +1,3 @@
+pilot,candidate_periods,rib_visible_periods,total_candidate_windows,normal_verified_windows,unknown_windows,normal_yield_percent,candidate_success_rate,reasons_for_failure
+FIRST_NORMAL_PILOT,6,see normal_rib_update_qualification_results_v1.csv,63,53,10,84.127,see first-pilot candidate-level outputs,first pilot retained UNKNOWN where RIB/UPDATE stability evidence was insufficient
+SECOND_NORMAL_PILOT,8,8,48,24,24,50.0,50.0,second pilot uses RIB-prescreened candidates; remaining UNKNOWN windows indicate update instability or insufficient sustained block

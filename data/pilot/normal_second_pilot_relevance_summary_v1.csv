@@ -1,0 +1,9 @@
+candidate_period_id,associated_incident_uid,associated_category,total_parsed_observations,directly_matching_observations,match_percent,matching_asn_count,matching_prefix_count,notes
+Hijack_58159_14_225_192_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,5713233,0,0.0,0,0,relevance uses affected ASN plus exact prefix when available; global unrelated observations are excluded from features
+Hijack_58159_14_225_193_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,5713233,0,0.0,0,0,relevance uses affected ASN plus exact prefix when available; global unrelated observations are excluded from features
+Hijack_58159_14_225_194_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,5713233,0,0.0,0,0,relevance uses affected ASN plus exact prefix when available; global unrelated observations are excluded from features
+Leak_291102_offset_+14_20250414T084500Z,Leak:291102,Leak,2510143,55,0.002,16,5,relevance uses affected ASN plus exact prefix when available; global unrelated observations are excluded from features
+Leak_291102_offset_+7_20250407T084500Z,Leak:291102,Leak,1390186,85,0.006,17,11,relevance uses affected ASN plus exact prefix when available; global unrelated observations are excluded from features
+Leak_291102_offset_-14_20250317T084500Z,Leak:291102,Leak,1720268,74,0.004,38,2,relevance uses affected ASN plus exact prefix when available; global unrelated observations are excluded from features
+Leak_291102_offset_-7_20250324T084500Z,Leak:291102,Leak,1699989,1,0.0,8,1,relevance uses affected ASN plus exact prefix when available; global unrelated observations are excluded from features
+Leak_426483_asn_s1_offset_+30_20251129T060000Z,Leak:426483,Leak,2147421,126,0.006,18,29,relevance uses affected ASN plus exact prefix when available; global unrelated observations are excluded from features
