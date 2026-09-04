@@ -1,0 +1,9 @@
+parameter,value,source_artifact
+Python version,3.12.2,data/performance/final_k1_inference_latency_v1.csv
+XGBoost version,3.4.1,data/performance/final_k1_inference_latency_v1.csv
+OS/platform,macOS-15.7.5-x86_64-i386-64bit,data/performance/final_k1_inference_latency_v1.csv
+thread count,11,data/performance/final_k1_inference_latency_v1.csv
+recorded CPU field,i386,data/performance/final_k1_inference_latency_v1.csv
+CPU model,NA,data/performance/final_k1_inference_latency_v1.csv
+RAM,NA,data/performance/final_k1_inference_latency_v1.csv
+model loaded state,MODEL_ALREADY_LOADED_OR_CACHED_PROBABILITIES,data/performance/final_k1_inference_latency_v1.csv
