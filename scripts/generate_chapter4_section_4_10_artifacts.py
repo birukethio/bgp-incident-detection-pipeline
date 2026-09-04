@@ -233,9 +233,9 @@ def draw_stability(seed_rows: list[dict[str, str]], multi: list[dict[str, str]],
     ]
     multi_lookup = {row["metric"]: row for row in multi}
     left = int(170 * scale)
-    top = int((350 if include_text else 240) * scale)
+    top = int((350 if include_text else 130) * scale)
     right = int(2240 * scale)
-    bottom = int((1110 if include_text else 1860) * scale)
+    bottom = int((1110 if include_text else 1680) * scale)
     ymin, ymax = 0.90, 1.00
     for idx in range(6):
         val = ymin + (ymax - ymin) * idx / 5
@@ -284,7 +284,7 @@ def draw_stability(seed_rows: list[dict[str, str]], multi: list[dict[str, str]],
         )
 
     legend_x = int(620 * scale)
-    legend_y = int((1210 if include_text else 2120) * scale)
+    legend_y = int((1210 if include_text else 1950) * scale)
     for i, (_, label, color) in enumerate(metrics):
         x = legend_x + int(i * 290 * scale)
         draw.rectangle((x, legend_y, x + int(25 * scale), legend_y + int(25 * scale)), fill=color)
@@ -318,7 +318,10 @@ def main() -> None:
 
     fig = draw_stability(seed_rows, multi, 2400, 1500, True)
     save_outputs(fig, FIG_PNG, FIG_PDF)
-    jpg = draw_stability(seed_rows, multi, 3600, 2250, True)
+    jpg_full = draw_stability(seed_rows, multi, 3600, 2250, True)
+    # Chart-only export for Word: remove title/subtitle and bottom prose/source
+    # while preserving axes, seed labels, legend, and mean annotations.
+    jpg = jpg_full.crop((0, 430, 3600, 1885))
     save_jpg(jpg, FIG_JPG)
 
     m = {row["metric"]: row for row in multi}
