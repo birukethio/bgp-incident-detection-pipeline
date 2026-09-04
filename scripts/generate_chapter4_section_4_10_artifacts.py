@@ -318,7 +318,7 @@ def main() -> None:
 
     fig = draw_stability(seed_rows, multi, 2400, 1500, True)
     save_outputs(fig, FIG_PNG, FIG_PDF)
-    jpg = draw_stability(seed_rows, multi, 3600, 2400, False)
+    jpg = draw_stability(seed_rows, multi, 3600, 2250, True)
     save_jpg(jpg, FIG_JPG)
 
     m = {row["metric"]: row for row in multi}
