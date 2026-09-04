@@ -1,0 +1,9 @@
+hyperparameter,value,source_artifact
+n_estimators,1200,config/final_model_candidate_v2_1_rf_refined.yaml
+max_depth,40,config/final_model_candidate_v2_1_rf_refined.yaml
+max_features,0.3,config/final_model_candidate_v2_1_rf_refined.yaml
+min_samples_leaf,6,config/final_model_candidate_v2_1_rf_refined.yaml
+min_samples_split,6,config/final_model_candidate_v2_1_rf_refined.yaml
+bootstrap,False,config/final_model_candidate_v2_1_rf_refined.yaml
+criterion,log_loss,config/final_model_candidate_v2_1_rf_refined.yaml
+class_weight,null,config/final_model_candidate_v2_1_rf_refined.yaml
