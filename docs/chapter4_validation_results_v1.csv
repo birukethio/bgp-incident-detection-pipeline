@@ -1,0 +1,9 @@
+metric,train_cv,validation,delta,source_artifact
+incident_macro_f1,0.8056775087076607,0.7139044944819144,-0.09177301422574635,data/validation/train_vs_validation_comparison_v1.csv
+top1,0.8070493454179255,0.7183098591549296,-0.08873948626299588,data/validation/train_vs_validation_comparison_v1.csv
+top2,0.9347432024169183,0.9014084507042254,-0.033334751712692956,data/validation/train_vs_validation_comparison_v1.csv
+mrr,0.8926485397784489,0.8427230046948359,-0.04992553508361308,data/validation/train_vs_validation_comparison_v1.csv
+hijack_f1,0.7561964090221941,0.6341463414634146,-0.12205006755877945,data/validation/train_vs_validation_comparison_v1.csv
+leak_f1,0.8519226498985109,0.7746478873239436,-0.07727476257456722,data/validation/train_vs_validation_comparison_v1.csv
+outage_f1,0.8089134672022773,0.7329192546583851,-0.07599421254389216,data/validation/train_vs_validation_comparison_v1.csv
+window_macro_f1,0.6806190145403048,0.617678902651,-0.06294011188930482,data/validation/train_vs_validation_comparison_v1.csv
