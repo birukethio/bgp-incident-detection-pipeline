@@ -28,6 +28,10 @@ FAMILY_FIG = FIGURES / "figure_4_feature_family_ablation_v1.png"
 FAMILY_FIG_PDF = FIGURES / "figure_4_feature_family_ablation_v1.pdf"
 CLASS_IMPACT_FIG = FIGURES / "figure_4_feature_family_class_impact_v1.png"
 CLASS_IMPACT_FIG_PDF = FIGURES / "figure_4_feature_family_class_impact_v1.pdf"
+VARIANT_FIG_JPG = FIGURES / "figure_4_feature_variant_progression_v1_highres_chart_only.jpg"
+FAMILY_FIG_JPG = FIGURES / "figure_4_feature_family_ablation_v1_highres_chart_only.jpg"
+CLASS_IMPACT_FIG_JPG = FIGURES / "figure_4_feature_family_class_impact_v1_highres_chart_only.jpg"
+PAPER_TEXT_OUT = DOCS / "chapter4_section_4_3_paper_figure_text_v1.md"
 
 EXPECTED_VARIANTS = {
     "V1": {"behavioral_features": 44, "caida_features": 0, "rpki_features": 0, "total_features": 44},
@@ -118,6 +122,11 @@ def save_both(img: Image.Image, png: Path, pdf: Path) -> None:
     png.parent.mkdir(parents=True, exist_ok=True)
     img.save(png, "PNG", optimize=True)
     img.save(pdf, "PDF", resolution=200.0)
+
+
+def save_jpg(img: Image.Image, jpg: Path) -> None:
+    jpg.parent.mkdir(parents=True, exist_ok=True)
+    img.save(jpg, "JPEG", quality=96, subsampling=0, optimize=True, dpi=(300, 300))
 
 
 def add_source(draw: ImageDraw.ImageDraw, source: str) -> None:
@@ -268,6 +277,101 @@ def class_impact_heatmap(rows: list[dict[str, object]]) -> None:
     save_both(img, CLASS_IMPACT_FIG, CLASS_IMPACT_FIG_PDF)
 
 
+def bar_chart_variant_jpg(rows: list[dict[str, object]]) -> None:
+    img = Image.new("RGB", (3600, 2400), "white")
+    draw = ImageDraw.Draw(img)
+    left, top, right, bottom = 360, 260, 3400, 1900
+    values = [float(r["incident_macro_f1"]) for r in rows]
+    labels = [str(r["variant"]) for r in rows]
+    ymin, ymax = 0.0, 0.62
+    for step in range(0, 7):
+        val = ymax * step / 6
+        y = bottom - int((val - ymin) / (ymax - ymin) * (bottom - top))
+        draw.line((left, y, right, y), fill=COLORS["grid"], width=3)
+        draw.text((230, y - 16), f"{val:.2f}", font=font(24), fill=COLORS["muted"])
+    draw.line((left, top, left, bottom), fill=COLORS["axis"], width=5)
+    draw.line((left, bottom, right, bottom), fill=COLORS["axis"], width=5)
+    bar_w = 360
+    gap = (right - left - bar_w * 4) / 5
+    colors = [COLORS["blue"], COLORS["green"], COLORS["amber"], COLORS["purple"]]
+    descriptions = {
+        "V1": "Behavioral",
+        "V2": "Behavioral\n+ CAIDA",
+        "V3": "Behavioral\n+ RPKI/ROV",
+        "V4": "Behavioral\n+ CAIDA\n+ RPKI/ROV",
+    }
+    for i, (label, value) in enumerate(zip(labels, values)):
+        x0 = left + gap + i * (bar_w + gap)
+        x1 = x0 + bar_w
+        y0 = bottom - int((value - ymin) / (ymax - ymin) * (bottom - top))
+        draw.rounded_rectangle((x0, y0, x1, bottom), radius=16, fill=colors[i])
+        draw.text((x0 + 82, y0 - 58), f"{value:.6f}", font=font(30, True), fill=COLORS["ink"])
+        draw.text((x0 + 145, bottom + 48), label, font=font(40, True), fill=COLORS["ink"])
+        draw.multiline_text((x0 + 35, bottom + 110), descriptions[label], font=font(28), fill=COLORS["muted"], spacing=8, align="center")
+    save_jpg(img, VARIANT_FIG_JPG)
+
+
+def horizontal_delta_chart_jpg(rows: list[dict[str, object]]) -> None:
+    plot_rows = [r for r in rows if r["feature_family"] != "NONE_FULL_V4"]
+    plot_rows.sort(key=lambda r: float(r["delta_macro_f1_vs_full_v4"]))
+    img = Image.new("RGB", (3600, 2400), "white")
+    draw = ImageDraw.Draw(img)
+    left, top, right, bottom = 1180, 220, 3400, 2180
+    vals = [float(r["delta_macro_f1_vs_full_v4"]) for r in plot_rows]
+    minv = min(vals + [-0.001])
+    maxv = max(vals + [0.001])
+    pad = max(abs(minv), abs(maxv)) * 0.2
+    min_axis, max_axis = minv - pad, maxv + pad
+    zero_x = left + int((0 - min_axis) / (max_axis - min_axis) * (right - left))
+    draw.line((zero_x, top - 40, zero_x, bottom + 40), fill=COLORS["axis"], width=6)
+    n = len(plot_rows)
+    row_h = (bottom - top) / n
+    for i, r in enumerate(plot_rows):
+        y = top + i * row_h + row_h * 0.18
+        val = float(r["delta_macro_f1_vs_full_v4"])
+        x_val = left + int((val - min_axis) / (max_axis - min_axis) * (right - left))
+        color = COLORS["red"] if val < -0.002 else COLORS["green"] if val > 0.002 else COLORS["muted"]
+        x0, x1 = sorted((zero_x, x_val))
+        draw.rounded_rectangle((x0, int(y), x1, int(y + row_h * 0.56)), radius=12, fill=color)
+        label = str(r["feature_family"]).replace("_", " ").title()
+        draw.text((100, int(y + 10)), label, font=font(28), fill=COLORS["ink"])
+        value_x = x_val + (18 if val >= 0 else -205)
+        draw.text((value_x, int(y + 12)), f"{val:+.6f}", font=font(23), fill=COLORS["ink"])
+    save_jpg(img, FAMILY_FIG_JPG)
+
+
+def class_impact_heatmap_jpg(rows: list[dict[str, object]]) -> None:
+    full = next(r for r in rows if r["feature_family"] == "NONE_FULL_V4")
+    plot_rows = [r for r in rows if r["feature_family"] != "NONE_FULL_V4"]
+    classes = ["hijack_f1", "leak_f1", "outage_f1"]
+    for r in plot_rows:
+        r["_max_abs_class_delta"] = max(abs(float(r[c]) - float(full[c])) for c in classes)
+    plot_rows.sort(key=lambda r: r["_max_abs_class_delta"], reverse=True)
+    img = Image.new("RGB", (3600, 2400), "white")
+    draw = ImageDraw.Draw(img)
+    left, top = 1250, 250
+    cell_w, cell_h = 540, 180
+    headers = ["Hijack F1 Delta", "Leak F1 Delta", "Outage F1 Delta"]
+    for j, header in enumerate(headers):
+        draw.text((left + j * cell_w + 105, top - 82), header, font=font(32, True), fill=COLORS["ink"])
+    max_abs = max(abs(float(r[c]) - float(full[c])) for r in plot_rows for c in classes)
+    for i, r in enumerate(plot_rows):
+        y = top + i * cell_h
+        label = str(r["feature_family"]).replace("_", " ").title()
+        draw.text((100, y + 65), label, font=font(29), fill=COLORS["ink"])
+        for j, c in enumerate(classes):
+            delta = float(r[c]) - float(full[c])
+            intensity = int(min(1.0, abs(delta) / max_abs) * 105)
+            if delta < 0:
+                fill = f"#{255:02x}{max(130, 240-intensity):02x}{max(130, 240-intensity):02x}"
+            else:
+                fill = f"#{max(130, 230-intensity):02x}{255:02x}{max(130, 230-intensity):02x}"
+            x = left + j * cell_w
+            draw.rectangle((x, y, x + cell_w, y + cell_h), fill=fill, outline=COLORS["grid"], width=3)
+            draw.text((x + 185, y + 70), f"{delta:+.6f}", font=font(25), fill=COLORS["ink"])
+    save_jpg(img, CLASS_IMPACT_FIG_JPG)
+
+
 def build_variant_rows() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     rows = read_csv(VARIANT_SOURCE)
     selected = [r for r in rows if r["model"] == "RF_HIER" and r["imbalance_condition"] == "I1"]
@@ -415,6 +519,56 @@ No model was retrained. Validation was not recomputed or used. Final Holdout was
     CAPTIONS_OUT.write_text(text, encoding="utf-8")
 
 
+def write_paper_figure_text() -> None:
+    text = f"""# Section 4.3 Paper Figure Text v1
+
+These text blocks are separated from the high-resolution chart-only JPG figures so the dissertation document can control headings, captions, spacing, and source notes directly.
+
+## Figure 4.x Feature Variant Progression
+
+Title: Feature Variant Progression
+
+Subtitle: Incident-level Macro F1 from TRAIN-only grouped cross-validation. V1 = Behavioral; V2 = Behavioral + CAIDA; V3 = Behavioral + RPKI/ROV; V4 = Behavioral + CAIDA + RPKI/ROV.
+
+Under-figure note: Higher Macro F1 indicates better balanced incident-level classification across Hijack, Leak, and Outage.
+
+Caption: This figure compares the frozen V1-V4 feature variants during TRAIN-only grouped cross-validation. V3 achieved the highest Macro F1 in this experiment, while V4 retained the complete 74-feature representation and strongest overall ranking/per-class balance used by the later pipeline.
+
+Source: `{rel(VARIANT_SOURCE)}`
+
+Image: `{rel(VARIANT_FIG_JPG)}`
+
+## Figure 4.x Feature-Family Ablation
+
+Title: Feature-Family Ablation
+
+Subtitle: Delta Incident Macro F1 versus full V4 under TRAIN-only grouped cross-validation. Negative values mean performance decreased when that feature family was removed.
+
+Under-figure note: Sorted by Macro-F1 impact. Larger negative bars provide stronger evidence of useful predictive contribution in this experiment.
+
+Caption: This figure reports the change in incident-level Macro F1 after removing each feature family from the full V4 representation. RPKI/ROV removal produced the largest Macro-F1 decrease, indicating the strongest measured contribution among the tested feature families.
+
+Source: `{rel(FAMILY_SOURCE)}`
+
+Image: `{rel(FAMILY_FIG_JPG)}`
+
+## Figure 4.x Class-Specific Feature-Family Impact
+
+Title: Class-Specific Feature-Family Impact
+
+Subtitle: Class F1 delta after removing each feature family from full V4. Negative cells indicate the class became harder to classify.
+
+Under-figure note: Use as class-level evidence only; the experiment is TRAIN-only and not a causal proof of feature mechanisms.
+
+Caption: This heatmap shows class-level sensitivity to feature-family removal. RPKI/ROV most affected Hijack F1, peer visibility most affected Leak F1, and CAIDA AS-relationship removal most affected Outage F1 in this TRAIN-only ablation.
+
+Source: `{rel(FAMILY_SOURCE)}`
+
+Image: `{rel(CLASS_IMPACT_FIG_JPG)}`
+"""
+    PAPER_TEXT_OUT.write_text(text, encoding="utf-8")
+
+
 def validate_no_forbidden_sources(audit_rows: Iterable[dict[str, object]]) -> None:
     forbidden = ("validation", "final_holdout", "holdout")
     for row in audit_rows:
@@ -477,12 +631,16 @@ def main() -> None:
         ["metric", "value", "experiment", "source_file", "source_field_or_row", "authoritative_status"],
     )
     write_captions()
+    write_paper_figure_text()
     bar_chart_variant(variant_rows)
     grouped_ranking_chart(variant_rows)
     horizontal_delta_chart(family_rows)
     class_impact_heatmap(family_rows)
+    bar_chart_variant_jpg(variant_rows)
+    horizontal_delta_chart_jpg(family_rows)
+    class_impact_heatmap_jpg(family_rows)
 
-    outputs = [VARIANT_OUT, FAMILY_OUT, CAPTIONS_OUT, AUDIT_OUT, VARIANT_FIG, VARIANT_FIG_PDF, VARIANT_RANKING_FIG, VARIANT_RANKING_FIG_PDF, FAMILY_FIG, FAMILY_FIG_PDF, CLASS_IMPACT_FIG, CLASS_IMPACT_FIG_PDF]
+    outputs = [VARIANT_OUT, FAMILY_OUT, CAPTIONS_OUT, PAPER_TEXT_OUT, AUDIT_OUT, VARIANT_FIG, VARIANT_FIG_PDF, VARIANT_RANKING_FIG, VARIANT_RANKING_FIG_PDF, FAMILY_FIG, FAMILY_FIG_PDF, CLASS_IMPACT_FIG, CLASS_IMPACT_FIG_PDF, VARIANT_FIG_JPG, FAMILY_FIG_JPG, CLASS_IMPACT_FIG_JPG]
     for path in outputs:
         print(path)
 
