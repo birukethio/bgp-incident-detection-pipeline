@@ -1,0 +1,12 @@
+check,result,evidence,source_artifact
+Level-1 leakage,none detected,PASS=993,data/modeling_k2/k2_first_level_leakage_audit_v1.csv
+Level-2 leakage,none detected,PASS=5,data/modeling_k2/k2_second_level_leakage_audit_v1.csv
+unique incident meta rows,993,expected 993; duplicate incident_uid=0,data/modeling_k2/k2_incident_uniqueness_audit_v1.csv
+class balance,331/331/331,hijack=331; leak=331; outage=331,data/modeling_k2/k2_incident_uniqueness_audit_v1.csv
+true-label meta-features,none detected,no meta features require true labels; structural future-window features flagged separately for scope,data/modeling_k2/k2_meta_feature_leakage_audit_v1.csv
+permutation test,Macro F1 range 0.300358-0.339858,PASS=5,data/modeling_k2/k2_label_permutation_sanity_v1.csv
+multi-seed stability,PASS,five-seed analysis completed with low metric variation,data/modeling_k2/k2_multiseed_performance_v1.csv
+fold/seed consistency,PASS,paired K1-vs-B0 folds won=5; all K2 seed Macro F1 values exceed B0 aggregate=True,data/modeling_k1/k1_paired_fold_comparison_v1.csv; data/modeling_k2/k2_seed_sensitivity_v1.csv
+Validation usage,not used,validation_not_used PASS; K2 code path uses TRAIN/K1 artifacts only,data/modeling_k2/k2_forensic_readiness_audit_v1.csv
+Final Holdout access,not accessed,holdout_untouched PASS; Final Holdout remains SEALED,data/modeling_k2/k2_forensic_readiness_audit_v1.csv
+overall disposition,PASS,classification=K1_GAIN_CONFIRMED,data/modeling_k2/k2_forensic_readiness_audit_v1.csv

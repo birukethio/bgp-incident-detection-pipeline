@@ -1,0 +1,5 @@
+# Section 4.10 Figure Caption
+
+**Figure 4.11. K1 multi-seed stability and forensic verification summary.** This figure reports existing Phase K2 TRAIN-only seed-level results for the selected K1 temporal stacking architecture. Each line shows one incident-level metric across the five evaluated seeds, and the dashed reference lines show the corresponding five-seed means. Macro F1 was 0.934304 ± 0.002309, Top-1 was 0.934139 ± 0.002349, Top-2 was 0.992548 ± 0.000806, and MRR was 0.965827 ± 0.001227. The forensic audit reported no detected Level-1 or Level-2 leakage, 993 unique incident meta rows, balanced 331/331/331 classes, and no true-class encoded meta-features. Label permutation Macro F1 collapsed to 0.300358-0.339858. These are post-Validation TRAIN-only forensic/stability results; Validation was not recomputed or reused, and Final Holdout remained sealed.
+
+Source artifacts: `data/modeling_k2/k2_multiseed_performance_v1.csv`, `data/modeling_k2/k2_seed_sensitivity_v1.csv`, `data/modeling_k2/k2_forensic_readiness_audit_v1.csv`, `data/modeling_k2/k2_label_permutation_sanity_v1.csv`, and `data/modeling_k2/k2_final_vs_b0_comparison_v1.csv`.
