@@ -1,0 +1,5 @@
+# Section 4.7 Figure Caption
+
+**Figure 4.9. XGBoost comparison and refinement results, TRAIN-only grouped cross-validation.** The figure compares the Phase H2 refined Random Forest benchmark, the Phase I XGBoost candidate, and the Phase I2 refined XGBoost candidate under the frozen V4/I1 feature and weighting framework. The left panel reports incident Macro F1, with the Phase I2 error bar representing the recorded multi-seed standard deviation (0.002042). The right panel reports Top-2 accuracy and MRR, which were available consistently across all three stages. Refined XGBoost improved incident Macro F1 over the refined RF benchmark by 0.021089. These are TRAIN-only development results; Validation and Final Holdout were not accessed or recomputed.
+
+Source artifacts: `data/modeling/xgb_i2_vs_refined_rf_v1.csv`, `data/modeling/rf_multiseed_stability_results_v1.csv`, `data/modeling/xgb_i2_final_comparison_v1.csv`, `data/modeling/xgb_multiseed_stability_results_v2.csv`, and `config/final_model_candidate_v3_1_xgb_refined.yaml`.

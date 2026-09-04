@@ -1,0 +1,10 @@
+hyperparameter,value,source_artifact
+n_estimators,600,config/final_model_candidate_v3_1_xgb_refined.yaml
+max_depth,6,config/final_model_candidate_v3_1_xgb_refined.yaml
+learning_rate,0.125,config/final_model_candidate_v3_1_xgb_refined.yaml
+subsample,0.9,config/final_model_candidate_v3_1_xgb_refined.yaml
+colsample_bytree,0.9,config/final_model_candidate_v3_1_xgb_refined.yaml
+min_child_weight,1,config/final_model_candidate_v3_1_xgb_refined.yaml
+gamma,0,config/final_model_candidate_v3_1_xgb_refined.yaml
+reg_alpha,0.01,config/final_model_candidate_v3_1_xgb_refined.yaml
+reg_lambda,2.0,config/final_model_candidate_v3_1_xgb_refined.yaml

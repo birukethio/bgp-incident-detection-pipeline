@@ -1,0 +1,52 @@
+metric,value,model_stage,source_file,source_field_or_row,authoritative_status
+n_estimators,600,Phase I2 refined XGBoost configuration,config/final_model_candidate_v3_1_xgb_refined.yaml,selected_hyperparameters.n_estimators,PASS_MATCHES_PHASE_I2_ARTIFACT
+max_depth,6,Phase I2 refined XGBoost configuration,config/final_model_candidate_v3_1_xgb_refined.yaml,selected_hyperparameters.max_depth,PASS_MATCHES_PHASE_I2_ARTIFACT
+learning_rate,0.125,Phase I2 refined XGBoost configuration,config/final_model_candidate_v3_1_xgb_refined.yaml,selected_hyperparameters.learning_rate,PASS_MATCHES_PHASE_I2_ARTIFACT
+subsample,0.9,Phase I2 refined XGBoost configuration,config/final_model_candidate_v3_1_xgb_refined.yaml,selected_hyperparameters.subsample,PASS_MATCHES_PHASE_I2_ARTIFACT
+colsample_bytree,0.9,Phase I2 refined XGBoost configuration,config/final_model_candidate_v3_1_xgb_refined.yaml,selected_hyperparameters.colsample_bytree,PASS_MATCHES_PHASE_I2_ARTIFACT
+min_child_weight,1,Phase I2 refined XGBoost configuration,config/final_model_candidate_v3_1_xgb_refined.yaml,selected_hyperparameters.min_child_weight,PASS_MATCHES_PHASE_I2_ARTIFACT
+gamma,0,Phase I2 refined XGBoost configuration,config/final_model_candidate_v3_1_xgb_refined.yaml,selected_hyperparameters.gamma,PASS_MATCHES_PHASE_I2_ARTIFACT
+reg_alpha,0.01,Phase I2 refined XGBoost configuration,config/final_model_candidate_v3_1_xgb_refined.yaml,selected_hyperparameters.reg_alpha,PASS_MATCHES_PHASE_I2_ARTIFACT
+reg_lambda,2.0,Phase I2 refined XGBoost configuration,config/final_model_candidate_v3_1_xgb_refined.yaml,selected_hyperparameters.reg_lambda,PASS_MATCHES_PHASE_I2_ARTIFACT
+incident_macro_f1,0.784588,Phase H2 refined RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=RandomForest; configuration=RF_REFINED_TRAIN_CANDIDATE; field=incident_macro_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+incident_top1,0.787513,Phase H2 refined RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=RandomForest; configuration=RF_REFINED_TRAIN_CANDIDATE; field=incident_top1,PASS_AUTHORITATIVE_TRAIN_ONLY
+incident_top2,0.932931,Phase H2 refined RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=RandomForest; configuration=RF_REFINED_TRAIN_CANDIDATE; field=incident_top2,PASS_AUTHORITATIVE_TRAIN_ONLY
+incident_mrr,0.882578,Phase H2 refined RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=RandomForest; configuration=RF_REFINED_TRAIN_CANDIDATE; field=incident_mrr,PASS_AUTHORITATIVE_TRAIN_ONLY
+hijack_f1,0.721923,Phase H2 refined RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=RandomForest; configuration=RF_REFINED_TRAIN_CANDIDATE; field=hijack_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+leak_f1,0.841110,Phase H2 refined RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=RandomForest; configuration=RF_REFINED_TRAIN_CANDIDATE; field=leak_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+outage_f1,0.790732,Phase H2 refined RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=RandomForest; configuration=RF_REFINED_TRAIN_CANDIDATE; field=outage_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+window_macro_f1,0.679524,Phase H2 refined RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=RandomForest; configuration=RF_REFINED_TRAIN_CANDIDATE; field=window_macro_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+fit_time_seconds,399.192,Phase H2 refined RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=RandomForest; configuration=RF_REFINED_TRAIN_CANDIDATE; field=fit_time_seconds,PASS_AUTHORITATIVE_TRAIN_ONLY
+inference_time_seconds,1.321,Phase H2 refined RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=RandomForest; configuration=RF_REFINED_TRAIN_CANDIDATE; field=inference_time_seconds,PASS_AUTHORITATIVE_TRAIN_ONLY
+incident_macro_f1,0.799599,Phase I XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASE_I_XGB_WINNER; field=incident_macro_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+macro_f1_std,0.000000,Phase I XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASE_I_XGB_WINNER; field=macro_f1_std,PASS_AUTHORITATIVE_TRAIN_ONLY
+incident_top1,0.800604,Phase I XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASE_I_XGB_WINNER; field=incident_top1,PASS_AUTHORITATIVE_TRAIN_ONLY
+incident_top2,0.933535,Phase I XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASE_I_XGB_WINNER; field=incident_top2,PASS_AUTHORITATIVE_TRAIN_ONLY
+incident_mrr,0.889225,Phase I XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASE_I_XGB_WINNER; field=incident_mrr,PASS_AUTHORITATIVE_TRAIN_ONLY
+hijack_f1,0.751269,Phase I XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASE_I_XGB_WINNER; field=hijack_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+leak_f1,0.848580,Phase I XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASE_I_XGB_WINNER; field=leak_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+outage_f1,0.798949,Phase I XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASE_I_XGB_WINNER; field=outage_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+window_macro_f1,0.677656,Phase I XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASE_I_XGB_WINNER; field=window_macro_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+fit_time_seconds,21.699,Phase I XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASE_I_XGB_WINNER; field=fit_time_seconds,PASS_AUTHORITATIVE_TRAIN_ONLY
+inference_time_seconds,0.158,Phase I XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASE_I_XGB_WINNER; field=inference_time_seconds,PASS_AUTHORITATIVE_TRAIN_ONLY
+incident_macro_f1,0.805678,Phase I2 refined XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASEI2_XGB_LOCAL_004; field=incident_macro_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+macro_f1_std,0.002042,Phase I2 refined XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASEI2_XGB_LOCAL_004; field=macro_f1_std,PASS_AUTHORITATIVE_TRAIN_ONLY
+incident_top1,0.807049,Phase I2 refined XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASEI2_XGB_LOCAL_004; field=incident_top1,PASS_AUTHORITATIVE_TRAIN_ONLY
+incident_top2,0.934743,Phase I2 refined XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASEI2_XGB_LOCAL_004; field=incident_top2,PASS_AUTHORITATIVE_TRAIN_ONLY
+incident_mrr,0.892649,Phase I2 refined XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASEI2_XGB_LOCAL_004; field=incident_mrr,PASS_AUTHORITATIVE_TRAIN_ONLY
+hijack_f1,0.756196,Phase I2 refined XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASEI2_XGB_LOCAL_004; field=hijack_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+leak_f1,0.851923,Phase I2 refined XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASEI2_XGB_LOCAL_004; field=leak_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+outage_f1,0.808913,Phase I2 refined XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASEI2_XGB_LOCAL_004; field=outage_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+window_macro_f1,0.680619,Phase I2 refined XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASEI2_XGB_LOCAL_004; field=window_macro_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+fit_time_seconds,32.989,Phase I2 refined XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASEI2_XGB_LOCAL_004; field=fit_time_seconds,PASS_AUTHORITATIVE_TRAIN_ONLY
+inference_time_seconds,0.215,Phase I2 refined XGBoost,data/modeling/xgb_i2_final_comparison_v1.csv,candidate_id=PHASEI2_XGB_LOCAL_004; field=inference_time_seconds,PASS_AUTHORITATIVE_TRAIN_ONLY
+macro_f1_std_source,0.001342,Phase H2 refined RF,data/modeling/rf_multiseed_stability_results_v1.csv,candidate_id=H2_LOCAL_001; field=std_incident_macro_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+delta_Macro F1,0.02108922959793469,Phase I2 XGB minus Phase H2 RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=DELTA_XGB_MINUS_RF; metric=Macro F1,PASS_AUTHORITATIVE_TRAIN_ONLY
+delta_Top-1,0.01953675730110782,Phase I2 XGB minus Phase H2 RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=DELTA_XGB_MINUS_RF; metric=Top-1,PASS_AUTHORITATIVE_TRAIN_ONLY
+delta_Top-2,0.0018126888217523396,Phase I2 XGB minus Phase H2 RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=DELTA_XGB_MINUS_RF; metric=Top-2,PASS_AUTHORITATIVE_TRAIN_ONLY
+delta_MRR,0.010070493454179541,Phase I2 XGB minus Phase H2 RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=DELTA_XGB_MINUS_RF; metric=MRR,PASS_AUTHORITATIVE_TRAIN_ONLY
+delta_Hijack F1,0.03427376528741077,Phase I2 XGB minus Phase H2 RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=DELTA_XGB_MINUS_RF; metric=Hijack F1,PASS_AUTHORITATIVE_TRAIN_ONLY
+delta_Leak F1,0.01081283594386706,Phase I2 XGB minus Phase H2 RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=DELTA_XGB_MINUS_RF; metric=Leak F1,PASS_AUTHORITATIVE_TRAIN_ONLY
+delta_Outage F1,0.018181087562526344,Phase I2 XGB minus Phase H2 RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=DELTA_XGB_MINUS_RF; metric=Outage F1,PASS_AUTHORITATIVE_TRAIN_ONLY
+delta_fit runtime seconds,-366.203,Phase I2 XGB minus Phase H2 RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=DELTA_XGB_MINUS_RF; metric=fit runtime seconds,PASS_AUTHORITATIVE_TRAIN_ONLY
+delta_inference runtime seconds,-1.1058,Phase I2 XGB minus Phase H2 RF,data/modeling/xgb_i2_vs_refined_rf_v1.csv,algorithm=DELTA_XGB_MINUS_RF; metric=inference runtime seconds,PASS_AUTHORITATIVE_TRAIN_ONLY
