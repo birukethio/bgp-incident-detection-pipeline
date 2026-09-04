@@ -232,16 +232,22 @@ def draw_stability(seed_rows: list[dict[str, str]], multi: list[dict[str, str]],
         ("mrr", "MRR", COLORS["mrr"]),
     ]
     multi_lookup = {row["metric"]: row for row in multi}
-    left = int(170 * scale)
-    top = int((350 if include_text else 130) * scale)
-    right = int(2240 * scale)
-    bottom = int((1110 if include_text else 1680) * scale)
+    if include_text:
+        left = int(170 * scale)
+        top = int(350 * scale)
+        right = int(2240 * scale)
+        bottom = int(1110 * scale)
+    else:
+        left = int(240 * scale)
+        top = int(150 * scale)
+        right = int(2160 * scale)
+        bottom = int(1300 * scale)
     ymin, ymax = 0.90, 1.00
     for idx in range(6):
         val = ymin + (ymax - ymin) * idx / 5
         y = bottom - int((val - ymin) / (ymax - ymin) * (bottom - top))
         draw.line((left, y, right, y), fill=COLORS["grid"], width=max(2, int(2 * scale)))
-        draw.text((int(72 * scale), y - int(11 * scale)), f"{val:.2f}", font=font(int(15 * scale)), fill=COLORS["muted"])
+        draw.text((int(72 * scale), y - int(14 * scale)), f"{val:.2f}", font=font(int((15 if include_text else 22) * scale)), fill=COLORS["muted"])
     draw.line((left, top, left, bottom), fill=COLORS["axis"], width=max(3, int(3 * scale)))
     draw.line((left, bottom, right, bottom), fill=COLORS["axis"], width=max(3, int(3 * scale)))
 
@@ -249,8 +255,8 @@ def draw_stability(seed_rows: list[dict[str, str]], multi: list[dict[str, str]],
     x_gap = (right - left) / (len(seeds) - 1)
     xs = [int(left + i * x_gap) for i in range(len(seeds))]
     for x, seed in zip(xs, seeds):
-        draw.text((x - int(54 * scale), bottom + int(34 * scale)), seed[-2:], font=font(int(17 * scale)), fill=COLORS["ink"])
-    draw.text((int((left + right) / 2 - 120 * scale), bottom + int(84 * scale)), "Seed suffix", font=font(int(17 * scale)), fill=COLORS["muted"])
+        draw.text((x - int(54 * scale), bottom + int(34 * scale)), seed[-2:], font=font(int((17 if include_text else 24) * scale)), fill=COLORS["ink"])
+    draw.text((int((left + right) / 2 - 120 * scale), bottom + int(84 * scale)), "Seed suffix", font=font(int((17 if include_text else 23) * scale)), fill=COLORS["muted"])
 
     mean_label_offsets = {
         "incident_macro_f1": int(34 * scale),
@@ -265,30 +271,31 @@ def draw_stability(seed_rows: list[dict[str, str]], multi: list[dict[str, str]],
             y = bottom - int((value - ymin) / (ymax - ymin) * (bottom - top))
             pts.append((x, y, value))
         for (x0, y0, _), (x1, y1, _) in zip(pts, pts[1:]):
-            draw.line((x0, y0, x1, y1), fill=color, width=max(4, int(4 * scale)))
+            draw.line((x0, y0, x1, y1), fill=color, width=max(4, int((4 if include_text else 6) * scale)))
         for x, y, _ in pts:
-            r = max(7, int(8 * scale))
+            r = max(7, int((8 if include_text else 12) * scale))
             draw.ellipse((x - r, y - r, x + r, y + r), fill=color)
         mean = f(multi_lookup[field], "mean")
         mean_y = bottom - int((mean - ymin) / (ymax - ymin) * (bottom - top))
         dash = int(18 * scale)
         cursor = left
         while cursor < right:
-            draw.line((cursor, mean_y, min(cursor + dash, right), mean_y), fill=color, width=max(2, int(2 * scale)))
+            draw.line((cursor, mean_y, min(cursor + dash, right), mean_y), fill=color, width=max(2, int((2 if include_text else 4) * scale)))
             cursor += dash * 2
         draw.text(
-            (right - int(125 * scale), mean_y + mean_label_offsets[field]),
+            (right - int((125 if include_text else 175) * scale), mean_y + mean_label_offsets[field]),
             f"{label} mean {mean:.3f}",
-            font=font(int(14 * scale)),
+            font=font(int((14 if include_text else 20) * scale)),
             fill=color,
         )
 
-    legend_x = int(620 * scale)
-    legend_y = int((1210 if include_text else 1950) * scale)
+    legend_x = int((620 if include_text else 520) * scale)
+    legend_y = int((1210 if include_text else 1500) * scale)
     for i, (_, label, color) in enumerate(metrics):
-        x = legend_x + int(i * 290 * scale)
-        draw.rectangle((x, legend_y, x + int(25 * scale), legend_y + int(25 * scale)), fill=color)
-        draw.text((x + int(40 * scale), legend_y - int(4 * scale)), label, font=font(int(18 * scale)), fill=COLORS["ink"])
+        x = legend_x + int(i * (290 if include_text else 335) * scale)
+        swatch = int((25 if include_text else 34) * scale)
+        draw.rectangle((x, legend_y, x + swatch, legend_y + swatch), fill=color)
+        draw.text((x + int((40 if include_text else 52) * scale), legend_y - int(4 * scale)), label, font=font(int((18 if include_text else 25) * scale)), fill=COLORS["ink"])
 
     if include_text:
         draw_wrapped(draw, (int(100 * scale), int(1300 * scale)), "Across five seeds, the selected K1 architecture remained stable: Macro F1 varied by 0.006055, Top-2 by 0.002014, and the forensic audit reported no detected Level-1 or Level-2 leakage.", 152, font(int(18 * scale)), COLORS["muted"])
@@ -318,10 +325,7 @@ def main() -> None:
 
     fig = draw_stability(seed_rows, multi, 2400, 1500, True)
     save_outputs(fig, FIG_PNG, FIG_PDF)
-    jpg_full = draw_stability(seed_rows, multi, 3600, 2250, True)
-    # Chart-only export for Word: remove title/subtitle and bottom prose/source
-    # while preserving axes, seed labels, legend, and mean annotations.
-    jpg = jpg_full.crop((0, 430, 3600, 1885))
+    jpg = draw_stability(seed_rows, multi, 3000, 2100, False)
     save_jpg(jpg, FIG_JPG)
 
     m = {row["metric"]: row for row in multi}
