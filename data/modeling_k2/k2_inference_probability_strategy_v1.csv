@@ -1,0 +1,2 @@
+recommended_strategy,oof_fulltrain_shift_concerning,notes
+CROSSFIT_ENSEMBLE_FIRST_LEVEL,True,Use crossfit ensemble if full-TRAIN probabilities are materially shifted from OOF meta-training probabilities.

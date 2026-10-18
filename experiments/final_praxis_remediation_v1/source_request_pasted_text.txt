@@ -1,0 +1,443 @@
+Experimental development is now closed.
+The objective of this task is not to perform additional modeling, retraining, tuning, validation, or data modification.
+The objective is to consolidate the professor/advisor feedback and all completed remediation work into a single authoritative package that will drive:
+1.  the final Praxis revision; 
+2.  Chapters 1–5 restructuring; 
+3.  appendix construction; 
+4.  table/figure selection; 
+5.  references and citation remediation; 
+6.  final defense presentation. 
+Create a new additive workspace:
+experiments/final_praxis_remediation_v1/
+Do not:
+-  retrain any model; 
+-  score any new incident; 
+-  modify TRAIN; 
+-  modify Validation; 
+-  modify Final Holdout; 
+-  modify the 1,419-event corpus; 
+-  modify the IEC roster; 
+-  alter labels; 
+-  change features; 
+-  change model artifacts; 
+-  recompute official results; 
+-  change TTI; 
+-  recalibrate; 
+-  alter any completed audit; 
+-  overwrite existing figures/tables; 
+-  modify the current Praxis manuscript. 
+This task is inventory, reconciliation, mapping, and manuscript planning only.
+Existing experimental outputs are authoritative.
+Search the project workspace and inventory all completed remediation packages, including at minimum:
+-  label provenance audit; 
+-  Cloudflare label-entry trace; 
+-  provenance manuscript package; 
+-  natural-distribution/prior-shift sensitivity; 
+-  early-horizon/TTI experiment; 
+-  TTI final verification; 
+-  corpus-balancing audit; 
+-  calibration audit; 
+-  Hijack:68538 forensic audit; 
+-  partition-independence audit; 
+-  reproducibility audit; 
+-  final incident-level error analysis; 
+-  independent-validation V1 audit/lock/stopped execution; 
+-  independent-validation V2 candidate acquisition; 
+-  source-separated IEC construction; 
+-  implementation-equivalence audits; 
+-  Level-2 artifact search; 
+-  Level-2 external-validation closure; 
+-  Level-1 IEC stopped/inconclusive execution; 
+-  cross-source label validation; 
+-  targeted Hijack/Leak cross-source expansion; 
+-  all existing Chapter 3/4/5 manuscript-ready snippets; 
+-  all manuscript-ready tables; 
+-  all manuscript-ready figures. 
+For every package record:
+package_name
+path
+purpose
+primary_question_answered
+key_result
+final_disposition
+manuscript_relevance
+defense_relevance
+authoritative_artifacts
+Create:
+MASTER_REMEDIATION_ARTIFACT_INVENTORY_v1.csv
+Recover the professor/advisor feedback from the available assessment/review materials and existing project notes.
+Do not invent feedback.
+For every distinct professor concern create one row containing:
+Feedback_ID
+Professor_Feedback
+Underlying_Risk
+Original_Praxis_Problem
+Remediation_Action
+Authoritative_Evidence
+Key_Result
+Limitation
+Final_Status
+Praxis_Chapter
+Praxis_Section
+Table
+Figure
+Appendix_Material
+Defense_Slide
+Defense_Talking_Point
+Allowed status values:
+ADDRESSED
+ADDRESSED_WITH_DOCUMENTED_LIMITATION
+PARTIALLY_ADDRESSED
+INCONCLUSIVE
+MANUSCRIPT_REMEDIATION_REQUIRED
+Do not label an item ADDRESSED when the evidence supports only partial closure.
+Specifically include the following major concerns where supported by the professor's feedback:
+-  Cloudflare label provenance; 
+-  label/feature dependence; 
+-  direct target leakage; 
+-  class balancing; 
+-  observed natural class distribution; 
+-  incident weighting; 
+-  train/development/holdout split; 
+-  partition independence; 
+-  independent/source-separated confirmation; 
+-  H1/H2/H3 confirmation; 
+-  five-minute analytical horizon; 
+-  TTI; 
+-  real-time versus retrospective claims; 
+-  Level-2 temporal causality; 
+-  calibration/probability terminology; 
+-  Hijack:68538; 
+-  reproducibility; 
+-  feature dictionary; 
+-  incident-level error analysis; 
+-  external validation; 
+-  root-cause terminology; 
+-  enterprise-network claims; 
+-  page-count compliance; 
+-  obsolete methodology/results; 
+-  references/citations; 
+-  figure/table numbering; 
+-  manuscript/template integrity. 
+Create:
+FINAL_PROFESSOR_FEEDBACK_REMEDIATION_MATRIX_v1.csv
+FINAL_PROFESSOR_FEEDBACK_REMEDIATION_MATRIX_v1.md
+and a readable:
+FINAL_PROFESSOR_FEEDBACK_REMEDIATION_MATRIX_v1.docx
+Create one authoritative results registry.
+Search completed experiment artifacts and record the final verified values for:
+-  raw Hijack count; 
+-  raw Leak count; 
+-  raw Outage count; 
+-  usable pre-balancing counts; 
+-  balanced counts; 
+-  final 1,419 total; 
+-  TRAIN; 
+-  Validation; 
+-  Final Holdout; 
+-  duplicate-collapse counts. 
+-  Behavioral count; 
+-  CAIDA count; 
+-  RPKI/ROV count; 
+-  total V4 count. 
+-  Macro F1; 
+-  Top-1; 
+-  Top-2; 
+-  MRR; 
+-  per-class F1; 
+-  confusion matrix; 
+-  any authoritative CI. 
+-  30 sec; 
+-  60 sec; 
+-  120 sec; 
+-  300 sec; 
+-  600 sec; 
+-  900 sec; 
+-  Top-1 cumulative TTI; 
+-  Top-2 cumulative TTI; 
+-  horizon Macro F1. 
+-  Brier; 
+-  log loss; 
+-  ECE; 
+-  mean Top-1 confidence; 
+-  observed Top-1 accuracy. 
+-  Final Holdout Top-1 errors; 
+-  class-specific error rates; 
+-  dominant confusion; 
+-  Top-2 rescue. 
+-  observed collected-source proportions; 
+-  Macro F1; 
+-  weighted F1; 
+-  Top-1; 
+-  Top-2; 
+-  MRR. 
+-  incidents searched; 
+-  independently corroborated; 
+-  class composition; 
+-  exact agreement; 
+-  κ; 
+-  limitations. 
+-  initial candidates; 
+-  final source-separated roster; 
+-  H/L/O counts; 
+-  Cloudflare-primary count; 
+-  overlap count; 
+-  external scoring outcome. 
+Create:
+AUTHORITATIVE_RESULTS_REGISTRY_v1.csv
+Every value must include:
+metric
+value
+population
+experiment
+source_artifact
+manuscript_usage
+notes
+If conflicting historical numbers exist, identify them and select the authoritative value based on the latest verified/frozen artifact.
+Never silently reconcile conflicting numbers.
+Create three categories:
+Examples only where evidence supports them:
+-  H/L/O classification and ranking; 
+-  incident-level Final Holdout performance; 
+-  ranking utility; 
+-  five-minute practical analytical tradeoff; 
+-  early Level-1 classification evidence; 
+-  direct target leakage not detected; 
+-  partition independence; 
+-  cross-source corroboration for matched events. 
+Include where appropriate:
+-  normalized class probabilities; 
+-  label-source validity; 
+-  reproducibility; 
+-  class-prior robustness; 
+-  cross-source label agreement. 
+Explicitly evaluate:
+-  true root-cause determination; 
+-  live enterprise deployment; 
+-  prospective Level-2 classification; 
+-  universal cross-enterprise generalization; 
+-  global Internet incident prevalence; 
+-  external validation of Level 2; 
+-  external Level-1 performance; 
+-  externally confirmed H3. 
+Create:
+FINAL_RESEARCH_CLAIMS_BOUNDARY_v1.md
+This document must state exactly what the Praxis can and cannot claim.
+Map all final evidence into Chapters 1–5.
+Identify:
+-  title changes; 
+-  problem statement changes; 
+-  thesis statement; 
+-  research questions; 
+-  H1/H2/H3 wording; 
+-  contribution claims; 
+-  terminology corrections; 
+-  enterprise/root-cause claim narrowing. 
+Identify:
+-  literature gaps; 
+-  closest-work comparison; 
+-  Cloudflare methodology; 
+-  BGP incident labeling; 
+-  source/domain dependence; 
+-  class imbalance; 
+-  calibration; 
+-  early time-series classification; 
+-  TTI; 
+-  recent BGP ML research; 
+-  streaming/BMP/Kafka future-work literature. 
+Map:
+-  1,419 corpus construction; 
+-  quality-stratified 473/class selection; 
+-  duplicate remediation; 
+-  label provenance; 
+-  partitioning; 
+-  leakage controls; 
+-  RouteViews; 
+-  five-minute windows; 
+-  74 features; 
+-  CAIDA; 
+-  RPKI; 
+-  I1; 
+-  Level 1; 
+-  retrospective Level 2; 
+-  grouped/nested CV; 
+-  metrics; 
+-  TTI methodology; 
+-  reproducibility. 
+Map:
+-  corpus results; 
+-  imbalance; 
+-  feature comparison; 
+-  model comparison; 
+-  Level-2 temporal aggregation; 
+-  Validation; 
+-  Final Holdout; 
+-  calibration; 
+-  error analysis; 
+-  TTI; 
+-  prior-shift sensitivity; 
+-  cross-source label validation; 
+-  independent IEC outcome; 
+-  hypothesis disposition. 
+Map:
+-  interpretation; 
+-  contribution; 
+-  Cloudflare/source dependence; 
+-  balancing; 
+-  calibration; 
+-  validation drop; 
+-  error patterns; 
+-  retrospective Level 2; 
+-  external-validation limitation; 
+-  TTI implications; 
+-  real-time future architecture; 
+-  Kafka/BMP; 
+-  incremental features; 
+-  TTSC; 
+-  external enterprise validation; 
+-  future causal temporal model. 
+Create:
+FINAL_MANUSCRIPT_INTEGRATION_MAP_v1.md
+and:
+FINAL_MANUSCRIPT_INTEGRATION_MAP_v1.csv
+Inventory every existing manuscript-ready table and figure.
+For each record:
+ID
+Current_Title
+Source_Artifact
+Recommended_Final_Title
+Chapter
+Section
+KEEP_MAIN_TEXT
+MOVE_APPENDIX
+REMOVE_OBSOLETE
+REGENERATE
+Reason
+Specifically identify:
+-  corpus construction/balancing table; 
+-  label provenance table; 
+-  provenance architecture figure; 
+-  partition-independence table; 
+-  feature-family table; 
+-  model-performance tables; 
+-  Final Holdout table; 
+-  confusion matrix; 
+-  calibration figure; 
+-  error-analysis figures; 
+-  TTI performance figure; 
+-  TTI cumulative figure; 
+-  prior-shift table; 
+-  cross-source label-validation figure; 
+-  IEC architecture figure; 
+-  future Kafka/BMP/TTI/TTSC architecture. 
+Avoid redundant figures.
+Main chapters should contain only figures/tables necessary to answer research questions.
+Forensic/audit detail should go to appendices.
+Create:
+FINAL_TABLE_FIGURE_INVENTORY_v1.csv
+FINAL_TABLE_FIGURE_INVENTORY_v1.md
+Create the recommended appendix structure.
+Consider:
+-  Appendix A — 74-Feature Dictionary; 
+-  Appendix B — Dataset Provenance and Quality Controls; 
+-  Appendix C — Reproducibility Specification; 
+-  Appendix D — Additional Model Results; 
+-  Appendix E — Calibration Diagnostics; 
+-  Appendix F — Error Analysis; 
+-  Appendix G — TTI/Early-Horizon Supplemental Results; 
+-  Appendix H — Cross-Source Label Validation; 
+-  Appendix I — Independent External Confirmation Audit; 
+-  Appendix J — Additional Tables/Figures. 
+Optimize appendix usage to help Chapters 1–5 meet the required page limit.
+Create:
+FINAL_APPENDIX_PLAN_v1.md
+The professor requires Chapters 1–5 to meet the Praxis page limit.
+Analyze the current manuscript structure and identify:
+-  redundant methodology; 
+-  duplicate results; 
+-  excessive experiment history; 
+-  obsolete Random Forest material; 
+-  obsolete 49-feature material; 
+-  repeated tables; 
+-  repeated figures; 
+-  material that should move to appendices; 
+-  material that can be condensed. 
+Produce a chapter-level target:
+Chapter 1 target pages
+Chapter 2 target pages
+Chapter 3 target pages
+Chapter 4 target pages
+Chapter 5 target pages
+Total Chapters 1–5 target:
+80–100 pages
+Create:
+FINAL_PAGE_REDUCTION_PLAN_v1.md
+Do not shrink fonts/margins to achieve compliance.
+Do not yet rewrite the bibliography.
+Audit:
+-  in-text citations without references; 
+-  references never cited; 
+-  malformed APA entries; 
+-  DOI inconsistencies; 
+-  publication-year inconsistencies; 
+-  duplicate references; 
+-  placeholder references; 
+-  missing recent research; 
+-  web/vendor sources requiring authoritative URLs; 
+-  peer-reviewed sources supporting TTI, BGP anomaly detection, calibration, provenance/source dependence, RPKI, route leaks, hijacks, outages, streaming, and explainability. 
+Create:
+FINAL_REFERENCE_REMEDIATION_PLAN_v1.csv
+and:
+FINAL_REFERENCE_REMEDIATION_SUMMARY_v1.md
+Reduce the entire research project into a defensible presentation narrative.
+Map approximately 12–15 core defense slides:
+1.  Problem; 
+2.  Research gap; 
+3.  Research questions/hypotheses; 
+4.  Dataset; 
+5.  Feature architecture; 
+6.  Model architecture; 
+7.  Experimental controls; 
+8.  Final performance; 
+9.  Error/ranking analysis; 
+10.  TTI; 
+11.  Advisor concerns and remediation; 
+12.  Label provenance/source validation; 
+13.  Limitations; 
+14.  Future real-time BGP/BMP/Kafka architecture; 
+15.  Contributions/conclusion. 
+For each slide identify:
+-  objective; 
+-  3–5 bullets maximum; 
+-  table/figure; 
+-  authoritative result; 
+-  likely committee question; 
+-  defense response. 
+Create:
+FINAL_DEFENSE_EVIDENCE_MAP_v1.md
+Create one dedicated slide concept:
+Advisor Feedback and Technical Remediation
+Condense the major concerns into approximately:
+-  Label provenance/source dependence; 
+-  Class balancing; 
+-  TTI/five-minute horizon; 
+-  Partition independence; 
+-  Calibration; 
+-  Reproducibility; 
+-  Error analysis; 
+-  External validation. 
+For each show:
+Concern → Action → Result
+Keep it readable on one slide.
+Create:
+ADVISOR_FEEDBACK_DEFENSE_SLIDE_v1.md
+Produce:
+FINAL_PRAXIS_REMEDIATION_STATUS_v1.md
+Divide all work into:
+Explicitly state:
+EXPERIMENTAL DEVELOPMENT CLOSED
+No additional modeling should be recommended unless a demonstrable implementation error is discovered.
+At minimum create:
+- MASTER_REMEDIATION_ARTIFACT_INVENTORY_v1.csv 
+- FINAL_PROFESSOR_FEEDBACK_REMEDIATION_MATRIX_v1.csv 
+-  `FINAL

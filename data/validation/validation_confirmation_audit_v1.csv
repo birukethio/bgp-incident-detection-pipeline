@@ -1,0 +1,9 @@
+check,status,notes
+protocol_verified_before_validation_access,PASS,config/validation_confirmation_protocol_v4.yaml
+candidate_locked,PASS,XGB_REFINED_TRAIN_CANDIDATE
+train_only_fit,PASS,993 TRAIN incidents
+validation_not_used_for_fit,PASS,Validation used for one confirmation pass only
+holdout_sealed,PASS,Holdout feature/prediction paths not loaded
+feature_count_74,PASS,74
+acceptance_floors,PASS,VALIDATION_CONFIRMATION_PASS
+nothing_changed_after_results,PASS,"No candidate, feature, hyperparameter, weighting, aggregation, or ranking change performed"

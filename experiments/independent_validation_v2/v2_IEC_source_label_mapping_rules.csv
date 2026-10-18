@@ -1,0 +1,9 @@
+mapping_rule_id,source_native_pattern,mapped_study_class,confidence,notes
+H1_HIJACK_EXPLICIT,\b(bgp\s+)?(route\s+|prefix\s+|origin\s+)?hijack(?:ed|ing)?\b,Hijack,EXPLICIT,Explicit source-native hijack terminology.
+H2_UNAUTHORIZED_ORIGIN,\bunauthori[sz]ed\s+(origin(?:ation)?s?|prefix(?:es)?|announcement(?:s)?)\b|\bwrong[-\s]?origin\b,Hijack,EXPLICIT,Explicit unauthorized/wrong-origin label evidence maps deterministically to Hijack.
+H3_WELL_KNOWN_HIJACK_CASE,\byoutube\s+hijack\b|\bpaker?stan\s+telecom\s*/\s*youtube\b,Hijack,EXPLICIT,Named public incident is source-native hijack terminology in the candidate record.
+L1_ROUTE_LEAK_EXPLICIT,\b(bgp\s+)?route\s+leak(?:age|ed|ing)?\b|\bleaked\s+(?:upstream\s+)?(?:prefix|prefixes|routes)\b|\bleaking\s+(?:thousands\s+of\s+)?prefixes\b,Leak,EXPLICIT,Explicit source-native route-leak terminology.
+L2_EXPORT_POLICY_LEAK,\bexport[-\s]?policy\s+leak\b|\bpolicy/export\s+violation\b|\bleak\s+between\s+upstreams\b,Leak,EXPLICIT,Explicit policy/export leak description maps deterministically to Leak.
+O1_AS_SCOPED_OUTAGE_EXPLICIT,\b(as[-\s]?scoped\s+)?(?:internet\s+)?outage\b.*\bbgp[-\s]?visible\b|\bbgp[-\s]?visible\b.*\boutage\b,Outage,EXPLICIT,Explicit outage with BGP visibility / Internet reachability loss for an identified ASN.
+O2_MANUALLY_VERIFIED_IODA_OUTAGE,\bioda\s+manually\s+verified\b.*\boutage\b|\bmanually\s+verified\s+ioda\s+outage\b,Outage,EXPLICIT,IODA manually verified AS-scoped outage source record.
+X1_AMBIGUOUS_GENERIC_ROUTING_EVENT,\b(anomaly|routing\s+incident|routing\s+instability|connectivity\s+event)\b,EXCLUDE,AMBIGUOUS,Generic labels do not deterministically map to H/L/O.

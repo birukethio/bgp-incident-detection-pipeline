@@ -1,0 +1,4 @@
+class,total_candidates_found,accepted_new_independent,routeviews_available_accepted,target_min_15_met,target_prefer_20_met,at_least_two_sources,rejected,ambiguous,possible_overlap_review
+Hijack,19,18,18,YES,NO,15,0,1,0
+Leak,27,25,25,YES,YES,18,1,1,0
+Outage,30,30,30,YES,YES,NA,0,0,0

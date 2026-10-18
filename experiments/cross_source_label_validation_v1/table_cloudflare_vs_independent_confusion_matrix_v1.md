@@ -1,0 +1,5 @@
+| cloudflare_label   |   Hijack |   Leak |   Outage |
+|:-------------------|---------:|-------:|---------:|
+| Hijack             |        0 |      0 |        0 |
+| Leak               |        0 |      1 |        0 |
+| Outage             |        0 |      0 |       58 |

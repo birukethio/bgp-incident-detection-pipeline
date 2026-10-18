@@ -1,0 +1,3 @@
+|comparison|delta_macro_f1|ci|decision|
+|---|---|---|---|
+|Mean aggregation vs RETROSPECTIVE temporal stacker|NA|NA|INCONCLUSIVE|

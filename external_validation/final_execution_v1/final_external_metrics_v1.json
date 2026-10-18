@@ -1,0 +1,42 @@
+{
+  "evaluable_n": 18,
+  "class_counts": {
+    "Hijack": 3,
+    "Leak": 5,
+    "Outage": 10
+  },
+  "headline": {
+    "macro_f1": 0.41269841269841273,
+    "top1_accuracy": 0.5555555555555556,
+    "top2_accuracy": 0.7222222222222222,
+    "mrr": 0.7314814814814814,
+    "mean_true_class_rank": 1.7222222222222223
+  },
+  "per_class": {
+    "Hijack": {
+      "precision": 0.5,
+      "recall": 0.6666666666666666,
+      "f1": 0.5714285714285714,
+      "support": 3
+    },
+    "Leak": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 5
+    },
+    "Outage": {
+      "precision": 0.5714285714285714,
+      "recall": 0.8,
+      "f1": 0.6666666666666666,
+      "support": 10
+    }
+  },
+  "top1_errors": 8,
+  "top2_rescues": 3,
+  "true_class_rank_distribution": {
+    "1": 10,
+    "2": 3,
+    "3": 5
+  }
+}

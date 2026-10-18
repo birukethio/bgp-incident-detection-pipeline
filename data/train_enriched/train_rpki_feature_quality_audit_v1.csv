@@ -1,0 +1,17 @@
+feature_name,row_count,missing_count,missing_rate,zero_count,zero_rate,min,median,mean,p95,max,unique_values,constant,sparse,invalid,status
+rpki_evidence_observation_count,68031,0,0.0,30684,45.103,0,3.0,1897.9448192735665,9113.0,3467730,9071,False,False,0,PASS
+rpki_evaluable_observation_count,68031,0,0.0,30710,45.141,0,3.0,1882.3125780894004,9003.5,3467730,9019,False,False,0,PASS
+rpki_valid_observation_count,68031,0,0.0,36296,53.352,0,0.0,1222.138128206259,5213.5,1746066,7166,False,False,0,PASS
+rpki_invalid_observation_count,68031,0,0.0,62127,91.322,0,0.0,2.3049345151475062,4.0,7718,283,False,False,0,PASS
+rpki_not_found_observation_count,68031,0,0.0,41823,61.476,0,0.0,657.869515367994,3319.0,1721531,5674,False,False,0,PASS
+rpki_unevaluable_observation_count,68031,0,0.0,63383,93.168,0,0.0,15.632241184166041,19.0,13832,861,False,False,0,PASS
+rpki_invalid_origin_observation_count,68031,0,0.0,63047,92.674,0,0.0,1.6484102835472063,2.0,7662,230,False,False,0,PASS
+rpki_invalid_maxlength_observation_count,68031,0,0.0,66250,97.382,0,0.0,0.6565242316002998,0.0,2403,147,False,True,0,REVIEW
+rpki_valid_observation_ratio,68031,30710,45.141,5586,14.967,0.0,0.7071090047393365,0.6226314992835329,1.0,1.0,17239,False,False,0,PASS
+rpki_invalid_observation_ratio,68031,30710,45.141,31417,84.18,0.0,0.0,0.014628872639654634,0.012036434612882238,1.0,4876,False,False,0,PASS
+rpki_not_found_observation_ratio,68031,30710,45.141,11113,29.777,0.0,0.2711864406779661,0.3627396280768124,1.0,1.0,17015,False,False,0,PASS
+rpki_unique_valid_prefix_count,68031,0,0.0,36296,53.352,0,0.0,200.19164792521056,828.0,514102,2712,False,False,0,PASS
+rpki_unique_invalid_prefix_count,68031,0,0.0,62127,91.322,0,0.0,0.7355323308491717,1.0,3472,130,False,False,0,PASS
+rpki_unique_not_found_prefix_count,68031,0,0.0,41823,61.476,0,0.0,121.67207596536873,499.0,371011,1986,False,False,0,PASS
+rpki_state_diversity_count,68031,0,0.0,30684,45.103,0,1.0,1.0194764151636755,3.0,5,6,False,False,0,PASS
+rpki_dominant_state_code,68031,0,0.0,30684,45.103,0,1.0,1.0920168746600813,4.0,5,6,False,False,0,PASS

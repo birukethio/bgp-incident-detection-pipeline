@@ -1,0 +1,3 @@
+change_id,scope,before,after,applies_to,methodology_changed,reason
+PILOT-FIX-001,generic successful-download status normalization,adapter emitted DOWNLOADED; frozen parser accepted 200/CACHED/REUSED_FROM_PILOT,successful HTTP transfers emit 200,all newly downloaded pilot MRT files,NO,align adapter vocabulary with frozen parser gate
+PILOT-FIX-002,generic RouteViews directory-index fallback,quarter-hour filename generation returned 404 for archive-era nonaligned filenames,"when every standard URL for an incident is 404, select actual indexed files overlapping the same collection interval",any archive date with nonaligned RouteViews filenames,NO,retrieve the same collector/time interval while retaining BGP-timestamp-based five-minute windows

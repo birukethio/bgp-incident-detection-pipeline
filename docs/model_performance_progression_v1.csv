@@ -1,0 +1,9 @@
+stage,evaluation_design,feature_set,incident_macro_f1,source_artifact,status
+RF baseline,TRAIN grouped CV,Behavioral V1,0.4631739251767722,data/modeling/baseline_v1_model_comparison_v1.csv,historical baseline
+Refined RF H2,TRAIN grouped CV,V4/I1,0.784588,data/modeling/rf_h2_final_comparison_v1.csv,RF benchmark
+Refined XGBoost I2,TRAIN grouped CV,V4/I1,0.805678,data/modeling/xgb_i2_final_comparison_v1.csv,promoted to Validation
+Phase J Validation,Validation confirmation,V4/I1,0.713904,data/validation/validation_confirmation_results_v1.csv,passed floors
+K1 stacker,TRAIN nested CV,V4/I1,0.934666,data/modeling_k1/k1_model_results_v1.csv,post-Validation TRAIN development
+K2 multi-seed K1,TRAIN nested CV,V4/I1,0.934304 ± 0.002309,data/modeling_k2/k2_multiseed_performance_v1.csv,forensic/stability
+L0 fixed deployable K1,TRAIN nested CV,V4/I1,0.931653 ± 0.002150,data/final_prep/k1_fixed_second_level_verification_v1.csv,pre-Holdout frozen
+Final Holdout,one-time terminal,V4/I1/K1,0.920177,config/final_praxis_result_v1.yaml,terminal

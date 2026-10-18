@@ -1,0 +1,6 @@
+figure_title,purpose,source,exists,needs_generation,chapter_section
+End-to-end methodology pipeline,show full workflow,docs/final_architecture_flow_v1.md,NEEDS_GENERATION,YES,Chapter 3 Research Design
+Dataset/partition flow,show incident-level split,data/partitions_v2/frozen_partition_manifest_v2.csv,NEEDS_GENERATION,YES,Chapter 3 Dataset
+Five-minute window representation,define analytical row,data/train_frozen/frozen_train_behavioral_corpus_v1.parquet,NEEDS_GENERATION,YES,Chapter 3 Windowing
+Feature engineering/enrichment pipeline,show Behavioral+CAIDA+RPKI,config/feature_variants_v1.yaml,NEEDS_GENERATION,YES,Chapter 3 Features
+K1 stacking architecture,show final two-level K1,docs/final_architecture_flow_v1.md,NEEDS_GENERATION,YES,Chapter 3 Model

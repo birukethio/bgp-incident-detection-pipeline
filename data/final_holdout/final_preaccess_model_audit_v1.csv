@@ -1,0 +1,15 @@
+check,status,notes
+first_level_leakage,PASS,0 incident/window overlaps
+second_level_leakage,PASS,0 outer train/test overlaps
+label_derived_meta_features,PASS,no label/category/source identifiers in model features
+duplicate_incident_rows,PASS,K2 uniqueness audit confirmed 993 unique incident-level TRAIN rows
+nested_topology,PASS,outer test cannot affect either level
+label_permutation_sanity,PASS,permuted labels collapse toward chance
+k1_reproduction,PASS,selected metrics reproduce within tolerance
+multi_seed_stability,PASS,fixed five-seed analysis completed
+meta_feature_schema,PASS,status=FROZEN feature_count=74
+k1_architecture,PASS,status=K1_TRAIN_FORENSIC_VERIFIED_CANDIDATE candidate=K1-M2_XGB_K1-TEMPORAL
+k2_disposition,PASS,K1_GAIN_CONFIRMED
+k25_decision,PASS,recommendation=KEEP_XGB_XGB_K1 selected=A0_XGB_TO_XGB
+final_second_level_hyperparameters,FAIL,config/k1_final_candidate_v1.yaml does not define one final second-level XGBoost hyperparameter set; it only records grid size and nested-CV performance
+holdout_access,PASS,No Final Holdout feature data read or processed; stopped before FIRST_FINAL_HOLDOUT_ACCESS

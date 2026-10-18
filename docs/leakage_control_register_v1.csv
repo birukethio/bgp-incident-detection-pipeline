@@ -1,0 +1,6 @@
+control,purpose,artifact,status,notes
+Incident-level partitioning,all windows inherit incident partition,data/partitions_v2/frozen_partition_manifest_v2.csv,PASS,No cross-partition incident overlap.
+Grouped CV,folds grouped by incident_uid,data/modeling/,PASS,Prevents within-incident window leakage.
+Validation access control,first opened in Phase J only,data/validation/validation_confirmation_results_v1.csv,PASS,No K1 validation reuse.
+Holdout access control,first opened in Phase L only,data/final_holdout/final_holdout_access_record_v1.csv,PASS,No post-Holdout model changes.
+K2 permutation sanity,label permutation near chance,data/modeling_k2/k2_label_permutation_sanity_v1.csv,PASS,Supports leakage-control validity with caveat.

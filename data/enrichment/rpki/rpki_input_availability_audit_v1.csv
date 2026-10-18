@@ -1,0 +1,6 @@
+check_name,observed_value,status,notes
+pilot_train_only,['train'],PASS,Validation/Holdout not accessed
+pilot_window_count,661,PASS,one row expected per pilot window
+evidence_has_bgp_origin_asn,origin_asn column from compact evidence,PASS,"origin_asn was extracted from observed AS_PATH during MRT parse, not incident metadata"
+full_mrt_reparse_required,NO,PASS,window_start/window_id + prefix + origin_asn + observation_count are sufficient for recommended RPKI features
+frozen_v2_available,True,PASS,V2 is read only; not modified

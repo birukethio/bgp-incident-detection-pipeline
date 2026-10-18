@@ -1,0 +1,10 @@
+incident_uid,stage,reference_rows,new_implementation_rows,comparison_status,notes
+Hijack:131045,E4_MEAN_AGGREGATION,1,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Mean aggregation incident reference is available when row_count=1; no new implementation aggregation was generated.
+Hijack:41142,E4_MEAN_AGGREGATION,1,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Mean aggregation incident reference is available when row_count=1; no new implementation aggregation was generated.
+Hijack:115187,E4_MEAN_AGGREGATION,1,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Mean aggregation incident reference is available when row_count=1; no new implementation aggregation was generated.
+Leak:462139,E4_MEAN_AGGREGATION,1,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Mean aggregation incident reference is available when row_count=1; no new implementation aggregation was generated.
+Leak:442710,E4_MEAN_AGGREGATION,1,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Mean aggregation incident reference is available when row_count=1; no new implementation aggregation was generated.
+Leak:415566,E4_MEAN_AGGREGATION,1,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Mean aggregation incident reference is available when row_count=1; no new implementation aggregation was generated.
+Outage:1066,E4_MEAN_AGGREGATION,1,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Mean aggregation incident reference is available when row_count=1; no new implementation aggregation was generated.
+Outage:532,E4_MEAN_AGGREGATION,1,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Mean aggregation incident reference is available when row_count=1; no new implementation aggregation was generated.
+Outage:1178,E4_MEAN_AGGREGATION,1,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Mean aggregation incident reference is available when row_count=1; no new implementation aggregation was generated.

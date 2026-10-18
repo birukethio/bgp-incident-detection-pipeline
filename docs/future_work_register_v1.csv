@@ -1,0 +1,11 @@
+future_direction,tested_or_future,reason,priority
+stronger Normal-vs-Incident Stage 1 formulation,tested partially,Stage 1 unresolved,HIGH
+enterprise-local telemetry integration,future work,improve local observability,MEDIUM
+streaming/online classification,future work,operational deployment,MEDIUM
+shorter observation-window inference,future work,reduce detection latency,HIGH
+larger incident corpus,future work,narrow confidence intervals,MEDIUM
+additional route collectors,future work,improve visibility,MEDIUM
+graph-based AS relationship models,future work,richer topology learning,LOW
+sequence models,future work,model temporal patterns directly,LOW
+calibrated ranked probabilities,future work,improve operator trust,MEDIUM
+operator diagnostic-time study,future work,measure operational usefulness,MEDIUM

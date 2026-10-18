@@ -1,0 +1,5 @@
+metric,value,ci_lower,ci_upper,eligible_incidents,status,decision,notes
+incident_macro_f1,NA,NA,NA,0,NOT_EXECUTED_PROTOCOL_GATE_STOP,INCONCLUSIVE,No eligible independent confirmation roster was constructed because RouteLLM source-native events were unavailable.
+top1,NA,NA,NA,0,NOT_EXECUTED_PROTOCOL_GATE_STOP,INCONCLUSIVE,No scoring performed.
+top2,NA,NA,NA,0,NOT_EXECUTED_PROTOCOL_GATE_STOP,INCONCLUSIVE,Predefined H1 acceptance criterion not evaluated.
+mrr,NA,NA,NA,0,NOT_EXECUTED_PROTOCOL_GATE_STOP,INCONCLUSIVE,No scoring performed.

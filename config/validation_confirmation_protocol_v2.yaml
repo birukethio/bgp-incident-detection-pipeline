@@ -1,0 +1,39 @@
+protocol_version: "v2"
+candidate_under_test: "RF_TUNED_LOCK_CANDIDATE_V1"
+candidate_source: "config/final_model_candidate_v2_tuned.yaml"
+supersedes_candidate_for_validation: "RF_LOCK_CANDIDATE_V1"
+baseline_protocol_reference: "config/validation_confirmation_protocol_v1.yaml"
+validation_status: "NOT_ACCESSED"
+final_holdout_status: "SEALED"
+single_primary_validation_evaluation_only: true
+locked_decisions:
+  feature_variant: "V4"
+  imbalance_treatment: "I1"
+  architecture: "RF_MULTICLASS_STAGE2"
+  ranking_aggregation: "mean incident probability"
+primary_metrics:
+  - "incident_level_macro_f1"
+  - "incident_level_mrr"
+  - "incident_level_top2_accuracy"
+secondary_metrics:
+  - "window_macro_f1"
+  - "hijack_f1"
+  - "leak_f1"
+  - "outage_f1"
+  - "top1_accuracy"
+  - "confusion_matrix"
+acceptance_criteria:
+  principle: "Same criteria as v1; do not change criteria because tuning results changed."
+  minimum_incident_macro_f1: 0.6
+  minimum_incident_mrr: 0.75
+  minimum_incident_top2_accuracy: 0.85
+  schema_or_provenance_failure: "FAIL"
+  catastrophic_class_failure: "FAIL if any incident class has F1 == 0"
+  review_band: "REVIEW if primary metrics fall below floors without schema/provenance failure; do not tune on Validation."
+forbidden_validation_search:
+  - "feature variants"
+  - "imbalance strategies"
+  - "expert architectures"
+  - "Random Forest hyperparameters"
+  - "Stage 1 thresholds"
+  - "ranking weights"

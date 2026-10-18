@@ -1,0 +1,192 @@
+{
+  "status": "LOCKED_PENDING_EXECUTION",
+  "lock_scope": "independent_validation_pre_evaluation_model_artifacts",
+  "created_utc": "2026-09-14T19:52:59+00:00",
+  "non_destructive": true,
+  "model_scoring_performed": false,
+  "validation_accessed": false,
+  "final_holdout_accessed": false,
+  "artifact_count": 20,
+  "artifacts": [
+    {
+      "name": "level1_ensemble_manifest",
+      "role": "Level-1 ensemble inference manifest",
+      "artifact_type": "json",
+      "relative_path": "data/tti_pilot/level1_ensemble_manifest_v2.json",
+      "status": "PRESENT",
+      "sha256": "f5244b95be4e50fa531e1f76150f299f0741d0b0e7a88badb56b2c9bbd79dd5c",
+      "notes": ""
+    },
+    {
+      "name": "level1_feature_schema",
+      "role": "Frozen V4 feature order for Level-1",
+      "artifact_type": "json",
+      "relative_path": "data/tti_pilot/reconstructed_level1_v1/feature_schema_v4.json",
+      "status": "PRESENT",
+      "sha256": "38ca70a2aa50a39172f2a90d1c893fdd08dfa38a49b3e5945b19d9cab2a202f3",
+      "notes": ""
+    },
+    {
+      "name": "level1_fold_1_model",
+      "role": "Level-1 XGBoost fold model",
+      "artifact_type": "joblib",
+      "relative_path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_1_hist_njobs_minus1.joblib",
+      "status": "PRESENT",
+      "sha256": "72fa8831bec6c6fcf286d8f39dff1b00a0322805f27335ccb6d381d62cb87a24",
+      "notes": ""
+    },
+    {
+      "name": "level1_fold_2_model",
+      "role": "Level-1 XGBoost fold model",
+      "artifact_type": "joblib",
+      "relative_path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_2_hist_njobs_minus1.joblib",
+      "status": "PRESENT",
+      "sha256": "468ac8c03bc9d8bf6fbda7a8bb9d70144b92264ef6d1ad6c668741b57194615e",
+      "notes": ""
+    },
+    {
+      "name": "level1_fold_3_model",
+      "role": "Level-1 XGBoost fold model",
+      "artifact_type": "joblib",
+      "relative_path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_3_hist_njobs_minus1.joblib",
+      "status": "PRESENT",
+      "sha256": "144d615c1e525305a082a7f7edce40f6634c0ed11af8f3930ce58ba46332550f",
+      "notes": ""
+    },
+    {
+      "name": "level1_fold_4_model",
+      "role": "Level-1 XGBoost fold model",
+      "artifact_type": "joblib",
+      "relative_path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_4_hist_njobs_minus1.joblib",
+      "status": "PRESENT",
+      "sha256": "290259d731f4c2d0f949d2be72385ba32e50f6e3219dd1bb508d31f2d0f20ff6",
+      "notes": ""
+    },
+    {
+      "name": "level1_fold_5_model",
+      "role": "Level-1 XGBoost fold model",
+      "artifact_type": "joblib",
+      "relative_path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_5_hist_njobs_minus1.joblib",
+      "status": "PRESENT",
+      "sha256": "0e7d220cbec179c15aaf995dd29a630037b58b4c3635778b1186c002518cb5fe",
+      "notes": ""
+    },
+    {
+      "name": "level2_xgb_frozen_spec",
+      "role": "Level-2 XGBoost frozen specification",
+      "artifact_type": "yaml",
+      "relative_path": "config/k1_second_level_xgb_final_v1.yaml",
+      "status": "PRESENT",
+      "sha256": "4326f0eb845ceacfb28fee9a70e85a49c19445a3f41aa3b6a10945c74d3bd58d",
+      "notes": "Standalone serialized Level-2 binary was not located during this lock audit; this config is the frozen specification artifact visible in the repository."
+    },
+    {
+      "name": "level2_verification",
+      "role": "Level-2 fixed deployable verification record",
+      "artifact_type": "csv",
+      "relative_path": "data/final_prep/k1_fixed_second_level_verification_v1.csv",
+      "status": "PRESENT",
+      "sha256": "6633239e289d98c7ca62cb3678da478b4e4c2605b943c3e6dfee9648b9b736f8",
+      "notes": ""
+    },
+    {
+      "name": "behavioral_feature_schema",
+      "role": "Behavioral feature schema",
+      "artifact_type": "yaml",
+      "relative_path": "config/behavioral_feature_schema_v1.yaml",
+      "status": "PRESENT",
+      "sha256": "766c5ae8193984a760dfa86b1e928279b60cc8e7e9ca1c860d39a2992fa18b48",
+      "notes": ""
+    },
+    {
+      "name": "caida_feature_schema",
+      "role": "CAIDA feature schema",
+      "artifact_type": "yaml",
+      "relative_path": "config/caida_feature_schema_v1.yaml",
+      "status": "PRESENT",
+      "sha256": "8646fa983a137b58fe7e1937b95d9499e333adcab0466bc7c9d2b7255f600ede",
+      "notes": ""
+    },
+    {
+      "name": "rpki_feature_schema",
+      "role": "RPKI/ROV feature schema",
+      "artifact_type": "yaml",
+      "relative_path": "config/rpki_feature_schema_v1.yaml",
+      "status": "PRESENT",
+      "sha256": "01100a98ac78bacc634e2be788221259f67fb6734f838256a03f491f9b833191",
+      "notes": ""
+    },
+    {
+      "name": "v4_train_feature_manifest",
+      "role": "Frozen V4 train schema/audit manifest",
+      "artifact_type": "csv",
+      "relative_path": "data/train_frozen/frozen_train_v4_behavioral_caida_rpki_audit_v1.csv",
+      "status": "PRESENT",
+      "sha256": "fe6e938d39c501544c7086af8a7bd63bbcc83db56b5f310d21dc1ab5e9563cf1",
+      "notes": ""
+    },
+    {
+      "name": "meta_feature_schema",
+      "role": "K1 meta-feature schema",
+      "artifact_type": "yaml",
+      "relative_path": "config/k1_incident_meta_feature_schema_v1.yaml",
+      "status": "PRESENT",
+      "sha256": "290bae06afb595a161ae864ccca8a64dd5d6594522128052657a43a1d143e1f3",
+      "notes": ""
+    },
+    {
+      "name": "final_candidate_config",
+      "role": "Final deployable K1 candidate config",
+      "artifact_type": "yaml",
+      "relative_path": "config/k1_final_candidate_v1_1_deployable.yaml",
+      "status": "PRESENT",
+      "sha256": "d7ef54c4e3d9491207cd137eaabe7630ffc7adab4df96b83a9b132bb022e5dc4",
+      "notes": ""
+    },
+    {
+      "name": "preprocessing_and_stacking_code",
+      "role": "Aggregation, meta-feature, imputation, and ranking code",
+      "artifact_type": "python",
+      "relative_path": "src/bgp_incident_detection/k1_incident_stacking.py",
+      "status": "PRESENT",
+      "sha256": "02ccfc05ae1fa7e3c94de642ed50d528a9024cd4786b6ca6abe3bf1b2145053f",
+      "notes": ""
+    },
+    {
+      "name": "level1_reconstruction_code",
+      "role": "Level-1 reconstruction logic",
+      "artifact_type": "python",
+      "relative_path": "src/bgp_incident_detection/level1_reconstruction.py",
+      "status": "PRESENT",
+      "sha256": "2254a7c8a7dfa4b37140cbadf034d44837495e42dc541c7481d5f21d105bb639",
+      "notes": ""
+    },
+    {
+      "name": "caida_mapping_code",
+      "role": "CAIDA feature mapping logic",
+      "artifact_type": "python",
+      "relative_path": "src/bgp_incident_detection/caida_features.py",
+      "status": "PRESENT",
+      "sha256": "384807e6fdd713421292dcb0f925087893c4dc025c32c40826ce4595f1d41025",
+      "notes": ""
+    },
+    {
+      "name": "rpki_rov_logic",
+      "role": "RPKI/ROV feature logic",
+      "artifact_type": "python",
+      "relative_path": "src/bgp_incident_detection/rpki_features.py",
+      "status": "PRESENT",
+      "sha256": "3a71ee48e333b75245381a6fc54ae4cedff1729ddd10230034e437e0d200fa64",
+      "notes": ""
+    },
+    {
+      "name": "level1_scoring_code",
+      "role": "Level-1 scoring and class ranking code",
+      "artifact_type": "python",
+      "relative_path": "src/bgp_incident_detection/tti_level1_scoring.py",
+      "status": "PRESENT",
+      "sha256": "72d7cb6a5900b257a3ca87a7ac34f887f839075d3efbf6ef42396600bb56bd25",
+      "notes": ""
+    }
+  ]
+}

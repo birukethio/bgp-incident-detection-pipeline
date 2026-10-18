@@ -1,0 +1,5 @@
+context_type,artifact_or_cache,snapshot_count,label_or_partition_fields_present,assessment,notes
+CAIDA_AS_RELATIONSHIP_SNAPSHOTS,data/cache/caida_as_relationships,47,NO,EXPECTED_SHARED_HISTORICAL_CONTEXT,CAIDA relationship snapshots are historical context reused across incidents; reuse is expected and not target leakage.
+RPKI_VRP_SNAPSHOTS,data/cache/rpki_vrps and snapshot mapping CSVs,date/trust-anchor dependent,NO in VRP records; mapping artifacts may contain incident/window IDs for provenance but not labels as predictive features,EXPECTED_SHARED_HISTORICAL_CONTEXT,RPKI/VRP snapshots are historical context reused across incidents; reuse is expected and not target leakage.
+FINAL_HOLDOUT_CAIDA_MAPPING,data/final_holdout/final_holdout_caida_snapshot_mapping_v1.csv,40,category present for audit/provenance; not a model feature,EXPECTED_SHARED_HISTORICAL_CONTEXT,Mapping records document which historical snapshot was applied.
+FINAL_HOLDOUT_RPKI_MAPPING,data/final_holdout/final_holdout_rpki_snapshot_mapping_v1.csv,1315,NO label fields in mapping table,EXPECTED_SHARED_HISTORICAL_CONTEXT,Mapping records document historical VRP snapshots and trust anchors.

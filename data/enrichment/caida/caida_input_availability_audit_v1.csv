@@ -1,0 +1,5 @@
+check_name,observed_value,status,notes
+pilot_windows_available,661,PASS,existing 9-incident pilot behavioral windows
+parsed_pilot_artifacts_available,9,PASS,one parsed observation CSV expected for each pilot incident
+frozen_behavioral_corpus_unchanged,60,PASS,CAIDA enrichment reads parsed artifacts and does not alter frozen behavioral parquet
+validation_holdout_untouched,['train'],PASS,pilot enrichment is TRAIN only

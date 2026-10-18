@@ -1,0 +1,4 @@
+incident_uid,category,selected_first_post_documented_evidence_onset,diagnostic_change_based_onset,difference_seconds,could_change_checkpoint_membership_or_interpretation,notes
+Hijack:125889,Hijack,2025-12-01T18:50:40.983Z,2025-12-01T18:50:42.237Z,1.254,True,Primary onset was not changed; sensitivity is descriptive and not performance-selected.
+Leak:426483,Leak,2025-10-30T06:02:45.763Z,2025-10-30T06:02:45.881Z,0.118,True,Primary onset was not changed; sensitivity is descriptive and not performance-selected.
+Outage:1014,Outage,2024-09-07T09:45:00.043Z,2024-09-07T09:45:00.434Z,0.391,True,Primary onset was not changed; sensitivity is descriptive and not performance-selected.

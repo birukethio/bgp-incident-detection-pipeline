@@ -1,0 +1,7 @@
+chapter,original_pages,final_pages,preferred_range,maximum_allowed,status
+Chapter 1,12,7,5-8,8,PASS
+Chapter 2,52,21,30-35,35,REVIEW
+Chapter 3,73,22,22-28,28,PASS
+Chapter 4,52,23,20-25,25,PASS
+Chapter 5,22,3,3-5,5,PASS
+Full rendered document,263,93,82-101 overall target,101,PASS

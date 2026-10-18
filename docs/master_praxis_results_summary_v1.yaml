@@ -1,0 +1,91 @@
+praxis:
+  title: An Artificial Intelligence–Based Classification and Ranking System for Border
+    Gateway Protocol Incidents in Enterprise Networks
+  stage1_status: UNRESOLVED_EXPERIMENTAL_AUXILIARY
+dataset:
+  train_incidents: 993
+  validation_incidents: 213
+  holdout_incidents: 213
+  holdout_window_rows: 14906
+feature_engineering:
+  behavioral_features: 44
+  caida_features: 14
+  rpki_features: 16
+  v4_features: 74
+  train_behavioral_rows: 68031
+normal_methodology:
+  normal_windows: 516
+  status: auxiliary
+feature_variants:
+  V1: 44
+  V2: 58
+  V3: 60
+  V4: 74
+baseline_results:
+  artifact: data/modeling/baseline_v1_model_comparison_v1.csv
+ablation_results:
+  feature_variant_artifact: data/modeling/feature_variant_ablation_results_v1.csv
+  feature_family_artifact: data/modeling/feature_family_ablation_results_v1.csv
+stage1_results:
+  status: UNRESOLVED_EXPERIMENTAL_AUXILIARY
+rf_results:
+  refined_rf_macro_f1: 0.784588
+  artifact: data/modeling/rf_h2_final_comparison_v1.csv
+xgboost_results:
+  refined_xgb_macro_f1: 0.805678
+  artifact: data/modeling/xgb_i2_final_comparison_v1.csv
+validation:
+  macro_f1: 0.713904
+  artifact: data/validation/validation_confirmation_results_v1.csv
+  note: Phase J candidate only; K1 not Validation-confirmed.
+k1:
+  architecture: A0_XGB_TO_XGB
+  train_macro_f1: 0.934666
+  artifact: data/modeling_k1/k1_model_results_v1.csv
+k2:
+  macro_f1_mean: 0.934304
+  macro_f1_std: 0.002309
+  artifact: data/modeling_k2/k2_multiseed_performance_v1.csv
+k25:
+  decision: KEEP_XGB_XGB_K1
+  artifact: data/modeling_k25/k25_final_architecture_decision_v1.csv
+final_model:
+  architecture: A0_XGB_TO_XGB
+  second_level_hash: 40df040321ef
+  artifact: config/k1_second_level_xgb_final_v1.yaml
+holdout:
+  macro_f1: 0.9201769450076779
+  ci_lower: 0.8801170994295882
+  ci_upper: 0.9544024249379308
+  top1: 0.92018779342723
+  top2: 0.9906103286384976
+  mrr: 0.9585289514866979
+  hijack_f1: 0.8776978417266187
+  leak_f1: 0.9041095890410958
+  outage_f1: 0.9787234042553191
+  rank1: 196
+  rank2: 15
+  rank3: 2
+limitations:
+- RouteViews observability
+- external labels
+- Stage 1 unresolved
+- K1 not Validation-confirmed
+- Holdout size 213
+authoritative_artifacts:
+- data/partitions_v2/frozen_partition_manifest_v2.csv
+- data/train_frozen/frozen_train_behavioral_corpus_v1.parquet
+- data/model_ready/frozen_normal_v4_v1.parquet
+- config/feature_variants_v1.yaml
+- data/modeling/feature_variant_ablation_results_v1.csv
+- data/modeling/feature_family_ablation_results_v1.csv
+- data/modeling/xgb_i2_final_comparison_v1.csv
+- data/validation/validation_confirmation_results_v1.csv
+- data/modeling_k1/k1_model_results_v1.csv
+- data/modeling_k2/k2_multiseed_performance_v1.csv
+- data/modeling_k2/k2_label_permutation_sanity_v1.csv
+- data/modeling_k25/k25_architecture_multiseed_results_v1.csv
+- config/k1_second_level_xgb_final_v1.yaml
+- config/final_praxis_result_v1.yaml
+- data/final_holdout/final_holdout_confusion_matrix_v1.csv
+phase_count: 19

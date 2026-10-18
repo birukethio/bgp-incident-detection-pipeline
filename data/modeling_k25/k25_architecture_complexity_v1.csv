@@ -1,0 +1,5 @@
+architecture_id,level1_models_required_per_seed_nested_cv,level2_models_required_per_seed,level1_algorithm,level2_algorithm,mean_level1_fit_time_seconds,mean_level2_fit_time_seconds,mean_inference_time_seconds,approx_model_storage
+A0_XGB_TO_XGB,25,5,XGB,XGB,,0.31848228501155973,,not materialized; comparator stores metadata/results only
+A1_XGB_TO_RF,25,5,XGB,RF,29.358331458605825,0.4482252449635416,0.04239556497894228,not materialized; comparator stores metadata/results only
+A2_RF_TO_XGB,25,5,RF,XGB,304.9980449432135,0.3285841450933367,0.00258333345875144,not materialized; comparator stores metadata/results only
+A3_RF_TO_RF,25,5,RF,RF,0.0,0.44761872322298585,0.042195848301053045,not materialized; comparator stores metadata/results only

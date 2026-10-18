@@ -1,0 +1,2 @@
+comparison,delta_macro_f1,ci_lower,ci_upper,top1_difference,top2_difference,mrr_difference,status,decision,notes
+Behavioral-only vs Behavioral+CAIDA+RPKI/ROV,NA,NA,NA,NA,NA,NA,NOT_EXECUTED_PROTOCOL_GATE_STOP,INCONCLUSIVE,H2 requires the same eligible independent incidents as H1; no confirmation roster was constructed.

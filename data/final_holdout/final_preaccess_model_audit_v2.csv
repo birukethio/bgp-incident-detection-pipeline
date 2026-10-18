@@ -1,0 +1,12 @@
+check,status,notes
+first_level_leakage,PASS,0 incident/window overlaps
+second_level_leakage,PASS,0 outer train/test overlaps
+k1_reproduction,PASS,selected metrics reproduce within tolerance
+k2_disposition,PASS,K1_GAIN_CONFIRMED
+k25_decision,PASS,KEEP_XGB_XGB_K1
+meta_feature_schema,PASS,config/k1_incident_meta_feature_schema_v1.yaml status=FROZEN
+k1_architecture,PASS,K1_TRAIN_FORENSIC_VERIFIED_CANDIDATE
+final_second_level_hyperparameters,PASS,40df040321ef
+deployable_candidate_config,PASS,config/k1_final_candidate_v1_1_deployable.yaml
+validation_unused_l0,PASS,Validation not read or used
+final_holdout_accessed,PASS,NO; Final Holdout remains SEALED

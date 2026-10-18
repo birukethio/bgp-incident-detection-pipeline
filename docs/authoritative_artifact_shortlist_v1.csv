@@ -1,0 +1,16 @@
+artifact,phase,role,priority
+data/partitions_v2/frozen_partition_manifest_v2.csv,P0,v2 incident partition counts and leakage-free split,ESSENTIAL
+data/train_frozen/frozen_train_behavioral_corpus_v1.parquet,P2,"68,031 TRAIN behavioral five-minute feature rows",ESSENTIAL
+data/model_ready/frozen_normal_v4_v1.parquet,P3,516 verified Normal windows after RIB+UPDATE qualification,ESSENTIAL
+config/feature_variants_v1.yaml,P6,V1/V2/V3/V4 definitions and feature counts,ESSENTIAL
+data/modeling/feature_variant_ablation_results_v1.csv,P6,feature-variant ablation outcomes,ESSENTIAL
+data/modeling/feature_family_ablation_results_v1.csv,P10,feature-family removal outcomes,ESSENTIAL
+data/modeling/xgb_i2_final_comparison_v1.csv,P12,refined XGBoost selected before Validation,ESSENTIAL
+data/validation/validation_confirmation_results_v1.csv,P13,first Validation access and confirmation result,ESSENTIAL
+data/modeling_k1/k1_model_results_v1.csv,P14,K1 stacker compared with mean aggregation,ESSENTIAL
+data/modeling_k2/k2_multiseed_performance_v1.csv,P15,K1 multi-seed stability,ESSENTIAL
+data/modeling_k2/k2_label_permutation_sanity_v1.csv,P15,label permutation sanity check,ESSENTIAL
+data/modeling_k25/k25_architecture_multiseed_results_v1.csv,P16,A0/A1/A2/A3 architecture comparison,ESSENTIAL
+config/k1_second_level_xgb_final_v1.yaml,P17,frozen deployable second-level XGBoost hash 40df040321ef,ESSENTIAL
+config/final_praxis_result_v1.yaml,P18,terminal final Holdout result,ESSENTIAL
+data/final_holdout/final_holdout_confusion_matrix_v1.csv,P18,final confusion/error pattern,ESSENTIAL

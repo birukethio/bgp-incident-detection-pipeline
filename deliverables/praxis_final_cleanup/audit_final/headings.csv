@@ -1,0 +1,68 @@
+paragraph_index,style,text
+87,Heading 1,Dedication
+93,Heading 1,Acknowledgements
+96,Heading 1,Abstract of Praxis
+115,Heading 1,Table of Contents
+118,Heading 1,List of Tables
+121,Heading 1,List of Figures
+124,Heading 1,List of Acronyms
+128,Heading 1,Chapter 1 - Introduction
+129,Heading 2,Background
+132,Heading 2,Research Motivation
+135,Heading 2,Problem Statement
+138,Heading 2,Thesis Statement
+140,Heading 2,Research Objectives
+147,Heading 2,Research Questions and Hypotheses
+150,Heading 2,Scope and Limitations
+153,Heading 2,Organization of the Praxis
+154,Normal,"Chapter 2 reviews the BGP, routing-security, measurement, and machine-learning literature that grounds the study. Chapter 3 describes the final methodology, including corpus construction, RouteViews processing, feature engineering, leakage controls, and modeling. Chapter 4 presents the results from feature development through Final Holdout evaluation. Chapter 5 summarizes the findings, contributions, limitations, and future work."
+155,Heading 2,Condensed Source Synthesis
+166,Heading 1,Chapter 2 - Literature Review
+167,Heading 2,Introduction
+169,Heading 2,BGP Operation and Measurement
+173,Heading 2,Routing Incidents and Outages
+176,Heading 2,Routing Security and Validation
+179,Heading 2,AS Relationships and Routing Policy
+182,Heading 2,BGP Anomaly Detection
+185,Heading 2,Machine Learning and Explainability
+189,Heading 2,Research Gaps and Study Positioning
+194,Heading 2,Literature Synthesis
+196,Heading 2,Condensed Source Synthesis
+247,Heading 1,Chapter 3 - Methodology
+248,Heading 2,Research Design
+251,Heading 2,Incident Corpus and Partitioning
+255,Heading 2,RouteViews Data and Analytical Windows
+258,Heading 2,Feature Engineering
+262,Heading 2,Feature Variants and Imbalance Strategy
+265,Heading 2,Model Families and Evaluation Design
+268,Heading 2,Incident-Level Temporal Stacking
+271,Heading 2,Quality Gates and Leakage Controls
+273,Heading 2,Evaluation Metrics
+275,Heading 2,Computational Latency Methodology
+277,Heading 2,Methodological Limitations
+279,Heading 2,Condensed Source Synthesis
+356,Heading 1,Chapter 4 - Results
+357,Heading 2,Overview
+358,Normal,Chapter 4 reports the final experimental sequence from feature development through the one-time Final Holdout evaluation. Results are presented at the incident level unless otherwise stated. Developmental results are included only when they explain a final methodological decision.
+359,Heading 2,Corpus and Feature Foundation
+363,Heading 2,Feature Variant and Ablation Results
+370,Heading 2,Incident Imbalance and Stage 1 Findings
+373,Heading 2,Random Forest and XGBoost Development
+376,Heading 2,Independent Validation
+380,Heading 2,Incident-Level Stacking
+387,Heading 2,Final Holdout Evaluation
+393,Heading 2,Final Error and Confusion Analysis
+398,Heading 2,Latency and Operational Feasibility
+402,Heading 2,Research Question Mapping
+404,Heading 2,Chapter Summary
+406,Heading 2,Condensed Source Synthesis
+484,Heading 1,Chapter 5 - Conclusions
+485,Heading 2,Overview
+487,Heading 2,Interpretation of Findings
+490,Heading 2,Key Contributions
+496,Heading 2,Practical Implications
+498,Heading 2,Limitations
+500,Heading 2,Future Research
+502,Heading 2,Conclusion
+504,Heading 2,Condensed Source Synthesis
+510,Heading 1,References

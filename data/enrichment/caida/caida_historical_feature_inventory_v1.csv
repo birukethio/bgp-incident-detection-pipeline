@@ -1,0 +1,4 @@
+feature_name,historical_definition,historical_formula,source_artifact,reproducible,notes
+caida_path_observation_count,CAIDA/path observation count,count AS_PATH observations per window,behavioral_features.py/docs configs,yes,new formalized feature; historical docs mentioned CAIDA group only
+caida_valley_free_violation_ratio,valley-free/path relationship violation,paths with relationship violations / AS_PATH observations,user methodology and Cloudflare tags,yes,"Cloudflare raw tags include asrel hints, but local pipeline had no frozen CAIDA feature implementation"
+caida_customer_provider_transition_ratio,customer/provider transition balance,(c2p+p2c)/known transitions,methodology prompt examples,yes,recovered as concept rather than exact prior implementation

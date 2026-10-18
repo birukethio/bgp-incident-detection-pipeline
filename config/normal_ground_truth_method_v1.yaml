@@ -1,0 +1,33 @@
+normal_method_version: v1
+implementation_method_version: rib_update_v1
+window_minutes: 5
+context_buffer_minutes: 60
+incident_exclusion_buffer_minutes: 60
+minimum_consecutive_stable_windows: 6
+minimum_stability_minutes: 30
+rib_visibility_required: true
+stable_route_presence_required: true
+stable_origin_required: true
+known_incident_overlap_allowed: false
+zero_update_activity_can_qualify: true
+uncertain_state: UNKNOWN
+verified_state: NORMAL_VERIFIED
+behavioral_feature_version: v1
+behavioral_feature_count: 44
+normal_label_training_mapping: NORMAL_VERIFIED -> NORMAL
+incident_label_training_mapping: Hijack/Leak/Outage -> INCIDENT
+unknown_training_mapping: UNKNOWN -> excluded_from_supervised_training
+normal_qualification_blockers:
+  - known_incident_overlap
+  - inside_60_minute_incident_exclusion_buffer
+  - missing_rib_route_visibility
+  - unstable_route_presence
+  - unstable_expected_origin
+  - origin_change_event_count_greater_than_zero
+  - strong_as_path_instability
+  - suspicious_prefix_deaggregation
+  - unexpected_moas_or_origin_diversity
+  - fewer_than_6_consecutive_stable_5_minute_windows
+  - insufficient_evidence
+ground_truth_scope: training labels only
+stage1_inference_method: machine_learning_model_not_rules

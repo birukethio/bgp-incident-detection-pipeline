@@ -1,0 +1,17 @@
+feature_name,max_abs_difference,rows_compared,status
+rpki_evidence_observation_count,0.0,36,PASS
+rpki_evaluable_observation_count,0.0,36,PASS
+rpki_valid_observation_count,0.0,36,PASS
+rpki_invalid_observation_count,0.0,36,PASS
+rpki_not_found_observation_count,0.0,36,PASS
+rpki_unevaluable_observation_count,0.0,36,PASS
+rpki_invalid_origin_observation_count,0.0,36,PASS
+rpki_invalid_maxlength_observation_count,0.0,36,PASS
+rpki_valid_observation_ratio,1.1102230246251565e-16,36,PASS
+rpki_invalid_observation_ratio,5.551115123125783e-17,36,PASS
+rpki_not_found_observation_ratio,8.326672684688674e-17,36,PASS
+rpki_unique_valid_prefix_count,0.0,36,PASS
+rpki_unique_invalid_prefix_count,0.0,36,PASS
+rpki_unique_not_found_prefix_count,0.0,36,PASS
+rpki_state_diversity_count,0.0,36,PASS
+rpki_dominant_state_code,0.0,36,PASS

@@ -1,0 +1,11 @@
+artifact,artifact_status,reason
+config/final_praxis_result_v1.yaml,AUTHORITATIVE_CURRENT,terminal final result
+config/k1_final_candidate_v1_1_deployable.yaml,AUTHORITATIVE_CURRENT,final deployable K1 config
+data/partitions_v2/frozen_partition_manifest_v2.csv,AUTHORITATIVE_CURRENT,v2 partition
+data/validation/validation_confirmation_results_v1.csv,AUTHORITATIVE_CURRENT,"Phase J evidence, not K1 validation"
+config/final_model_candidate_v3_1_xgb_refined.yaml,SUPERSEDED,Phase J candidate superseded by K1 final
+data/modeling/rf_h2_final_comparison_v1.csv,HISTORICAL_EXPERIMENT,RF benchmark
+data/modeling_k1/k1_model_results_v1.csv,AUTHORITATIVE_CURRENT,K1 TRAIN result
+data/modeling_k2/k2_multiseed_performance_v1.csv,AUTHORITATIVE_CURRENT,K2 stability
+data/modeling_k25/k25_architecture_multiseed_results_v1.csv,AUTHORITATIVE_CURRENT,K2.5 comparator
+early pilot notebooks,INTERMEDIATE,engineering history

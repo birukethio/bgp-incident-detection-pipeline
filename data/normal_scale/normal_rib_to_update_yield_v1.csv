@@ -1,0 +1,5 @@
+associated_category,rib_approved_candidates,candidates_producing_normal_verified,candidate_success_percent,windows_evaluated,normal_verified_windows,unknown_windows,normal_window_yield_percent
+Hijack,14,10,71.429,95,66,29,69.474
+Leak,17,9,52.941,114,62,52,54.386
+Outage,14,11,78.571,84,66,18,78.571
+ALL,45,30,66.667,293,194,99,66.212

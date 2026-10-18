@@ -1,0 +1,10 @@
+incident_uid,stage,reference_score_rows,new_implementation_score_rows,comparison_status,probability_columns,notes
+Hijack:131045,E3_LEVEL1_WINDOW_SCORES,25,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,p_hijack|p_leak|p_outage,Stored TRAIN OOF Level-1 probabilities are available. No new implementation scores were generated.
+Hijack:41142,E3_LEVEL1_WINDOW_SCORES,52,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,p_hijack|p_leak|p_outage,Stored TRAIN OOF Level-1 probabilities are available. No new implementation scores were generated.
+Hijack:115187,E3_LEVEL1_WINDOW_SCORES,52,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,p_hijack|p_leak|p_outage,Stored TRAIN OOF Level-1 probabilities are available. No new implementation scores were generated.
+Leak:462139,E3_LEVEL1_WINDOW_SCORES,25,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,p_hijack|p_leak|p_outage,Stored TRAIN OOF Level-1 probabilities are available. No new implementation scores were generated.
+Leak:442710,E3_LEVEL1_WINDOW_SCORES,52,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,p_hijack|p_leak|p_outage,Stored TRAIN OOF Level-1 probabilities are available. No new implementation scores were generated.
+Leak:415566,E3_LEVEL1_WINDOW_SCORES,52,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,p_hijack|p_leak|p_outage,Stored TRAIN OOF Level-1 probabilities are available. No new implementation scores were generated.
+Outage:1066,E3_LEVEL1_WINDOW_SCORES,30,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,p_hijack|p_leak|p_outage,Stored TRAIN OOF Level-1 probabilities are available. No new implementation scores were generated.
+Outage:532,E3_LEVEL1_WINDOW_SCORES,63,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,p_hijack|p_leak|p_outage,Stored TRAIN OOF Level-1 probabilities are available. No new implementation scores were generated.
+Outage:1178,E3_LEVEL1_WINDOW_SCORES,2268,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,p_hijack|p_leak|p_outage,Stored TRAIN OOF Level-1 probabilities are available. No new implementation scores were generated.

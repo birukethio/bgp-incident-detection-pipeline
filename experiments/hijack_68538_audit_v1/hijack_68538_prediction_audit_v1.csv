@@ -1,0 +1,2 @@
+incident_uid,true_class,predicted_class,p_hijack,p_leak,p_outage,rank_1_class,rank_2_class,rank_3_class,true_class_rank,correctly_classified,contributed_to_error,prediction_source_artifact,note
+Hijack:68538,HIJACK,HIJACK,0.7212451696395874,0.251849889755249,0.0269049555063247,HIJACK,LEAK,OUTAGE,1,True,False,data/final_holdout/final_holdout_incident_rankings_v1.csv,Existing frozen prediction only; no model inference rerun.

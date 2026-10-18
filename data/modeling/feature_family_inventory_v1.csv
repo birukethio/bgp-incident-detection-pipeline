@@ -1,0 +1,75 @@
+feature_name,source_variant,feature_family,definition,feature_count_in_family
+update_count,V1_behavioral_inventory,announcement_update_activity,Incident-relevant prefix-level UPDATE observations in the window.,6
+announcement_count,V1_behavioral_inventory,announcement_update_activity,Incident-relevant announcement observations.,6
+withdrawal_count,V1_behavioral_inventory,withdrawal_activity,Incident-relevant withdrawal observations.,3
+update_rate_per_minute,V1_behavioral_inventory,announcement_update_activity,Incident-relevant UPDATE observation rate.,6
+announcement_rate_per_minute,V1_behavioral_inventory,announcement_update_activity,Announcement observation rate.,6
+withdrawal_rate_per_minute,V1_behavioral_inventory,withdrawal_activity,Withdrawal observation rate.,3
+announcement_ratio,V1_behavioral_inventory,announcement_update_activity,Share of relevant observations that are announcements.,6
+withdrawal_ratio,V1_behavioral_inventory,withdrawal_activity,Share of relevant observations that are withdrawals.,3
+announcement_to_withdrawal_ratio,V1_behavioral_inventory,announcement_update_activity,Announcement-to-withdrawal balance.,6
+unique_prefix_count,V1_behavioral_inventory,prefix_dynamics,Distinct prefixes among incident-relevant observations.,5
+unique_announced_prefix_count,V1_behavioral_inventory,prefix_dynamics,Distinct prefixes announced in relevant observations.,5
+unique_withdrawn_prefix_count,V1_behavioral_inventory,prefix_dynamics,Distinct prefixes withdrawn in relevant observations.,5
+prefix_churn_count,V1_behavioral_inventory,prefix_dynamics,Total distinct announced and withdrawn prefix activity.,5
+prefix_with_both_announce_withdraw_count,V1_behavioral_inventory,prefix_dynamics,Prefixes both announced and withdrawn in the same window.,5
+unique_peer_asn_count,V1_behavioral_inventory,peer_visibility_behavior,Distinct RouteViews peer ASNs seeing relevant observations.,12
+unique_origin_asn_count,V1_behavioral_inventory,origin_change_moas_behavior,Distinct origin ASNs in relevant announcements.,5
+origin_diversity_ratio,V1_behavioral_inventory,origin_change_moas_behavior,Origin diversity normalized by prefix count.,5
+moas_prefix_count,V1_behavioral_inventory,origin_change_moas_behavior,Prefixes with more than one observed origin ASN in the window.,5
+moas_prefix_ratio,V1_behavioral_inventory,origin_change_moas_behavior,Share of prefixes with multiple origins.,5
+origin_change_event_count,V1_behavioral_inventory,origin_change_moas_behavior,Additional origin alternatives beyond one per prefix.,5
+unique_as_path_count,V1_behavioral_inventory,as_path_length_structure,Distinct AS_PATH strings in relevant announcements.,8
+as_path_length_min,V1_behavioral_inventory,as_path_length_structure,Minimum AS_PATH length.,8
+as_path_length_max,V1_behavioral_inventory,as_path_length_structure,Maximum AS_PATH length.,8
+as_path_length_mean,V1_behavioral_inventory,as_path_length_structure,Mean AS_PATH length.,8
+as_path_length_median,V1_behavioral_inventory,as_path_length_structure,Median AS_PATH length.,8
+as_path_length_std,V1_behavioral_inventory,as_path_length_structure,Population standard deviation of AS_PATH length.,8
+as_path_length_p95,V1_behavioral_inventory,as_path_length_structure,95th percentile AS_PATH length.,8
+as_path_length_range,V1_behavioral_inventory,as_path_length_structure,Range of AS_PATH lengths.,8
+path_prepending_observation_count,V1_behavioral_inventory,prepending_behavior,Relevant announcements whose AS_PATH contains repeated ASNs.,3
+path_prepending_ratio,V1_behavioral_inventory,prepending_behavior,Share of relevant announcements with path prepending.,3
+prepended_asn_repetition_count,V1_behavioral_inventory,prepending_behavior,Total repeated ASN positions beyond unique ASNs across paths.,3
+multi_path_prefix_count,V1_behavioral_inventory,as_path_instability_path_change,Prefixes with more than one observed AS_PATH.,2
+path_diversity_mean_per_prefix,V1_behavioral_inventory,as_path_instability_path_change,Average number of distinct AS_PATHs per prefix.,2
+peer_prefix_pair_count,V1_behavioral_inventory,peer_visibility_behavior,Distinct peer ASN and prefix pairs.,12
+peer_origin_pair_count,V1_behavioral_inventory,peer_visibility_behavior,Distinct peer ASN and origin ASN pairs.,12
+peer_as_path_pair_count,V1_behavioral_inventory,peer_visibility_behavior,Distinct peer ASN and AS_PATH pairs.,12
+unique_next_hop_count,V1_behavioral_inventory,peer_visibility_behavior,Distinct NEXT_HOP values in relevant announcements.,12
+community_observation_count,V1_behavioral_inventory,peer_visibility_behavior,Relevant observations carrying at least one BGP community value.,12
+community_observation_ratio,V1_behavioral_inventory,peer_visibility_behavior,Share of relevant observations carrying communities.,12
+unique_community_count,V1_behavioral_inventory,peer_visibility_behavior,Distinct BGP community tokens observed.,12
+med_observation_count,V1_behavioral_inventory,peer_visibility_behavior,Relevant announcements with MED populated.,12
+unique_med_count,V1_behavioral_inventory,peer_visibility_behavior,Distinct MED values observed.,12
+local_pref_observation_count,V1_behavioral_inventory,peer_visibility_behavior,Relevant announcements with LOCAL_PREF populated by parser.,12
+atomic_aggregate_count,V1_behavioral_inventory,peer_visibility_behavior,Relevant announcements carrying an atomic aggregate marker other than NAG/empty.,12
+caida_path_observation_count,V2_V4_CAIDA_inventory,caida_as_relationship,Number of parsed pilot observations with an AS_PATH containing at least two ASNs.,14
+caida_paths_with_no_as_path_count,V2_V4_CAIDA_inventory,caida_as_relationship,Parsed observations without an evaluable AS_PATH.,14
+caida_paths_with_unknown_relationship_count,V2_V4_CAIDA_inventory,caida_as_relationship,AS paths containing at least one adjacent AS pair absent from the selected CAIDA snapshot.,14
+caida_unknown_relationship_transition_count,V2_V4_CAIDA_inventory,caida_as_relationship,Adjacent AS transitions absent from the selected CAIDA snapshot.,14
+caida_customer_to_provider_transition_count,V2_V4_CAIDA_inventory,caida_as_relationship,Known customer-to-provider transitions in observed AS paths.,14
+caida_provider_to_customer_transition_count,V2_V4_CAIDA_inventory,caida_as_relationship,Known provider-to-customer transitions in observed AS paths.,14
+caida_peer_to_peer_transition_count,V2_V4_CAIDA_inventory,caida_as_relationship,Known peer-to-peer transitions in observed AS paths.,14
+caida_valley_free_valid_path_count,V2_V4_CAIDA_inventory,caida_as_relationship,Paths with known relationships and no valley-free violation.,14
+caida_valley_free_violation_path_count,V2_V4_CAIDA_inventory,caida_as_relationship,Paths with known relationships and at least one valley-free violation.,14
+caida_valley_free_violation_ratio,V2_V4_CAIDA_inventory,caida_as_relationship,Share of evaluable AS paths with a valley-free violation.,14
+caida_max_violation_count_per_path,V2_V4_CAIDA_inventory,caida_as_relationship,Maximum valley-free violation count on any observed path.,14
+caida_mean_violation_count_per_path,V2_V4_CAIDA_inventory,caida_as_relationship,Mean valley-free violation count across observed paths.,14
+caida_customer_provider_transition_ratio,V2_V4_CAIDA_inventory,caida_as_relationship,Share of known transitions that are customer/provider links.,14
+caida_peer_transition_ratio,V2_V4_CAIDA_inventory,caida_as_relationship,Share of known transitions that are peer-to-peer links.,14
+rpki_evidence_observation_count,V3_V4_RPKI_inventory,rpki_rov,Underlying incident-relevant BGP observations represented by compact evidence rows.,16
+rpki_evaluable_observation_count,V3_V4_RPKI_inventory,rpki_rov,Observation-weighted count with parseable prefix and origin ASN.,16
+rpki_valid_observation_count,V3_V4_RPKI_inventory,rpki_rov,Observation-weighted count classified VALID.,16
+rpki_invalid_observation_count,V3_V4_RPKI_inventory,rpki_rov,Observation-weighted count classified INVALID.,16
+rpki_not_found_observation_count,V3_V4_RPKI_inventory,rpki_rov,Observation-weighted count with no covering VRP.,16
+rpki_unevaluable_observation_count,V3_V4_RPKI_inventory,rpki_rov,Observation-weighted count with missing/malformed prefix or origin.,16
+rpki_invalid_origin_observation_count,V3_V4_RPKI_inventory,rpki_rov,Observation-weighted INVALID caused by origin mismatch.,16
+rpki_invalid_maxlength_observation_count,V3_V4_RPKI_inventory,rpki_rov,Observation-weighted INVALID caused by maxLength violation.,16
+rpki_valid_observation_ratio,V3_V4_RPKI_inventory,rpki_rov,Share of evaluable observations classified VALID.,16
+rpki_invalid_observation_ratio,V3_V4_RPKI_inventory,rpki_rov,Share of evaluable observations classified INVALID.,16
+rpki_not_found_observation_ratio,V3_V4_RPKI_inventory,rpki_rov,Share of evaluable observations classified NOT_FOUND.,16
+rpki_unique_valid_prefix_count,V3_V4_RPKI_inventory,rpki_rov,Unique prefixes with at least one VALID observation.,16
+rpki_unique_invalid_prefix_count,V3_V4_RPKI_inventory,rpki_rov,Unique prefixes with at least one INVALID observation.,16
+rpki_unique_not_found_prefix_count,V3_V4_RPKI_inventory,rpki_rov,Unique prefixes with at least one NOT_FOUND observation.,16
+rpki_state_diversity_count,V3_V4_RPKI_inventory,rpki_rov,Number of distinct RPKI states seen in the window.,16
+rpki_dominant_state_code,V3_V4_RPKI_inventory,rpki_rov,Numeric code for the most common observation-weighted RPKI state.,16

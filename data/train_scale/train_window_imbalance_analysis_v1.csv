@@ -1,0 +1,49 @@
+category,metric,value,notes
+Hijack,top_1_percent,1.252,top 4 incidents
+Hijack,top_5_percent,5.32,top 17 incidents
+Hijack,top_10_percent,10.64,top 34 incidents
+Hijack,min_rows_per_incident,25.0,
+Hijack,median_rows_per_incident,52.0,
+Hijack,mean_rows_per_incident,50.199,
+Hijack,p75_rows_per_incident,52.0,
+Hijack,p90_rows_per_incident,52.0,
+Hijack,p95_rows_per_incident,52.0,
+Hijack,p99_rows_per_incident,52.0,
+Hijack,max_rows_per_incident,52.0,
+Hijack,total_feature_rows,16616.0,
+Leak,top_1_percent,1.286,top 4 incidents
+Leak,top_5_percent,5.464,top 17 incidents
+Leak,top_10_percent,10.928,top 34 incidents
+Leak,min_rows_per_incident,25.0,
+Leak,median_rows_per_incident,52.0,
+Leak,mean_rows_per_incident,48.879,
+Leak,p75_rows_per_incident,52.0,
+Leak,p90_rows_per_incident,52.0,
+Leak,p95_rows_per_incident,52.0,
+Leak,p99_rows_per_incident,52.0,
+Leak,max_rows_per_incident,52.0,
+Leak,total_feature_rows,16179.0,
+Outage,top_1_percent,14.695,top 4 incidents
+Outage,top_5_percent,27.514,top 17 incidents
+Outage,top_10_percent,38.478,top 34 incidents
+Outage,min_rows_per_incident,30.0,
+Outage,median_rows_per_incident,63.0,
+Outage,mean_rows_per_incident,106.453,
+Outage,p75_rows_per_incident,115.0,
+Outage,p90_rows_per_incident,204.0,
+Outage,p95_rows_per_incident,244.5,
+Outage,p99_rows_per_incident,751.7999999999994,
+Outage,max_rows_per_incident,2268.0,
+Outage,total_feature_rows,35236.0,
+ALL,top_1_percent,11.577,top 10 incidents
+ALL,top_5_percent,24.164,top 50 incidents
+ALL,top_10_percent,33.354,top 100 incidents
+ALL,min_rows_per_incident,25.0,
+ALL,median_rows_per_incident,52.0,
+ALL,mean_rows_per_incident,68.511,
+ALL,p75_rows_per_incident,52.0,
+ALL,p90_rows_per_incident,93.20000000000027,
+ALL,p95_rows_per_incident,163.9999999999999,
+ALL,p99_rows_per_incident,271.04000000000053,
+ALL,max_rows_per_incident,2268.0,
+ALL,total_feature_rows,68031.0,

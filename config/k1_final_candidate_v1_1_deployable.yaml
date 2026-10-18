@@ -1,0 +1,27 @@
+candidate_id: K1_FINAL_DEPLOYABLE_V1_1
+status: K1_DEPLOYABLE_CANDIDATE_READY_FOR_PREACCESS_AUDIT
+methodological_status: POST_VALIDATION_VERSIONED_TRAIN_DEVELOPMENT_EXPERIMENT
+frozen_first_level_xgboost_specification:
+  n_estimators: 600
+  max_depth: 6
+  learning_rate: 0.125
+  subsample: 0.9
+  colsample_bytree: 0.9
+  min_child_weight: 1
+  gamma: 0
+  reg_alpha: 0.01
+  reg_lambda: 2.0
+first_level_inference_strategy: CROSSFIT_ENSEMBLE_FIRST_LEVEL
+first_level_feature_schema: V4 frozen 74-feature Behavioral + CAIDA + RPKI schema
+k1_meta_feature_schema: config/k1_incident_meta_feature_schema_v1.yaml
+second_level_configuration: config/k1_second_level_xgb_final_v1.yaml
+ranking_rule: descending P(Hijack), P(Leak), P(Outage)
+final_train_only_fitting_procedure:
+- generate leakage-safe OOF first-level TRAIN probabilities
+- derive frozen K1 meta-features for 993 TRAIN incidents
+- train fixed second-level XGBoost on TRAIN meta rows
+- use crossfit first-level ensemble for unseen incident windows
+fixed_second_level_verification: data/final_prep/k1_fixed_second_level_verification_v1.csv
+validation_used: false
+final_holdout_accessed: false
+source_commit: 99fafc1037fa050fd2933ccc8c0f6f0bede45d05

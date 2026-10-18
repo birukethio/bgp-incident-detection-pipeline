@@ -1,0 +1,11 @@
+gate,status,evidence,source_artifact
+frozen_roster_membership,PASS,Present in frozen_incident_roster_v2 with category Hijack and roster_status FROZEN.,data/roster_v2/frozen_incident_roster_v2.csv
+partition_assignment,PASS,Assigned to holdout in frozen v2 manifest.,data/partitions_v2/frozen_partition_manifest_v2.csv
+source_label_provenance,PASS,"Raw Cloudflare Radar hijack event 68538 preserved with source label, hijacker ASN, victim ASNs, prefixes, detector tags, and peer/message counts.",cloudflare_incidents/raw_hijacks_all_available_to_2026-01_cloudflare.json
+routeviews_download,PASS,21/21 planned files downloaded with HTTP 200.,data/final_holdout/final_holdout_mrt_download_audit_v1.csv
+routeviews_parse_presence,PASS,Final feature summary records 5254545 parsed raw BGP observations across 21 MRT files.,data/final_holdout/final_holdout_incident_feature_summary_v1.csv
+incident_relevance_match,REVIEW,Relevant observations = 0; processing quality gate reason: no relevant observations.,data/final_holdout/final_holdout_incident_processing_quality_gate_v1.csv
+feature_row_generation,PASS,Generated 52 feature rows; final incident feature summary processing_status=REVIEW.,data/final_holdout/final_holdout_incident_feature_summary_v1.csv
+v4_schema,PASS,Final Holdout V4 schema audit passed with 44 behavioral + 14 CAIDA + 16 RPKI features.,data/final_holdout/final_holdout_v4_schema_audit_v1.csv
+nan_inf_compatibility,PASS,Numeric NaN count=1196; numeric Inf count=0; no incompatible Inf detected.,data/final_holdout/final_holdout_v4_features_v1.parquet
+current_chapter3_consistency_if_applied_today,REVIEW,Would require explicit documented limitation or exclusion decision because no incident-relevant RouteViews matches were found despite valid downloaded/parsed RouteViews data.,derived from final_holdout quality gate and feature summary

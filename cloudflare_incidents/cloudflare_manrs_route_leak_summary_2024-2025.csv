@@ -1,0 +1,10 @@
+metric,value
+cloudflare_leaks_checked,119615
+date_range_start,2024-01-01
+date_range_end,2025-12-31
+manrs_months_checked,24
+manrs_global_route_leaks_total_across_checked_months,0
+matched_cloudflare_leaks,0
+not_matched_cloudflare_leaks,119615
+match_percent,0.00
+important_limitation,MANRS public /scores/summary exposes monthly aggregate incident counts. Public per-ASN /scores and /scores/details calls returned 401 without MANRS credentials.

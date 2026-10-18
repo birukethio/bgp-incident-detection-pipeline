@@ -1,0 +1,10 @@
+candidate_id,normalized_start_utc,normalized_end_utc,timestamp_gate,notes
+V2-HIJACK-003,2008-02-24T18:47:00Z,2008-02-24T21:01:00Z,PASS,RIPE NCC RIS event timeline; source-corroborated correction to candidate metadata.
+V2-HIJACK-006,2020-07-30T01:15:38Z,2020-07-30T02:27:27Z,PASS,Exact boundaries preserved from candidate source record.
+V2-HIJACK-008,2020-04-01T19:28:00Z,,REVIEW,Source reports approximately one hour but no exact end timestamp; no end time invented.
+V2-LEAK-002,2018-05-18T09:36:00Z,2018-05-18T10:06:00Z,PASS,Exact boundaries preserved from candidate source record.
+V2-LEAK-003,2019-06-24T10:35:00Z,2019-06-24T12:38:00Z,PASS,Exact boundaries preserved from candidate source record.
+V2-LEAK-007,2021-02-11T04:36:41Z,2021-02-11T04:50:10Z,PASS,Exact boundaries preserved from candidate source record.
+V2-OUTAGE-001,2021-07-02T02:40:00Z,2021-07-02T03:15:00Z,PASS,IODA curated interval normalized to UTC.
+V2-OUTAGE-002,2021-06-15T13:50:00Z,2021-06-15T14:30:00Z,PASS,IODA curated interval normalized to UTC.
+V2-OUTAGE-003,2021-06-04T02:50:00Z,2021-06-04T05:50:00Z,PASS,IODA curated interval normalized to UTC.

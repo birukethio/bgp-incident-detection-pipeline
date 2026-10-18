@@ -1,0 +1,32 @@
+source,class,source_url,candidate_count,candidate_ids,source_role,notes
+APNIC analysis of Cloudflare Radar leak,Leak,https://blog.apnic.net/2026/05/25/ephemeral-leaks-and-automated-bgp-route-leak-detection/,1,V2-LEAK-005,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+BGPHorizon incident analysis,Hijack,https://www.bgphorizon.com/blog/telegram-bgp-hijack-june-2026,1,V2-HIJACK-002,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+GitHub evidence archive and NANOG thread,Hijack,https://github.com/miao-2011/bgp-hijack-evidence-AS202734; https://lists.nanog.org/archives/list/nanog@lists.nanog.org/thread/MI6VWOX7XOCDIS244RLJSMS2ITZWTGED/,1,V2-HIJACK-001,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Internet Society / MANRS article,Leak,https://www.internetsociety.org/blog/2017/08/google-leaked-prefixes-knocked-japan-off-internet/,1,V2-LEAK-013,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Kentik route leak analysis,Leak,https://www.kentik.com/blog/ephemeral-leaks-and-automated-bgp-route-leak-detection/,1,V2-LEAK-017,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+MANRS / Oracle Internet Intelligence incident analysis,Leak,https://manrs.org/2019/06/large-european-routing-leak-sends-traffic-through-china-telecom/,1,V2-LEAK-011,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+MANRS 2017 year-in-review,Hijack,https://manrs.org/2018/01/14000-incidents-a-2017-routing-security-year-in-review/,3,V2-HIJACK-017; V2-HIJACK-018; V2-HIJACK-019,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+MANRS 2017 year-in-review,Leak,https://manrs.org/2018/01/14000-incidents-a-2017-routing-security-year-in-review/,2,V2-LEAK-014; V2-LEAK-015,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+MANRS BGP Security in 2021,Hijack,https://manrs.org/2022/02/bgp-security-in-2021/,6,V2-HIJACK-011; V2-HIJACK-012; V2-HIJACK-013; V2-HIJACK-014; V2-HIJACK-015; V2-HIJACK-016,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+MANRS BGP Security in 2021,Leak,https://manrs.org/2022/02/bgp-security-in-2021/,6,V2-LEAK-022; V2-LEAK-023; V2-LEAK-024; V2-LEAK-025; V2-LEAK-026; V2-LEAK-027,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+MANRS incident analysis,Hijack,https://manrs.org/2020/04/not-just-another-bgp-hijack/,1,V2-HIJACK-008,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+MANRS incident analysis,Hijack,https://manrs.org/2020/07/another-bgp-incident-impacts-twc-rogers-charter-and-others/,1,V2-HIJACK-006,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+MANRS incident analysis,Hijack,https://manrs.org/2022/07/for-12-hours-was-part-of-apple-engineerings-network-hijacked-by-russias-rostelecom/,1,V2-HIJACK-007,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+MANRS incident analysis,Leak,https://manrs.org/2021/02/major-route-leak-by-as28548-another-bgp-optimizer/,1,V2-LEAK-007,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+MANRS incident analysis,Leak,https://manrs.org/2022/04/rfc-7911-what-happens-when-routers-do-not-speak-the-same-language/,1,V2-LEAK-016,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+MANRS incident analysis,Leak,https://manrs.org/2023/05/bgp-route-leak-at-angola-cables-slows-connectivity-for-many-australians/,1,V2-LEAK-012,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs Q3 2024 BGP incident overview,Leak,https://blog.qrator.net/en/q3-2024-ddos-bots-and-bgp-incidents-statistics-and_209/,1,V2-LEAK-021,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs Radar archive,Leak,https://blog.qrator.net/en/radar/?page=4,1,V2-LEAK-010,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs Radar article,Hijack,https://blog.qrator.net/en/lumen-aka-centurylink-generating-routing-incidents_101/,1,V2-HIJACK-010,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs Radar article,Leak,https://blog.qrator.net/en/as42910-leaking-hundreds-prefixes_89/,1,V2-LEAK-008,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs Radar article,Leak,https://blog.qrator.net/en/as9304-leaking-8764-prefixes-through-as15412_111/,1,V2-LEAK-006,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs Radar article,Leak,https://blog.qrator.net/en/moscow-traffic-jam_9/,1,V2-LEAK-009,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs Radar article index,Hijack,https://blog.qrator.net/en/radar/?page=2,1,V2-HIJACK-009,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs blog,Hijack,https://blog.qrator.net/en/leaked-censorship_16/,1,V2-HIJACK-004,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs blog,Hijack,https://blog.qrator.net/en/new-hijack-attack_42/,1,V2-HIJACK-005,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs blog,Leak,https://blog.qrator.net/en/day-internet-survived_14/,1,V2-LEAK-002,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs blog,Leak,https://blog.qrator.net/en/how-difficult-disrupt-service-nowadays_49/,1,V2-LEAK-003,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs blog,Leak,https://blog.qrator.net/en/prepending-trouble_115/,1,V2-LEAK-001,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator Labs quarterly BGP incidents report,Leak,https://blog.qrator.net/en/q3-2024-ddos-bots-and-bgp-incidents-statistics-and_209/,1,V2-LEAK-004,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+Qrator_Radar social feed mirror,Leak,https://twstalker.com/Qrator_Radar,3,V2-LEAK-018; V2-LEAK-019; V2-LEAK-020,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.
+RouteCause reproducible demo using RIPE RIS/RouteViews raw MRT,Hijack,https://github.com/dim-tsoukalas/RouteCause,1,V2-HIJACK-003,PRIMARY,Cloudflare is not primary for any accepted expansion candidate.

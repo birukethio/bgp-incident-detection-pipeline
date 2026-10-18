@@ -1,0 +1,10 @@
+incident_uid,stage,reference_rows,new_rows,feature_count,schema_order_match,max_absolute_difference,max_relative_difference,comparison_status,notes
+Hijack:131045,E2_V4_FEATURES,25,25,74,True,0.0,0.0,PASS_EXACT,Assembled 44 Behavioral + 14 CAIDA + 16 RPKI features in frozen V4 order and compared to frozen V4.
+Hijack:41142,E2_V4_FEATURES,52,52,74,True,0.0,0.0,PASS_EXACT,Assembled 44 Behavioral + 14 CAIDA + 16 RPKI features in frozen V4 order and compared to frozen V4.
+Hijack:115187,E2_V4_FEATURES,52,52,74,True,0.0,0.0,PASS_EXACT,Assembled 44 Behavioral + 14 CAIDA + 16 RPKI features in frozen V4 order and compared to frozen V4.
+Leak:462139,E2_V4_FEATURES,25,25,74,True,0.0,0.0,PASS_EXACT,Assembled 44 Behavioral + 14 CAIDA + 16 RPKI features in frozen V4 order and compared to frozen V4.
+Leak:442710,E2_V4_FEATURES,52,52,74,True,0.0,0.0,PASS_EXACT,Assembled 44 Behavioral + 14 CAIDA + 16 RPKI features in frozen V4 order and compared to frozen V4.
+Leak:415566,E2_V4_FEATURES,52,52,74,True,0.0,0.0,PASS_EXACT,Assembled 44 Behavioral + 14 CAIDA + 16 RPKI features in frozen V4 order and compared to frozen V4.
+Outage:1066,E2_V4_FEATURES,30,30,74,True,0.0,0.0,PASS_EXACT,Assembled 44 Behavioral + 14 CAIDA + 16 RPKI features in frozen V4 order and compared to frozen V4.
+Outage:532,E2_V4_FEATURES,63,63,74,True,0.0,0.0,PASS_EXACT,Assembled 44 Behavioral + 14 CAIDA + 16 RPKI features in frozen V4 order and compared to frozen V4.
+Outage:1178,E2_V4_FEATURES,2268,2268,74,True,0.0,0.0,PASS_EXACT,Assembled 44 Behavioral + 14 CAIDA + 16 RPKI features in frozen V4 order and compared to frozen V4.

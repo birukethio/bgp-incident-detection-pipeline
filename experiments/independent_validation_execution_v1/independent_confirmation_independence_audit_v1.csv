@@ -1,0 +1,4 @@
+audit_item,status,reason,result
+"Existing 1,419-corpus overlap audit",NOT_EXECUTED,No accepted independent candidate incidents were acquired before the source gate stopped execution.,No event-level overlap comparisons performed.
+RouteLLM availability,FAIL_GATE,Source-native event roster unavailable in local workspace and not discoverable from inspected public paper/source metadata.,No Hijack/Leak confirmation roster could be constructed under the lock.
+Artifact checksum verification,PASS,All locked artifacts recomputed before any scoring.,20/20 artifacts matched.

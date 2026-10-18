@@ -1,0 +1,10 @@
+incident_id,incident_uid,true_class,top1_tti_checkpoint,top2_tti_checkpoint,stable_correct_checkpoint,identified_top1_by_300s,identified_top2_by_300s,onset_review_flag
+125889,Hijack:125889,Hijack,<=30s checkpoint,<=30s checkpoint,<=30s checkpoint,True,True,REVIEW_CHANGE_ONSET_DIFFERS
+58159,Hijack:58159,Hijack,<=30s checkpoint,<=30s checkpoint,<=30s checkpoint,True,True,NONE
+97511,Hijack:97511,Hijack,<=30s checkpoint,<=30s checkpoint,<=30s checkpoint,True,True,NONE
+291102,Leak:291102,Leak,<=30s checkpoint,<=30s checkpoint,<=30s checkpoint,True,True,NONE
+426483,Leak:426483,Leak,<=30s checkpoint,<=30s checkpoint,<=30s checkpoint,True,True,REVIEW_CHANGE_ONSET_DIFFERS
+426871,Leak:426871,Leak,<=120s checkpoint,<=30s checkpoint,<=120s checkpoint,True,True,NONE
+1014,Outage:1014,Outage,<=30s checkpoint,<=30s checkpoint,<=30s checkpoint,True,True,REVIEW_CHANGE_ONSET_DIFFERS
+207,Outage:207,Outage,<=30s checkpoint,<=30s checkpoint,<=30s checkpoint,True,True,NONE
+525,Outage:525,Outage,<=30s checkpoint,<=30s checkpoint,<=30s checkpoint,True,True,NONE

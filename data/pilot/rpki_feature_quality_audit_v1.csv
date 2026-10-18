@@ -1,0 +1,17 @@
+feature_name,missing_count,missing_rate,zero_count,zero_rate,min,median,mean,p95,max,unique_values,constant,sparse,invalid,status
+rpki_evidence_observation_count,0,0.0,219,33.132,0,107.0,1189.0650529500756,4039.0,90904,351,False,False,0,PASS
+rpki_evaluable_observation_count,0,0.0,219,33.132,0,105.0,1186.0151285930408,4039.0,90904,349,False,False,0,PASS
+rpki_valid_observation_count,0,0.0,438,66.263,0,0.0,535.6142208774584,900.0,82271,161,False,False,0,PASS
+rpki_invalid_observation_count,0,0.0,628,95.008,0,0.0,2.24357034795764,0.0,805,15,False,True,0,REVIEW
+rpki_not_found_observation_count,0,0.0,235,35.552,0,77.0,648.1573373676248,2831.0,48029,306,False,False,0,PASS
+rpki_unevaluable_observation_count,0,0.0,601,90.923,0,0.0,3.049924357034796,5.0,1259,22,False,False,0,PASS
+rpki_invalid_origin_observation_count,0,0.0,633,95.764,0,0.0,2.220877458396369,0.0,805,15,False,True,0,REVIEW
+rpki_invalid_maxlength_observation_count,0,0.0,656,99.244,0,0.0,0.0226928895612708,0.0,3,2,False,True,0,REVIEW
+rpki_valid_observation_ratio,219,33.132,219,49.548,0.0,0.005020307895881449,0.24951881443994195,0.9128975311054653,1.0,213,False,False,0,PASS
+rpki_invalid_observation_ratio,219,33.132,409,92.534,0.0,0.0,0.005609849647907616,0.005354303382130237,0.6742209631728046,34,False,False,0,PASS
+rpki_not_found_observation_ratio,219,33.132,16,3.62,0.0,0.9927426644416633,0.7448713359121504,1.0,1.0,210,False,False,0,PASS
+rpki_unique_valid_prefix_count,0,0.0,438,66.263,0,0.0,57.71558245083207,209.0,6282,107,False,False,0,PASS
+rpki_unique_invalid_prefix_count,0,0.0,628,95.008,0,0.0,0.3524962178517398,0.0,62,7,False,True,0,REVIEW
+rpki_unique_not_found_prefix_count,0,0.0,235,35.552,0,4.0,37.36157337367625,137.0,2917,103,False,False,0,PASS
+rpki_state_diversity_count,0,0.0,219,33.132,0,1.0,1.1225416036308624,3.0,4,5,False,False,0,PASS
+rpki_dominant_state_code,0,0.0,219,33.132,0,2.0,2.1649016641452343,4.0,4,4,False,False,0,PASS

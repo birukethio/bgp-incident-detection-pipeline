@@ -1,0 +1,4 @@
+benchmark_batch_id,incident_uid,category,status,mrt_files,raw_bgp_observations,relevant_observations,feature_rows,parser_version,source_commit
+small_benchmark_001,Hijack:58159,Hijack,VERIFIED,20,8915481,64690,52,bgpdump 1.6.2,99fafc1037fa050fd2933ccc8c0f6f0bede45d05
+small_benchmark_001,Leak:291102,Leak,VERIFIED,11,1980268,267818,30,bgpdump 1.6.2,99fafc1037fa050fd2933ccc8c0f6f0bede45d05
+small_benchmark_001,Outage:1014,Outage,VERIFIED,14,7236549,63326,39,bgpdump 1.6.2,99fafc1037fa050fd2933ccc8c0f6f0bede45d05

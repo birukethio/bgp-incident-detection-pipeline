@@ -1,0 +1,17 @@
+imbalance_strategies_version: v1
+status: DOCUMENTED_NOT_APPLIED
+derived_from: TRAIN behavioral corpus only
+notes: These are future modeling configurations; none are baked into the frozen corpus.
+strategies:
+  natural:
+    description: Use all 68,031 TRAIN behavioral rows as observed.
+    row_count: 68031
+    applied_to_frozen_corpus: false
+  incident_aware_weighting:
+    description: Retain all rows while assigning each incident approximately equal aggregate influence.
+    applied_to_frozen_corpus: false
+  p95_cap_plus_incident_weighting:
+    description: Future modeling variant using a TRAIN-derived p95 cap plus incident-aware weights.
+    p95_window_cap: 164
+    p95_window_cap_derived_from: TRAIN distribution only
+    applied_to_frozen_corpus: false

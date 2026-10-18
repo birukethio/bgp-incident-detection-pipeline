@@ -1,0 +1,11 @@
+metric,value,notes
+target_original_hijack_incidents,473.0,Frozen Cloudflare v2 corpus; Outages excluded from targeted expansion.
+target_original_leak_incidents,473.0,Frozen Cloudflare v2 corpus; Outages excluded from targeted expansion.
+prior_v1_hijack_matches,0.0,From frozen v1 cross-source result.
+prior_v1_leak_matches,1.0,From frozen v1 cross-source result.
+additional_hijack_matches,0.0,No qualifying new exact same-event source-native Hijack matches found.
+additional_leak_matches,0.0,No qualifying new exact same-event source-native Leak matches found beyond existing Leak:291677.
+revised_hijack_matches,0.0,Unchanged from v1.
+revised_leak_matches,1.0,Unchanged from v1.
+revised_hijack_leak_exact_agreement,1.0,Among corroborated Hijack/Leak incidents only. Hijack denominator is zero; only one Leak match exists.
+revised_overall_v1_agreement,1.0,Overall v1 agreement remains unchanged because no new matches were appended to v1.

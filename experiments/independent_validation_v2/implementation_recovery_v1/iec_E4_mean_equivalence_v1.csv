@@ -1,0 +1,10 @@
+incident_uid,stage,reference_rows,new_rows,max_absolute_probability_difference,max_relative_probability_difference,ranking_match,comparison_status,notes
+Hijack:131045,E4_MEAN_AGGREGATION,1,1,0.0,0.0,True,PASS_EXACT,Mean H/L/O Level-1 probabilities by incident and compared to K1-B0_MEAN_PROBABILITY.
+Hijack:41142,E4_MEAN_AGGREGATION,1,1,0.0,0.0,True,PASS_EXACT,Mean H/L/O Level-1 probabilities by incident and compared to K1-B0_MEAN_PROBABILITY.
+Hijack:115187,E4_MEAN_AGGREGATION,1,1,0.0,0.0,True,PASS_EXACT,Mean H/L/O Level-1 probabilities by incident and compared to K1-B0_MEAN_PROBABILITY.
+Leak:462139,E4_MEAN_AGGREGATION,1,1,0.0,0.0,True,PASS_EXACT,Mean H/L/O Level-1 probabilities by incident and compared to K1-B0_MEAN_PROBABILITY.
+Leak:442710,E4_MEAN_AGGREGATION,1,1,0.0,0.0,True,PASS_EXACT,Mean H/L/O Level-1 probabilities by incident and compared to K1-B0_MEAN_PROBABILITY.
+Leak:415566,E4_MEAN_AGGREGATION,1,1,0.0,0.0,True,PASS_EXACT,Mean H/L/O Level-1 probabilities by incident and compared to K1-B0_MEAN_PROBABILITY.
+Outage:1066,E4_MEAN_AGGREGATION,1,1,0.0,0.0,True,PASS_EXACT,Mean H/L/O Level-1 probabilities by incident and compared to K1-B0_MEAN_PROBABILITY.
+Outage:532,E4_MEAN_AGGREGATION,1,1,0.0,0.0,True,PASS_EXACT,Mean H/L/O Level-1 probabilities by incident and compared to K1-B0_MEAN_PROBABILITY.
+Outage:1178,E4_MEAN_AGGREGATION,1,1,0.0,0.0,True,PASS_EXACT,Mean H/L/O Level-1 probabilities by incident and compared to K1-B0_MEAN_PROBABILITY.

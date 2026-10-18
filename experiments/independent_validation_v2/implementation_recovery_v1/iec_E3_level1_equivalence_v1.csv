@@ -1,0 +1,10 @@
+incident_uid,stage,reference_rows,new_rows,max_absolute_probability_difference,max_relative_probability_difference,predicted_class_agreement,comparison_status,notes
+Hijack:131045,E3_LEVEL1_WINDOW_SCORES,25,25,0.0,0.0,True,PASS_EXACT,Applied verified reconstructed fold-specific Level-1 models to fixture V4 rows and compared to frozen OOF probabilities.
+Hijack:41142,E3_LEVEL1_WINDOW_SCORES,52,52,0.0,0.0,True,PASS_EXACT,Applied verified reconstructed fold-specific Level-1 models to fixture V4 rows and compared to frozen OOF probabilities.
+Hijack:115187,E3_LEVEL1_WINDOW_SCORES,52,52,0.0,0.0,True,PASS_EXACT,Applied verified reconstructed fold-specific Level-1 models to fixture V4 rows and compared to frozen OOF probabilities.
+Leak:462139,E3_LEVEL1_WINDOW_SCORES,25,25,0.0,0.0,True,PASS_EXACT,Applied verified reconstructed fold-specific Level-1 models to fixture V4 rows and compared to frozen OOF probabilities.
+Leak:442710,E3_LEVEL1_WINDOW_SCORES,52,52,0.0,0.0,True,PASS_EXACT,Applied verified reconstructed fold-specific Level-1 models to fixture V4 rows and compared to frozen OOF probabilities.
+Leak:415566,E3_LEVEL1_WINDOW_SCORES,52,52,0.0,0.0,True,PASS_EXACT,Applied verified reconstructed fold-specific Level-1 models to fixture V4 rows and compared to frozen OOF probabilities.
+Outage:1066,E3_LEVEL1_WINDOW_SCORES,30,30,0.0,0.0,True,PASS_EXACT,Applied verified reconstructed fold-specific Level-1 models to fixture V4 rows and compared to frozen OOF probabilities.
+Outage:532,E3_LEVEL1_WINDOW_SCORES,63,63,0.0,0.0,True,PASS_EXACT,Applied verified reconstructed fold-specific Level-1 models to fixture V4 rows and compared to frozen OOF probabilities.
+Outage:1178,E3_LEVEL1_WINDOW_SCORES,2268,2268,0.0,0.0,True,PASS_EXACT,Applied verified reconstructed fold-specific Level-1 models to fixture V4 rows and compared to frozen OOF probabilities.

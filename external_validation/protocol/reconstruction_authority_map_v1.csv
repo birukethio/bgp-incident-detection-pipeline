@@ -1,0 +1,7 @@
+component,authoritative_source,status
+V4 schema,src/bgp_incident_detection/feature_ablation.py; data/tti_pilot/reconstructed_level1_v1/feature_schema_v4.json,74_FEATURE_ORDER_FROZEN
+Level-1 models,data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_*.joblib,EXACT_TRAIN_PROBABILITY_EQUIVALENCE
+Behavioral,src/bgp_incident_detection/behavioral_features.py,44_FEATURES
+CAIDA,src/bgp_incident_detection/caida_features.py,14_HISTORICAL_FEATURES
+RPKI/ROV,src/bgp_incident_detection/rpki_features.py,16_HISTORICAL_FEATURES
+Level-2,experiments/independent_validation_v2/level2_external_validation_closure_v1/,NOT_USABLE_ARTIFACT_NOT_PERSISTED

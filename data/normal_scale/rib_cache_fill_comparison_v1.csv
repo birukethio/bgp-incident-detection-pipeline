@@ -1,0 +1,3 @@
+run_label,candidates_processed,RIB_files_available,full_RIB_parses,index_lookups,RIB_PRESCREEN_PASS,RIB_REVIEW,failures,elapsed_time,average_time_per_candidate
+before_cache_fill,12,0,0,0,0,12,12,,
+after_cache_fill,12,24,0,24,1,0,11,5.575,0.465

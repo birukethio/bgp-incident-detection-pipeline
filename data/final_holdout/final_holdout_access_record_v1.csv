@@ -1,0 +1,2 @@
+access_timestamp_utc,access_type,protocol,protocol_status,authorized_architecture,model_candidate,second_level_parameter_hash,notes
+2026-09-03T01:23:45Z,FINAL_HOLDOUT_PHASE_L_EVALUATION,config/final_holdout_protocol_v1.yaml,FROZEN_BEFORE_HOLDOUT_ACCESS,A0_XGB_TO_XGB,K1_FINAL_SECOND_LEVEL_XGB_V1,40df040321ef,"Recorded before Holdout feature generation, prediction, and metric computation."

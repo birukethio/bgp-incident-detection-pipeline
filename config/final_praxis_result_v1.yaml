@@ -1,0 +1,29 @@
+result_id: final_praxis_result_v1
+status: FROZEN_TERMINAL_FINAL_HOLDOUT_RESULT
+architecture: A0_XGB_TO_XGB
+architecture_decision: KEEP_XGB_XGB_K1
+first_level_strategy: CROSSFIT_ENSEMBLE_FIRST_LEVEL
+second_level_model: K1_FINAL_SECOND_LEVEL_XGB_V1
+second_level_parameter_hash: 40df040321ef
+holdout_incidents: 213
+holdout_window_rows: 14906
+incident_macro_f1: 0.9201769450076779
+top1: 0.92018779342723
+top2: 0.9906103286384976
+mrr: 0.9585289514866979
+hijack_f1: 0.8776978417266187
+leak_f1: 0.9041095890410958
+outage_f1: 0.9787234042553191
+mean_true_class_rank: 1.0892018779342723
+multiclass_log_loss: 0.21543796853818212
+multiclass_brier_score: 0.11632375759556997
+bootstrap_ci_file: data/final_holdout/final_holdout_bootstrap_ci_v1.csv
+macro_f1_ci_95:
+  ci_lower_95: 0.8801170994295882
+  ci_upper_95: 0.9544024249379308
+stage1_status: UNRESOLVED_EXPERIMENTAL_AUXILIARY
+final_holdout_status: EVALUATED_ONCE_AND_CLOSED
+post_holdout_model_changes: FORBIDDEN
+next_phase: documentation, chapters, figures, and defense only
+source_commit: 99fafc1037fa050fd2933ccc8c0f6f0bede45d05
+evaluation_timestamp_utc: '2026-09-03T08:45:33Z'

@@ -1,0 +1,4 @@
+class,total_candidates_found,accepted_candidates,new_independent_accepted_candidates,routeviews_available_new_candidates,target_range,target_met
+Hijack,5,4,4,4,20-30,NO
+Leak,5,4,4,4,20-30,NO
+Outage,30,30,30,30,20-30,YES

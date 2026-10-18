@@ -1,0 +1,139 @@
+rpki_feature_version: v1
+rpki_feature_count: 16
+source_inventory: data/enrichment/rpki/rpki_feature_inventory_v1.csv
+row_grain: one row per frozen TRAIN 5-minute window_id
+validation_states:
+  VALID: covering VRP authorizes origin ASN and prefix length
+  INVALID_ORIGIN: covering VRP exists but origin ASN is not authorized
+  INVALID_LENGTH: origin ASN is authorized but observed prefix exceeds maxLength
+  NOT_FOUND: no covering VRP exists
+  UNEVALUABLE: missing or malformed prefix/origin evidence
+features:
+  - order: 1
+    name: rpki_evidence_observation_count
+    definition: "Underlying incident-relevant BGP observations represented by compact evidence rows."
+    formula: "sum(observation_count)"
+    required_inputs: "window evidence"
+    aggregation_method: "observation-weighted sum"
+    zero_behavior: "0 when no evidence"
+    missing_behavior: "0 means no prefix/origin evidence in the window"
+  - order: 2
+    name: rpki_evaluable_observation_count
+    definition: "Observation-weighted count with parseable prefix and origin ASN."
+    formula: "valid+invalid+not_found"
+    required_inputs: "prefix, origin_asn, observation_count"
+    aggregation_method: "observation-weighted sum"
+    zero_behavior: "0 when no evaluable evidence"
+    missing_behavior: "not equivalent to VALID"
+  - order: 3
+    name: rpki_valid_observation_count
+    definition: "Observation-weighted count classified VALID."
+    formula: "sum(observation_count where state=VALID)"
+    required_inputs: "prefix, origin_asn, VRPs"
+    aggregation_method: "observation-weighted sum"
+    zero_behavior: "0 if no VALID observations"
+    missing_behavior: "0 can mean no evidence or all non-VALID; use denominator features"
+  - order: 4
+    name: rpki_invalid_observation_count
+    definition: "Observation-weighted count classified INVALID."
+    formula: "INVALID_ORIGIN + INVALID_LENGTH"
+    required_inputs: "prefix, origin_asn, VRPs"
+    aggregation_method: "observation-weighted sum"
+    zero_behavior: "0 if no INVALID observations"
+    missing_behavior: "0 is meaningful only with evaluable denominator"
+  - order: 5
+    name: rpki_not_found_observation_count
+    definition: "Observation-weighted count with no covering VRP."
+    formula: "sum(observation_count where state=NOT_FOUND)"
+    required_inputs: "prefix, origin_asn, VRPs"
+    aggregation_method: "observation-weighted sum"
+    zero_behavior: "0 if no NOT_FOUND observations"
+    missing_behavior: "NOT_FOUND is not VALID"
+  - order: 6
+    name: rpki_unevaluable_observation_count
+    definition: "Observation-weighted count with missing/malformed prefix or origin."
+    formula: "sum(observation_count where state=UNEVALUABLE)"
+    required_inputs: "prefix, origin_asn"
+    aggregation_method: "observation-weighted sum"
+    zero_behavior: "0 if all evidence evaluable"
+    missing_behavior: "separate from NOT_FOUND"
+  - order: 7
+    name: rpki_invalid_origin_observation_count
+    definition: "Observation-weighted INVALID caused by origin mismatch."
+    formula: "sum(observation_count where state=INVALID_ORIGIN)"
+    required_inputs: "prefix, origin_asn, VRPs"
+    aggregation_method: "observation-weighted sum"
+    zero_behavior: "0 if no origin mismatch invalids"
+    missing_behavior: "separate from maxLength violation"
+  - order: 8
+    name: rpki_invalid_maxlength_observation_count
+    definition: "Observation-weighted INVALID caused by maxLength violation."
+    formula: "sum(observation_count where state=INVALID_LENGTH)"
+    required_inputs: "prefix, origin_asn, VRPs"
+    aggregation_method: "observation-weighted sum"
+    zero_behavior: "0 if no maxLength invalids"
+    missing_behavior: "separate from origin mismatch"
+  - order: 9
+    name: rpki_valid_observation_ratio
+    definition: "Share of evaluable observations classified VALID."
+    formula: "valid/evaluable"
+    required_inputs: "RPKI counts"
+    aggregation_method: "ratio"
+    zero_behavior: "NaN if denominator zero"
+    missing_behavior: "NaN when no evaluable evidence"
+  - order: 10
+    name: rpki_invalid_observation_ratio
+    definition: "Share of evaluable observations classified INVALID."
+    formula: "invalid/evaluable"
+    required_inputs: "RPKI counts"
+    aggregation_method: "ratio"
+    zero_behavior: "NaN if denominator zero"
+    missing_behavior: "NaN when no evaluable evidence"
+  - order: 11
+    name: rpki_not_found_observation_ratio
+    definition: "Share of evaluable observations classified NOT_FOUND."
+    formula: "not_found/evaluable"
+    required_inputs: "RPKI counts"
+    aggregation_method: "ratio"
+    zero_behavior: "NaN if denominator zero"
+    missing_behavior: "NaN when no evaluable evidence"
+  - order: 12
+    name: rpki_unique_valid_prefix_count
+    definition: "Unique prefixes with at least one VALID observation."
+    formula: "nunique(prefix where state=VALID)"
+    required_inputs: "prefix, ROV state"
+    aggregation_method: "prefix-unique count"
+    zero_behavior: "0 if none"
+    missing_behavior: "prefix-unique, not observation-weighted"
+  - order: 13
+    name: rpki_unique_invalid_prefix_count
+    definition: "Unique prefixes with at least one INVALID observation."
+    formula: "nunique(prefix where state starts INVALID)"
+    required_inputs: "prefix, ROV state"
+    aggregation_method: "prefix-unique count"
+    zero_behavior: "0 if none"
+    missing_behavior: "prefix-unique, not observation-weighted"
+  - order: 14
+    name: rpki_unique_not_found_prefix_count
+    definition: "Unique prefixes with at least one NOT_FOUND observation."
+    formula: "nunique(prefix where state=NOT_FOUND)"
+    required_inputs: "prefix, ROV state"
+    aggregation_method: "prefix-unique count"
+    zero_behavior: "0 if none"
+    missing_behavior: "prefix-unique, not observation-weighted"
+  - order: 15
+    name: rpki_state_diversity_count
+    definition: "Number of distinct RPKI states seen in the window."
+    formula: "count distinct VALID/INVALID_ORIGIN/INVALID_LENGTH/NOT_FOUND/UNEVALUABLE with count > 0"
+    required_inputs: "RPKI states"
+    aggregation_method: "window distinct count"
+    zero_behavior: "0 if no evidence"
+    missing_behavior: "captures mixed state windows"
+  - order: 16
+    name: rpki_dominant_state_code
+    definition: "Numeric code for the most common observation-weighted RPKI state."
+    formula: "argmax state count mapped to code"
+    required_inputs: "RPKI states"
+    aggregation_method: "categorical code"
+    zero_behavior: "0 if no evidence"
+    missing_behavior: "codes documented in missing/zero policy"

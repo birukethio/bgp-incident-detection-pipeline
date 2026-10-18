@@ -1,0 +1,10 @@
+term,definition,usage_note,chapter
+incident,independent real-world BGP event unit used for splitting and evaluation,Do not confuse with five-minute windows.,Chapter 3
+window,five-minute analytical interval associated with an incident or verified Normal candidate,Window rows inherit incident partition.,Chapter 3
+V4,"74-feature schema combining 44 Behavioral, 14 CAIDA, and 16 RPKI/ROV features",Authoritative final feature representation.,Chapter 3/4
+I1,incident-aware weighting strategy,Used to reduce unequal influence from incidents with many windows.,Chapter 3/4
+Stage 1,Normal-vs-Incident experimental branch,"Auxiliary/unresolved, not final architecture.",Chapter 4/5
+K1,incident-level temporal stacking architecture,Post-Validation TRAIN-only development; not Validation-confirmed.,Chapter 4
+Final Holdout,sealed 213-incident terminal evaluation partition,Opened once in Phase L.,Chapter 3/4
+Top-2,share of incidents whose true class appears in the two highest-ranked classes,Final Top-2 = 211/213.,Chapter 4
+MRR,mean reciprocal rank of the true class,Incident-level ranking metric.,Chapter 4

@@ -1,0 +1,4 @@
+comparison,left_unique_asns,right_unique_asns,origin_or_affected_as_overlap_count,right_incidents_with_any_left_asn,right_incidents_with_any_left_asn_percent,right_incidents_with_asn_class_overlap,right_incidents_with_asn_prefix_overlap,asn_prefix_close_time_pair_count_24h,assessment,notes
+train↔validation,1822,1011,347,179,84.038,174,35,8,RESOURCE_RECURRENCE_NOT_EVENT_LEAKAGE,"Repeated ASNs are expected, especially major networks/providers; they are not leakage absent duplicate event evidence."
+train↔holdout,1822,1055,369,179,84.038,174,46,9,RESOURCE_RECURRENCE_NOT_EVENT_LEAKAGE,"Repeated ASNs are expected, especially major networks/providers; they are not leakage absent duplicate event evidence."
+validation↔holdout,1011,1055,190,145,68.075,141,19,1,RESOURCE_RECURRENCE_NOT_EVENT_LEAKAGE,"Repeated ASNs are expected, especially major networks/providers; they are not leakage absent duplicate event evidence."

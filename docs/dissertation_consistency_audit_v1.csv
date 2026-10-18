@@ -1,0 +1,9 @@
+stale_claim_pattern,where_to_check,flag,notes
+old Praxis title,search docs/config summaries,CURRENT_DOCUMENT_NEEDS_UPDATE,Update only current writing files; keep historical artifacts.
+old feature count around 49,historical docs,CURRENT_DOCUMENT_NEEDS_UPDATE,Current V4 = 74.
+old RPKI count of 3,historical docs,CURRENT_DOCUMENT_NEEDS_UPDATE,Current RPKI = 16.
+old 7-event Holdout,historical pilot docs,HISTORICAL_KEEP_AS_IS,Do not rewrite pilot history.
+old Random Forest final-model claims,modeling docs,SUPERSEDED,"RF is benchmark, final is K1 XGB->XGB."
+old Macro F1 values,phase-specific results,HISTORICAL_KEEP_AS_IS,Use artifact status to distinguish.
+old threshold tau=0.70 claims,Stage 1 docs,HISTORICAL_KEEP_AS_IS,Stage 1 remains auxiliary.
+old two-stage hierarchy as final architecture,historical docs,CURRENT_DOCUMENT_NEEDS_UPDATE,Final architecture is K1 incident-level stacker.

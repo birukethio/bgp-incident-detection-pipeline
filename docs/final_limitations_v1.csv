@@ -1,0 +1,9 @@
+limitation,impact,mitigation,future_work
+RouteViews perspective,public collectors may not reflect enterprise-local BGP state,use multiple collectors/future enterprise telemetry,Chapter 5
+Collector observability,historical visibility varies by collector/time,quality gates and caveats,Chapter 5
+External labels,incident labels derive from third-party sources,cross-check provenance and preserve uncertainty,Chapter 5
+Normal methodology,Stage 1 remained auxiliary,future Normal formulation,Chapter 5
+K1 window requirements,requires configured observation window,future shorter-window inference,Chapter 5
+Post-Validation K1 development,K1 was not Validation-confirmed,treat Holdout as primary independent estimate,Chapter 5
+Holdout size,213 incidents limits uncertainty precision,bootstrap CI and larger corpus future work,Chapter 5
+Hijack difficulty,Hijack lowest final F1,targeted future features/error analysis,Chapter 5

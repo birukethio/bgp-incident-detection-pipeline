@@ -1,0 +1,45 @@
+candidate_id: "RF_REFINED_TRAIN_CANDIDATE"
+status: "RF_REFINED_TRAIN_CANDIDATE"
+recommendation: "PROMOTE_PHASE_H2_RF"
+h2_result_classification: "MARGINAL_REFINEMENT"
+selected_source_candidate_id: "H2_LOCAL_001"
+selected_hyperparameters:
+  bootstrap: false
+  criterion: "log_loss"
+  max_depth: 40
+  max_features: 0.3
+  min_samples_leaf: 6
+  min_samples_split: 6
+  n_estimators: 1200
+  class_weight: null
+feature_variant: "V4"
+feature_count: 74
+imbalance_condition: "I1"
+seed_policy:
+  local_search_seed: 20260828
+  stability_rf_seeds:
+    - 20260828
+    - 20260829
+    - 20260830
+    - 20260831
+    - 20260901
+  fold_assignments: "data/modeling/baseline_v1_grouped_cv_assignments_v1.csv"
+grouped_folds: "Existing frozen grouped folds reused; no fold regeneration."
+incident_aggregation: "mean class probability across all eligible windows for the incident"
+ranking_rule: "sort P(Hijack), P(Leak), P(Outage) descending"
+train_multiseed_results:
+  mean_incident_macro_f1: 0.7845882791097261
+  std_incident_macro_f1: 0.0013420598133869943
+  mean_mrr: 0.8825780463242694
+  mean_top2: 0.932930513595166
+  mean_top1: 0.7875125881168177
+  hijack_f1_mean: 0.7219226437347833
+  leak_f1_mean: 0.8411098139546438
+  outage_f1_mean: 0.790732379639751
+  window_macro_f1_mean: 0.6795239597593301
+  mean_fit_time_seconds: 399.19179999999994
+validation_accessed: false
+final_holdout_accessed: false
+stage1_status: "UNRESOLVED_EXPERIMENTAL_AUXILIARY"
+phase_i_xgboost_pending: true
+source_commit: "99fafc1037fa050fd2933ccc8c0f6f0bede45d05"

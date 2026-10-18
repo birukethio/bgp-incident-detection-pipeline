@@ -67,6 +67,28 @@ The Final Holdout is used only after the complete pipeline is frozen. It must ne
 - Stage 1 threshold selection
 - model selection
 
+## Frozen Experimental Components
+
+| Component | Status |
+|---|---|
+| Incident Roster v2 | FROZEN |
+| Incident partitions v2 | FROZEN |
+| Behavioral feature schema v1 | 44 features, FROZEN |
+| CAIDA AS-relationship schema | 14 features, FROZEN |
+| Historical RPKI/ROV schema | 16 features, FROZEN |
+| Final V4 schema | 74 features, FROZEN |
+| Normal ground-truth methodology v1 | FROZEN |
+| Normal development corpus v1 | 516 verified windows, FROZEN_FOR_DEVELOPMENT |
+| TRAIN grouped/nested evaluation | COMPLETE |
+| Validation confirmation | COMPLETE |
+| Final Holdout evaluation | COMPLETE, TERMINAL |
+
+Normal methodology v1 and the Normal development corpus are documented in `config/normal_ground_truth_method_v1.yaml`, `docs/normal_ground_truth_methodology_v1.md`, and `data/normal_frozen/`.
+
+`NORMAL_VERIFIED` maps to `NORMAL` for supervised Stage 1 training. `Hijack`, `Leak`, and `Outage` map to `INCIDENT`. `UNKNOWN` windows are excluded from supervised training.
+
+The completed V4 representation contains 44 Behavioral, 14 historical CAIDA, and 16 historical RPKI/ROV features. The final incident-level Holdout results are Macro F1 `0.920177`, Top-1 `0.920188`, Top-2 `0.990610`, and MRR `0.958529`. These terminal results are immutable; the repository's later audits and sensitivity analyses are additive and do not replace them.
+
 ## Window Cap Status
 
 No fixed `max_windows_per_incident` is defined yet. The window cap will be determined later from the observed duration and 5-minute window-count distribution after the incident roster is frozen and before model training.
@@ -125,11 +147,6 @@ The current pre-MRT audit status is `REVIEW`: the frozen partition mechanics pas
 | `src/bgp_incident_detection/partitioning_v2.py` | Freeze Roster v2 and create the final v2 incident-level partitions |
 | `src/bgp_incident_detection/audit.py` | Audit frozen partitions before MRT acquisition |
 
-## Next Pipeline Steps
+## Final Project Status
 
-1. Define normal-window selection rules.
-2. Analyze incident duration and window-count distribution to choose a window cap.
-3. Add MRT downloader for RouteViews and RIPE RIS.
-4. Add BGP UPDATE parser and 5-minute feature extractor.
-5. Train Stage 1 and Stage 2 models.
-6. Run feature ablation experiments.
+The Praxis experiment, reproducibility audits, TRAIN-only early-classification analyses, post-hoc sensitivity analyses, and publication figures are complete. Raw RouteViews archives, generated feature matrices, and oversized serialized development models remain local and are intentionally excluded from Git; compact provenance manifests, schemas, code, checksums, and result summaries are versioned here.

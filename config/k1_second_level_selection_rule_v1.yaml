@@ -1,0 +1,15 @@
+rule_id: k1_second_level_selection_rule_v1
+status: FROZEN_BEFORE_FINAL_SELECTION
+input_evidence: data/final_prep/k1_second_level_candidate_inventory_v1.csv
+candidate_pool: second-level XGBoost configurations actually selected/evaluated during
+  K1/K2 only
+tie_tolerance_macro_f1: 0.002
+hierarchy:
+- highest mean nested-CV incident Macro F1
+- if abs(Macro F1 difference) < 0.002, higher mean MRR
+- if still tied, higher mean Top-2
+- if still tied, better minimum per-class F1
+- if still tied, lower fold/seed variance
+- if still tied, simpler/faster configuration
+validation_used: false
+final_holdout_accessed: false

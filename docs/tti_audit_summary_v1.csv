@@ -1,0 +1,6 @@
+question,answer,evidence
+Can current compact evidence reconstruct 30/60/120/300s V4-compatible features exactly?,NO,Compact evidence is aggregated by completed 5-minute window and lacks per-observation timestamp.
+Can pilot parsed CSVs support a small proof-of-concept?,YES_FOR_SMALL_SUBSETS,"Parsed pilot/normal CSVs retain bgp_timestamp_utc, but they are not the complete TRAIN corpus."
+Can frozen Level-1 XGBoost consume partial-horizon features?,TECHNICALLY_YES,The model expects 74 numeric V4 columns; horizon-limited features can match the schema if generated with identical column order and preprocessing.
+Is retraining scientifically required for a production early-classification model?,LIKELY_YES,Partial horizons are censored observations with different distributions from completed 5-minute training windows.
+Should frozen K1 be used directly for initial TTI?,NO,"K1 second-level meta-features summarize full incident probability sequences, including early/middle/late segments and slopes."

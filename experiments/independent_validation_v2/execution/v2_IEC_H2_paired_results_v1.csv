@@ -1,0 +1,2 @@
+comparison,delta_h2_macro_f1,ci_lower,ci_upper,evaluable_incidents,status,notes
+Behavioral-only vs Behavioral+CAIDA+RPKI/ROV,NA,NA,NA,0,NOT_EXECUTED_IMPLEMENTATION_EQUIVALENCE_FAIL,Requires successful IEC scoring on the same evaluable incidents.

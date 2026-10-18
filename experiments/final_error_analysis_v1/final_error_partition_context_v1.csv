@@ -1,0 +1,8 @@
+partition,partition_context_category,classification_status,incident_count,percent_within_category,mean_related_pair_count,interpretation_boundary
+FINAL_HOLDOUT,CLEAR,misclassified,1,0.03333333333333333,0.0,partition-forensic association only; not leakage or causation
+FINAL_HOLDOUT,CLEAR,correct,29,0.9666666666666667,0.0,partition-forensic association only; not leakage or causation
+FINAL_HOLDOUT,EXPECTED_CONTEXT_OVERLAP,misclassified,12,0.08955223880597014,0.0,partition-forensic association only; not leakage or causation
+FINAL_HOLDOUT,EXPECTED_CONTEXT_OVERLAP,correct,122,0.9104477611940298,0.0,partition-forensic association only; not leakage or causation
+FINAL_HOLDOUT,POTENTIAL_RELATED_EVENT,misclassified,4,0.10526315789473684,26.0,partition-forensic association only; not leakage or causation
+FINAL_HOLDOUT,POTENTIAL_RELATED_EVENT,correct,34,0.8947368421052632,8.941176470588236,partition-forensic association only; not leakage or causation
+FINAL_HOLDOUT,REVIEW_REQUIRED,correct,11,1.0,1.0,partition-forensic association only; not leakage or causation

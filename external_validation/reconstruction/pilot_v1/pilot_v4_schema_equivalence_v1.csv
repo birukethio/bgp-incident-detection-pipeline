@@ -1,0 +1,9 @@
+incident_uid,category,feature_count,feature_names_order_exact,schema_sha256,historical_enrichment_exact,model_checksums_exact,status
+V2-HIJACK-003,Hijack,74,True,38ca70a2aa50a39172f2a90d1c893fdd08dfa38a49b3e5945b19d9cab2a202f3,False,True,REVIEW
+V2-HIJACK-006,Hijack,74,True,38ca70a2aa50a39172f2a90d1c893fdd08dfa38a49b3e5945b19d9cab2a202f3,True,True,PASS
+V2-LEAK-002,Leak,74,True,38ca70a2aa50a39172f2a90d1c893fdd08dfa38a49b3e5945b19d9cab2a202f3,True,True,PASS
+V2-LEAK-003,Leak,74,True,38ca70a2aa50a39172f2a90d1c893fdd08dfa38a49b3e5945b19d9cab2a202f3,True,True,PASS
+V2-LEAK-007,Leak,74,True,38ca70a2aa50a39172f2a90d1c893fdd08dfa38a49b3e5945b19d9cab2a202f3,True,True,PASS
+V2-OUTAGE-001,Outage,74,True,38ca70a2aa50a39172f2a90d1c893fdd08dfa38a49b3e5945b19d9cab2a202f3,True,True,PASS
+V2-OUTAGE-002,Outage,74,True,38ca70a2aa50a39172f2a90d1c893fdd08dfa38a49b3e5945b19d9cab2a202f3,True,True,PASS
+V2-OUTAGE-003,Outage,74,True,38ca70a2aa50a39172f2a90d1c893fdd08dfa38a49b3e5945b19d9cab2a202f3,True,True,PASS

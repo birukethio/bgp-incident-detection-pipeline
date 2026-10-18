@@ -1,0 +1,16 @@
+metric,class,value,notes
+original_incidents_searched,ALL,1419.0,Frozen roster v2 incident count.
+independently_corroborated_incidents,ALL,59.0,Unique Cloudflare incidents with accepted same-event non-Cloudflare source-native label.
+corroboration_rate,ALL,0.041578576462297394,Corroborated / searched.
+overall_exact_label_agreement,ALL,1.0,Agreement among accepted corroborated incidents only.
+overall_agreement_bootstrap_ci_lower_95,ALL,1.0,Incident-level bootstrap; seed=20260915; reps=10000.
+overall_agreement_bootstrap_ci_upper_95,ALL,1.0,Incident-level bootstrap; seed=20260915; reps=10000.
+cohens_kappa,ALL,1.0,Cloudflare label versus deterministic independent-source mapped label.
+multi_non_cloudflare_source_supported_incidents,ALL,2.0,Counts accepted incidents whose source packet records more than one non-Cloudflare source.
+disagreement_count,ALL,0.0,Accepted corroborated incidents with different mapped labels.
+corroborated_incidents,Hijack,0.0,Accepted same-event matches by Cloudflare class.
+class_exact_label_agreement,Hijack,,Agreement among accepted same-event matches in class.
+corroborated_incidents,Leak,1.0,Accepted same-event matches by Cloudflare class.
+class_exact_label_agreement,Leak,1.0,Agreement among accepted same-event matches in class.
+corroborated_incidents,Outage,58.0,Accepted same-event matches by Cloudflare class.
+class_exact_label_agreement,Outage,1.0,Agreement among accepted same-event matches in class.

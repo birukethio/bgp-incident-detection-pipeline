@@ -22,13 +22,27 @@ pnpm-debug.log*
 # Raw BGP archives and feature matrices
 data/raw/
 data/raw_mrt/
+external_validation/final_execution_v1/work/raw_mrt/
+external_validation/final_execution_v1/work/parsed/
+external_validation/reconstruction/pilot_v1/raw_mrt/
+external_validation/reconstruction/pilot_v1/parsed/
 data/parsed_mrt/
 data/features/
+data/cache/
 *.mrt
 *.mrt.gz
 *.bz2
 *.parquet
 *.feather
+
+# Large generated model/evidence artifacts (kept locally; reproducible from manifests)
+data/modeling/models/baseline_v1/
+data/modeling/models/domain_experts_v1/
+data/tti_pilot/tti_timestamped_evidence_v1.csv
+experiments/natural_distribution_v1/natural_distribution_incident_roster_v1.csv
+
+# Document rendering scratch output; retain final DOCX/PDF deliverables
+deliverables/**/render*/
 
 # Large Cloudflare/API dumps generated during exploration
 cloudflare_incidents/raw_*.json

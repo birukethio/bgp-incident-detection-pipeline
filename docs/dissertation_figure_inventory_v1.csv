@@ -1,0 +1,9 @@
+figure_title,purpose,source,status,priority
+End-to-end methodology pipeline,show full workflow,docs/final_architecture_flow_v1.md,NEEDS_GENERATION,ESSENTIAL
+Dataset/partition flow,show incident-level split,data/partitions_v2/frozen_partition_manifest_v2.csv,NEEDS_GENERATION,ESSENTIAL
+Five-minute window representation,define analytical row,data/train_frozen/frozen_train_behavioral_corpus_v1.parquet,NEEDS_GENERATION,ESSENTIAL
+Feature engineering/enrichment pipeline,show Behavioral+CAIDA+RPKI,config/feature_variants_v1.yaml,NEEDS_GENERATION,ESSENTIAL
+K1 stacking architecture,show final two-level K1,docs/final_architecture_flow_v1.md,NEEDS_GENERATION,ESSENTIAL
+Final confusion matrix,terminal errors,figures/final/final_holdout_confusion_matrix_v1.png,EXISTS,ESSENTIAL
+TRAIN vs Validation vs Holdout,compare evaluation populations,data/final_holdout/train_vs_final_holdout_comparison_v1.csv,NEEDS_GENERATION,ESSENTIAL
+SHAP global/class-specific figures,explainability,,NEEDS_GENERATION,OPTIONAL

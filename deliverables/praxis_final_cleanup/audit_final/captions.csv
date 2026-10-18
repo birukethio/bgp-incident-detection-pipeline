@@ -1,0 +1,15 @@
+paragraph_index,style,caption_type,text
+148,Caption,Table,Table 1.1 Research questions and hypotheses.
+192,Caption,Table,Table 2.1 Literature areas supporting the final methodology.
+253,Caption,Table,Table 3.1 Frozen incident partition summary.
+260,Caption,Table,Table 3.2 Final V4 feature representation.
+361,Caption,Table,Table 4.1 Final corpus and feature foundation.
+366,Caption,Figure,Figure 4.1 Feature variant progression from Behavioral-only evidence to the full V4 representation.
+369,Caption,Figure,Figure 4.2 Feature-family ablation results.
+379,Caption,Figure,Figure 4.3 TRAIN grouped-CV versus independent Validation performance.
+383,Caption,Figure,Figure 4.4 Mean probability aggregation versus K1 temporal stacking.
+386,Caption,Figure,Figure 4.5 K1 multi-seed stability results.
+390,Caption,Figure,Figure 4.6 Final Holdout primary performance for the frozen K1 architecture.
+391,Caption,Table,Table 4.2 Final Holdout class and ranking results.
+396,Caption,Figure,"Figure 4.7 Final Holdout confusion matrix for Hijack, Leak, and Outage."
+401,Caption,Figure,Figure 4.8 Breakdown of warm downstream K1 computational latency.

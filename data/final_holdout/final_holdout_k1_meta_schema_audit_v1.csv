@@ -1,0 +1,5 @@
+check,observed,expected,status
+k1_meta_rows,213,213,PASS
+k1_meta_feature_count,74,74,PASS
+k1_meta_schema_columns_present,True,True,PASS
+no_train_or_validation_meta_rows,0,0,PASS

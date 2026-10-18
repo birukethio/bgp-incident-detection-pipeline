@@ -1,0 +1,7 @@
+batch_run_id,incidents_attempted_this_run,total_incidents_with_status,timestamp_evidence_pass,retry_required,insufficient_evidence,mrt_unavailable,parser_failure,review_required,total_raw_records_inspected,total_relevant_observations_retained,evidence_size_bytes,elapsed_seconds_this_run,status,false_mrt_unavailable_reclassified,cache_events_recorded,temp_cache_released_bytes,peak_temp_cache_bytes,minimum_free_bytes_observed
+2026-09-08T21:25:25Z,0,0,0,0,0,0,0,0,0,0,0,0.0,NOTHING_TO_DO,,,,,
+2026-09-08T21:25:56Z,0,993,0,0,0,0,0,0,0,0,0,0.003,NOTHING_TO_DO,,,,,
+2026-09-08T23:56:04Z,1,993,0,0,0,140,0,0,0,0,0,0.042,RUN_COMPLETE,,,,,
+2026-09-09T00:09:19Z,0,993,2,290,0,0,0,0,12839254,64923,462662,0.005,NOTHING_TO_DO,290,0,0,0,26938761216
+2026-09-09T00:23:19Z,16,993,18,285,0,0,0,0,130109977,3008399,41385460,814.843,RUN_COMPLETE,0,590,457479500,90207833,26810359808
+2026-09-09T16:18:57Z,975,993,984,0,9,0,0,0,6691671457,144905473,1814115646,57308.215,RUN_COMPLETE,0,44962,31253384422,1684432095,14621052928

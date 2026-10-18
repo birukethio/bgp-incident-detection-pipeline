@@ -1,0 +1,8 @@
+component,mean,median,p95,p99,unit,included_in_operational_latency,notes
+5-minute analytical window,N/A,N/A,N/A,N/A,minutes,YES,Observation interval; a window is complete only after five minutes of data collection.
+feature computation,N/A,N/A,N/A,N/A,N/A,YES,Not benchmarked in Phase N; depends on MRT parsing/cache availability.
+Level-1 XGBoost ensemble probability averaging,1.0769844435580374e-05,1.1268448344635023e-05,1.2165935380933387e-05,1.224571200638213e-05,milliseconds/window,YES_AFTER_FEATURE_AVAILABILITY,Measures arithmetic averaging of five cached TRAIN first-level probability streams; model-binary prediction is not re-run because final models are not serialized and retraining is prohibited.
+K1 meta-feature construction,23.276590249999998,22.6515,24.432975075,24.591328415,milliseconds/incident,YES_AFTER_FEATURE_AVAILABILITY,TRAIN-only fixture with 4 incidents and 2507 windows; uses frozen meta-feature code.
+Level-2 XGBoost output ranking,0.09552433333333332,0.09416675,0.09815104999999999,0.09850521,milliseconds/incident,YES_AFTER_FEATURE_AVAILABILITY,Uses cached TRAIN K1 probabilities to measure final argmax/ranking handling; model-binary Level-2 prediction is documented from runtime history.
+Complete measured K1 computational path from probabilities to ranking,23.378864583333332,22.75116675,24.538594874999998,24.697477375,milliseconds/incident,YES_AFTER_FEATURE_AVAILABILITY,Excludes feature computation and XGBoost model-binary prediction time; see runtime history.
+operational observation requirement,varies,varies,varies,varies,minutes/windows,YES,Depends on incident window count; do not conflate with warm model inference.

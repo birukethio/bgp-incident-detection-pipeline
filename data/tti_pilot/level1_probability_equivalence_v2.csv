@@ -1,0 +1,2 @@
+candidate_id,tree_method,n_jobs,predictions_compared,predicted_class_agreement,max_abs_probability_difference,mean_abs_probability_difference,median_abs_probability_difference,p_hijack_correlation,p_leak_correlation,p_outage_correlation,reference_window_macro_f1,reconstructed_window_macro_f1,window_macro_f1_difference,equivalence_status,selection_basis
+hist_njobs_minus1,hist,-1,68031,1.0,0.0,0.0,0.0,1.0,1.0,1.0,0.6800827559185664,0.6800827559185664,0.0,PASS,probability fingerprint only; no outcome-based tuning or TTI scoring

@@ -1,0 +1,10 @@
+category,status,incident_count
+Hijack,MATCH_STRONG,441
+Hijack,MATCH_RELAXED,0
+Hijack,NO_MATCH,272
+Leak,MATCH_STRONG,15
+Leak,MATCH_RELAXED,230
+Leak,NO_MATCH,482
+Outage,MATCH_STRONG,0
+Outage,MATCH_RELAXED,51
+Outage,NO_MATCH,207

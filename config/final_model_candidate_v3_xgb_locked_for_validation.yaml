@@ -1,0 +1,120 @@
+candidate_id: "FINAL_STAGE2_MODEL_CANDIDATE_V3"
+status: "ALGORITHM_SELECTED_TRAIN_ONLY_READY_FOR_VALIDATION"
+phase_i_decision: "LOCK_XGBOOST"
+selection_reason: "XGBoost shows a meaningful TRAIN grouped-CV incident Macro F1 gain without material ranking loss."
+algorithm: "XGBoost"
+algorithm_version: "3.4.1"
+hyperparameters:
+  colsample_bytree: 1.0
+  gamma: 0
+  learning_rate: 0.1
+  max_depth: 6
+  min_child_weight: 1
+  n_estimators: 400
+  reg_alpha: 0
+  reg_lambda: 1.0
+  subsample: 1.0
+feature_variant: "V4"
+feature_count: 74
+feature_list_order:
+  - "update_count"
+  - "announcement_count"
+  - "withdrawal_count"
+  - "update_rate_per_minute"
+  - "announcement_rate_per_minute"
+  - "withdrawal_rate_per_minute"
+  - "announcement_ratio"
+  - "withdrawal_ratio"
+  - "announcement_to_withdrawal_ratio"
+  - "unique_prefix_count"
+  - "unique_announced_prefix_count"
+  - "unique_withdrawn_prefix_count"
+  - "prefix_churn_count"
+  - "prefix_with_both_announce_withdraw_count"
+  - "unique_peer_asn_count"
+  - "unique_origin_asn_count"
+  - "origin_diversity_ratio"
+  - "moas_prefix_count"
+  - "moas_prefix_ratio"
+  - "origin_change_event_count"
+  - "unique_as_path_count"
+  - "as_path_length_min"
+  - "as_path_length_max"
+  - "as_path_length_mean"
+  - "as_path_length_median"
+  - "as_path_length_std"
+  - "as_path_length_p95"
+  - "as_path_length_range"
+  - "path_prepending_observation_count"
+  - "path_prepending_ratio"
+  - "prepended_asn_repetition_count"
+  - "multi_path_prefix_count"
+  - "path_diversity_mean_per_prefix"
+  - "peer_prefix_pair_count"
+  - "peer_origin_pair_count"
+  - "peer_as_path_pair_count"
+  - "unique_next_hop_count"
+  - "community_observation_count"
+  - "community_observation_ratio"
+  - "unique_community_count"
+  - "med_observation_count"
+  - "unique_med_count"
+  - "local_pref_observation_count"
+  - "atomic_aggregate_count"
+  - "caida_path_observation_count"
+  - "caida_paths_with_no_as_path_count"
+  - "caida_paths_with_unknown_relationship_count"
+  - "caida_unknown_relationship_transition_count"
+  - "caida_customer_to_provider_transition_count"
+  - "caida_provider_to_customer_transition_count"
+  - "caida_peer_to_peer_transition_count"
+  - "caida_valley_free_valid_path_count"
+  - "caida_valley_free_violation_path_count"
+  - "caida_valley_free_violation_ratio"
+  - "caida_max_violation_count_per_path"
+  - "caida_mean_violation_count_per_path"
+  - "caida_customer_provider_transition_ratio"
+  - "caida_peer_transition_ratio"
+  - "rpki_evidence_observation_count"
+  - "rpki_evaluable_observation_count"
+  - "rpki_valid_observation_count"
+  - "rpki_invalid_observation_count"
+  - "rpki_not_found_observation_count"
+  - "rpki_unevaluable_observation_count"
+  - "rpki_invalid_origin_observation_count"
+  - "rpki_invalid_maxlength_observation_count"
+  - "rpki_valid_observation_ratio"
+  - "rpki_invalid_observation_ratio"
+  - "rpki_not_found_observation_ratio"
+  - "rpki_unique_valid_prefix_count"
+  - "rpki_unique_invalid_prefix_count"
+  - "rpki_unique_not_found_prefix_count"
+  - "rpki_state_diversity_count"
+  - "rpki_dominant_state_code"
+imbalance_condition: "I1"
+weighting: "I1 incident-aware sample weights computed from the training side of each grouped-CV fold only"
+seed_policy:
+  search_seed: 20260828
+  stability_seeds:
+    - 20260828
+    - 20260829
+    - 20260830
+    - 20260831
+    - 20260901
+  fold_assignments: "data/modeling/baseline_v1_grouped_cv_assignments_v1.csv"
+incident_probability_aggregation: "mean class probability across all eligible windows for the incident"
+ranking_rule: "sort P(Hijack), P(Leak), P(Outage) descending"
+train_grouped_cv_performance:
+  incident_macro_f1: 0.7995994096053164
+  incident_macro_f1_std: 0.0
+  incident_top1: 0.8006042296072508
+  incident_top2: 0.9335347432024168
+  incident_mrr: 0.8892245720040279
+  hijack_f1: 0.751269035532995
+  leak_f1: 0.8485804416403786
+  outage_f1: 0.7989487516425755
+  window_macro_f1: 0.6776561288584088
+stage1_status: "UNRESOLVED_EXPERIMENTAL_AUXILIARY"
+validation_accessed: false
+final_holdout_accessed: false
+source_commit: "99fafc1037fa050fd2933ccc8c0f6f0bede45d05"

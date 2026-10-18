@@ -1,0 +1,5 @@
+# Proposed Chapter 5 Interpretation Paragraph for RQ3/H3
+
+**Suggested location:** Chapter 5, in the RQ3/H3 interpretation or future-work/operationalization discussion.
+
+The post-hoc early-horizon experiment provides additional evidence for the practical value of the five-minute analytical representation used in the final Praxis pipeline. The frozen Level-1 classifier already recovered substantial classification signal within 30 seconds, but performance continued to improve through 60, 120, and 300 seconds as additional RouteViews evidence accumulated. Gains beyond 300 seconds were small and inconsistent, which supports five minutes as a practical tradeoff between earlier classification and stronger route-evidence representation. This result should be interpreted cautiously because the experiment was retrospective, TRAIN-only, and Level-1 only; it does not replace the final incident-level stacking architecture or the untouched Final Holdout evaluation. Instead, it strengthens the methodological justification for five-minute analytical windows and identifies real-time incremental inference as an important future-work direction.

@@ -1,0 +1,8 @@
+decision,alternatives,evidence,reason,phase
+I1 selected,I0 natural; I2 p95 temporal capping,Phase B: I1 improved group-level behavior while preserving all observations.,Incident is the independent unit; weighting reduces long-incident dominance without data removal.,B
+V4 carried forward,V1 behavioral; V2 behavioral+CAIDA; V3 behavioral+RPKI,Phase C: V4 had strongest overall Stage 2/window performance; V3 remained competitive.,Retain complete empirically validated enrichment set before Validation confirmation.,C
+RPKI strongly supported,Remove RPKI family,Phase D: RPKI removal had the strongest overall negative delta and strong Hijack contribution.,Origin-validation signals are domain-relevant for Hijack discrimination.,D
+CAIDA retained,Drop CAIDA and use V3,Phase C/D: CAIDA showed modest/mixed group-level contribution but positive Stage 2/window evidence.,Keep relationship features through one Validation confirmation; do not discard V3 comparison permanently.,C/D
+Expert architecture rejected,F0 full-V4 experts; F1 domain-informed experts,Phase F: S2_BASE had best incident Macro F1 and best incident MRR; experts required 15 models.,Added complexity did not improve incident-level classification/ranking.,F
+Stage 1 hard gate unresolved/rejected for final candidate,tau=0.06 threshold; tau=0.72 W1 threshold; calibrated Stage 1,Phase E/E2: Normal F1 and PR-AUC remained very low; W1 caused unacceptable false-Normal behavior.,Primary final candidate must not depend on an unreliable Normal-vs-Incident gate.,E/E2
+Multiclass Stage 2 selected,single-stage; hierarchical hard-gated final system; one-vs-rest experts,"Phase F: S2_BASE incident Macro F1=0.7428, Top-2=0.9315, MRR=0.8642.",Best TRAIN incident-level evidence with the simplest selected architecture.,F

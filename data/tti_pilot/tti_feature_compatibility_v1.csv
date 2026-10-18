@@ -1,0 +1,75 @@
+feature_group,feature_name,partial_horizon_status,future_leakage_risk,included_in_pilot_feature_file
+Behavioral,update_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,announcement_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,withdrawal_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,update_rate_per_minute,REVIEW_DENOMINATOR_POLICY,Frozen definition divides by 5 minutes. This is schema-compatible but not an elapsed-time rate for 30/60/120-second horizons.,YES
+Behavioral,announcement_rate_per_minute,REVIEW_DENOMINATOR_POLICY,Frozen definition divides by 5 minutes. This is schema-compatible but not an elapsed-time rate for 30/60/120-second horizons.,YES
+Behavioral,withdrawal_rate_per_minute,REVIEW_DENOMINATOR_POLICY,Frozen definition divides by 5 minutes. This is schema-compatible but not an elapsed-time rate for 30/60/120-second horizons.,YES
+Behavioral,announcement_ratio,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,withdrawal_ratio,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,announcement_to_withdrawal_ratio,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,unique_prefix_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,unique_announced_prefix_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,unique_withdrawn_prefix_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,prefix_churn_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,prefix_with_both_announce_withdraw_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,unique_peer_asn_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,unique_origin_asn_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,origin_diversity_ratio,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,moas_prefix_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,moas_prefix_ratio,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,origin_change_event_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,unique_as_path_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,as_path_length_min,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,as_path_length_max,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,as_path_length_mean,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,as_path_length_median,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,as_path_length_std,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,as_path_length_p95,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,as_path_length_range,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,path_prepending_observation_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,path_prepending_ratio,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,prepended_asn_repetition_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,multi_path_prefix_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,path_diversity_mean_per_prefix,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,peer_prefix_pair_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,peer_origin_pair_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,peer_as_path_pair_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,unique_next_hop_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,community_observation_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,community_observation_ratio,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,unique_community_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,med_observation_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,unique_med_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,local_pref_observation_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+Behavioral,atomic_aggregate_count,COMPATIBLE_WITH_CAUSAL_TIMESTAMPED_EVIDENCE,None if computed only from observations up to the horizon cutoff.,YES
+CAIDA,caida_path_observation_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_paths_with_no_as_path_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_paths_with_unknown_relationship_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_unknown_relationship_transition_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_customer_to_provider_transition_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_provider_to_customer_transition_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_peer_to_peer_transition_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_valley_free_valid_path_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_valley_free_violation_path_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_valley_free_violation_ratio,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_max_violation_count_per_path,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_mean_violation_count_per_path,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_customer_provider_transition_ratio,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+CAIDA,caida_peer_transition_ratio,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_evidence_observation_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_evaluable_observation_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_valid_observation_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_invalid_observation_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_not_found_observation_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_unevaluable_observation_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_invalid_origin_observation_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_invalid_maxlength_observation_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_valid_observation_ratio,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_invalid_observation_ratio,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_not_found_observation_ratio,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_unique_valid_prefix_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_unique_invalid_prefix_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_unique_not_found_prefix_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_state_diversity_count,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO
+RPKI/ROV,rpki_dominant_state_code,NOT_CONSTRUCTED_IN_THIS_PILOT,"Requires horizon-filtered timestamped prefix/origin/path evidence plus as-of external snapshot mapping. Safe in principle, but not produced here.",NO

@@ -1,0 +1,8 @@
+issue_type,source_artifact,action,priority
+Citation/reference reconciliation,deliverables/praxis_final_cleanup/Final_Praxis_Reference_Audit.csv,Resolve in-text citations without reference entries and references never cited.,ESSENTIAL
+APA7 formatting,deliverables/praxis_final_cleanup/Final_Praxis_Reference_Audit.csv,"Normalize DOI/URL formatting, title case, publisher/source fields, and retrieval-date handling for web/vendor sources.",ESSENTIAL
+Recent BGP ML research,Chapter 2 literature review,"Add or verify recent sources for BGP anomaly detection, route leaks, hijacks, outages, and ML classification.",ESSENTIAL
+Calibration literature,calibration audit,Support probability/calibration terminology with peer-reviewed calibration references.,IMPORTANT
+TTI and early classification,TTI remediation,"Support checkpoint TTI, early time-series classification, and saturation/tradeoff framing.",IMPORTANT
+Streaming/BMP/Kafka future work,Chapter 5 future work,Add authoritative streaming telemetry and BGP Monitoring Protocol/Kafka architecture sources.,IMPORTANT
+Cloudflare/vendor sources,label provenance audit,Use official Cloudflare Radar/API/methodology URLs only where they directly support source provenance.,ESSENTIAL

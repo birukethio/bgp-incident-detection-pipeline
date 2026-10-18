@@ -1,0 +1,5 @@
+stage,source_artifact,rows,passing_rows,status_values,verification_status,notes
+iec_E1_window_equivalence_v1,experiments/independent_validation_v2/implementation_recovery_v1/iec_E1_window_equivalence_v1.csv,9,9,PASS,PASS,Nine frozen TRAIN fixtures verify this stage exactly.
+iec_E2_feature_equivalence_v1,experiments/independent_validation_v2/implementation_recovery_v1/iec_E2_feature_equivalence_v1.csv,9,9,PASS_EXACT,PASS,Nine frozen TRAIN fixtures verify this stage exactly.
+iec_E3_level1_equivalence_v1,experiments/independent_validation_v2/implementation_recovery_v1/iec_E3_level1_equivalence_v1.csv,9,9,PASS_EXACT,PASS,Nine frozen TRAIN fixtures verify this stage exactly.
+iec_E4_mean_equivalence_v1,experiments/independent_validation_v2/implementation_recovery_v1/iec_E4_mean_equivalence_v1.csv,9,9,PASS_EXACT,PASS,Nine frozen TRAIN fixtures verify this stage exactly.

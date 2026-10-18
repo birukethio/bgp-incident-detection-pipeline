@@ -1,0 +1,5 @@
+feature_family,signals,most_relevant_classes,interpretation,source_artifact,support_status
+Behavioral,"announcements, withdrawals, AS-path changes, churn, visibility",all classes,base BGP dynamics,config/behavioral_feature_schema_v1.yaml,DIRECT
+CAIDA,relationship and peer-visibility context,Leak/Outage especially,topological context,config/caida_feature_schema_v1.yaml,SUPPORTED_WITH_CAVEAT
+RPKI/ROV,valid/invalid/not-found route authorization state,Hijack especially,prefix-origin legitimacy signal,config/rpki_feature_schema_v1.yaml,SUPPORTED_WITH_CAVEAT
+K1 temporal summaries,incident-level probability trajectory statistics,all classes,aggregation beyond window mean,data/modeling_k1/k1_model_results_v1.csv,DIRECT

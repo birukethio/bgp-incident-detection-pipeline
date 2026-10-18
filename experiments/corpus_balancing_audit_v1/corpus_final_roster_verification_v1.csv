@@ -1,0 +1,10 @@
+check,observed,expected,status,source_artifact
+frozen_roster_sha256,1d596b2da403fb075dc9536e6e0fc995c717b1de82e1db15e337c66999d5af83,record checksum,PASS,data/roster_v2/frozen_incident_roster_v2.csv
+total_incident_count,1419,1419,PASS,data/roster_v2/frozen_incident_roster_v2.csv
+class_count_Hijack,473,473,PASS,data/roster_v2/frozen_incident_roster_v2.csv
+class_count_Leak,473,473,PASS,data/roster_v2/frozen_incident_roster_v2.csv
+class_count_Outage,473,473,PASS,data/roster_v2/frozen_incident_roster_v2.csv
+incident_uid_duplicates,0,0,PASS,data/roster_v2/frozen_incident_roster_v2.csv
+incident_signature_duplicates_review_indicator,0,0,PASS,data/roster_v2/frozen_incident_roster_v2.csv
+partition_manifest_count,1419,1419,PASS,data/partitions_v2/frozen_partition_manifest_v2.csv
+partition_manifest_sha256,e459ffb1b3c66fe8151e66688bc9eca09ca6b19427108ef164e872cefb5d9aaf,record checksum,PASS,data/partitions_v2/frozen_partition_manifest_v2.csv

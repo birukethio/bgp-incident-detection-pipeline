@@ -1,0 +1,47 @@
+storage_config_version: v1
+default_profile: local_project
+
+profiles:
+  local_project:
+    root: data
+    RAW_MRT_ROOT: data/raw_mrt/train_batches
+    PARSED_TEMP_ROOT: data/parsed_mrt/train_batches_temp
+    FEATURE_OUTPUT_ROOT: data/train_scale/features
+    AUDIT_OUTPUT_ROOT: data/train_scale
+    CACHE_ROOT: data/cache/train_mrt
+
+  external_volume_example:
+    root: /Volumes/<external-volume>/bgp-praxis-data
+    RAW_MRT_ROOT: /Volumes/<external-volume>/bgp-praxis-data/raw_mrt
+    PARSED_TEMP_ROOT: /Volumes/<external-volume>/bgp-praxis-data/parsed_temp
+    FEATURE_OUTPUT_ROOT: /Volumes/<external-volume>/bgp-praxis-data/features
+    AUDIT_OUTPUT_ROOT: /Volumes/<external-volume>/bgp-praxis-data/audit
+    CACHE_ROOT: /Volumes/<external-volume>/bgp-praxis-data/cache
+
+disk_safety:
+  parser_temp_factor: 1.25
+  feature_output_factor: 0.02
+  safety_reserve_bytes: 5368709120
+  target_mrt_bytes_per_batch: 2147483648
+
+processing:
+  status_values:
+    - PLANNED
+    - DOWNLOADING
+    - DOWNLOADED
+    - PARSING
+    - FEATURED
+    - VERIFIED
+    - CLEANED
+    - REVIEW
+    - FAIL
+  cleanup_after_verified: true
+  retain_raw_mrt_after_verified: false
+  retain_parsed_temp_after_verified: false
+
+scientific_methodology:
+  window_cap_applied: false
+  downsampling_applied: false
+  weighting_applied: false
+  behavioral_feature_version: v1
+  behavioral_feature_count: 44

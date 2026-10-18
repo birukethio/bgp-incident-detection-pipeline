@@ -1,0 +1,18 @@
+audit_item,evidence,status
+chronology complete,all major phases P0-P18 represented,PASS
+major phases represented,19 phases/subphases,PASS
+authoritative numbers verified,script checked terminal values,PASS
+final model lineage correct,XGB refinement -> Validation -> K1 -> K2/K2.5 -> L0 -> Holdout,PASS
+Validation chronology correct,Phase J first Validation access; K1 not Validation-confirmed,PASS
+Holdout chronology correct,Phase L first Holdout access; no post-Holdout changes,PASS
+negative findings preserved,Stage 1/domain experts/RF caveats captured,PASS
+limitations preserved,threats and final limitations produced,PASS
+feature ablation documented,variant and family ablation mapped,PASS
+baseline modeling documented,RF baseline/RF/XGB progression mapped,PASS
+data engineering documented,MRT/Behavioral/CAIDA/RPKI/Normal mapped,PASS
+dissertation Chapter 3 map produced,chapter3 methodology/table/figure plans,PASS
+dissertation Chapter 4 map produced,chapter4 results/table/figure plans,PASS
+notebook map produced,notebook_experiment_map_v1.csv,PASS
+evidence map produced,praxis_artifact_evidence_map_v1.csv,PASS
+stale artifacts identified,stale_artifact_register_v1.csv,PASS
+SHAP explainability,not generated in Phase M unless already present,REVIEW

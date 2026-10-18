@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-09-14T21:20:05+00:00",
+  "disposition": "V2_FEASIBLE_WITH_LIMITATIONS",
+  "model_scoring_performed": false,
+  "validation_accessed": false,
+  "final_holdout_accessed": false,
+  "candidate_count": 40,
+  "counts": [
+    {
+      "class": "Hijack",
+      "total_candidates_found": 5,
+      "accepted_candidates": 4,
+      "new_independent_accepted_candidates": 4,
+      "routeviews_available_new_candidates": 4,
+      "target_range": "20-30",
+      "target_met": "NO"
+    },
+    {
+      "class": "Leak",
+      "total_candidates_found": 5,
+      "accepted_candidates": 4,
+      "new_independent_accepted_candidates": 4,
+      "routeviews_available_new_candidates": 4,
+      "target_range": "20-30",
+      "target_met": "NO"
+    },
+    {
+      "class": "Outage",
+      "total_candidates_found": 30,
+      "accepted_candidates": 30,
+      "new_independent_accepted_candidates": 30,
+      "routeviews_available_new_candidates": 30,
+      "target_range": "20-30",
+      "target_met": "YES"
+    }
+  ]
+}

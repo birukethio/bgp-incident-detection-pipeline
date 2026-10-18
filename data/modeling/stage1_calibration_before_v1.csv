@@ -1,0 +1,2 @@
+calibration_method,roc_auc,pr_auc_normal,average_precision,brier_score,log_loss,ece_10_bin,notes
+C0_NONE,0.6962597505993335,0.014019478905159742,0.014019478905159742,0.0074567069212314735,0.04985286051424525,0.0017038669934881985,OOF probabilities; calibration fit from training-side inner grouped OOF predictions only

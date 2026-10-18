@@ -1,0 +1,4 @@
+associated_category,unique_associated_incidents,unique_asns,candidate_periods,rib_prescreen_pass,no_observability,known_overlap,duration_fail,origin_unstable,review,notes
+Hijack,20,20,243,3,0,16,0,0,224,"Counts are candidate periods, not NORMAL_VERIFIED labels."
+Leak,22,22,245,5,0,18,0,0,222,"Counts are candidate periods, not NORMAL_VERIFIED labels."
+Outage,20,20,240,0,0,6,0,0,234,"Counts are candidate periods, not NORMAL_VERIFIED labels."

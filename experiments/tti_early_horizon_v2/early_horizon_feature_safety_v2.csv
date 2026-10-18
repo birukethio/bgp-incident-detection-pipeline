@@ -1,0 +1,5 @@
+feature_group,feature_count,partial_horizon_safe,handling,future_information_policy,status
+Behavioral,44,YES,Recomputed per cumulative horizon from timestamped RouteViews evidence at or before cutoff.,No post-cutoff BGP observation may contribute.,PASS
+CAIDA AS relationship,14,YES,Recomputed per cumulative horizon using only AS paths observed by cutoff and historical CAIDA snapshot mapping.,No post-cutoff BGP observation may contribute.,PASS
+RPKI/ROV,16,YES,Recomputed per cumulative horizon using only prefix-origin observations observed by cutoff and historical VRP/RPKI state.,No post-cutoff BGP observation may contribute.,PASS
+Frozen V4 schema,74,YES,Feature names/order/types preserved from V4-compatible horizon artifacts.,Compatibility inherited from existing 30/60/120/300 and 600/900 gates.,PASS

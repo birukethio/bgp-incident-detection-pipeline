@@ -1,0 +1,16 @@
+experiment,phase,priority,source_artifact,why_needed
+Frozen Behavioral feature corpus,P2,ESSENTIAL,data/train_frozen/frozen_train_behavioral_corpus_v1.parquet,Minimum sequence for final methodology and evidence.
+V1/V2/V3/V4 feature variants,P6,ESSENTIAL,config/feature_variants_v1.yaml,Minimum sequence for final methodology and evidence.
+Imbalance I0/I1/I2,P7,ESSENTIAL,data/modeling/imbalance_strategy_model_comparison_v1.csv,Minimum sequence for final methodology and evidence.
+Baseline RF/H1,P8,IMPORTANT,data/modeling/baseline_v1_model_comparison_v1.csv,Minimum sequence for final methodology and evidence.
+Feature-variant ablation,P6,ESSENTIAL,data/modeling/feature_variant_ablation_results_v1.csv,Minimum sequence for final methodology and evidence.
+Feature-family ablation,P10,ESSENTIAL,data/modeling/feature_family_ablation_results_v1.csv,Minimum sequence for final methodology and evidence.
+RF vs XGBoost selection,P12,ESSENTIAL,data/modeling/xgb_i2_final_comparison_v1.csv,Minimum sequence for final methodology and evidence.
+Refined XGBoost,P12,ESSENTIAL,data/modeling/xgb_i2_final_comparison_v1.csv,Minimum sequence for final methodology and evidence.
+Phase J Validation,P13,ESSENTIAL,data/validation/validation_confirmation_results_v1.csv,Minimum sequence for final methodology and evidence.
+K1 stacking,P14,ESSENTIAL,data/modeling_k1/k1_model_results_v1.csv,Minimum sequence for final methodology and evidence.
+K2 leakage/stability verification,P15,ESSENTIAL,data/modeling_k2/k2_multiseed_performance_v1.csv,Minimum sequence for final methodology and evidence.
+K2.5 architecture comparator,P16,ESSENTIAL,data/modeling_k25/k25_architecture_multiseed_results_v1.csv,Minimum sequence for final methodology and evidence.
+L0 fixed deployable K1,P17,ESSENTIAL,data/final_prep/k1_fixed_second_level_verification_v1.csv,Minimum sequence for final methodology and evidence.
+Final Holdout,P18,ESSENTIAL,config/final_praxis_result_v1.yaml,Minimum sequence for final methodology and evidence.
+RIB/Normal engineering pilots,P3,APPENDIX_ONLY,config/normal_ground_truth_method_v1.yaml,Minimum sequence for final methodology and evidence.

@@ -1,0 +1,10 @@
+check,status,notes
+train_incidents_only,PASS,993
+class_counts_331_each,PASS,"{""HIJACK"": 331, ""LEAK"": 331, ""OUTAGE"": 331}"
+same_folds,PASS,baseline_v1_grouped_cv_assignments_v1.csv
+nested_leakage_safety,PASS,data/modeling_k25/k25_nested_leakage_audit_v1.csv
+same_meta_feature_schema,PASS,config/k1_incident_meta_feature_schema_v1.yaml
+frozen_algorithms_hyperparameters,PASS,XGB/RF configs fixed; no tuning beyond recovered K1 XGB fold params
+no_new_tuning,PASS,single RF meta config; no new search
+validation_unused,PASS,VALIDATION_USED_FOR_K25 = FALSE
+holdout_untouched,PASS,FINAL_HOLDOUT_STATUS = SEALED

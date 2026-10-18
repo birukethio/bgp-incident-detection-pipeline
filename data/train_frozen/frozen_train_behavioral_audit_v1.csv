@@ -1,0 +1,14 @@
+check_name,observed_value,status,notes
+row_count,68031,PASS,expected 68031 rows
+incident_count,993,PASS,expected 993 incidents
+class_counts,"{""Hijack"": 331, ""Leak"": 331, ""Outage"": 331}",PASS,"expected {'Hijack': 331, 'Leak': 331, 'Outage': 331}"
+behavioral_feature_count,44,PASS,missing_features=[]
+duplicate_window_ids,0,PASS,expected zero duplicate incident_uid/window_id pairs
+invalid_feature_values,0,PASS,infinite numeric feature values are invalid; NaN is allowed where denominators are zero
+validation_contamination,0,PASS,expected no Validation rows
+holdout_contamination,0,PASS,expected no Holdout rows
+train_only_partition,"[""train""]",PASS,expected train only
+outage_605_recovery_incorporated,True,PASS,requires Outage:605 recovery metadata
+source_v1_preserved,True,PASS,v1 source artifact must remain available
+no_weight_or_cap_columns,[],PASS,frozen corpus must not bake in imbalance correction
+no_caida_rpki_columns,[],PASS,CAIDA/RPKI enrichment is pending

@@ -1,0 +1,4 @@
+partition,top1_error_count,true_class_recovered_at_top2,true_class_rank3,percent_errors_recovered_at_top2,percent_errors_rank3,operational_interpretation
+TRAIN,65,58,7,0.8923076923076924,0.1076923076923077,Top-2 rescue quantifies ranking support for diagnostic assistance.
+VALIDATION,60,39,21,0.65,0.35,Top-2 rescue quantifies ranking support for diagnostic assistance.
+FINAL_HOLDOUT,17,15,2,0.8823529411764706,0.11764705882352941,Top-2 rescue quantifies ranking support for diagnostic assistance.

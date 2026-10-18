@@ -1,0 +1,4 @@
+metric,value
+pulse_label,Iraq ongoing regional shutdown since 2025-02-18T11:00:00Z
+matched_cloudflare_outage_records,51
+match_rule,country + time overlap + government-directed outage cause

@@ -1,0 +1,17 @@
+metric,value,source_artifact,notes
+Final Holdout Incident Macro F1,0.920177,config/final_praxis_result_v1.yaml,terminal result
+Final Holdout Macro F1 95% CI,"[0.880117, 0.954402]",data/final_holdout/final_holdout_bootstrap_ci_v1.csv,incident bootstrap
+Final Holdout Top-1,0.920188,config/final_praxis_result_v1.yaml,196/213 rank first
+Final Holdout Top-2,0.990610,config/final_praxis_result_v1.yaml,211/213 within Top-2
+Final Holdout MRR,0.958529,config/final_praxis_result_v1.yaml,ranking metric
+Final Holdout Hijack F1,0.877698,config/final_praxis_result_v1.yaml,hardest class
+Final Holdout Leak F1,0.904110,config/final_praxis_result_v1.yaml,middle class
+Final Holdout Outage F1,0.978723,config/final_praxis_result_v1.yaml,strongest class
+Mean true-class rank,1.089202,config/final_praxis_result_v1.yaml,ranking quality
+Correct rank 1,196/213,data/final_holdout/final_holdout_ranking_metrics_v1.csv,Top-1 count
+Correct within Top-2,211/213,data/final_holdout/final_holdout_ranking_metrics_v1.csv,rank1+rank2
+Rank 3,2/213,data/final_holdout/final_holdout_ranking_metrics_v1.csv,missed Top-2
+Fixed deployable TRAIN nested-CV Macro F1,0.931653 ± 0.002150,data/final_prep/k1_fixed_second_level_verification_v1.csv,TRAIN reference
+Fixed deployable TRAIN Top-1,0.931521,data/final_prep/k1_fixed_second_level_verification_v1.csv,TRAIN reference
+Fixed deployable TRAIN Top-2,0.992346,data/final_prep/k1_fixed_second_level_verification_v1.csv,TRAIN reference
+Fixed deployable TRAIN MRR,0.964485,data/final_prep/k1_fixed_second_level_verification_v1.csv,TRAIN reference

@@ -1,0 +1,75 @@
+meta_feature_name,definition,source,aggregation,temporal_scope,leakage_safe
+window_count,window count,frozen TRAIN feature rows,incident structural summary,all eligible incident windows,True
+observed_temporal_span_minutes,observed temporal span minutes,frozen TRAIN feature rows,incident structural summary,all eligible incident windows,True
+proportion_zero_observation_windows,proportion zero observation windows,frozen TRAIN feature rows,incident structural summary,all eligible incident windows,True
+hijack_prob_mean,hijack prob mean,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+hijack_prob_median,hijack prob median,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+hijack_prob_std,hijack prob std,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+hijack_prob_min,hijack prob min,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+hijack_prob_max,hijack prob max,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+hijack_prob_p25,hijack prob p25,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+hijack_prob_p75,hijack prob p75,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+hijack_prob_p90,hijack prob p90,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+hijack_top1_proportion,hijack top1 proportion,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+hijack_top2_proportion,hijack top2 proportion,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+hijack_top1_count,hijack top1 count,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+leak_prob_mean,leak prob mean,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+leak_prob_median,leak prob median,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+leak_prob_std,leak prob std,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+leak_prob_min,leak prob min,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+leak_prob_max,leak prob max,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+leak_prob_p25,leak prob p25,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+leak_prob_p75,leak prob p75,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+leak_prob_p90,leak prob p90,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+leak_top1_proportion,leak top1 proportion,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+leak_top2_proportion,leak top2 proportion,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+leak_top1_count,leak top1 count,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+outage_prob_mean,outage prob mean,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+outage_prob_median,outage prob median,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+outage_prob_std,outage prob std,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+outage_prob_min,outage prob min,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+outage_prob_max,outage prob max,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+outage_prob_p25,outage prob p25,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+outage_prob_p75,outage prob p75,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+outage_prob_p90,outage prob p90,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+outage_top1_proportion,outage top1 proportion,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+outage_top2_proportion,outage top2 proportion,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+outage_top1_count,outage top1 count,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+mean_max_class_probability,mean max class probability,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+median_max_class_probability,median max class probability,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+maximum_confidence,maximum confidence,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+minimum_confidence,minimum confidence,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+confidence_standard_deviation,confidence standard deviation,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+mean_top1_top2_margin,mean top1 top2 margin,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+median_top1_top2_margin,median top1 top2 margin,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+minimum_top1_top2_margin,minimum top1 top2 margin,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+maximum_top1_top2_margin,maximum top1 top2 margin,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+proportion_low_margin_windows,proportion low margin windows,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+proportion_high_confidence_windows,proportion high confidence windows,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+window_prediction_entropy_mean,window prediction entropy mean,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+window_prediction_entropy_std,window prediction entropy std,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+unique_top1_classes_observed,unique top1 classes observed,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+dominant_class_proportion,dominant class proportion,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+dominant_vs_second_vote_margin,dominant vs second vote margin,OOF first-level window probabilities,incident-level probability/confidence summary,all eligible incident windows,True
+early_hijack_prob_mean,early hijack prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+early_leak_prob_mean,early leak prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+early_mean_max_confidence,early mean max confidence,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+early_mean_top1_top2_margin,early mean top1 top2 margin,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+early_outage_prob_mean,early outage prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+hijack_prob_linear_slope,hijack prob linear slope,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+late_hijack_prob_mean,late hijack prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+late_leak_prob_mean,late leak prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+late_mean_max_confidence,late mean max confidence,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+late_mean_top1_top2_margin,late mean top1 top2 margin,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+late_minus_early_confidence,late minus early confidence,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+late_minus_early_hijack_prob_mean,late minus early hijack prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+late_minus_early_leak_prob_mean,late minus early leak prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+late_minus_early_outage_prob_mean,late minus early outage prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+late_outage_prob_mean,late outage prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+leak_prob_linear_slope,leak prob linear slope,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+middle_hijack_prob_mean,middle hijack prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+middle_leak_prob_mean,middle leak prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+middle_mean_max_confidence,middle mean max confidence,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+middle_mean_top1_top2_margin,middle mean top1 top2 margin,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+middle_outage_prob_mean,middle outage prob mean,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True
+outage_prob_linear_slope,outage prob linear slope,OOF first-level window probabilities,chronological thirds or trajectory,EARLY/MIDDLE/LATE,True

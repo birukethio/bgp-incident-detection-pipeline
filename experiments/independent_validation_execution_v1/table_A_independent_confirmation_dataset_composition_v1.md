@@ -1,0 +1,4 @@
+|source|role|candidate_incidents|eligible_incidents|status|
+|---|---|---|---|---|
+|RouteLLM|Primary Hijack/Leak|NA|0|NOT_ACQUIRED_SOURCE_ROSTER_UNAVAILABLE|
+|IODA|Primary Outage|NA|0|NOT_ACQUIRED_ALL_CLASS_GATE_STOP|

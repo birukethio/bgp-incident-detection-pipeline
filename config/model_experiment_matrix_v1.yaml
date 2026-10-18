@@ -1,0 +1,30 @@
+model_experiment_matrix_version: v1
+status: REGISTERED_UNEXECUTED
+holdout_rule: Final Holdout remains untouched and must not be used for threshold selection, feature selection, balancing, hyperparameter tuning, or model comparison.
+feature_variants:
+  V1: {description: Behavioral, feature_count: 44}
+  V2: {description: Behavioral + CAIDA, feature_count: 58}
+  V3: {description: Behavioral + RPKI, feature_count: 60}
+  V4: {description: Behavioral + CAIDA + RPKI, feature_count: 74}
+imbalance_conditions:
+  I0: {description: Natural, applied: false}
+  I1: {description: Incident-aware weighting, applied: false}
+  I2: {description: p95 cap plus incident-aware weighting, train_derived_p95_cap_windows: 164, applied: false}
+baselines:
+  B0: {description: Single-stage Random Forest, task: Normal / Hijack / Leak / Outage, executed: false}
+  B1: {description: Single-stage XGBoost, task: Normal / Hijack / Leak / Outage, executed: false}
+  H1: {description: Hierarchical Random Forest, stage1: Normal vs Incident, stage2: Hijack vs Leak vs Outage, executed: false}
+future_execution_order:
+  - Start with V1 Behavioral only under Natural training.
+  - Compare B0, B1, and H1 under I0 Natural.
+  - With a selected or controlled common architecture, compare I0, I1, and I2.
+  - Holding architecture and imbalance treatment constant, compare V1, V2, V3, and V4.
+  - From V4, later test removal of withdrawal/activity, AS-path/path-instability, origin-change, CAIDA, and RPKI feature groups.
+metrics:
+  primary: [Macro F1, Top-2 Accuracy, MRR]
+  secondary: [per-class precision, per-class recall, per-class F1, confusion matrix, ROC/PR where applicable, calibration, event-level metrics]
+evaluation_levels: [window, incident_or_control_group]
+data_hierarchy:
+  TRAIN: model fitting plus grouped CV
+  VALIDATION: later model and threshold selection only after TRAIN-only baseline protocol is established
+  FINAL_HOLDOUT: one final locked evaluation only

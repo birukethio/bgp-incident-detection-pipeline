@@ -1,0 +1,8 @@
+defense_topic,evidence,source_artifact,priority
+Problem and corpus,v2 roster and partition counts,data/partitions_v2/frozen_partition_manifest_v2.csv,ESSENTIAL
+Feature architecture,44+14+16=74 V4,config/feature_variants_v1.yaml,ESSENTIAL
+Ablation evidence,V1-V4 and feature-family results,data/modeling/feature_variant_ablation_results_v1.csv,ESSENTIAL
+Model selection,RF vs XGB and K1 progression,data/modeling/xgb_i2_final_comparison_v1.csv,ESSENTIAL
+Leakage integrity,"grouped CV, access chronology, K2",data/modeling_k2/k2_multiseed_performance_v1.csv,ESSENTIAL
+Final results,Holdout Macro F1/Top-2/MRR/class metrics,config/final_praxis_result_v1.yaml,ESSENTIAL
+Limitations,"Stage 1, observability, labels",docs/final_limitations_v1.csv,ESSENTIAL

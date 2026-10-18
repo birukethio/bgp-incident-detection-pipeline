@@ -1,0 +1,46 @@
+candidate_period_id,associated_incident_uid,associated_category,total_windows,normal_verified_windows,unknown_windows,normal_yield_percent,longest_stable_block_minutes,candidate_status,failure_reason
+Hijack_116423_offset_-1_20250919T040606Z,Hijack:116423,Hijack,7,6,1,85.714,30,PASS,no_suspicious_update_behavior;no_suspicious_deaggregation
+Hijack_130063_offset_-1_20260102T194844Z,Hijack:130063,Hijack,7,0,7,0.0,25,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;stable but not part of 30-minute sustained block
+Hijack_131027_offset_-1_20260110T170604Z,Hijack:131027,Hijack,7,7,0,100.0,35,PASS,
+Hijack_131154_offset_-1_20260112T010122Z,Hijack:131154,Hijack,7,7,0,100.0,35,PASS,
+Hijack_17628_offset_-1_20230916T105333Z,Hijack:17628,Hijack,7,7,0,100.0,35,PASS,
+Hijack_24189_offset_-1_20231119T060136Z,Hijack:24189,Hijack,7,7,0,100.0,35,PASS,
+Hijack_58159_14_225_192_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,6,6,0,100.0,30,PASS,
+Hijack_58159_14_225_193_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,6,6,0,100.0,30,PASS,
+Hijack_58159_14_225_194_0_24_s1_offset_-1_20240728T132000Z,Hijack:58159,Hijack,6,6,0,100.0,30,PASS,
+Hijack_58159_offset_+1_20240730T132040Z,Hijack:58159,Hijack,7,7,0,100.0,35,PASS,
+Hijack_69304_offset_-1_20241016T151021Z,Hijack:69304,Hijack,7,7,0,100.0,35,PASS,
+Hijack_87622_offset_-1_20250304T012925Z,Hijack:87622,Hijack,7,0,7,0.0,25,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;no_suspicious_deaggregation;stable but not part of 30-minute sustained block
+Hijack_94314_offset_-1_20250421T170612Z,Hijack:94314,Hijack,7,0,7,0.0,15,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;no_suspicious_deaggregation;stable but not part of 30-minute sustained block
+Hijack_94865_offset_-1_20250424T113644Z,Hijack:94865,Hijack,7,0,7,0.0,25,REVIEW,no_suspicious_update_behavior;no_suspicious_deaggregation;stable but not part of 30-minute sustained block
+Leak_221038_offset_-1_20240203T070639Z,Leak:221038,Leak,7,7,0,100.0,35,PASS,
+Leak_230949_offset_-1_20240626T184858Z,Leak:230949,Leak,7,7,0,100.0,35,PASS,
+Leak_233513_offset_-1_20240714T075834Z,Leak:233513,Leak,7,7,0,100.0,35,PASS,
+Leak_291102_offset_+14_20250414T084500Z,Leak:291102,Leak,6,0,6,0.0,20,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;stable but not part of 30-minute sustained block
+Leak_291102_offset_+7_20250407T084500Z,Leak:291102,Leak,6,0,6,0.0,10,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;stable but not part of 30-minute sustained block
+Leak_291102_offset_-14_20250317T084500Z,Leak:291102,Leak,6,0,6,0.0,25,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;stable but not part of 30-minute sustained block
+Leak_291102_offset_-7_20250324T084500Z,Leak:291102,Leak,6,6,0,100.0,30,PASS,
+Leak_303661_offset_-1_20250421T064909Z,Leak:303661,Leak,7,0,7,0.0,15,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;stable but not part of 30-minute sustained block
+Leak_367992_offset_-1_20250808T120832Z,Leak:367992,Leak,7,7,0,100.0,35,PASS,
+Leak_426483_asn_s1_offset_+30_20251129T060000Z,Leak:426483,Leak,6,0,6,0.0,10,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;no_suspicious_update_behavior;no_strong_as_path_instability;no_suspicious_deaggregation;stable but not part of 30-minute sustained block
+Leak_444142_offset_-3_20251120T110901Z,Leak:444142,Leak,7,0,7,0.0,15,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;stable but not part of 30-minute sustained block
+Leak_462510_offset_-1_20260101T184101Z,Leak:462510,Leak,7,0,7,0.0,20,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;no_suspicious_deaggregation;stable but not part of 30-minute sustained block
+Leak_466722_offset_-1_20260112T170002Z,Leak:466722,Leak,7,7,0,100.0,35,PASS,
+Leak_467067_offset_-1_20260113T132129Z,Leak:467067,Leak,7,7,0,100.0,35,PASS,
+Leak_468905_offset_-1_20260117T174131Z,Leak:468905,Leak,7,7,0,100.0,35,PASS,
+Leak_471270_offset_-1_20260124T065454Z,Leak:471270,Leak,7,0,7,0.0,5,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;stable but not part of 30-minute sustained block
+Leak_471812_offset_-1_20260125T094808Z,Leak:471812,Leak,7,7,0,100.0,35,PASS,
+Outage_1001_offset_-1_20240828T030000Z,Outage:1001,Outage,6,0,6,0.0,15,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;stable but not part of 30-minute sustained block
+Outage_1014_offset_-1_20240906T094500Z,Outage:1014,Outage,6,6,0,100.0,30,PASS,
+Outage_1028_offset_-1_20240924T094500Z,Outage:1028,Outage,6,6,0,100.0,30,PASS,
+Outage_103_offset_-3_20220924T123000Z,Outage:103,Outage,6,6,0,100.0,30,PASS,
+Outage_1065_offset_-1_20250106T000000Z,Outage:1065,Outage,6,6,0,100.0,30,PASS,
+Outage_1081_offset_+1_20250316T001500Z,Outage:1081,Outage,6,0,6,0.0,0,REVIEW,rib_route_confirmed;rib_origin_stable
+Outage_1178_offset_-1_20250527T050000Z,Outage:1178,Outage,6,6,0,100.0,30,PASS,
+Outage_125_offset_-1_20220913T190000Z,Outage:125,Outage,6,6,0,100.0,30,PASS,
+Outage_1515_offset_-1_20260101T000000Z,Outage:1515,Outage,6,0,6,0.0,15,REVIEW,no_suspicious_update_behavior;no_strong_as_path_instability;stable but not part of 30-minute sustained block
+Outage_1521_offset_-1_20260113T173000Z,Outage:1521,Outage,6,6,0,100.0,30,PASS,
+Outage_322_offset_-1_20230127T160000Z,Outage:322,Outage,6,6,0,100.0,30,PASS,
+Outage_323_offset_-1_20230131T043000Z,Outage:323,Outage,6,6,0,100.0,30,PASS,
+Outage_325_offset_-1_20230204T104500Z,Outage:325,Outage,6,6,0,100.0,30,PASS,
+Outage_328_offset_-1_20230206T030000Z,Outage:328,Outage,6,6,0,100.0,30,PASS,

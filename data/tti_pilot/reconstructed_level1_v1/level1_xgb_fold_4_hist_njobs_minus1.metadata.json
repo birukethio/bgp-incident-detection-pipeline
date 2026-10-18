@@ -1,0 +1,37 @@
+{
+  "assignment_sha256": "4fa06415be3233c808a2bd0169a345c6c29088082ca7d3f0d3792fb9d506a355",
+  "candidate_id": "hist_njobs_minus1",
+  "environment": {
+    "class_order": "[\"HIJACK\", \"LEAK\", \"OUTAGE\"]",
+    "feature_count": 74,
+    "numpy_version": "1.26.4",
+    "pandas_version": "2.2.2",
+    "platform": "macOS-15.7.5-x86_64-i386-64bit",
+    "python_executable": "/opt/anaconda3/bin/python",
+    "python_version": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 21:00:12) [Clang 16.0.6 ]",
+    "random_seed": 20260828,
+    "sklearn_version": "1.5.1",
+    "tree_method_selected": "hist",
+    "xgboost_version": "3.4.1"
+  },
+  "feature_schema_path": "data/tti_pilot/reconstructed_level1_v1/feature_schema_v4.json",
+  "fold": 4,
+  "heldout_incident_count": 199,
+  "hyperparameters": {
+    "colsample_bytree": 0.9,
+    "gamma": 0,
+    "learning_rate": 0.125,
+    "max_depth": 6,
+    "min_child_weight": 1,
+    "n_estimators": 600,
+    "reg_alpha": 0.01,
+    "reg_lambda": 2.0,
+    "subsample": 0.9
+  },
+  "model_sha256": "290259d731f4c2d0f949d2be72385ba32e50f6e3219dd1bb508d31f2d0f20ff6",
+  "n_jobs": -1,
+  "seed": 20260828,
+  "train_dataset_sha256": "b9a6490a13a3146266c86e605a75e92f30c167e4181d60e28732ebaced9a24ad",
+  "training_incident_count": 794,
+  "tree_method": "hist"
+}

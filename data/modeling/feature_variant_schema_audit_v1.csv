@@ -1,0 +1,5 @@
+feature_variant,expected_feature_count,observed_feature_count,behavioral_columns_identical,caida_schema_ok,rpki_schema_ok,forbidden_feature_columns,row_count,status
+V1,44,44,True,True,True,[],68547,PASS
+V2,58,58,True,True,True,[],68547,PASS
+V3,60,60,True,True,True,[],68547,PASS
+V4,74,74,True,True,True,[],68547,PASS

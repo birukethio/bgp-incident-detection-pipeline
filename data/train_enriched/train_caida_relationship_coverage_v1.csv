@@ -1,0 +1,4 @@
+category,window_rows,windows_with_caida_path_observations,windows_without_caida_path_observations,path_observation_total,paths_with_unknown_relationship_total,unknown_relationship_transition_total,unknown_path_percent
+Hijack,16616,9741,6875,13123638,773795,848462,5.896
+Leak,16179,14215,1964,84164219,4995434,6458025,5.935
+Outage,35236,13365,21871,30766904,673090,756529,2.188

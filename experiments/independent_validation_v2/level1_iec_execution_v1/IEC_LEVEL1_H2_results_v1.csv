@@ -1,0 +1,2 @@
+hypothesis,status,behavioral_only_comparator_executable,n_evaluable,macro_f1_delta_v4_minus_behavioral,paired_bootstrap_ci_lower,paired_bootstrap_ci_upper,notes
+H2,H2_EXTERNAL_CONFIRMATION_NOT_EXECUTED_COMPARATOR_NOT_REPRODUCIBLE,NO,0,,,,No pre-IEC frozen/reproducible behavioral-only Level-1 comparator capable of the same IEC reconstruction and inference path was identified; H2 was not executed.

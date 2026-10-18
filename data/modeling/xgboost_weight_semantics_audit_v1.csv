@@ -1,0 +1,6 @@
+fold,train_rows,train_incident_groups,min_group_weight,median_group_weight,max_group_weight,group_weight_semantics,status
+1,53399,794,0.9999999999999999,1.0,1.0,same group_aware_weights(train_fold) function used for RF and XGBoost; weights computed from training side only,PASS
+2,53402,795,0.9999999999999999,1.0,1.0,same group_aware_weights(train_fold) function used for RF and XGBoost; weights computed from training side only,PASS
+3,54897,795,0.9999999999999999,1.0,1.0,same group_aware_weights(train_fold) function used for RF and XGBoost; weights computed from training side only,PASS
+4,55693,794,0.9999999999999999,1.0,1.0,same group_aware_weights(train_fold) function used for RF and XGBoost; weights computed from training side only,PASS
+5,54733,794,0.9999999999999999,1.0,1.0,same group_aware_weights(train_fold) function used for RF and XGBoost; weights computed from training side only,PASS

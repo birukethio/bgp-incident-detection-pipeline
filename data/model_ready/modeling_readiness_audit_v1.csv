@@ -1,0 +1,22 @@
+check_name,observed_value,status,notes
+V1_normal_rows,516,PASS,Normal membership unchanged
+V1_normal_incident_feature_schema_align,44,PASS,same feature names and order as incident variant
+V1_stage1_rows,68547,PASS,"516 Normal + 68,031 incident TRAIN windows"
+V1_stage2_rows,68031,PASS,incident TRAIN windows only
+V2_normal_rows,516,PASS,Normal membership unchanged
+V2_normal_incident_feature_schema_align,58,PASS,same feature names and order as incident variant
+V2_stage1_rows,68547,PASS,"516 Normal + 68,031 incident TRAIN windows"
+V2_stage2_rows,68031,PASS,incident TRAIN windows only
+V3_normal_rows,516,PASS,Normal membership unchanged
+V3_normal_incident_feature_schema_align,60,PASS,same feature names and order as incident variant
+V3_stage1_rows,68547,PASS,"516 Normal + 68,031 incident TRAIN windows"
+V3_stage2_rows,68031,PASS,incident TRAIN windows only
+V4_normal_rows,516,PASS,Normal membership unchanged
+V4_normal_incident_feature_schema_align,74,PASS,same feature names and order as incident variant
+V4_stage1_rows,68547,PASS,"516 Normal + 68,031 incident TRAIN windows"
+V4_stage2_rows,68031,PASS,incident TRAIN windows only
+grouping_keys_available,group_id and model_group_id,PASS,No random window-level split created
+imbalance_configurations_registered,I0/I1/I2,PASS,registered but unapplied
+experiment_matrix_registered,config/model_experiment_matrix_v1.yaml,PASS,B0/B1/H1 and V1-V4 registered but unexecuted
+holdout_untouched,YES,PASS,Only TRAIN frozen corpora and Normal TRAIN corpus were loaded
+model_training_executed,NO,PASS,No estimator import/fit is performed

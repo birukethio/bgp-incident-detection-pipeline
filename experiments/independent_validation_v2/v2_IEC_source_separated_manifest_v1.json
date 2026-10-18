@@ -1,0 +1,16 @@
+{
+  "accepted_class_counts": {
+    "Hijack": 16,
+    "Leak": 17,
+    "Outage": 30
+  },
+  "accepted_count": 63,
+  "candidate_count": 73,
+  "disposition": "READY_FOR_AUTOMATED_IEC_LOCK",
+  "excluded_count": 10,
+  "final_holdout_accessed": false,
+  "generated_utc": "2026-09-15T14:39:33.779028+00:00",
+  "model_scoring_performed": false,
+  "source_candidate_artifact": "/Users/biruk/Documents/New project/experiments/independent_validation_audit_v2/v2_expert_adjudication_form.csv",
+  "validation_accessed": false
+}

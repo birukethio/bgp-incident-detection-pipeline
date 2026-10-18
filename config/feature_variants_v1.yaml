@@ -1,31 +1,40 @@
 feature_variants_version: v1
-source: data/pilot/behavioral_feature_inventory_v1.csv
-notes: Counts are derived from locally verified/reproducible inventory only; CAIDA and RPKI/ROV enrichments remain future controlled steps.
+source: data/train_frozen/frozen_train_behavioral_corpus_v1.parquet
+notes: All four feature variants are frozen only after full TRAIN audits pass. No weighting, p95 cap, modeling, or ablation is applied here.
 variants:
   V1:
     description: Behavioral BGP features only
-    feature_count: 44
+    behavioral_feature_count: 44
+    total_feature_count: 44
+    status: FROZEN
     feature_groups:
       - Behavioral
   V2:
     description: Behavioral BGP + CAIDA AS-relationship features
-    feature_count: 44
+    behavioral_feature_count: 44
+    caida_feature_count: 14
+    total_feature_count: 58
+    status: FROZEN
     feature_groups:
       - Behavioral
       - CAIDA AS-relationship
-    unresolved_external_feature_count: 0
   V3:
     description: Behavioral BGP + RPKI/ROV features
-    feature_count: 44
+    behavioral_feature_count: 44
+    rpki_feature_count: 16
+    total_feature_count: 60
+    status: FROZEN
     feature_groups:
       - Behavioral
       - RPKI/ROV
-    unresolved_external_feature_count: 0
   V4:
     description: Behavioral BGP + CAIDA AS-relationship + RPKI/ROV features
-    feature_count: 44
+    behavioral_feature_count: 44
+    caida_feature_count: 14
+    rpki_feature_count: 16
+    total_feature_count: 74
+    status: FROZEN
     feature_groups:
       - Behavioral
       - CAIDA AS-relationship
       - RPKI/ROV
-    unresolved_external_feature_count: 0

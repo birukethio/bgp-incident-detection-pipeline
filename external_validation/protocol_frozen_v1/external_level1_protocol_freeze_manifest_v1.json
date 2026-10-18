@@ -1,0 +1,122 @@
+{
+  "protocol_version": "external_level1_protocol_frozen_v1",
+  "freeze_timestamp_utc": "2026-09-18T21:36:20Z",
+  "git_head_at_freeze": "b3974dfcfad28cb1ccc9132414761fcda502d724",
+  "statement": "The reconstruction, feature-generation, historical-enrichment, frozen Level-1 inference, and mean incident-aggregation procedures were frozen before selection of the final prospective external-validation cohort.",
+  "scope": "Prospective source-separated external validation of the frozen reproducibly preserved Level-1 BGP incident-classification path.",
+  "level2_external_validation": false,
+  "protocol": {
+    "path": "external_validation/protocol_frozen_v1/external_level1_protocol_frozen_v1.md",
+    "sha256": "258a41d066adcaf29038c34729653be91d2dbe3f46cd95bd79242eff5e1a0b94"
+  },
+  "reconstruction_runner": {
+    "path": "external_validation/protocol_frozen_v1/runners/external_level1_reconstruction_runner_frozen_v1.py",
+    "sha256": "1d236ddf827514825e192fbd139d24f37ae0c09a9285f62de5b7bf3a59d96614"
+  },
+  "inference_finalization_runner": {
+    "path": "external_validation/protocol_frozen_v1/runners/external_level1_inference_finalization_runner_frozen_v1.py",
+    "sha256": "8a0805afb57e96ce002f1b2502db2f342c1e1250d7dc3cdc8dcbc69700b3762a"
+  },
+  "feature_schema": {
+    "path": "data/tti_pilot/reconstructed_level1_v1/feature_schema_v4.json",
+    "sha256": "38ca70a2aa50a39172f2a90d1c893fdd08dfa38a49b3e5945b19d9cab2a202f3",
+    "feature_count": 74
+  },
+  "level1_models": [
+    {
+      "path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_1_hist_njobs_minus1.joblib",
+      "sha256": "72fa8831bec6c6fcf286d8f39dff1b00a0322805f27335ccb6d381d62cb87a24"
+    },
+    {
+      "path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_2_hist_njobs_minus1.joblib",
+      "sha256": "468ac8c03bc9d8bf6fbda7a8bb9d70144b92264ef6d1ad6c668741b57194615e"
+    },
+    {
+      "path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_3_hist_njobs_minus1.joblib",
+      "sha256": "144d615c1e525305a082a7f7edce40f6634c0ed11af8f3930ce58ba46332550f"
+    },
+    {
+      "path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_4_hist_njobs_minus1.joblib",
+      "sha256": "290259d731f4c2d0f949d2be72385ba32e50f6e3219dd1bb508d31f2d0f20ff6"
+    },
+    {
+      "path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_5_hist_njobs_minus1.joblib",
+      "sha256": "0e7d220cbec179c15aaf995dd29a630037b58b4c3635778b1186c002518cb5fe"
+    }
+  ],
+  "level1_model_metadata": [
+    {
+      "path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_1_hist_njobs_minus1.metadata.json",
+      "sha256": "ab38de21241802d7731fbff6471014cf521f35ad3c2efe9c2fe6996f54f9f2af"
+    },
+    {
+      "path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_2_hist_njobs_minus1.metadata.json",
+      "sha256": "8184e44df0479670366ec190a0a25a8830444ab1072c7c1f37db17ba503234da"
+    },
+    {
+      "path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_3_hist_njobs_minus1.metadata.json",
+      "sha256": "4589150e2047c4daac56ff5f7d48571c26ac591be15afde72fd3659175209bcd"
+    },
+    {
+      "path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_4_hist_njobs_minus1.metadata.json",
+      "sha256": "16f73af089eeed07808f28ad144ab0127508097bde2b8273a93f15fb06d70458"
+    },
+    {
+      "path": "data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_5_hist_njobs_minus1.metadata.json",
+      "sha256": "ee165115cca8b187e7b0b67183fefe899ca67edcc22d44c2a09851b65332a5f2"
+    }
+  ],
+  "collector_selection_rule": "route-views2 only",
+  "context_buffer_minutes": 60,
+  "incident_active_segmentation_rule": "Outage documented interval; Hijack/Leak <=60m one segment; >60m first/last 5m boundary segments",
+  "relevance_predicate": {
+    "version": "frozen_train_incident_scale_v1",
+    "path": "src/bgp_incident_detection/train_incident_scale.py",
+    "sha256": "f2b71e71dc903cd24b33227feb8079ccc48a3c7ac1868c6d2cbf49ffde7d0432"
+  },
+  "five_minute_windowing": {
+    "path": "src/bgp_incident_detection/windows.py",
+    "sha256": "a64389de76ff78cd0ad834580b67373942d99760459c5ff42b972812a13a8941"
+  },
+  "behavioral_rule": {
+    "version": "44_feature_v1",
+    "path": "src/bgp_incident_detection/behavioral_features.py",
+    "sha256": "797243c9af93e4362cb93db9e218cd2a3a0f0b96f410201dd01a2b5452e9a3cb"
+  },
+  "caida_rule": {
+    "version": "14_feature_serial2_v1",
+    "path": "src/bgp_incident_detection/caida_features.py",
+    "sha256": "384807e6fdd713421292dcb0f925087893c4dc025c32c40826ce4595f1d41025"
+  },
+  "rpki_rule": {
+    "version": "16_feature_historical_v1",
+    "path": "src/bgp_incident_detection/rpki_features.py",
+    "sha256": "3a71ee48e333b75245381a6fc54ae4cedff1729ddd10230034e437e0d200fa64"
+  },
+  "mrt_parser": {
+    "path": "src/bgp_incident_detection/mrt_parser.py",
+    "sha256": "51db1334aeaa0dcb431b26ece3780c00857c3680fe1737f3eabd00dcf46025b9"
+  },
+  "missing_value_behavior": "Frozen NaN behavior; no new imputation; native XGBoost missing-value handling",
+  "mean_incident_aggregation_rule": "Arithmetic mean class probability across all eligible reconstructed five-minute windows",
+  "pilot_exclusion_ledger": {
+    "path": "external_validation/manifests/pilot_exclusion_from_final_roster_v1.csv",
+    "sha256": "d56cf19f53695216d396fedc98abc6e2d27561a88a7cf3a748be00eaaa6b3fa6"
+  },
+  "pilot_engineering_change_log": {
+    "path": "external_validation/reconstruction/pilot_v1/pilot_engineering_change_log_v1.csv",
+    "sha256": "b2043bfdcca06e3a00a1d7ad438c60e75cdaa103fae892b427a9be71b140b5df"
+  },
+  "fixed_dispositions": [
+    "ACCEPTED",
+    "TIMESTAMP_REVIEW",
+    "LABEL_AMBIGUOUS",
+    "SOURCE_INSUFFICIENT",
+    "ORIGINAL_CORPUS_OVERLAP",
+    "PILOT_EXCLUDED",
+    "ARCHIVAL_COVERAGE_INELIGIBLE",
+    "RECONSTRUCTION_FAILED",
+    "SCHEMA_MISMATCH",
+    "INFERENCE_FAILED"
+  ]
+}

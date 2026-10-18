@@ -1,0 +1,6 @@
+metric,point_estimate,ci_lower,ci_upper,confidence_level,method,iterations,seed,sample_unit,sample_count
+macro_f1,0.41269841269841273,0.2222222222222222,0.6,0.95,stratified incident-level bootstrap within each observed class,10000,20260918,incident,18
+top1_accuracy,0.5555555555555556,0.3888888888888889,0.7222222222222222,0.95,stratified incident-level bootstrap within each observed class,10000,20260918,incident,18
+top2_accuracy,0.7222222222222222,0.6111111111111112,0.8333333333333334,0.95,stratified incident-level bootstrap within each observed class,10000,20260918,incident,18
+mrr,0.7314814814814814,0.6296296296296295,0.8148148148148148,0.95,stratified incident-level bootstrap within each observed class,10000,20260918,incident,18
+mean_true_class_rank,1.7222222222222223,1.5,2.0,0.95,stratified incident-level bootstrap within each observed class,10000,20260918,incident,18
