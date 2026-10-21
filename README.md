@@ -67,21 +67,7 @@ Per-class F1 scores were `0.877698` for Hijack, `0.904110` for Leak, and `0.9787
 
 ## Project Status
 
-The primary Praxis experiment is complete. The repository includes:
-
-- corpus and partition provenance;
-- RouteViews acquisition and parsing code;
-- five-minute Behavioral feature construction;
-- historical CAIDA and RPKI/ROV enrichment;
-- V1-V4 and feature-family ablation studies;
-- Random Forest and XGBoost comparisons;
-- TRAIN grouped/nested evaluation and forensic leakage checks;
-- Validation and terminal Final Holdout records;
-- calibration, error, latency, provenance, and reproducibility audits;
-- TRAIN-only retrospective early-classification/TTI sensitivity analyses;
-- publication-ready tables, figures, and manuscript deliverables.
-
-There are no unfinished "next pipeline steps" for the frozen Praxis experiment. Future research directions are documented separately and are not required to reproduce the reported study.
+The Praxis research and its primary experimental evaluation are complete. This repository preserves the final code, frozen experimental configurations, result artifacts, quality and reproducibility audits, manuscript-ready tables, and supporting documentation. Earlier developmental experiments are retained for transparency and provenance but do not replace the authoritative final results. Any remaining extensions are future research opportunities rather than incomplete steps in the reported study.
 
 ## Repository Guide
 
@@ -94,7 +80,6 @@ There are no unfinished "next pipeline steps" for the frozen Praxis experiment. 
 | `docs/` | Evidence audits, methodology records, captions, and result tables |
 | `experiments/` | Additive forensic and sensitivity analyses |
 | `external_validation/` | Source-separated Level-1 validation protocols and records |
-| `figures/` | Publication-ready Chapter 3-5 figures |
 | `notebooks/` | Versioned experimental notebooks |
 | `deliverables/` | Final manuscript and related deliverables |
 
