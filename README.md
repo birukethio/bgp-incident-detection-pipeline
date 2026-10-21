@@ -65,6 +65,12 @@ The authoritative assignment is `data/partitions_v2/frozen_partition_manifest_v2
 
 Per-class F1 scores were `0.877698` for Hijack, `0.904110` for Leak, and `0.978723` for Outage. These values are frozen and authoritative.
 
+### Final Holdout Confusion Matrix
+
+![Final Holdout confusion matrix for Hijack, Leak, and Outage classification](docs/assets/final_holdout_confusion_matrix.png)
+
+**Figure.** Frozen incident-level Final Holdout confusion matrix (`n = 213`; 71 incidents per class). Rows are true classes and columns are predicted classes.
+
 ## Project Status
 
 The Praxis research and its primary experimental evaluation are complete. This repository preserves the final code, frozen experimental configurations, result artifacts, quality and reproducibility audits, manuscript-ready tables, and supporting documentation. Earlier developmental experiments are retained for transparency and provenance but do not replace the authoritative final results. Any remaining extensions are future research opportunities rather than incomplete steps in the reported study.

@@ -54,6 +54,10 @@ docs/chapter3_figure_options/
 *.svg
 **/*figure*.pdf
 
+# Curated README result asset
+!docs/assets/
+!docs/assets/final_holdout_confusion_matrix.png
+
 # Large Cloudflare/API dumps generated during exploration
 cloudflare_incidents/raw_*.json
 cloudflare_incidents/all_*.csv
