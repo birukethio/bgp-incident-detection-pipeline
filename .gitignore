@@ -44,6 +44,16 @@ experiments/natural_distribution_v1/natural_distribution_incident_roster_v1.csv
 # Document rendering scratch output; retain final DOCX/PDF deliverables
 deliverables/**/render*/
 
+# Publication figures are maintained outside the public repository
+figures/
+**/figures/
+docs/chapter3_figure_options/
+*.png
+*.jpg
+*.jpeg
+*.svg
+**/*figure*.pdf
+
 # Large Cloudflare/API dumps generated during exploration
 cloudflare_incidents/raw_*.json
 cloudflare_incidents/all_*.csv
