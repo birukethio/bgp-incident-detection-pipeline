@@ -1,0 +1,5 @@
+# Section 4.8 Figure Caption
+
+**Figure 4.9. TRAIN-CV versus independent Validation performance for the Phase J confirmation experiment.** The figure compares the locked refined XGBoost candidate's TRAIN grouped-CV reference against its first independent Validation confirmation on 213 incidents (71 Hijack, 71 Leak, and 71 Outage). The primary panel reports incident Macro F1, Top-1 accuracy, Top-2 accuracy, and MRR; the secondary panel reports Validation class-specific F1. Validation performance decreased relative to TRAIN-CV, with the largest listed decrease in Hijack F1, but all predefined Validation floors passed. No model selection, threshold selection, hyperparameter tuning, feature changes, or post-result candidate changes were made using Validation, and Final Holdout remained sealed.
+
+Validation disposition: `VALIDATION_CONFIRMATION_PASS`. Source artifacts: `data/validation/validation_confirmation_results_v1.csv`, `data/validation/train_vs_validation_comparison_v1.csv`, and `data/validation/validation_confirmation_audit_v1.csv`.

@@ -1,0 +1,16 @@
+{
+  "disposition": "SOURCE_SEPARATED_IEC_INCONCLUSIVE",
+  "final_holdout_accessed": false,
+  "generated_utc": "2026-09-15T15:03:51.276900+00:00",
+  "implementation_equivalence": "FAIL",
+  "input_roster": "experiments/independent_validation_v2/v2_IEC_final_source_separated_roster.csv",
+  "locked_artifacts_match": true,
+  "locked_roster_class_counts": {
+    "Hijack": 16,
+    "Leak": 17,
+    "Outage": 30
+  },
+  "locked_roster_rows": 63,
+  "model_scoring_performed": false,
+  "validation_accessed": false
+}

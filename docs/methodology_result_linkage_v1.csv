@@ -1,0 +1,7 @@
+methodology_decision,scientific_reason,experiment,measured_effect,artifact,final_interpretation
+Incident-level split,avoid window leakage across incidents,P0,zero cross-partition incident overlap,data/partitions_v2/frozen_partition_manifest_v2.csv,All future windows inherit incident partition.
+Incident-aware weighting,reduce unequal incident influence,P7,I1 retained as modeling default,data/modeling/imbalance_strategy_model_comparison_v1.csv,Balancing decision made on TRAIN only.
+Behavioral+CAIDA+RPKI V4,"combine route behavior, AS context, and route authorization state",P6,V4 carried forward,data/modeling/feature_variant_ablation_results_v1.csv,Feature composition supported by ablation with caveats.
+RPKI enrichment,capture prefix-origin validity signals,P5/P10,Hijack classification benefited in feature-family evidence,data/modeling/feature_family_ablation_results_v1.csv,"Predictive contribution, not causal proof."
+Incident temporal stacking,summarize within-incident probability trajectory,P14,+0.131729 Macro F1 vs mean aggregation,data/modeling_k1/k1_decision_summary_v1.csv,K1 transformed window probabilities into incident summaries.
+One-time Holdout evaluation,protect final generalization estimate,P18,Macro F1 0.920177,config/final_praxis_result_v1.yaml,Terminal result; no post-Holdout model changes.

@@ -1,0 +1,6 @@
+table_id_proposed,chapter,section,title,purpose,source_artifact,key_columns,status,priority
+PROPOSED_TABLE_CH3_PARTITIONS,Chapter 3,Incident Dataset,Incident Partition Summary,show 993/213/213 and class balance,data/partitions_v2/frozen_partition_manifest_v2.csv,"partition, category counts",READY,ESSENTIAL
+PROPOSED_TABLE_CH3_BEHAVIORAL,Chapter 3,Features,Behavioral Feature Families,summarize 44 behavioral features,config/behavioral_feature_schema_v1.yaml,feature group/count,READY,ESSENTIAL
+PROPOSED_TABLE_CH3_VARIANTS,Chapter 3,Features,Feature Variant Definitions,define V1-V4,config/feature_variants_v1.yaml,variant/composition/features,READY,ESSENTIAL
+PROPOSED_TABLE_CH3_NORMAL,Chapter 3,Normal,Normal Ground-Truth Qualification Rules,document RIB+UPDATE rules,config/normal_ground_truth_method_v1.yaml,rule/status,READY,IMPORTANT
+PROPOSED_TABLE_CH3_K1_SPEC,Chapter 3,Final Model,Final K1 Model Specification,document final architecture,config/k1_final_candidate_v1_1_deployable.yaml,level/model/features,READY,ESSENTIAL

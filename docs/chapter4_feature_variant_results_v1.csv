@@ -1,0 +1,5 @@
+variant,behavioral_features,caida_features,rpki_features,total_features,incident_macro_f1,top1_accuracy,top2_accuracy,mrr,hijack_f1,leak_f1,outage_f1,evaluation_scope,source_artifact
+V1,44,0,0,44,0.524534,NA,0.918623,0.843838,0.396661,0.776704,0.793125,TRAIN-only incident-level grouped CV; RF_HIER; I1 imbalance condition,data/modeling/feature_variant_ablation_results_v1.csv
+V2,44,14,0,58,0.519024,NA,0.922748,0.847545,0.391523,0.785284,0.799159,TRAIN-only incident-level grouped CV; RF_HIER; I1 imbalance condition,data/modeling/feature_variant_ablation_results_v1.csv
+V3,44,0,16,60,0.545986,NA,0.920780,0.846567,0.417184,0.780019,0.796779,TRAIN-only incident-level grouped CV; RF_HIER; I1 imbalance condition,data/modeling/feature_variant_ablation_results_v1.csv
+V4,44,14,16,74,0.541436,NA,0.923076,0.851910,0.422826,0.788013,0.805773,TRAIN-only incident-level grouped CV; RF_HIER; I1 imbalance condition,data/modeling/feature_variant_ablation_results_v1.csv

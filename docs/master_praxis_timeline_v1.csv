@@ -1,0 +1,20 @@
+sequence,phase,milestone,date_or_commit_if_available,partition,major_output,decision,significance
+1,P0,Incident roster and v2 partitions,,TRAIN/Validation/Holdout,data/partitions_v2/frozen_partition_manifest_v2.csv,Use v2 as authoritative corpus,Balanced and leakage-free incident split
+2,P1,RouteViews acquisition and processing,,TRAIN,data/train_scale/outage_605_recovery_feature_changes_v1.csv,Proceed to frozen behavioral corpus,Pipeline recovered missing primary source cases
+3,P2,Behavioral feature corpus,,TRAIN,data/train_frozen/frozen_train_behavioral_corpus_v1.parquet,Use as base feature family,Schema and corpus frozen
+4,P3,Normal ground-truth development,,TRAIN only,data/model_ready/frozen_normal_v4_v1.parquet,Keep Stage 1 auxiliary,Normal is useful but hard
+5,P4,CAIDA enrichment,,TRAIN,config/caida_feature_schema_v1.yaml,Retain CAIDA in V4,Useful especially for Leak/Outage context with caveats
+6,P5,RPKI/ROV enrichment,,TRAIN,config/rpki_feature_schema_v1.yaml,Retain RPKI in V4,Strong Hijack signal in ablation
+7,P6,Feature variants,,TRAIN grouped CV,data/modeling/feature_variant_ablation_results_v1.csv,Use V4 for later models,Behavioral+CAIDA+RPKI retained
+8,P7,Imbalance strategies,,TRAIN grouped CV,data/modeling/imbalance_strategy_model_comparison_v1.csv,Carry I1 forward,Equalizes incident influence without data loss
+9,P8,Baseline modeling,,TRAIN grouped CV,data/modeling/baseline_v1_model_comparison_v1.csv,Proceed to enrichment/imbalance,Baseline only
+10,P9,Stage 1 experiments,,TRAIN grouped CV,data/modeling/stage1_threshold_selection_summary_v1.csv,Keep Stage 1 auxiliary,Negative result preserved
+11,P10,Domain-expert architecture,,TRAIN grouped CV,data/modeling/domain_expert_classification_results_v1.csv,KEEP_MULTICLASS_STAGE2,Negative architecture result
+12,P11,Random Forest optimization,,TRAIN grouped CV,data/modeling/rf_h2_final_comparison_v1.csv,PROMOTE_PHASE_H2_RF as RF benchmark,MARGINAL_REFINEMENT
+13,P12,XGBoost comparison/refinement,,TRAIN grouped CV,data/modeling/xgb_i2_final_comparison_v1.csv,PROMOTE_PHASE_I2_XGB,XGBoost stronger than refined RF
+14,P13,Phase J Validation,,Validation,data/validation/validation_confirmation_results_v1.csv,VALIDATION_CONFIRMATION_PASS,Passed predeclared floors
+15,P14,K1 incident-level stacking,,TRAIN nested CV,data/modeling_k1/k1_model_results_v1.csv,CARRY_XGB_INCIDENT_STACKER,Material TRAIN-only stacking gain
+16,P15,K2 forensic verification,,TRAIN nested CV,data/modeling_k2/k2_multiseed_performance_v1.csv,K1_GAIN_CONFIRMED,Leakage controls support validity
+17,P16,K2.5 architecture comparator,,TRAIN nested CV,data/modeling_k25/k25_architecture_multiseed_results_v1.csv,KEEP_XGB_XGB_K1,XGB->XGB strongest
+18,P17,L0 deployable freeze,,TRAIN nested CV,config/k1_second_level_xgb_final_v1.yaml,READY_FOR_PHASE_L,Prevented premature Holdout access
+19,P18,Final Holdout,2026-09-03T01:23:45Z,Final Holdout,config/final_praxis_result_v1.yaml,FINAL_HOLDOUT_EVALUATED_NO_FURTHER_TUNING,"Strong independent generalization, no post-Holdout tuning"

@@ -1,0 +1,31 @@
+number_name,value,authoritative_source,context,chapter_usage
+Praxis title,An Artificial Intelligence–Based Classification and Ranking System for Border Gateway Protocol Incidents in Enterprise Networks,user Phase M request,current title,all chapters
+TRAIN incidents,993,data/partitions_v2/frozen_partition_manifest_v2.csv,frozen v2 partition,Chapter 3
+TRAIN class counts,331/331/331,data/partitions_v2/frozen_partition_manifest_v2.csv,Hijack/Leak/Outage,Chapter 3
+Validation incidents,213,data/partitions_v2/frozen_partition_manifest_v2.csv,frozen v2 partition,Chapter 3/4
+Validation class counts,71/71/71,data/partitions_v2/frozen_partition_manifest_v2.csv,Hijack/Leak/Outage,Chapter 3/4
+Final Holdout incidents,213,config/final_praxis_result_v1.yaml,terminal evaluation,Chapter 4/5
+Final Holdout class counts,71/71/71,data/partitions_v2/frozen_partition_manifest_v2.csv,Hijack/Leak/Outage,Chapter 4
+TRAIN behavioral rows,68031,data/train_frozen/frozen_train_behavioral_corpus_v1.parquet,five-minute feature rows,Chapter 3/4
+Normal frozen windows,516,data/model_ready/frozen_normal_v4_v1.parquet,NORMAL_VERIFIED windows,Chapter 3/4
+Behavioral features,44,config/behavioral_feature_schema_v1.yaml,frozen behavioral schema,Chapter 3
+CAIDA features,14,config/caida_feature_schema_v1.yaml,frozen CAIDA schema,Chapter 3
+RPKI features,16,config/rpki_feature_schema_v1.yaml,frozen RPKI schema,Chapter 3
+V4 features,74,config/feature_variants_v1.yaml,Behavioral+CAIDA+RPKI,Chapter 3/4
+Final Holdout rows,14906,config/final_praxis_result_v1.yaml,final Holdout V4 rows,Chapter 4
+Final Macro F1,0.920177,config/final_praxis_result_v1.yaml,incident-level final metric,Chapter 4/5
+Final Macro F1 95% CI,"[0.880117, 0.954402]",data/final_holdout/final_holdout_bootstrap_ci_v1.csv,incident bootstrap CI,Chapter 4
+Final Top-1,0.920188,config/final_praxis_result_v1.yaml,incident-level final metric,Chapter 4
+Final Top-2,0.990610,config/final_praxis_result_v1.yaml,incident-level final metric,Chapter 4/5
+Final MRR,0.958529,config/final_praxis_result_v1.yaml,incident-level final metric,Chapter 4
+Final Hijack F1,0.877698,config/final_praxis_result_v1.yaml,per-class final metric,Chapter 4
+Final Leak F1,0.904110,config/final_praxis_result_v1.yaml,per-class final metric,Chapter 4
+Final Outage F1,0.978723,config/final_praxis_result_v1.yaml,per-class final metric,Chapter 4
+Final rank1,196,data/final_holdout/final_holdout_ranking_metrics_v1.csv,true class ranked first,Chapter 4/5
+Final rank2,15,data/final_holdout/final_holdout_ranking_metrics_v1.csv,true class ranked second,Chapter 4/5
+Final rank3,2,data/final_holdout/final_holdout_ranking_metrics_v1.csv,true class ranked third,Chapter 4/5
+Final Top-2 count,211/213,data/final_holdout/final_holdout_ranking_metrics_v1.csv,rank1+rank2,Chapter 4/5
+Second-level hash,40df040321ef,config/k1_second_level_xgb_final_v1.yaml,frozen model identifier,Chapter 3/4
+Phase J Macro F1,0.713904,data/validation/validation_confirmation_results_v1.csv,Validation result before K1,Chapter 4
+K2 Macro F1,0.934304 ± 0.002309,data/modeling_k2/k2_multiseed_performance_v1.csv,TRAIN multi-seed K1 stability,Chapter 4
+Fixed deployable K1 Macro F1,0.931653 ± 0.002150,data/final_prep/k1_fixed_second_level_verification_v1.csv,pre-Holdout fixed TRAIN reference,Chapter 4

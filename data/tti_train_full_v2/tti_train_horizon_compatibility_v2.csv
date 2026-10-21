@@ -1,0 +1,75 @@
+feature_order,feature_name,feature_family,present_in_family_artifact,present_in_v4_artifact,expected_order_matches,compatible_numeric_dtype,missing_count,inf_count,status,notes
+1,update_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+2,announcement_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+3,withdrawal_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+4,update_rate_per_minute,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+5,announcement_rate_per_minute,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+6,withdrawal_rate_per_minute,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+7,announcement_ratio,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+8,withdrawal_ratio,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+9,announcement_to_withdrawal_ratio,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+10,unique_prefix_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+11,unique_announced_prefix_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+12,unique_withdrawn_prefix_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+13,prefix_churn_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+14,prefix_with_both_announce_withdraw_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+15,unique_peer_asn_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+16,unique_origin_asn_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+17,origin_diversity_ratio,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+18,moas_prefix_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+19,moas_prefix_ratio,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+20,origin_change_event_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+21,unique_as_path_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+22,as_path_length_min,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+23,as_path_length_max,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+24,as_path_length_mean,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+25,as_path_length_median,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+26,as_path_length_std,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+27,as_path_length_p95,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+28,as_path_length_range,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+29,path_prepending_observation_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+30,path_prepending_ratio,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+31,prepended_asn_repetition_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+32,multi_path_prefix_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+33,path_diversity_mean_per_prefix,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+34,peer_prefix_pair_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+35,peer_origin_pair_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+36,peer_as_path_pair_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+37,unique_next_hop_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+38,community_observation_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+39,community_observation_ratio,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+40,unique_community_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+41,med_observation_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+42,unique_med_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+43,local_pref_observation_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+44,atomic_aggregate_count,Behavioral,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+45,caida_path_observation_count,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+46,caida_paths_with_no_as_path_count,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+47,caida_paths_with_unknown_relationship_count,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+48,caida_unknown_relationship_transition_count,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+49,caida_customer_to_provider_transition_count,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+50,caida_provider_to_customer_transition_count,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+51,caida_peer_to_peer_transition_count,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+52,caida_valley_free_valid_path_count,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+53,caida_valley_free_violation_path_count,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+54,caida_valley_free_violation_ratio,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+55,caida_max_violation_count_per_path,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+56,caida_mean_violation_count_per_path,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+57,caida_customer_provider_transition_ratio,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+58,caida_peer_transition_ratio,CAIDA,True,False,False,False,NA,NA,REVIEW_PARTIAL_FAMILY_READY_V4_NOT_BUILT,"Family artifact exists, but final V4 artifact was not built because RPKI did not complete."
+59,rpki_evidence_observation_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+60,rpki_evaluable_observation_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+61,rpki_valid_observation_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+62,rpki_invalid_observation_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+63,rpki_not_found_observation_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+64,rpki_unevaluable_observation_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+65,rpki_invalid_origin_observation_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+66,rpki_invalid_maxlength_observation_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+67,rpki_valid_observation_ratio,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+68,rpki_invalid_observation_ratio,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+69,rpki_not_found_observation_ratio,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+70,rpki_unique_valid_prefix_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+71,rpki_unique_invalid_prefix_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+72,rpki_unique_not_found_prefix_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+73,rpki_state_diversity_count,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.
+74,rpki_dominant_state_code,RPKI_ROV,False,False,False,False,NA,NA,FAIL,RPKI/V4 not completed; no model scoring authorized or performed.

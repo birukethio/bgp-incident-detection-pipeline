@@ -1,0 +1,29 @@
+phase,artifact,model_or_component,runtime_type,mean_seconds,unit,notes
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_HIER,TRAINING_TIME,3.4096,seconds/fold-fit,Historical runtime recorded during TRAIN grouped-CV baseline.
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_HIER,INFERENCE_TIME,0.0874,seconds/fold-prediction,Historical runtime recorded during TRAIN grouped-CV baseline.
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_SINGLE,TRAINING_TIME,2.6339999999999995,seconds/fold-fit,Historical runtime recorded during TRAIN grouped-CV baseline.
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_SINGLE,INFERENCE_TIME,0.0539999999999999,seconds/fold-prediction,Historical runtime recorded during TRAIN grouped-CV baseline.
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_HIER,TRAINING_TIME,3.4096,seconds/fold-fit,Historical runtime recorded during TRAIN grouped-CV baseline.
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_HIER,INFERENCE_TIME,0.0874,seconds/fold-prediction,Historical runtime recorded during TRAIN grouped-CV baseline.
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_HIER_STAGE1,TRAINING_TIME,3.4096,seconds/fold-fit,Historical runtime recorded during TRAIN grouped-CV baseline.
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_HIER_STAGE1,INFERENCE_TIME,0.0874,seconds/fold-prediction,Historical runtime recorded during TRAIN grouped-CV baseline.
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_HIER_STAGE2,TRAINING_TIME,3.4096,seconds/fold-fit,Historical runtime recorded during TRAIN grouped-CV baseline.
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_HIER_STAGE2,INFERENCE_TIME,0.0874,seconds/fold-prediction,Historical runtime recorded during TRAIN grouped-CV baseline.
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_SINGLE,TRAINING_TIME,2.6339999999999995,seconds/fold-fit,Historical runtime recorded during TRAIN grouped-CV baseline.
+Baseline,data/modeling/baseline_v1_model_comparison_v1.csv,BASE_V1_I0_RF_SINGLE,INFERENCE_TIME,0.0539999999999999,seconds/fold-prediction,Historical runtime recorded during TRAIN grouped-CV baseline.
+H/H2,data/modeling/rf_h2_final_comparison_v1.csv,PHASE_H_WINNER,TRAINING_AND_CV_RUNTIME,226.4788,seconds/run,Historical RF runtime; artifact does not separate fit and inference.
+H/H2,data/modeling/rf_h2_final_comparison_v1.csv,H2_LOCAL_001,TRAINING_AND_CV_RUNTIME,399.1918,seconds/run,Historical RF runtime; artifact does not separate fit and inference.
+I/I2,data/modeling/xgb_i2_final_comparison_v1.csv,PHASE_I_XGB_WINNER,TRAINING_AND_CV_RUNTIME,21.699400000000004,seconds/run,Historical XGBoost TRAIN grouped-CV runtime.
+I/I2,data/modeling/xgb_i2_final_comparison_v1.csv,PHASE_I_XGB_WINNER,INFERENCE_TIME,0.158,seconds/run,Historical XGBoost inference time from TRAIN grouped-CV artifact.
+I/I2,data/modeling/xgb_i2_final_comparison_v1.csv,PHASEI2_XGB_LOCAL_004,TRAINING_AND_CV_RUNTIME,32.9888,seconds/run,Historical XGBoost TRAIN grouped-CV runtime.
+I/I2,data/modeling/xgb_i2_final_comparison_v1.csv,PHASEI2_XGB_LOCAL_004,INFERENCE_TIME,0.2153999999999999,seconds/run,Historical XGBoost inference time from TRAIN grouped-CV artifact.
+K1,data/modeling_k1/k1_model_results_v1.csv,K1-M2_XGB_K1-TEMPORAL,TRAINING_TIME,0.2343608918134123,seconds/fold-fit,Historical runtime recorded during TRAIN-only K1 experiment.
+K1,data/modeling_k1/k1_model_results_v1.csv,K1-M2_XGB_K1-TEMPORAL,INFERENCE_TIME,0.0020463831722736,seconds/fold-test-prediction,Historical runtime recorded during TRAIN-only K1 experiment.
+K1,data/modeling_k1/k1_model_results_v1.csv,K1-M2_XGB_K1-SIMPLE,TRAINING_TIME,0.2004361667670309,seconds/fold-fit,Historical runtime recorded during TRAIN-only K1 experiment.
+K1,data/modeling_k1/k1_model_results_v1.csv,K1-M2_XGB_K1-SIMPLE,INFERENCE_TIME,0.0017678250558674,seconds/fold-test-prediction,Historical runtime recorded during TRAIN-only K1 experiment.
+K1,data/modeling_k1/k1_model_results_v1.csv,K1-M1_LOGISTIC_K1-TEMPORAL,TRAINING_TIME,0.0225994833745062,seconds/fold-fit,Historical runtime recorded during TRAIN-only K1 experiment.
+K1,data/modeling_k1/k1_model_results_v1.csv,K1-M1_LOGISTIC_K1-TEMPORAL,INFERENCE_TIME,0.0013681335840374,seconds/fold-test-prediction,Historical runtime recorded during TRAIN-only K1 experiment.
+K1,data/modeling_k1/k1_model_results_v1.csv,K1-M1_LOGISTIC_K1-SIMPLE,TRAINING_TIME,0.0186331913806498,seconds/fold-fit,Historical runtime recorded during TRAIN-only K1 experiment.
+K1,data/modeling_k1/k1_model_results_v1.csv,K1-M1_LOGISTIC_K1-SIMPLE,INFERENCE_TIME,0.0015086661092936,seconds/fold-test-prediction,Historical runtime recorded during TRAIN-only K1 experiment.
+K1,data/modeling_k1/k1_model_results_v1.csv,K1-B0_MEAN_PROBABILITY,TRAINING_TIME,0.0,seconds/fold-fit,Historical runtime recorded during TRAIN-only K1 experiment.
+K1,data/modeling_k1/k1_model_results_v1.csv,K1-B0_MEAN_PROBABILITY,INFERENCE_TIME,0.0,seconds/fold-test-prediction,Historical runtime recorded during TRAIN-only K1 experiment.

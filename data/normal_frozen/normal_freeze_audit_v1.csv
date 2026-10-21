@@ -1,0 +1,14 @@
+check,status,observed,notes
+total_windows,PASS,516,expected 516
+all_final_states_normal_verified,PASS,NORMAL_VERIFIED,all rows must be NORMAL_VERIFIED
+unique_window_ids,PASS,516,no duplicate window_id
+train_only,PASS,train,Validation/Holdout excluded
+behavioral_features_present,PASS,44,expected 44 features
+no_validation_records,PASS,train,
+no_holdout_records,PASS,train,
+no_known_incident_overlap,PASS,not represented in frozen verified corpus; enforced upstream by method v1,known-overlap blocker remains frozen
+unique_asns,PASS,43,expected 43
+maximum_single_asn_contribution,PASS,6.202,review if > 15.0%
+associated_class_counts_preserved,PASS,"{""Hijack"": 198, ""Leak"": 144, ""Outage"": 174}","{""Hijack"": 198, ""Leak"": 144, ""Outage"": 174}"
+normal_methodology_v1_frozen,PASS,rib_update_v1,implementation method must remain rib_update_v1
+normal_corpus_v1_status,PASS,FROZEN_FOR_DEVELOPMENT,"development corpus freeze, not final sufficiency claim"

@@ -1,0 +1,24 @@
+protocol_id: "validation_confirmation_protocol_v3"
+selected_candidate_config: "config/final_model_candidate_v3_xgb_locked_for_validation.yaml"
+selected_algorithm: "XGBoost"
+purpose: "single predeclared Validation confirmation of the Phase I selected candidate only"
+validation_compares_algorithms: false
+primary_metrics:
+  - "incident_macro_f1"
+  - "incident_mrr"
+  - "incident_top2"
+acceptance_criteria:
+  incident_macro_f1_floor: 0.6
+  incident_mrr_floor: 0.75
+  incident_top2_floor: 0.85
+  catastrophic_class_failure: "any incident class F1 == 0"
+forbidden_uses:
+  - "algorithm comparison"
+  - "feature selection"
+  - "threshold tuning"
+  - "hyperparameter tuning"
+  - "model selection"
+  - "holdout access"
+validation_accessed: false
+final_holdout_accessed: false
+source_commit: "99fafc1037fa050fd2933ccc8c0f6f0bede45d05"

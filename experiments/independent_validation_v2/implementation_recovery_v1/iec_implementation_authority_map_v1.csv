@@ -1,0 +1,14 @@
+component,implementation_source,authoritative_artifact,verification_stage,rule_status
+RouteViews parsing,src/bgp_incident_detection/mrt_parser.py; src/bgp_incident_detection/behavioral_features.py,data/train_frozen/frozen_train_behavioral_corpus_v1.parquet,E1/E2,REFERENCE_OUTPUT_VERIFICATION
+incident relevance filtering,src/bgp_incident_detection/behavioral_features.py and frozen TRAIN behavioral corpus,data/train_frozen/frozen_train_behavioral_corpus_v1.parquet,E1/E2,REFERENCE_OUTPUT_VERIFICATION
+five-minute window construction,frozen TRAIN behavioral corpus window_id/window_start/window_end,data/train_frozen/frozen_train_behavioral_corpus_v1.parquet,E1,EXECUTABLE_LINKAGE_COMPARISON
+44 Behavioral features,src/bgp_incident_detection/behavioral_features.py; frozen TRAIN behavioral corpus,data/train_frozen/frozen_train_behavioral_corpus_v1.parquet,E2,EXECUTABLE_FEATURE_ASSEMBLY_COMPARISON
+14 CAIDA features,src/bgp_incident_detection/caida_features.py; frozen CAIDA enrichment,data/enrichment/caida/train_caida_features_v1.parquet,E2,EXECUTABLE_FEATURE_ASSEMBLY_COMPARISON
+16 RPKI/ROV features,src/bgp_incident_detection/rpki_features.py; frozen RPKI enrichment,data/enrichment/rpki/train_rpki_features_v1.parquet,E2,EXECUTABLE_FEATURE_ASSEMBLY_COMPARISON
+exact V4 feature order,src/bgp_incident_detection/feature_ablation.py::FEATURES_BY_VARIANT['V4'],data/train_frozen/frozen_train_v4_behavioral_caida_rpki_v1.parquet,E2,EXECUTABLE_SCHEMA_COMPARISON
+missing-value handling,serialized reconstructed Level-1 sklearn Pipeline SimpleImputer(strategy='median'),data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_*.joblib,E3,EXECUTABLE_MODEL_COMPARISON
+frozen Level-1 XGBoost reconstruction,data/tti_pilot/reconstructed_level1_v1/level1_xgb_fold_*.joblib,data/modeling_k1/k1_window_oof_probabilities_v1.parquet,E3,EXECUTABLE_MODEL_COMPARISON
+mean aggregation,groupby incident_uid mean over p_hijack/p_leak/p_outage,data/modeling_k1/k1_incident_level_predictions_v1.parquet::K1-B0_MEAN_PROBABILITY,E4,EXECUTABLE_AGGREGATION_COMPARISON
+Level-2 temporal meta-feature construction,src/bgp_incident_detection/k1_incident_stacking.py::summarize_incident,data/modeling_k1/k1_incident_meta_features_v1.parquet,E5,EXECUTABLE_META_FEATURE_COMPARISON
+frozen Level-2 XGBoost inference,config/k1_second_level_xgb_final_v1.yaml,data/modeling_k1/k1_incident_level_predictions_v1.parquet::K1-M2_XGB_K1-TEMPORAL,E6,BLOCKED_NO_SERIALIZED_LEVEL2_MODEL_FOUND
+class ranking,"descending P(Hijack), P(Leak), P(Outage)",config/k1_final_candidate_v1_1_deployable.yaml,E4/E6,EXECUTABLE_FOR_MEAN_AGGREGATION_ONLY

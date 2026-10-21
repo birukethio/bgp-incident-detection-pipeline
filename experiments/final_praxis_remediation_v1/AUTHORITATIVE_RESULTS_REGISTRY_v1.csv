@@ -1,0 +1,70 @@
+metric,value,population,experiment,source_artifact,manuscript_usage,notes
+raw_hijack_count,112290,Collected Cloudflare source corpus,Corpus balancing audit,experiments/corpus_balancing_audit_v1/corpus_source_accounting_v1.csv,Chapter 3 source accounting,Raw source records before deliberate balancing; not global prevalence.
+raw_leak_count,125051,Collected Cloudflare source corpus,Corpus balancing audit,experiments/corpus_balancing_audit_v1/corpus_source_accounting_v1.csv,Chapter 3 source accounting,Raw source records before deliberate balancing; not global prevalence.
+raw_outage_count,804,Collected Cloudflare source corpus,Corpus balancing audit,experiments/corpus_balancing_audit_v1/corpus_source_accounting_v1.csv,Chapter 3 source accounting,Cloudflare outage annotations.
+usable_prebalancing_hijack_count,112290,Collected source-validated corpus,Corpus balancing audit,experiments/corpus_balancing_audit_v1/corpus_source_accounting_v1.csv,Appendix source accounting,Full-universe Hijack duplicate-collapse artifact not found; documented as limitation.
+usable_prebalancing_leak_count,125051,Collected source-validated corpus,Corpus balancing audit,experiments/corpus_balancing_audit_v1/corpus_source_accounting_v1.csv,Appendix source accounting,Full-universe Leak duplicate-collapse artifact not found; documented as limitation.
+usable_prebalancing_outage_count,473,Collected source-validated corpus,Corpus balancing audit,experiments/corpus_balancing_audit_v1/corpus_source_accounting_v1.csv,Chapter 3 source accounting,Outage annotations reduced through dedup/QC.
+balanced_count_per_class,473/473/473,Frozen v2 incident corpus,Roster v2 freeze,data/roster_v2/frozen_incident_roster_v2.csv,Chapter 3 dataset,Final corpus is balanced by design.
+final_total_incidents,1419,Frozen v2 incident corpus,Roster v2 freeze,experiments/corpus_balancing_audit_v1/corpus_final_roster_verification_v1.csv,Chapter 3 dataset,473 per class.
+TRAIN_incidents,993,Frozen partition,Partition v2,docs/authoritative_numbers_register_v1.csv,Chapter 3/4,331 per class.
+Validation_incidents,213,Frozen partition,Phase J,docs/authoritative_numbers_register_v1.csv,Chapter 3/4,71 per class.
+Final_Holdout_incidents,213,Frozen partition,Phase L,config/final_praxis_result_v1.yaml,Chapter 4,71 per class.
+duplicate_collapse_removed,96 total; Hijack 30; Leak 57; Outage 9,Roster v2 remediation,Duplicate canonicalization,experiments/corpus_balancing_audit_v1/corpus_deduplication_audit_v1.csv,Chapter 3 appendix,Duplicate correction inside balanced roster.
+behavioral_feature_count,44,Frozen V4 schema,Feature engineering,docs/authoritative_numbers_register_v1.csv,Chapter 3,
+caida_feature_count,14,Frozen V4 schema,Feature engineering,docs/authoritative_numbers_register_v1.csv,Chapter 3,
+rpki_rov_feature_count,16,Frozen V4 schema,Feature engineering,docs/authoritative_numbers_register_v1.csv,Chapter 3,
+total_v4_feature_count,74,Frozen V4 schema,Feature engineering,docs/authoritative_numbers_register_v1.csv,Chapter 3/4,
+final_holdout_macro_f1,0.920177,Final Holdout,Phase L terminal evaluation,config/final_praxis_result_v1.yaml,Chapter 4 headline result,Official immutable terminal result.
+final_holdout_macro_f1_95_ci,"[0.880117, 0.954402]",Final Holdout,Phase L bootstrap,config/final_praxis_result_v1.yaml,Chapter 4 headline result,
+final_holdout_top1,0.920188,Final Holdout,Phase L terminal evaluation,config/final_praxis_result_v1.yaml,Chapter 4 headline result,
+final_holdout_top2,0.990610,Final Holdout,Phase L terminal evaluation,config/final_praxis_result_v1.yaml,Chapter 4 ranking result,211/213 ranked true class in Top-2.
+final_holdout_mrr,0.958529,Final Holdout,Phase L terminal evaluation,config/final_praxis_result_v1.yaml,Chapter 4 ranking result,
+final_holdout_hijack_f1,0.877698,Final Holdout,Phase L terminal evaluation,config/final_praxis_result_v1.yaml,Chapter 4 per-class,
+final_holdout_leak_f1,0.904110,Final Holdout,Phase L terminal evaluation,config/final_praxis_result_v1.yaml,Chapter 4 per-class,
+final_holdout_outage_f1,0.978723,Final Holdout,Phase L terminal evaluation,config/final_praxis_result_v1.yaml,Chapter 4 per-class,
+final_holdout_top1_errors,17/213,Final Holdout,Final error analysis,experiments/final_error_analysis_v1/final_error_analysis_summary_v1.md,Chapter 4 error analysis,
+dominant_confusion,HIJACK_TO_LEAK with 9 incidents,Final Holdout errors,Final error analysis,experiments/final_error_analysis_v1/final_error_analysis_summary_v1.md,Chapter 4 error analysis,
+top2_rescue,15/17 Top-1 errors rescued by Top-2,Final Holdout errors,Final error analysis,experiments/final_error_analysis_v1/final_error_analysis_summary_v1.md,Chapter 4 ranking utility,
+horizon_30s_macro_f1,0.790817,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,Level-1 only; retrospective/checkpoint-based.
+horizon_30s_top1,0.790437,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_30s_top2,0.932859,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_30s_mrr,0.884028,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_60s_macro_f1,0.843014,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,Level-1 only; retrospective/checkpoint-based.
+horizon_60s_top1,0.842319,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_60s_top2,0.953204,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_60s_mrr,0.913360,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_120s_macro_f1,0.873308,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,Level-1 only; retrospective/checkpoint-based.
+horizon_120s_top1,0.872838,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_120s_top2,0.973550,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_120s_mrr,0.932011,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_300s_macro_f1,0.898440,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,Level-1 only; retrospective/checkpoint-based.
+horizon_300s_top1,0.898271,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_300s_top2,0.972533,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_300s_mrr,0.944557,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_600s_macro_f1,0.904445,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,Level-1 only; retrospective/checkpoint-based.
+horizon_600s_top1,0.904419,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_600s_top2,0.979445,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_600s_mrr,0.948784,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_900s_macro_f1,0.893060,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,Level-1 only; retrospective/checkpoint-based.
+horizon_900s_top1,0.893004,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_900s_top2,0.972222,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+horizon_900s_mrr,0.941872,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_metrics_v2.csv,Chapter 4 TTI,
+top1_cumulative_tti_300s,910/983 = 92.57%,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_tti_cumulative_v2.csv,Chapter 4 TTI,
+top2_cumulative_tti_300s,965/983 = 98.17%,TRAIN TTI evaluable cohort,Early-horizon TTI v2,experiments/tti_early_horizon_v2/early_horizon_tti_cumulative_v2.csv,Chapter 4 TTI,
+final_holdout_brier,0.116324,Final Holdout,Calibration audit,experiments/calibration_audit_v1/calibration_metrics_v1.csv,Chapter 4 diagnostics,Diagnostic only; no recalibration.
+final_holdout_log_loss,0.215438,Final Holdout,Calibration audit,experiments/calibration_audit_v1/calibration_metrics_v1.csv,Chapter 4 diagnostics,
+final_holdout_ece_equal_width,0.042380,Final Holdout,Calibration audit,experiments/calibration_audit_v1/calibration_metrics_v1.csv,Chapter 4 diagnostics,
+final_holdout_mean_top1_confidence,0.892056,Final Holdout,Calibration audit,experiments/calibration_audit_v1/calibration_metrics_v1.csv,Chapter 4 diagnostics,
+natural_prior_macro_f1,0.722300,TRAIN nested-CV predictions reweighted,Natural prior sensitivity,experiments/natural_distribution_v1/natural_distribution_metrics_v1.csv,Chapter 4 sensitivity,"Prevalence-reweighted sensitivity, not external generalization."
+natural_prior_weighted_f1,0.916680,TRAIN nested-CV predictions reweighted,Natural prior sensitivity,experiments/natural_distribution_v1/natural_distribution_metrics_v1.csv,Chapter 4 sensitivity,
+natural_prior_top1,0.914426,TRAIN nested-CV predictions reweighted,Natural prior sensitivity,experiments/natural_distribution_v1/natural_distribution_metrics_v1.csv,Chapter 4 sensitivity,
+natural_prior_top2,0.989852,TRAIN nested-CV predictions reweighted,Natural prior sensitivity,experiments/natural_distribution_v1/natural_distribution_metrics_v1.csv,Chapter 4 sensitivity,
+natural_prior_mrr,0.955522,TRAIN nested-CV predictions reweighted,Natural prior sensitivity,experiments/natural_distribution_v1/natural_distribution_metrics_v1.csv,Chapter 4 sensitivity,
+cross_source_incidents_searched,1419,Frozen v2 corpus,Cross-source label validation,experiments/cross_source_label_validation_v1/cross_source_agreement_metrics_v1.csv,Chapter 4 label validation,
+cross_source_corroborated,59,Matched same-event incidents,Cross-source label validation,experiments/cross_source_label_validation_v1/cross_source_agreement_metrics_v1.csv,Chapter 4 label validation,"0 Hijack, 1 Leak, 58 Outage in original v1."
+cross_source_exact_agreement,1.0,Accepted matched incidents,Cross-source label validation,experiments/cross_source_label_validation_v1/cross_source_agreement_metrics_v1.csv,Chapter 4 label validation,Among accepted unambiguous matches only.
+cross_source_kappa,1.0,Accepted matched incidents,Cross-source label validation,experiments/cross_source_label_validation_v1/cross_source_agreement_metrics_v1.csv,Chapter 4 label validation,Sample coverage limited.
+IEC_source_separated_roster,63 total; 16 Hijack / 17 Leak / 30 Outage,IEC V2,Source-separated IEC construction,experiments/independent_validation_v2/v2_IEC_final_source_separated_roster.csv,Chapter 5 external validation limitation,
+IEC_Level1_external_scoring,0 evaluable; inconclusive,IEC V2,Level-1 IEC execution,experiments/independent_validation_v2/level1_iec_execution_v1/IEC_LEVEL1_final_disposition_v1.md,Chapter 5 limitation,No IEC model scoring was performed.
+IEC_Level2_external_scoring,not executed,IEC V2,Level-2 closure,experiments/independent_validation_v2/level2_external_validation_closure_v1/level2_external_validation_closure_v1.md,Chapter 5 limitation,Original trained Level-2 artifact was not persisted.

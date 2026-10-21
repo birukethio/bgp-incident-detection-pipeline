@@ -1,0 +1,11 @@
+check,observed,expected,status
+behavioral_features,44,44,PASS
+caida_features,14,14,PASS
+rpki_features,16,16,PASS
+total_model_features,74,74,PASS
+feature_names_match_train,True,True,PASS
+feature_order_matches_train,True,True,PASS
+no_duplicate_window_ids,0,0,PASS
+no_holdout_rows,0,0,PASS
+no_train_rows,0,0,PASS
+invalid_numeric_values,0,0,PASS

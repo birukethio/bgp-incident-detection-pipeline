@@ -1,0 +1,5 @@
+category,match_status,incident_count
+Hijack,MATCH_MONTH_COUNTRY,869
+Hijack,NO_MATCH,107
+Leak,NO_MATCH,727
+Outage,NO_MATCH,509

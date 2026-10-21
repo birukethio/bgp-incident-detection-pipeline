@@ -1,0 +1,6 @@
+candidate_id: K1-M2_XGB_K1-TEMPORAL
+status: POST_VALIDATION_TRAIN_DEVELOPMENT_CANDIDATE
+selection_basis: TRAIN nested-CV only
+validation_used: false
+final_holdout_status: SEALED
+source_commit: 99fafc1037fa050fd2933ccc8c0f6f0bede45d05

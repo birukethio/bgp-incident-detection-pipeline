@@ -1,0 +1,10 @@
+item,value,source
+Final corpus,"1,419 incidents; 473 Hijack / 473 Leak / 473 Outage",data/roster_v2/frozen_incident_roster_v2.csv
+Experimental split,TRAIN 993; Validation 213; Final Holdout 213,data/partitions_v2/frozen_partition_manifest_v2.csv
+Analytical window,5-minute RouteViews-observable BGP windows,src/bgp_incident_detection/windows.py
+Feature schema,V4 = 74 features; 44 Behavioral + 14 CAIDA + 16 RPKI/ROV,config/*_feature_schema_v1.yaml
+Weighting,I1 incident-aware sample weights,data/tti_pilot/level1_training_specification_v1.csv
+Level-1 classifier,Five-model crossfit XGBoost ensemble,config/k1_final_candidate_v1_1_deployable.yaml
+Level-2 classifier,XGBoost incident temporal stacker,config/k1_second_level_xgb_final_v1.yaml
+Evaluation,Incident-level grouped/nested CV; frozen one-time Final Holdout,config/final_praxis_result_v1.yaml
+Final metrics,Macro F1 0.9201769450076779; Top-2 0.9906103286384976; MRR 0.9585289514866979,config/final_praxis_result_v1.yaml

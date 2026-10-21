@@ -1,0 +1,10 @@
+true_class,predicted_class,balanced_train_count,balanced_train_row_rate,natural_prior_reweighted_count,source_artifact
+Hijack,Hijack,300,0.9063444108761329,101773.41389728097,data/modeling_k1/k1_incident_level_predictions_v1.parquet
+Hijack,Leak,30,0.09063444108761329,10177.341389728095,data/modeling_k1/k1_incident_level_predictions_v1.parquet
+Hijack,Outage,1,0.0030211480362537764,339.24471299093653,data/modeling_k1/k1_incident_level_predictions_v1.parquet
+Leak,Hijack,22,0.06646525679758308,8311.546827794562,data/modeling_k1/k1_incident_level_predictions_v1.parquet
+Leak,Leak,305,0.9214501510574018,115228.26283987916,data/modeling_k1/k1_incident_level_predictions_v1.parquet
+Leak,Outage,4,0.012084592145015106,1511.190332326284,data/modeling_k1/k1_incident_level_predictions_v1.parquet
+Outage,Hijack,3,0.00906344410876133,4.287009063444109,data/modeling_k1/k1_incident_level_predictions_v1.parquet
+Outage,Leak,5,0.015105740181268883,7.145015105740182,data/modeling_k1/k1_incident_level_predictions_v1.parquet
+Outage,Outage,323,0.9758308157099698,461.5679758308157,data/modeling_k1/k1_incident_level_predictions_v1.parquet

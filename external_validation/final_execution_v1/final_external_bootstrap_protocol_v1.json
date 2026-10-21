@@ -1,0 +1,18 @@
+{
+  "protocol_version": "final_external_bootstrap_protocol_v1",
+  "fixed_before_metric_computation": true,
+  "resampling_unit": "incident",
+  "bootstrap_iterations": 10000,
+  "bootstrap_method": "stratified incident-level bootstrap within each observed class",
+  "random_seed": 20260918,
+  "interval_method": "percentile",
+  "confidence_level": 0.95,
+  "metrics": [
+    "macro_f1",
+    "top1_accuracy",
+    "top2_accuracy",
+    "mrr",
+    "mean_true_class_rank"
+  ],
+  "small_sample_limitation": "Hijack support is only three incidents. Stratification preserves the observed 3/5/10 class composition but cannot remove the resulting finite-sample uncertainty."
+}

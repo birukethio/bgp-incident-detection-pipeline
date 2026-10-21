@@ -1,0 +1,4 @@
+Comparison,Exact incident overlap,Potential duplicate events,Confirmed duplicate events,Shared prefixes,Shared ASNs,Close-time related events,Final assessment
+train↔validation,0,0,0,567,347,8,PASS_WITH_DOCUMENTED_RELATED_EVENTS
+train↔holdout,0,0,0,625,369,9,PASS_WITH_DOCUMENTED_RELATED_EVENTS
+validation↔holdout,0,0,0,163,190,1,PASS_WITH_DOCUMENTED_RELATED_EVENTS

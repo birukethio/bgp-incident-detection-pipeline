@@ -1,0 +1,1 @@
+confirmation_incident_id,true_class,predicted_class,hijack_probability,leak_probability,outage_probability,top1,top2,true_class_rank,source,status

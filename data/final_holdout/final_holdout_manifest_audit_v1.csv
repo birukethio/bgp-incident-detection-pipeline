@@ -1,0 +1,9 @@
+check,observed,expected,status
+holdout_total_incidents,213,213,PASS
+holdout_hijack_incidents,71,71,PASS
+holdout_leak_incidents,71,71,PASS
+holdout_outage_incidents,71,71,PASS
+unique_holdout_incident_uid,213,213,PASS
+partition_values_holdout_only,holdout,holdout,PASS
+train_holdout_overlap,0,0,PASS
+validation_holdout_overlap,0,0,PASS

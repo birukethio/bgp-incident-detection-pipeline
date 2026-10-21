@@ -1,0 +1,66 @@
+protocol_id: final_holdout_protocol_v1
+protocol_status: FROZEN_BEFORE_HOLDOUT_ACCESS
+freeze_timestamp_utc: '2026-09-03T01:23:45Z'
+authorized_architecture: A0_XGB_TO_XGB
+architecture_decision: KEEP_XGB_XGB_K1
+first_level_model: XGB_REFINED_TRAIN_CANDIDATE
+first_level_xgboost_version: 3.4.1
+first_level_feature_schema: V4 exactly 74 frozen Behavioral + CAIDA + RPKI features
+first_level_hyperparameters:
+  n_estimators: 600
+  max_depth: 6
+  learning_rate: 0.125
+  subsample: 0.9
+  colsample_bytree: 0.9
+  min_child_weight: 1
+  gamma: 0
+  reg_alpha: 0.01
+  reg_lambda: 2.0
+first_level_inference_strategy: CROSSFIT_ENSEMBLE_FIRST_LEVEL
+first_level_ensemble_rule: arithmetic_mean_across_five_train_fold_models
+second_level_model: K1_FINAL_SECOND_LEVEL_XGB_V1
+second_level_config: config/k1_second_level_xgb_final_v1.yaml
+second_level_parameter_hash: 40df040321ef
+second_level_hyperparameters:
+  n_estimators: 150
+  max_depth: 3
+  learning_rate: 0.03
+  subsample: 1.0
+  colsample_bytree: 0.8
+  reg_alpha: 0.05
+  reg_lambda: 3.0
+  objective: multi:softprob
+  num_class: 3
+k1_meta_feature_schema: config/k1_incident_meta_feature_schema_v1.yaml
+k1_meta_feature_count: 74
+training_population: 'TRAIN only: 993 incidents, 331 Hijack / 331 Leak / 331 Outage'
+validation_population: not used in Phase L
+final_holdout_population: sealed until this frozen protocol and access record
+ranking_rule: descending second-level P(Hijack), P(Leak), P(Outage)
+primary_metrics:
+- incident_macro_f1
+- incident_mrr
+- incident_top2
+secondary_metrics:
+- top1
+- per_class_precision_recall_f1
+- confusion_matrix
+- mean_true_class_rank
+- log_loss
+- brier_score
+bootstrap_replicates: 1000
+bootstrap_seed: 20260828
+train_reference:
+  incident_macro_f1: 0.931653
+  top1: 0.931521
+  top2: 0.992346
+  mrr: 0.964485
+  hijack_f1: 0.909146
+  leak_f1: 0.907998
+  outage_f1: 0.977817
+stage1_status: UNRESOLVED_EXPERIMENTAL_AUXILIARY
+final_holdout_use: one terminal unbiased evaluation only
+no_post_holdout_changes_allowed: true
+source_commit: 99fafc1037fa050fd2933ccc8c0f6f0bede45d05
+preaccess_audit: data/final_holdout/final_preaccess_model_audit_v2.csv
+preaccess_audit_status: PASS

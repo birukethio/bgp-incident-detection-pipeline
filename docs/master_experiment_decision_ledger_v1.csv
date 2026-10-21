@@ -1,0 +1,8 @@
+decision,rationale,phase,artifact,status
+Use incident as experimental unit,avoid leakage,P0,data/partitions_v2/frozen_partition_manifest_v2.csv,LOCKED
+Use V4 features,best complete feature representation,P6,config/feature_variants_v1.yaml,LOCKED
+Use I1 weighting,preserve all windows while reducing incident dominance,P7,config/imbalance_strategies_v1.yaml,LOCKED
+Promote XGBoost over RF,higher TRAIN grouped-CV Macro F1,P12,data/modeling/xgb_i2_final_comparison_v1.csv,LOCKED
+Retain K1 stacker,large TRAIN-only gain over mean aggregation,P14,data/modeling_k1/k1_decision_summary_v1.csv,LOCKED
+Keep A0 XGB->XGB,best K2.5 architecture,P16,data/modeling_k25/k25_final_architecture_decision_v1.csv,LOCKED
+Freeze L0 before Holdout,protect final evaluation,P17,data/final_prep/k1_fixed_second_level_verification_v1.csv,LOCKED

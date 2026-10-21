@@ -1,0 +1,15 @@
+check,status,notes
+first_level_leakage,PASS,0 incident/window overlaps
+second_level_leakage,PASS,0 outer train/test overlaps
+label_derived_meta_features,PASS,no label/category/source identifiers in model features
+future_information_violations,REVIEW,structural features assume post-window incident classification
+duplicate_incidents,PASS,993 unique incident_uids
+nested_topology_valid,PASS,outer test cannot affect either level
+k1_reproduction,PASS,selected metrics reproduce within tolerance
+seed_stability,PASS,fixed five-seed analysis completed
+permutation_sanity,PASS,permuted labels collapse toward chance
+dominant_feature_review,PASS,no implausibly dominant feature
+oof_fulltrain_probability_strategy_documented,PASS,strategy recommendation written
+validation_not_used,PASS,K2 code path uses TRAIN/K1 artifacts only
+holdout_untouched,PASS,Final Holdout remains SEALED
+gain_classification,PASS,K1_GAIN_CONFIRMED

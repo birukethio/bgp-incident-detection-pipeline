@@ -1,0 +1,5 @@
+research_question,question_text,phases,evidence_summary,source_artifact,support_level
+RQ1,Can historical RouteViews data support a reproducible BGP incident feature corpus?,P0-P6,"68,031 TRAIN rows; frozen V4 74-feature corpus",data/train_frozen/frozen_train_v4_behavioral_caida_rpki_v1.parquet,SUPPORTED
+RQ2,Do CAIDA and RPKI enrichments improve incident classification?,P6/P10,V4 and feature-family ablation support usefulness,data/modeling/feature_variant_ablation_results_v1.csv,SUPPORTED_WITH_CAVEAT
+RQ3,Which model architecture best classifies/ranks incident causes?,P12-P16,XGB and K1 stacker selected under TRAIN-only evidence,data/modeling_k25/k25_final_architecture_decision_v1.csv,SUPPORTED
+RQ4,Does the locked final system generalize to unseen incidents?,P18,Final Macro F1 0.920177; Top-2 0.990610,config/final_praxis_result_v1.yaml,SUPPORTED

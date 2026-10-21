@@ -1,0 +1,17 @@
+table_id_proposed,chapter,section,title,purpose,source_artifact,key_columns,status,priority
+PROPOSED_TABLE_CH3_PARTITIONS,Chapter 3,Incident Dataset,Incident Partition Summary,show 993/213/213 and class balance,data/partitions_v2/frozen_partition_manifest_v2.csv,"partition, category counts",READY,ESSENTIAL
+PROPOSED_TABLE_CH3_BEHAVIORAL,Chapter 3,Features,Behavioral Feature Families,summarize 44 behavioral features,config/behavioral_feature_schema_v1.yaml,feature group/count,READY,ESSENTIAL
+PROPOSED_TABLE_CH3_VARIANTS,Chapter 3,Features,Feature Variant Definitions,define V1-V4,config/feature_variants_v1.yaml,variant/composition/features,READY,ESSENTIAL
+PROPOSED_TABLE_CH3_NORMAL,Chapter 3,Normal,Normal Ground-Truth Qualification Rules,document RIB+UPDATE rules,config/normal_ground_truth_method_v1.yaml,rule/status,READY,IMPORTANT
+PROPOSED_TABLE_CH3_K1_SPEC,Chapter 3,Final Model,Final K1 Model Specification,document final architecture,config/k1_final_candidate_v1_1_deployable.yaml,level/model/features,READY,ESSENTIAL
+PROPOSED_TABLE_CH4_BASELINE,Chapter 4,Baseline,Baseline Model Performance,baseline RF results,data/modeling/baseline_v1_model_comparison_v1.csv,metrics,READY,IMPORTANT
+PROPOSED_TABLE_CH4_IMBALANCE,Chapter 4,Imbalance,Imbalance Strategy Comparison,I0/I1/I2,data/modeling/imbalance_strategy_model_comparison_v1.csv,metrics,READY,ESSENTIAL
+PROPOSED_TABLE_CH4_VARIANT,Chapter 4,Ablation,V1-V4 Feature Ablation,feature variants,data/modeling/feature_variant_ablation_results_v1.csv,metrics,READY,ESSENTIAL
+PROPOSED_TABLE_CH4_FAMILY,Chapter 4,Ablation,Feature-Family Removal Results,feature families,data/modeling/feature_family_ablation_results_v1.csv,metrics,READY,ESSENTIAL
+PROPOSED_TABLE_CH4_VALIDATION,Chapter 4,Validation,Phase J Validation,pre-K1 validation,data/validation/validation_confirmation_results_v1.csv,metrics,READY,ESSENTIAL
+PROPOSED_TABLE_CH4_K1,Chapter 4,K1,K1 Mean-Aggregation vs Stacker,stacking gain,data/modeling_k1/k1_model_results_v1.csv,metrics,READY,ESSENTIAL
+PROPOSED_TABLE_CH4_K2,Chapter 4,K2,K2 Multi-Seed Stability,forensic checks,data/modeling_k2/k2_multiseed_performance_v1.csv,metrics,READY,ESSENTIAL
+PROPOSED_TABLE_CH4_K25,Chapter 4,K2.5,A0/A1/A2/A3 Comparison,architecture comparator,data/modeling_k25/k25_architecture_multiseed_results_v1.csv,metrics,READY,ESSENTIAL
+PROPOSED_TABLE_CH4_HOLDOUT,Chapter 4,Final Holdout,Final Holdout Performance,terminal metrics,data/final_holdout/final_holdout_performance_summary_v1.csv,metrics,READY,ESSENTIAL
+PROPOSED_TABLE_CH4_CLASS,Chapter 4,Final Holdout,Final Per-Class Metrics,class detail,data/final_holdout/final_holdout_per_class_metrics_v1.csv,precision/recall/F1,READY,ESSENTIAL
+PROPOSED_TABLE_CH4_RANK,Chapter 4,Final Holdout,Final Ranking Metrics,rank utility,data/final_holdout/final_holdout_ranking_metrics_v1.csv,rank counts/MRR,READY,ESSENTIAL

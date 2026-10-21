@@ -1,0 +1,2 @@
+comparison,delta_h3_macro_f1,ci_lower,ci_upper,evaluable_incidents,status,notes
+Mean Level-1 aggregation vs RETROSPECTIVE INCIDENT-LEVEL AGGREGATION,NA,NA,NA,0,NOT_EXECUTED_IMPLEMENTATION_EQUIVALENCE_FAIL,Requires successful IEC scoring on the same evaluable incidents.

@@ -1,0 +1,5 @@
+category,timestamp_pass_incidents,routeviews_behavioral_pass,exact_v4_pass,level1_scored,exact_v4_yield_percent
+Hijack,2,2,1,1,50.0
+Leak,3,3,3,3,100.0
+Outage,3,3,3,3,100.0
+ALL,8,8,7,7,87.5

@@ -1,0 +1,2 @@
+stage,observed_difference,authoritative_expected_behavior,code_correction,reason,before_after_comparison
+ALL,NONE_REQUIRING_CORRECTION,Frozen artifact and code references were used without changing methodology.,NONE,No correction was made to frozen artifacts; recovered implementation is additive.,NOT_APPLICABLE

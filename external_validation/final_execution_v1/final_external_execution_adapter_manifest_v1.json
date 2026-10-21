@@ -1,0 +1,9 @@
+{
+  "change_id": "FINAL-EXEC-INFRA-001",
+  "recorded_before_prediction_inspection": true,
+  "scope": "generic cohort input and output path adapter",
+  "frozen_runner_sha256": "1d236ddf827514825e192fbd139d24f37ae0c09a9285f62de5b7bf3a59d96614",
+  "adapter_sha256": "140e49a51e1df65036c86d60f6088de900a58a1da95490698c4fe46087a9d8e0",
+  "scientific_method_changed": false,
+  "details": "Imports checksum-locked functions; replaces only pilot roster cardinality/input path and execution output paths."
+}

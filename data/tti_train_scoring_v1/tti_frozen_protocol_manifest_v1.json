@@ -1,0 +1,259 @@
+{
+  "manifest_id": "tti_frozen_protocol_manifest_v1",
+  "protocol_status": "FROZEN_FOR_INDEPENDENT_CONFIRMATION",
+  "analysis_label": "RETROSPECTIVE EARLY-CLASSIFICATION / ROUTEVIEWS-OBSERVABLE CHECKPOINT TTI",
+  "created_utc": "2026-09-10T00:59:16Z",
+  "source_commit": "b3974dfcfad28cb1ccc9132414761fcda502d724",
+  "absolute_preservation": {
+    "validation_accessed": false,
+    "final_holdout_accessed": false,
+    "model_retrained_tuned_calibrated_or_modified": false,
+    "primary_praxis_results_modified": false,
+    "authoritative_final_holdout": {
+      "macro_f1": 0.920177,
+      "top2": 0.99061,
+      "mrr": 0.958529
+    }
+  },
+  "research_population": {
+    "original_train_corpus_incidents": 993,
+    "train_tti_evaluable_incidents": 983,
+    "class_counts": {
+      "Hijack": 327,
+      "Leak": 329,
+      "Outage": 327
+    },
+    "excluded_from_tti_denominators": {
+      "TTI_NOT_EVALUABLE_INSUFFICIENT_ROUTEVIEWS_EVIDENCE": 9,
+      "TTI_NOT_EVALUABLE_ONSET_UNRESOLVED": 1
+    }
+  },
+  "observable_onset": {
+    "rule": "FIRST_POST_DOCUMENTED_EVENT_EVIDENCE",
+    "definition": "First incident-relevant RouteViews observation at or after the independently documented incident start."
+  },
+  "observation_checkpoints_seconds": [
+    30,
+    60,
+    120,
+    300
+  ],
+  "feature_representation": {
+    "variant": "V4",
+    "feature_count": 74,
+    "behavioral_features": 44,
+    "caida_features": 14,
+    "rpki_rov_features": 16
+  },
+  "classifier": {
+    "model": "verified reconstructed five-model Level-1 XGBoost ensemble",
+    "equivalence": "exact probability equivalence to preserved original TRAIN fingerprint",
+    "combination_rule": "arithmetic mean class probability across five fold-specific Level-1 models",
+    "class_order": [
+      "Hijack",
+      "Leak",
+      "Outage"
+    ],
+    "threshold": "none; multiclass probability ordering only"
+  },
+  "primary_metrics": [
+    "Macro F1",
+    "Top-1",
+    "Top-2",
+    "MRR",
+    "per-class precision/recall/F1",
+    "confusion matrices",
+    "95% incident-level bootstrap CI for Macro F1"
+  ],
+  "tti_definitions": {
+    "Top1_TTI_checkpoint": "Earliest evaluated checkpoint where Top-1 equals the true class.",
+    "Top2_TTI_checkpoint": "Earliest evaluated checkpoint where the true class appears within the Top-2 ranking.",
+    "allowed_outcomes": [
+      "<=30s",
+      "<=60s",
+      "<=120s",
+      "<=300s",
+      "NOT_IDENTIFIED_WITHIN_300S"
+    ],
+    "interpolation": "forbidden"
+  },
+  "prediction_stability": {
+    "stable_correct_checkpoint": "Earliest evaluated checkpoint from which Top-1 remains correct through all later tested checkpoints.",
+    "manuscript_name": "descriptive stability metric; do not rename TSCC"
+  },
+  "independent_confirmation_rule": {
+    "validation_tti_application": "one-time independent confirmation using the exact same frozen methodology",
+    "post_validation_changes_allowed": false,
+    "final_holdout_tti_access_allowed": false
+  },
+  "train_reference_results": {
+    "horizon_metrics": {
+      "30": {
+        "macro_f1": 0.790817,
+        "top1": 0.790437,
+        "top2": 0.932859,
+        "mrr": 0.884028
+      },
+      "60": {
+        "macro_f1": 0.843014,
+        "top1": 0.842319,
+        "top2": 0.953204,
+        "mrr": 0.91336
+      },
+      "120": {
+        "macro_f1": 0.873308,
+        "top1": 0.872838,
+        "top2": 0.97355,
+        "mrr": 0.932011
+      },
+      "300": {
+        "macro_f1": 0.89844,
+        "top1": 0.898271,
+        "top2": 0.972533,
+        "mrr": 0.944557
+      }
+    },
+    "checkpoint_results": {
+      "top1_correct_by_300s": {
+        "count": 910,
+        "denominator": 983,
+        "percent": 0.92574
+      },
+      "top2_correct_by_300s": {
+        "count": 965,
+        "denominator": 983,
+        "percent": 0.98169
+      },
+      "stable_top1_from_30s": 748,
+      "first_stably_correct_60s": 56,
+      "first_stably_correct_120s": 42,
+      "first_stably_correct_300s": 37,
+      "never_stably_correct_within_tested_horizon": 100,
+      "correct_top1_then_later_incorrect": 39
+    }
+  },
+  "artifact_hashes": [
+    {
+      "role": "frozen_protocol",
+      "path": "data/tti_train_scoring_v1/tti_frozen_protocol_v1.md",
+      "sha256": "bbc982736786cf545b971cda38fd8ff5b9574febb6ce4276d564404a82c21bc9",
+      "bytes": 6575
+    },
+    {
+      "role": "v4_schema",
+      "path": "data/tti_pilot/reconstructed_level1_v1/feature_schema_v4.json",
+      "sha256": "38ca70a2aa50a39172f2a90d1c893fdd08dfa38a49b3e5945b19d9cab2a202f3",
+      "bytes": 2444
+    },
+    {
+      "role": "reconstructed_level1_ensemble_manifest",
+      "path": "data/tti_pilot/level1_ensemble_manifest_v2.json",
+      "sha256": "f5244b95be4e50fa531e1f76150f299f0741d0b0e7a88badb56b2c9bbd79dd5c",
+      "bytes": 2503
+    },
+    {
+      "role": "reconstructed_level1_model_checksums",
+      "path": "data/tti_pilot/reconstructed_level1_v1/sha256_checksums.json",
+      "sha256": "2a9b09d4e64f9d94b8816903e5528ed2e216eacd920fe8b54a55d7158caef485",
+      "bytes": 1723
+    },
+    {
+      "role": "train_tti_evaluable_cohort",
+      "path": "data/tti_train_full_v2_1/tti_train_evaluable_cohort_v2_1.csv",
+      "sha256": "26c53107e129215abfd01ade70bedb00ff95c7f80ba6bc4625d299b61402ace6",
+      "bytes": 235318
+    },
+    {
+      "role": "non_evaluable_incident_review",
+      "path": "data/tti_train_full_v2_1/tti_insufficient_evidence_review_v2_1.csv",
+      "sha256": "fb64bbd7bace71dd4062af54c1a4206db76758f3b0661a6c7400b57bb170f0f1",
+      "bytes": 3039
+    },
+    {
+      "role": "tti_feature_gate_v2_1",
+      "path": "data/tti_train_full_v2_1/tti_train_horizon_gate_v2_1.md",
+      "sha256": "8fd834670a64b5076dd1dc0dc7df095a1d3c17a0f37097450977c4fceda16cc0",
+      "bytes": 929
+    },
+    {
+      "role": "v4_compatibility_gate",
+      "path": "data/tti_train_full_v2_1/tti_train_horizon_compatibility_v2_1.csv",
+      "sha256": "d79cdb660275741c1cf6068d9925847fca089eb0b56c4dcd59cdd4b22af41836",
+      "bytes": 4904
+    },
+    {
+      "role": "horizon_leakage_gate",
+      "path": "data/tti_train_full_v2_1/tti_train_horizon_leakage_v2_1.csv",
+      "sha256": "383e40d71ed2c7d11ea01152ba8247f227780b358f483be89539fe5f25cc0ab5",
+      "bytes": 664278
+    },
+    {
+      "role": "approved_horizon_v4_features",
+      "path": "data/tti_train_full_v2_1/tti_train_horizon_v4_v2_1.parquet",
+      "sha256": "c2af3cba2628c5f696d62ff606abbf18efb48c8dfeba8468e62ffd15e5b1d8b8",
+      "bytes": 903623
+    },
+    {
+      "role": "onset_unresolved_review",
+      "path": "data/tti_train_full_v2_1/tti_outage377_onset_review_v2_1.md",
+      "sha256": "b094a13e753922072e889bc339d0c5e418507f9ff2e4205078e798e87237b18c",
+      "bytes": 1027
+    },
+    {
+      "role": "rpki_methodology_optimization",
+      "path": "data/tti_train_full_v2_1/tti_rpki_optimization_method_v2_1.md",
+      "sha256": "54864f12e0366304abed44cdd2c0fd37dcdcf0f55352b7c3123b4d73de55fc3e",
+      "bytes": 936
+    },
+    {
+      "role": "train_tti_horizon_metrics",
+      "path": "data/tti_train_scoring_v1/tti_train_horizon_metrics_v1.csv",
+      "sha256": "7aadbf4e0be6c3f2b0f626ec72f41e81a2360c7221ff1153f84d359467310f83",
+      "bytes": 861
+    },
+    {
+      "role": "train_tti_per_class_metrics",
+      "path": "data/tti_train_scoring_v1/tti_train_per_class_metrics_v1.csv",
+      "sha256": "aee149de0118e78e52c32adb12d5da0972b0fd7b9296b0cc34a2f8f970c71f79",
+      "bytes": 1561
+    },
+    {
+      "role": "train_tti_confusion_matrices",
+      "path": "data/tti_train_scoring_v1/tti_train_confusion_matrices_v1.csv",
+      "sha256": "816844e1f7f3c612b3f03ff8d5869c6570e1ca5f0772189879a9ce40e2fcf3b7",
+      "bytes": 751
+    },
+    {
+      "role": "train_tti_checkpoint_results",
+      "path": "data/tti_train_scoring_v1/tti_train_checkpoint_tti_v1.csv",
+      "sha256": "024cbbaa76d03293fb80aa51f508a23f83e2fd05ff3fd624e1037046453fb227",
+      "bytes": 132460
+    },
+    {
+      "role": "train_tti_cumulative_identification",
+      "path": "data/tti_train_scoring_v1/tti_train_cumulative_identification_v1.csv",
+      "sha256": "54f24ff96379b5431aef698c998ca7b18695ff1d97b2e928ae6c9a1d3e3bba7e",
+      "bytes": 1050
+    },
+    {
+      "role": "train_tti_stability",
+      "path": "data/tti_train_scoring_v1/tti_train_stability_v1.csv",
+      "sha256": "b1bd6b8def8b707785f2c4e92134d95a09d8649fe77ec67fd196b51e66d71abc",
+      "bytes": 998
+    },
+    {
+      "role": "train_tti_bootstrap_ci",
+      "path": "data/tti_train_scoring_v1/tti_train_bootstrap_ci_v1.csv",
+      "sha256": "ebd8cd496b739c7f5bcab2d7eba95b80c98eb18b6e254089d1f41b0ecc51250b",
+      "bytes": 767
+    },
+    {
+      "role": "train_tti_scoring_summary",
+      "path": "data/tti_train_scoring_v1/tti_train_scoring_summary_v1.md",
+      "sha256": "bd388d19649fc50f531982166dbc359470fa9c635241a7b68f74fc5bf811a26c",
+      "bytes": 13775
+    }
+  ],
+  "disposition": "TTI_PROTOCOL_FROZEN_FOR_INDEPENDENT_CONFIRMATION",
+  "manifest_sha256_excluding_this_field": "4223e39bf1e418548526661e8ac267111848745a811de5d19f4b7ece047c4936"
+}

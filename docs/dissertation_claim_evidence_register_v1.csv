@@ -1,0 +1,12 @@
+chapter_section,table_or_figure,claim,support_status,source_artifact,caveat,status
+Chapter 4,Final Holdout Performance,the final K1 architecture achieved strong generalization on the untouched Final Holdout,DIRECTLY_SUPPORTED,config/final_praxis_result_v1.yaml,Macro F1 0.920177; Top-2 0.990610; Holdout first accessed once.,READY
+Chapter 4,K1 Comparison,incident-level stacking materially improved classification/ranking compared with mean probability aggregation,DIRECTLY_SUPPORTED,data/modeling_k1/k1_decision_summary_v1.csv,TRAIN-only Macro F1 gain 0.131729 over K1-B0 mean aggregation.,READY
+Chapter 4,Feature-Family Ablation,RPKI/ROV features contributed strongly to Hijack classification,SUPPORTED_WITH_CAVEAT,data/modeling/feature_family_ablation_results_v1.csv,"Supported by TRAIN ablation; phrase as predictive contribution, not causal proof.",READY
+Chapter 4,Feature-Family Ablation,CAIDA/peer-visibility context contributed useful signal for Leak/Outage,SUPPORTED_WITH_CAVEAT,data/modeling/feature_family_ablation_results_v1.csv,Supported by feature-family experiments; avoid causal overclaiming.,READY
+Chapter 4,RF vs XGBoost,XGBoost outperformed refined Random Forest under the selected architecture,DIRECTLY_SUPPORTED,data/modeling/xgb_i2_final_comparison_v1.csv,Phase I2 XGB Macro F1 0.805678 vs H2 RF 0.784588.,READY
+Chapter 4,Final Ranking Metrics,the final system ranked the true class in the Top-2 for 211 of 213 Holdout incidents,DIRECTLY_SUPPORTED,data/final_holdout/final_holdout_ranking_metrics_v1.csv,rank1=196 and rank2=15.,READY
+Chapter 4,Per-Class Metrics,Outage was the strongest final class,DIRECTLY_SUPPORTED,data/final_holdout/final_holdout_per_class_metrics_v1.csv,Outage F1 0.978723.,READY
+Chapter 4/5,Per-Class Metrics,Hijack remained the most difficult final class,DIRECTLY_SUPPORTED,data/final_holdout/final_holdout_per_class_metrics_v1.csv,"Hijack F1 0.877698, lowest of the three classes.",READY
+Chapter 5,Stage 1,Stage 1 Normal-vs-Incident discrimination remained unresolved,DIRECTLY_SUPPORTED,config/final_praxis_result_v1.yaml,Stage 1 status is UNRESOLVED_EXPERIMENTAL_AUXILIARY.,READY
+Chapter 4/5,K2 Forensics,leakage controls and permutation testing supported the validity of K1,SUPPORTED_WITH_CAVEAT,data/modeling_k2/k2_label_permutation_sanity_v1.csv,"Supports absence of detected leakage, not a mathematical proof.",READY
+Chapter 5,Causality,model features identify root cause mechanisms causally,FUTURE_WORK_ONLY,,"Current evidence is predictive classification/ranking, not causal inference.",DO_NOT_CLAIM_AS_RESULT

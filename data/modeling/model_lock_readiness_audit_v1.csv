@@ -1,0 +1,13 @@
+check_name,observed_value,status,notes
+train_experiment_history_complete,True,PASS,all requested TRAIN artifacts present
+s2_architecture_selected,multiclass Stage 2 Random Forest,PASS,multiclass Stage 2 selected
+feature_configuration_selected,V4:74,PASS,V4 74 features selected
+i1_selected,I1 incident-aware weighting,PASS,incident-aware weighting selected
+rf_parameters_recorded,"{""class_weight"": null, ""max_depth"": null, ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""min_samples_split"": 2, ""n_estimators"": 200, ""n_jobs"": -1, ""random_state"": 20260828}",PASS,Random Forest parameters written to candidate config
+ranking_rule_recorded,sort class probabilities descending; incident mean probability aggregation,PASS,ranking rule written
+stage1_explicitly_unresolved,UNRESOLVED_EXPERIMENTAL_AUXILIARY,PASS,Stage 1 is not a locked hard gate
+validation_protocol_predeclared,config/validation_confirmation_protocol_v1.yaml,PASS,protocol written before Validation access
+validation_not_accessed,False,PASS,Phase G does not read Validation data
+holdout_not_accessed,False,PASS,Final Holdout remains sealed
+incident_macro_f1_recorded,0.7428140694101241,PASS,selected TRAIN incident Macro F1 captured
+incident_mrr_recorded,0.864216179926149,PASS,selected TRAIN incident MRR captured

@@ -1,0 +1,15 @@
+feature_name,missing_count,zero_count,min,median,mean,p95,max,unique_values,constant,sparse,invalid,status
+caida_path_observation_count,0,0,5,64776.0,82580.94553706505,167599.0,944133,659,False,False,0,PASS
+caida_paths_with_no_as_path_count,0,2,0,4458.0,5264.726172465961,9919.0,32790,618,False,False,0,PASS
+caida_paths_with_unknown_relationship_count,0,7,0,2816.0,4175.691376701967,10356.0,88571,615,False,False,0,PASS
+caida_unknown_relationship_transition_count,0,7,0,3039.0,4633.71860816944,11736.0,91911,625,False,False,0,PASS
+caida_customer_to_provider_transition_count,0,0,5,44486.0,52473.56278366112,104250.0,995591,659,False,False,0,PASS
+caida_provider_to_customer_transition_count,0,0,11,124799.0,167287.9243570348,365776.0,1647428,658,False,False,0,PASS
+caida_peer_to_peer_transition_count,0,0,4,47192.0,54099.54462934947,103675.0,611399,656,False,False,0,PASS
+caida_valley_free_valid_path_count,0,0,5,55039.0,73196.35703479576,155603.0,902573,654,False,False,0,PASS
+caida_valley_free_violation_path_count,0,3,0,4452.0,5208.897125567322,11705.0,44575,621,False,False,0,PASS
+caida_valley_free_violation_ratio,0,3,0.0,0.06579805332606195,0.07338599028333692,0.1425487009048786,0.23684210526315788,658,False,False,0,PASS
+caida_max_violation_count_per_path,0,3,0,6.0,6.2329803328290465,11.0,13,13,False,False,0,PASS
+caida_mean_violation_count_per_path,0,3,0.0,0.11289675188341361,0.12376051251375893,0.2498903562204571,0.6378743338836763,658,False,False,0,PASS
+caida_customer_provider_transition_ratio,0,0,0.648854961832061,0.7801303409708054,0.7915033583256779,0.8861332682364688,0.910317635367386,661,False,False,0,PASS
+caida_peer_transition_ratio,0,0,0.08968236463261407,0.21986965902919461,0.20849664167432214,0.25826932036100064,0.3511450381679389,661,False,False,0,PASS

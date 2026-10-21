@@ -1,0 +1,6 @@
+metric,value,ci_lower,ci_upper,evaluable_incidents,status,decision,notes
+macro_f1,NA,NA,NA,0,NOT_EXECUTED_IMPLEMENTATION_EQUIVALENCE_FAIL,INCONCLUSIVE,IEC scoring stopped before inference.
+top1,NA,NA,NA,0,NOT_EXECUTED_IMPLEMENTATION_EQUIVALENCE_FAIL,INCONCLUSIVE,IEC scoring stopped before inference.
+top2,NA,NA,NA,0,NOT_EXECUTED_IMPLEMENTATION_EQUIVALENCE_FAIL,INCONCLUSIVE,IEC scoring stopped before inference.
+mrr,NA,NA,NA,0,NOT_EXECUTED_IMPLEMENTATION_EQUIVALENCE_FAIL,INCONCLUSIVE,IEC scoring stopped before inference.
+mean_true_class_rank,NA,NA,NA,0,NOT_EXECUTED_IMPLEMENTATION_EQUIVALENCE_FAIL,INCONCLUSIVE,IEC scoring stopped before inference.

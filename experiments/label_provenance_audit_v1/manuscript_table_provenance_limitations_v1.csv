@@ -1,0 +1,6 @@
+limitation,interpretation
+Hijack and Leak evidence overlaps conceptually with model evidence,"Cloudflare and the model both observe routing behavior associated with the same event, so labels should not be described as fully evidence-independent."
+Cloudflare uses public BGP and routing-security information,"This supports external label provenance but also creates documented overlap with Behavioral, CAIDA, and RPKI/ROV feature families."
+Externally sourced does not mean fully independent,"The labels came from Cloudflare rather than the local model pipeline, but the underlying public routing evidence can be related."
+Outage labels are Internet outage annotations,"The Outage class should be interpreted as ASN/network-usable Cloudflare outage annotations, not as a dedicated BGP-outage detector output."
+Direct target leakage was not detected,"The feature schema did not include label text, source event type, provider identity, source classification, or incident identifiers."

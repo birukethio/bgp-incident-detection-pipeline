@@ -1,0 +1,8 @@
+contribution,evidence,novelty_scope,chapter,defense_value
+Reproducible BGP incident feature-engineering pipeline using historical RouteViews data,"frozen v2 roster, MRT processing, behavioral corpus",project contribution; literature novelty must be qualified,Chapter 3/4,HIGH
+Integrated Behavioral + CAIDA + historical RPKI/ROV representation,V4 74-feature schema and ablation artifacts,applied system contribution,Chapter 3/4,HIGH
+Incident-aware weighting methodology for unequal window counts,I1 imbalance strategy and grouped-CV modeling,methodological design contribution,Chapter 3/4,MEDIUM
+Leakage-safe incident-level temporal stacking architecture,K1/K2/K2.5/L0 artifacts,model architecture contribution within this Praxis,Chapter 4,HIGH
+Classification plus ranked incident-cause output,Top-1/Top-2/MRR final Holdout results,operational output contribution,Chapter 4/5,HIGH
+Grouped/nested CV and forensic leakage controls,"K2 permutation, access chronology, Holdout discipline",evaluation-integrity contribution,Chapter 3/4/5,HIGH
+Final unbiased Holdout evaluation on 213 incidents,Phase L terminal evaluation,evaluation evidence contribution,Chapter 4/5,HIGH

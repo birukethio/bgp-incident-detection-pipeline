@@ -1,0 +1,2 @@
+expected_incidents,included_incidents,excluded_incidents,PASS,KEEP_WITH_LIMITATION,technical_exclusions,feature_rows,duplicate_window_ids,schema_status,validation_contamination,holdout_contamination,overall_status,notes
+993,992,1,992,0,1,68031,0,PASS,False,False,FAIL,"Original 68,031-row corpus unchanged; review dispositions are advisory resolution metadata."

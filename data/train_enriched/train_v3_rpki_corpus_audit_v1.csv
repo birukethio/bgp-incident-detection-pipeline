@@ -1,0 +1,2 @@
+corpus_version,expected_rows,observed_rows,expected_incidents,observed_incidents,hijack_rows,leak_rows,outage_rows,hijack_incidents,leak_incidents,outage_incidents,behavioral_feature_count,caida_feature_count,rpki_feature_count,total_model_feature_count,duplicate_window_ids,validation_contamination,holdout_contamination,missing_rpki_feature_rows,integrity_status,overall_status,notes,source_commit,audit_timestamp
+v3,68031,68031,993,993,16616,16179,35236,331,331,331,44,0,16,60,0,0,0,0,PASS,PASS,,99fafc1037fa050fd2933ccc8c0f6f0bede45d05,2026-09-01T23:01:58Z

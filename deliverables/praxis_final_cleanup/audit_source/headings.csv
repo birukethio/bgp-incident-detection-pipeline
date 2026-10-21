@@ -1,0 +1,109 @@
+paragraph_index,style,text
+87,Heading 1,Dedication
+93,Heading 1,Acknowledgements
+96,Heading 1,Abstract of Praxis
+122,toc 1,Chapter 1—Introduction	1
+132,toc 1,Chapter 2—Literature Review	10
+142,toc 1,Chapter 3 — Methodology	51
+166,toc 1,Chapter 4 — Results	76
+179,toc 1,Chapter 5 — Conclusions	100
+190,Heading 1,List of Figures
+210,Heading 1,List of Tables
+243,Heading 1,List of Symbols
+248,Heading 1,List of Acronyms
+301,Heading 1,Chapter 1—Introduction
+302,Heading 2,Background
+313,Heading 2,Research Motivation
+326,Heading 2,Problem Statement
+336,Heading 2,Thesis Statement
+342,Heading 2,Research Objectives
+357,Heading 2,Research Questions and Hypotheses
+364,Heading 2,Scope of Research
+377,Heading 2,Research Limitations
+386,Heading 2,Organization of Praxis
+387,Normal,"Chapter 1: Introduction presents the research background, motivation, problem statement, thesis statement, objectives, research questions and hypotheses, scope, and limitations."
+388,Normal,"Chapter 2: Literature Review reviews prior research on BGP operation, routing incidents, anomaly detection, routing security, AS relationships, RPKI/ROV, and machine-learning approaches relevant to BGP incident analysis."
+389,Normal,"Chapter 3: Methodology describes the incident dataset, data partitioning, RouteViews data collection, five-minute analytical windows, behavioral feature engineering, CAIDA and RPKI/ROV enrichment, model-development strategy, leakage controls, incident-level stacking architecture, and evaluation methodology."
+390,Normal,"Chapter 4: Results presents the baseline experiments, imbalance analysis, feature ablation, Random Forest and XGBoost comparisons, Validation results, incident-level stacking experiments, forensic verification, and Final Holdout classification and ranking performance."
+391,Normal,"Chapter 5: Conclusions discusses the major findings, practical implications for enterprise network operations, study limitations, contributions, and recommendations for future research, including real-time and streaming extensions."
+393,Heading 1,Chapter 2—Literature Review
+395,Heading 2,Introduction
+403,Heading 2,Foundational Studies on BGP Operation and Measurement
+441,Heading 2,BGP Routing Incidents and Outages
+455,Heading 2,BGP Security Mechanisms and Routing Validation
+493,Heading 2,"AS Relationships, Routing Policies, and Valley-Free Routing"
+537,Heading 2,BGP Anomaly Detection Techniques
+558,Heading 2,Machine Learning for Network Fault Detection and Diagnosis
+601,Heading 2,Summary of Research Gaps and Study Positioning
+616,Heading 2,Literature Synthesis and Model Justification
+645,Heading 1,Chapter 3 — Methodology
+646,Heading 2,Research Methodology Overview
+668,Heading 2,Research Design and Experimental Framework
+675,Heading 2,Experimental Unit and Analytical Observation
+685,Heading 2,Development and Evaluation Strategy
+695,Heading 2,Experimental Environment and Implementation Platform
+706,Heading 2,Multi-Source Incident Corpus Construction
+714,Heading 2,Incident Labeling and Dataset Partitioning
+726,Heading 2,BGP UPDAGE Data Collection via RouteViews
+737,Heading 2,Pre-Training Data Quality Gates
+747,Heading 2,Five-Minute Analytical Window Construction
+756,Heading 2,Behavioral Feature Engineering
+776,Heading 2,Normal Ground-Truth Construction
+781,Heading 2,Normal Candidate Selection
+786,Heading 2,RIB-Assisted Prescreening
+791,Heading 2,UPDATE-Based Qualification
+798,Heading 2,Frozen Normal Corpus
+804,Heading 2,CAIDA AS-Relationship Feature Enrichment
+813,Heading 2,RPKI/ROV Feature Enrichment
+820,Heading 2,Historical RPKI Snapshot Mapping
+826,Heading 2,Route Origin Validation Procedure
+831,Heading 2,"VALID, INVALID, and NotFound Representation"
+838,Heading 2,Origin-Mismatch and maxLength Evidence
+846,Heading 2,Frozen Feature Variants and Ablation Design
+858,Heading 2,Incident Imbalance and Weighting Strategy
+862,Heading 3,I0 — Natural Window Representation
+864,Heading 3,I1 — Incident-Aware Weighting
+867,Heading 3,I2 — p95 Temporal Cap with Incident-Aware Weighting
+871,Heading 3,Selection of the Weighting Strategy
+877,Heading 2,Baseline Model Architecture and Model Families
+900,Heading 2,Grouped Cross-Validation and Leakage Controls
+905,Heading 3,Feature and Weighting Leakage Controls
+909,Heading 3,Hyperparameter and Model-Selection Controls
+913,Heading 3,Threshold-Selection Leakage Controls
+916,Heading 3,Stacking Leakage Controls
+920,Heading 3,Validation and Final Holdout Isolation
+926,Heading 2,Model Optimization and Stability Analysis
+950,Heading 2,Incident-Level Temporal Stacking Architecture
+972,Heading 2,Nested Stacking and Forensic Leakage Verification
+986,Heading 2,Experimental Normal-vs-Incident Stage 1
+1008,Heading 2,Experimental Normal-vs-Incident Stage 1
+1032,Heading 2,Evaluation Metrics
+1041,Heading 2,Computational Latency and Operational Scope
+1049,Heading 2,Methodological Limitations
+1058,Heading 2,Chapter Summary
+1068,Heading 1,Chapter 4 — Results
+1069,Heading 2,Overview of Experimental Results
+1089,Heading 2,Final Corpus and Feature Representation
+1102,Heading 2,Feature Variant and Ablation Results
+1147,Heading 2,Incident Imbalance and Weighting Results
+1162,Heading 2,Experimental Stage 1: Normal-vs-Incident Results
+1205,Heading 2,Random Forest Optimization and Stability Results
+1231,Heading 2,XGBoost Comparison and Refinement Results
+1243,Heading 2,Independent Validation Results
+1269,Heading 2,Incident-Level Stacking Results
+1296,Heading 2,Stacking Stability and Forensic Verification
+1328,Heading 2,Final Architecture Comparison
+1341,Heading 2,Final Holdout Evaluation
+1390,Heading 2,Final Error and Confusion Analysis
+1404,Heading 2,Computational Latency and Operational Feasibility
+1425,Heading 2,Mapping Results to Research Questions
+1445,Heading 2,Chapter Summary
+1458,Heading 1,Chapter 5 — Conclusions
+1459,Heading 2,Overview
+1468,Heading 2,Mapping of Findings to Research Questions and Hypotheses
+1492,Heading 2,Summary of Key Contributions
+1523,Heading 2,Practical Implications for Network Operations
+1535,Heading 2,Limitations of the Study
+1555,Heading 2,Recommendations for Future Research
+1596,Heading 2,Conclusion
+1614,Heading 2,References

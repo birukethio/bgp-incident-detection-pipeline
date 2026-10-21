@@ -1,0 +1,10 @@
+iec_label,source_family,candidate_count
+Hijack,BGPHorizon,1
+Hijack,MANRS,10
+Hijack,NOG/NANOG,1
+Hijack,Qrator,3
+Hijack,RouteCause,1
+Leak,Kentik,1
+Leak,MANRS,5
+Leak,Qrator,11
+Outage,IODA,30

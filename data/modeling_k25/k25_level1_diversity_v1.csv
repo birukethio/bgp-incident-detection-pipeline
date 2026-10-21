@@ -1,0 +1,2 @@
+window_prediction_agreement_rate,incident_prediction_agreement_rate,incidents_correct_only_by_xgb,incidents_correct_only_by_rf,p_hijack_correlation,p_leak_correlation,p_outage_correlation
+0.9243139157148946,0.9405840886203424,33,17,0.9700157823097196,0.9916106809875936,0.9890353320161905

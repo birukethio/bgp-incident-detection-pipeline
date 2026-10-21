@@ -1,0 +1,14 @@
+{
+  "study": "Prospective Source-Separated External Validation of the Frozen BGP Incident Classification and Ranking System",
+  "created_utc": "2026-09-18T20:39:33.407192+00:00",
+  "original_experiment_status": "IMMUTABLE_AUTHORITATIVE",
+  "original_corpus_incidents": 1419,
+  "train_incidents": 993,
+  "validation_incidents": 213,
+  "final_holdout_incidents": 213,
+  "reproducible_external_inference_path": "FROZEN_LEVEL1_FIVE_MODEL_XGBOOST_ENSEMBLE_WITH_MEAN_INCIDENT_AGGREGATION",
+  "level2_status": "NOT_USABLE_ORIGINAL_TRAINED_ARTIFACT_NOT_PERSISTED",
+  "pilot_incidents": 9,
+  "pilot_final_roster_eligibility": "PERMANENTLY_EXCLUDED",
+  "final_roster_collection_status": "PROHIBITED_UNTIL_RUNNER_AND_PROTOCOL_FROZEN"
+}

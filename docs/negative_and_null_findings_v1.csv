@@ -1,0 +1,7 @@
+finding,evidence,source_artifact,interpretation
+Stage 1 did not become final architecture,Normal-vs-Incident remained unresolved,config/final_praxis_result_v1.yaml,Preserve as limitation and future work.
+Domain experts were not adopted,expert variants did not outperform multiclass Stage 2,data/modeling/domain_expert_classification_results_v1.csv,Reduced candidate space.
+Class balancing alone was not sufficient,I1 helped but did not solve all errors,data/modeling/imbalance_strategy_model_comparison_v1.csv,Supports later architecture work.
+Threshold tuning was not sufficient,Stage 1 false-Normal risk remained,data/modeling/stage1_threshold_selection_summary_v1.csv,Do not present Stage 1 as final.
+RF remained strong but was not final,XGBoost and K1 were stronger,data/modeling/rf_h2_final_comparison_v1.csv,RF is benchmark/historical.
+Not every feature family contributed equally,ablation showed uneven contributions,data/modeling/feature_family_ablation_results_v1.csv,Use nuanced feature claims.

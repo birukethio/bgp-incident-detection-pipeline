@@ -1,0 +1,45 @@
+protocol_version: "v1"
+candidate_under_test: "RF_LOCK_CANDIDATE_V1"
+validation_status: "NOT_ACCESSED"
+final_holdout_status: "SEALED"
+single_primary_validation_evaluation_only: true
+locked_candidate:
+  feature_variant: "V4"
+  imbalance_treatment: "I1"
+  architecture: "multiclass Stage 2 Random Forest"
+  rf_hyperparameters_locked: true
+  ranking_rule_locked: true
+forbidden_validation_search:
+  - "feature variants V1/V2/V3/V4"
+  - "imbalance strategies I0/I1/I2"
+  - "expert architectures"
+  - "Random Forest hyperparameters"
+  - "Stage 1 thresholds"
+  - "ranking weights"
+primary_metrics:
+  - "incident_level_macro_f1"
+  - "incident_level_mrr"
+  - "incident_level_top2_accuracy"
+secondary_metrics:
+  - "window_macro_f1"
+  - "hijack_f1"
+  - "leak_f1"
+  - "outage_f1"
+  - "top1_accuracy"
+  - "confusion_matrix"
+acceptance_criteria:
+  principle: "Validation does not need to exceed TRAIN CV; it must avoid catastrophic degradation and preserve usable class/ranking behavior."
+  minimum_incident_macro_f1: 0.6
+  minimum_incident_mrr: 0.75
+  minimum_incident_top2_accuracy: 0.85
+  schema_or_provenance_failure: "FAIL"
+  catastrophic_class_failure: "FAIL if any incident class has F1 == 0"
+  review_band: "REVIEW if primary metrics are below floors but schema/provenance are valid; do not tune on Validation."
+train_variability_reference:
+  stage2_window_macro_f1_reference: 0.6739887306172063
+  window_macro_f1_std_reference: 0.0119590146322955
+  group_macro_f1_std_reference: 0.0323975793492104
+  minimum_incident_macro_f1_floor: 0.6
+  minimum_incident_mrr_floor: 0.75
+  minimum_incident_top2_floor: 0.85
+poor_validation_response: "Record result, keep Final Holdout sealed, and return to TRAIN development in a new explicitly versioned cycle if needed."

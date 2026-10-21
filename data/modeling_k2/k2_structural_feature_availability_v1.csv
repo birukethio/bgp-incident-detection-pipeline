@@ -1,0 +1,4 @@
+feature,available_at_incident_start,available_after_observation_window_complete,intended_classification_time,status,notes
+window_count,False,True,after candidate incident window is assembled,REVIEW,Legitimate only for retrospective/post-window incident classification; not for early real-time detection.
+observed_temporal_span_minutes,False,True,after candidate incident window is assembled,REVIEW,Uses completed window boundaries; acceptable for the current roster-level classifier if documented.
+proportion_zero_observation_windows,False,True,after candidate incident window is assembled,REVIEW,Requires the full observation window; should not be used for streaming early warning without redesign.

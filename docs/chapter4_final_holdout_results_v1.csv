@@ -1,0 +1,14 @@
+section,metric,value,ci_lower_95,ci_upper_95,fixed_train_reference,holdout_minus_train,sample_unit,source_artifact
+Final Holdout corpus,incidents,213,NA,NA,NA,NA,incident,data/final_holdout/final_holdout_performance_summary_v1.csv
+Final Holdout corpus,window_rows,14906,NA,NA,NA,NA,five_minute_window,data/final_holdout/final_holdout_performance_summary_v1.csv
+Primary performance,incident_macro_f1,0.9201769450076779,0.8801170994295882,0.9544024249379308,0.931653,-0.011476054992322071,incident,data/final_holdout/final_holdout_performance_summary_v1.csv; data/final_holdout/final_holdout_bootstrap_ci_v1.csv; data/final_holdout/train_vs_final_holdout_comparison_v1.csv
+Primary performance,top1,0.92018779342723,NA,NA,0.931521,-0.011333206572770038,incident,data/final_holdout/final_holdout_performance_summary_v1.csv; data/final_holdout/train_vs_final_holdout_comparison_v1.csv
+Primary performance,top2,0.9906103286384976,NA,NA,0.992346,-0.0017356713615023223,incident,data/final_holdout/final_holdout_performance_summary_v1.csv; data/final_holdout/train_vs_final_holdout_comparison_v1.csv
+Primary performance,mrr,0.9585289514866979,NA,NA,0.964485,-0.005956048513302115,incident,data/final_holdout/final_holdout_performance_summary_v1.csv; data/final_holdout/train_vs_final_holdout_comparison_v1.csv
+Per-class F1,hijack_f1,0.8776978417266187,NA,NA,0.909146,-0.03144815827338132,incident,data/final_holdout/final_holdout_per_class_metrics_v1.csv; data/final_holdout/train_vs_final_holdout_comparison_v1.csv
+Per-class F1,leak_f1,0.9041095890410958,NA,NA,0.907998,-0.0038884109589041316,incident,data/final_holdout/final_holdout_per_class_metrics_v1.csv; data/final_holdout/train_vs_final_holdout_comparison_v1.csv
+Per-class F1,outage_f1,0.9787234042553191,NA,NA,0.977817,0.000906404255319071,incident,data/final_holdout/final_holdout_per_class_metrics_v1.csv; data/final_holdout/train_vs_final_holdout_comparison_v1.csv
+Ranking,rank_1_count,196,NA,NA,NA,NA,incident,data/final_holdout/final_holdout_ranking_metrics_v1.csv
+Ranking,rank_2_count,15,NA,NA,NA,NA,incident,data/final_holdout/final_holdout_ranking_metrics_v1.csv
+Ranking,rank_3_count,2,NA,NA,NA,NA,incident,data/final_holdout/final_holdout_ranking_metrics_v1.csv
+Ranking,top2_correct_count,211,NA,NA,NA,NA,incident,data/final_holdout/final_holdout_ranking_metrics_v1.csv

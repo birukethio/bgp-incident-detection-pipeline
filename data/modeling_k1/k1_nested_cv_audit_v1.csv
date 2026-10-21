@@ -1,0 +1,6 @@
+outer_fold,outer_train_incidents,outer_test_incidents,inner_training_uses_outer_test_incidents,meta_train_features_are_inner_oof,meta_test_features_from_outer_train_only,validation_rows_used,holdout_rows_used,inner_fold_count,status,feature_set,xgb_meta_search_budget
+1,794,199,False,True,True,0,0,4,PASS,ALL,12
+2,795,198,False,True,True,0,0,4,PASS,ALL,12
+3,795,198,False,True,True,0,0,4,PASS,ALL,12
+4,794,199,False,True,True,0,0,4,PASS,ALL,12
+5,794,199,False,True,True,0,0,4,PASS,ALL,12

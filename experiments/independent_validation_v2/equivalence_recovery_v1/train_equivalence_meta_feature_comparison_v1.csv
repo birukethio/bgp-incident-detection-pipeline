@@ -1,0 +1,10 @@
+incident_uid,stage,reference_rows,reference_meta_feature_count,new_implementation_rows,comparison_status,notes
+Hijack:131045,E5_LEVEL2_META_FEATURES,1,74,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Retrospective temporal meta-feature references are available; no new implementation meta-features were generated.
+Hijack:41142,E5_LEVEL2_META_FEATURES,1,74,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Retrospective temporal meta-feature references are available; no new implementation meta-features were generated.
+Hijack:115187,E5_LEVEL2_META_FEATURES,1,74,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Retrospective temporal meta-feature references are available; no new implementation meta-features were generated.
+Leak:462139,E5_LEVEL2_META_FEATURES,1,74,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Retrospective temporal meta-feature references are available; no new implementation meta-features were generated.
+Leak:442710,E5_LEVEL2_META_FEATURES,1,74,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Retrospective temporal meta-feature references are available; no new implementation meta-features were generated.
+Leak:415566,E5_LEVEL2_META_FEATURES,1,74,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Retrospective temporal meta-feature references are available; no new implementation meta-features were generated.
+Outage:1066,E5_LEVEL2_META_FEATURES,1,74,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Retrospective temporal meta-feature references are available; no new implementation meta-features were generated.
+Outage:532,E5_LEVEL2_META_FEATURES,1,74,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Retrospective temporal meta-feature references are available; no new implementation meta-features were generated.
+Outage:1178,E5_LEVEL2_META_FEATURES,1,74,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,Retrospective temporal meta-feature references are available; no new implementation meta-features were generated.

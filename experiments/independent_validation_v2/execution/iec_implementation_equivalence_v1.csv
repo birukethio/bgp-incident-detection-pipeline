@@ -1,0 +1,4 @@
+check,required,observed,tolerance,status,notes
+frozen_non_IEC_fixture_available_for_end_to_end_IEC_pipeline,YES,NO_VERIFIED_FIXTURE_FOUND,predeclared exact schema/order and probability-level equivalence; no post-hoc relaxation,FAIL,"Existing Level-1 reconstruction proves model equivalence on preserved TRAIN probabilities, but does not verify arbitrary source-native IEC RouteViews reconstruction and full K1 scoring."
+prior_independent_validation_execution_reusable,YES,NO_STOPPED_ZERO_PREDICTION_RECORD_ONLY,not applicable,FAIL,V1 execution stopped before roster construction and scoring; it cannot verify or score the V2 IEC roster.
+implementation_equivalence_disposition,IMPLEMENTATION_EQUIVALENCE_PASS,IMPLEMENTATION_EQUIVALENCE_FAIL,not applicable,FAIL,Protocol requires STOP before IEC scoring.

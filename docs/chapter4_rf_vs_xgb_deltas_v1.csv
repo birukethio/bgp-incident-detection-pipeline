@@ -1,0 +1,10 @@
+metric,phase_h2_rf,phase_i2_xgb,delta_xgb_minus_rf,source_artifact
+Macro F1,0.7845882791097261,0.8056775087076607,0.02108922959793469,data/modeling/xgb_i2_vs_refined_rf_v1.csv
+Top-1,0.7875125881168177,0.8070493454179255,0.01953675730110782,data/modeling/xgb_i2_vs_refined_rf_v1.csv
+Top-2,0.932930513595166,0.9347432024169183,0.0018126888217523396,data/modeling/xgb_i2_vs_refined_rf_v1.csv
+MRR,0.8825780463242694,0.8926485397784489,0.010070493454179541,data/modeling/xgb_i2_vs_refined_rf_v1.csv
+Hijack F1,0.7219226437347833,0.7561964090221941,0.03427376528741077,data/modeling/xgb_i2_vs_refined_rf_v1.csv
+Leak F1,0.8411098139546438,0.8519226498985109,0.01081283594386706,data/modeling/xgb_i2_vs_refined_rf_v1.csv
+Outage F1,0.790732379639751,0.8089134672022773,0.018181087562526344,data/modeling/xgb_i2_vs_refined_rf_v1.csv
+fit runtime seconds,399.1918,32.9888,-366.203,data/modeling/xgb_i2_vs_refined_rf_v1.csv
+inference runtime seconds,1.3212,0.21539999999999998,-1.1058,data/modeling/xgb_i2_vs_refined_rf_v1.csv

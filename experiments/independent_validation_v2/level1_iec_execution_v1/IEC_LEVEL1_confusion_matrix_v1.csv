@@ -1,0 +1,4 @@
+true_class,predicted_Hijack,predicted_Leak,predicted_Outage,status
+Hijack,0,0,0,NOT_EXECUTED_NO_EVALUABLE_INCIDENTS
+Leak,0,0,0,NOT_EXECUTED_NO_EVALUABLE_INCIDENTS
+Outage,0,0,0,NOT_EXECUTED_NO_EVALUABLE_INCIDENTS

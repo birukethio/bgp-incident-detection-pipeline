@@ -1,0 +1,10 @@
+true_class,predicted_class,count,error_type,percentage_of_true_class,percentage_of_all_holdout,source_artifact
+HIJACK,HIJACK,61,correct,0.859155,0.286385,data/final_holdout/final_holdout_confusion_matrix_v1.csv
+HIJACK,LEAK,9,HIJACK_misclassified_as_LEAK,0.126761,0.042254,data/final_holdout/final_holdout_confusion_matrix_v1.csv
+HIJACK,OUTAGE,1,HIJACK_misclassified_as_OUTAGE,0.014085,0.004695,data/final_holdout/final_holdout_confusion_matrix_v1.csv
+LEAK,HIJACK,5,LEAK_misclassified_as_HIJACK,0.070423,0.023474,data/final_holdout/final_holdout_confusion_matrix_v1.csv
+LEAK,LEAK,66,correct,0.929577,0.309859,data/final_holdout/final_holdout_confusion_matrix_v1.csv
+LEAK,OUTAGE,0,LEAK_misclassified_as_OUTAGE,0.000000,0.000000,data/final_holdout/final_holdout_confusion_matrix_v1.csv
+OUTAGE,HIJACK,2,OUTAGE_misclassified_as_HIJACK,0.028169,0.009390,data/final_holdout/final_holdout_confusion_matrix_v1.csv
+OUTAGE,LEAK,0,OUTAGE_misclassified_as_LEAK,0.000000,0.000000,data/final_holdout/final_holdout_confusion_matrix_v1.csv
+OUTAGE,OUTAGE,69,correct,0.971831,0.323944,data/final_holdout/final_holdout_confusion_matrix_v1.csv

@@ -1,0 +1,6 @@
+metric,value
+ranked_first_count,196.0
+ranked_second_count,15.0
+ranked_third_count,2.0
+mean_true_class_rank,1.0892018779342723
+mrr,0.9585289514866979

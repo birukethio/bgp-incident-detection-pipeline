@@ -1,0 +1,9 @@
+phase,TRAIN_access,Validation_access,Holdout_access,purpose,first_access_timestamp_if_known,model_state_at_access,post_access_changes
+P0-P12,YES,NO,NO,iterative TRAIN-only data engineering/model development,,pre-Validation candidates,TRAIN-only changes allowed
+Phase J,YES,FIRST_VALIDATION_ACCESS,NO,single predeclared Validation confirmation,,XGB_REFINED_TRAIN_CANDIDATE,no Phase J candidate tuning after results
+Phase K1,YES,NO,NO,post-Validation TRAIN-only K1 development,,Phase J complete; Holdout sealed,K1 not Validation-confirmed
+Phase K2,YES,NO,NO,TRAIN-only forensic leakage and stability checks,,K1 candidate,no Validation/Holdout access
+Phase K2.5,YES,NO,NO,TRAIN-only architecture comparator,,K1 candidate,no Validation/Holdout access
+Phase L0,YES,NO,NO,fixed deployable K1 parameter freeze,,selected A0_XGB_TO_XGB,ready for first Holdout access
+Phase L,YES,NO,FIRST_FINAL_HOLDOUT_ACCESS,one-time terminal final evaluation,2026-09-03T01:23:45Z,locked K1,NO_POST_HOLDOUT_MODEL_CHANGES
+Phase M,NO_NEW_MODELING,NO,NO,documentation/indexing only,,terminal result already fixed,no recomputation

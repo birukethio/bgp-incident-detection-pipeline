@@ -1,0 +1,4 @@
+associated_category,candidates_screened,unique_asns,RIB_PRESCREEN_PASS,NO_OBSERVABILITY,ORIGIN_UNSTABLE,ROUTE_PRESENCE_UNSTABLE,RIB_REVIEW,other_failures,pass_percentage,dominant_pass_asn,dominant_pass_asn_count,dominance_review
+Hijack,1,1,0,0,0,0,1,0,0.0,,0,PASS
+Leak,1,1,0,0,0,0,1,0,0.0,,0,PASS
+Outage,6,3,0,0,0,2,4,0,0.0,,0,PASS

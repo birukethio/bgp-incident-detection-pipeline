@@ -1,0 +1,3 @@
+model_family,simple_candidate,temporal_candidate,meta_feature_count_simple,meta_feature_count_temporal,macro_f1_delta_temporal_minus_simple,mrr_delta_temporal_minus_simple,top2_delta_temporal_minus_simple,hijack_f1_delta_temporal_minus_simple
+K1-M1_LOGISTIC,K1-M1_LOGISTIC_K1-SIMPLE,K1-M1_LOGISTIC_K1-TEMPORAL,52,74,0.0007512306517855,-0.0001678415575696,-0.0040281973816717,-0.0022865208186308
+K1-M2_XGB,K1-M2_XGB_K1-SIMPLE,K1-M2_XGB_K1-TEMPORAL,52,74,0.0039461620868667,0.0020140986908357,0.0,0.0094353695830536

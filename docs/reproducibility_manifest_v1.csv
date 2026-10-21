@@ -1,0 +1,6 @@
+item,description,value,source_artifact,notes
+repository,local project,/Users/biruk/Documents/New project,current checkout,
+final model hash,second-level parameter hash,40df040321ef,config/k1_second_level_xgb_final_v1.yaml,authoritative
+XGBoost version,final/result configuration,3.4.1,config/final_praxis_result_v1.yaml,locked candidate family
+feature counts,44/14/16/74,Behavioral/CAIDA/RPKI/V4,config/feature_variants_v1.yaml,frozen
+partition seed/version,v2 split,20260828 / split_version v2,data/partitions_v2/frozen_partition_manifest_v2.csv,frozen

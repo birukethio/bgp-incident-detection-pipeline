@@ -1,0 +1,103 @@
+paragraph_index,style,caption_type,text
+191,table of figures,Figure,Figure 4 . 1 Per-event F1 comparison across model variants.	80
+192,table of figures,Figure,Figure 4 . 2 Global metric comparison across the four model configurations.	82
+193,table of figures,Figure,Figure 4 . 3 Before-and-after impact of RPKI enrichment on the difficult hijack events.	83
+194,table of figures,Figure,Figure 4 . 4 Residual error analysis for the Rostelecom hijack event.	84
+195,table of figures,Figure,"Figure 4 . 5Threshold sweep for Stage 1 precision, recall, F1, and hierarchical macro F1.	85"
+196,table of figures,Figure,Figure 4 . 6Stage 1 ROC and precision-recall curves.	86
+197,table of figures,Figure,Figure 4 . 7 One-vs-rest ROC curves for the four output classes.	87
+198,table of figures,Figure,Figure 4 . 8 Stage 1 SHAP beeswarm plot for the most important features.	89
+199,table of figures,Figure,Figure 4 . 9 Global Stage 1 SHAP feature importance.	90
+200,table of figures,Figure,Figure 4 . 10 Stage 2 SHAP importance by incident class.	91
+201,table of figures,Figure,Figure 4 . 11 Comparison of SHAP and Random Forest Gini feature importance.	92
+202,table of figures,Figure,Figure 4 . 12 Comparative confusion matrices across the model variants.	93
+203,table of figures,Figure,Figure 4 . 13 Per-event macro F1 across the seven holdout incidents.	94
+204,table of figures,Figure,"Figure 4 . 14 Feature profile comparison for difficult hijacks, detected hijacks, and leaks.	95"
+205,table of figures,Figure,Figure 4 . 15 Feature heatmap for the difficult hijack events.	95
+206,table of figures,Figure,Figure 4 . 16 Stage 1 calibration reliability diagram.	97
+207,table of figures,Figure,"Figure 4 . 17 Stage 2 calibration reliability diagrams for hijack, leak, and outage.	98"
+208,table of figures,Figure,Figure 4 . 18 Per-event inference time and batch-size scaling.	99
+211,table of figures,Table,Table 2. 1 BGP measurement resources and their analytical roles	17
+212,table of figures,Table,Table 2. 2 Representative BGP incident classes and overlapping observable signals	20
+213,table of figures,Table,Table 2. 3 Complementary dimensions of BGP routing validation	27
+214,table of figures,Table,Table 2. 4AS-relationship features motivated by prior routing-policy research	32
+215,table of figures,Table,Table 2. 5 Major families of BGP anomaly-detection research	36
+216,table of figures,Table,Table 2. 6Literature-based justification of model families and their role in the study	43
+217,table of figures,Table,Table 2. 7 Research gaps and positioning of the present study	46
+218,table of figures,Table,Table 2. 8 Literature Synthesis and Final Model Justification	52
+220,table of figures,Table,Table 3. 1 Experimental Compute Environment	56
+221,table of figures,Table,Table 3. 2 Quality-Gate Outcome for the 84 Candidate Events	60
+222,table of figures,Table,Table 3. 3 Final 49-Feature Set Used by the RPKI-Enriched Model	61
+223,table of figures,Table,Table 3. 4 Exported Training and Holdout Row Counts	63
+224,table of figures,Table,Table 3. 5 Seven Final Holdout Events	66
+225,table of figures,Table,Table 3. 6 Hierarchical Random Forest Configuration	67
+226,table of figures,Table,Table 3. 7 Stage 1 Threshold Sweep	69
+227,table of figures,Table,Table 3. 8 Calibration Metrics Produced by the Final Pipeline	71
+228,table of figures,Table,Table 3. 9 Incremental Model Variants Defined for Comparison	73
+229,table of figures,Table,Table 3. 10 Per-Event Inference Timing Used for Operational Assessment	74
+231,table of figures,Table,Table 4. 1 Model configurations evaluation	78
+232,table of figures,Table,Table 4. 2 Global performance comparison on the seven-event holdout	81
+233,table of figures,Table,Table 4. 3 Stealthy hijack results before and after RPKI enrichment	82
+234,table of figures,Table,Table 4. 4 Selected Stage 1 threshold sweep results	84
+235,table of figures,Table,Table 4. 5 Top 10 Stage 1 features by SHAP importance	87
+236,table of figures,Table,Table 4. 6 Incremental performance change across the four variants	91
+237,table of figures,Table,Table 4. 7 Per-event holdout performance	93
+238,table of figures,Table,Table 4. 8 Calibration results by model stage and class	96
+239,table of figures,Table,Table 4. 9 Per-event inference latency at threshold 0.70	99
+240,table of figures,Table,Table 4. 10 High-level comparison with representative BGP detection approaches	101
+438,Caption,Table,Table 2. 1 BGP Measurement and Contextual Data Resources Relevant to the Study
+453,Caption,Table,Table 2. 2 Representative BGP incident classes and overlapping observable signals
+491,Caption,Table,Table 2. 3 Complementary dimensions of BGP routing validation and Policy Context
+530,Caption,Table,Table 2. 4 AS-Relationship Feature Concepts Motivated by Prior Routing-Policy Research
+555,Caption,Table,Table 2. 5 Major Families of BGP Anomaly-Detection and Incident-Analysis Research
+594,Caption,Table,Table 2. 6 Literature-Based Justification of Model Families and Their Role in the Study
+614,Caption,Table,Table 2. 7 Research gaps and positioning of the present study
+634,Caption,Table,Table 2. 8 Literature Synthesis and Final Methodological Justification
+656,Normal,Figure,Figure 3.1. End-to-End Methodological Pipeline for BGP Incident Classification and Ranking
+697,Caption,Table,Table 3. 1 Experimental Compute Environment
+720,Normal,Table,Table 3.x Final Incident Dataset Partitioning
+848,Normal,Table,Table 3.x  Frozen Feature Variants Used for Controlled Ablation
+896,Normal,Table,Table 3.x  Comparison of Baseline Model Families and Experimental Roles
+939,List Paragraph,Table,Table 3.x  Refined XGBoost Configuration Selected for Stability Analysis
+966,Normal,Table,Table 3.x  Frozen Level-2 XGBoost Configuration
+1080,Normal,Table,Table 4.1 Major Experimental Stages and Their Roles in the Final Study
+1092,List Paragraph,Table,Table 4.2  Final Incident Corpus and Dataset Partitions
+1097,List Paragraph,Table,Table 4.3 Final V4 Feature Representation
+1107,List Paragraph,Table,Table 4.4 TRAIN-Only Feature Variant Comparison
+1117,Normal,Figure,Figure 4.1. Incident-Level Macro F1 Across V1–V4 Feature Variants
+1125,Normal,Figure,Figure 4.2. Ranking Performance Across V1–V4 Feature Variants
+1142,Normal,Figure,Figure 4.4. Class-Specific F1 Impact of Feature-Family Ablation
+1152,Normal,Table,Table 4.5 Incident Imbalance Strategies Evaluated
+1158,Normal,Figure,"Figure 4.5. Incident-Level Performance Across I0, I1, and I2 Imbalance Strategies"
+1174,List Paragraph,Table,Table 4.6 Stage 1 TRAIN-CV Threshold Results
+1178,Normal,Figure,Figure 4.6. Stage 1 TRAIN-CV Threshold Stability and Normal-Class Performance
+1184,List Paragraph,Table,Table 4.7  Effect of Class-and-Group Weighting on Stage 1
+1190,Normal,Figure,Figure 4.7. Stage 1 ROC and Precision-Recall Performance Before and After Class-and-Group Weighting
+1209,List Paragraph,Table,"Table 4.8  Random Forest Baseline, Tuned, and Refined Performance"
+1215,Normal,Figure,"Figure 4.8. Random Forest Performance Progression Across Baseline, Tuned, and Refined Configuration"
+1224,List Paragraph,Table,Table 4.9 Refined Random Forest and XGBoost Performance Comparison
+1230,List Paragraph,Figure,Figure 4.9. Random Forest and XGBoost Classification and Ranking Performa
+1236,Normal,Table,Table 4.9 Refined Random Forest and XGBoost Performance Comparison
+1247,Normal,Table,Table 4.10  Independent Validation Performance
+1252,List Paragraph,Table,Table 4.11  TRAIN-CV to Validation Performance Change
+1260,Normal,Figure,Figure 4.9. TRAIN Cross-Validation and Independent Validation Performance Comparison
+1281,Normal,Table,Table 4.12 Mean-Probability Baseline and Temporal Stacking Performance
+1290,Normal,Figure,Figure 4.10. Incident-Level Performance of Mean-Probability Aggregation and Temporal Stacking
+1306,Normal,Table,Table 4.13 K1 Multi-Seed Stability Results
+1311,Normal,Figure,Figure 4.11. Multi-Seed Stability of the K1 Incident-Level Temporal Stacker
+1318,Normal,Table,Table 4.14 Phase K2 Forensic Verification Summary
+1331,List Paragraph,Table,Table 4.15 TRAIN-Only Comparison of Incident-Level Stacking Architectures
+1349,Normal,Table,Table 4.16  Final Holdout Incident Distribution
+1355,Normal,Table,Table 4.17 Final Holdout Performance
+1359,Normal,Figure,Figure 4.12. Final Holdout Classification and Ranking Performance
+1363,Normal,Table,Table 4.18  Final Holdout Class-Specific F1
+1369,Normal,Table,Table 4.19 Final Holdout True-Class Ranking Distribution
+1374,List Paragraph,Figure,Figure 4.13. Final Holdout Distribution of True-Class Ranking Position
+1383,Normal,Table,Table 4.20  TRAIN Nested-CV to Final Holdout Performance Change
+1386,Normal,Figure,Figure 4.14. Fixed TRAIN Nested-CV and Final Holdout Performance Comparison
+1393,Normal,Table,Table 4.21 Final Holdout Misclassification Summary
+1396,Normal,Figure,"Figure 4.15. Final Holdout Confusion Matrix for Hijack, Leak, and Outage"
+1407,Normal,Table,Table 4.22 Final K1 Downstream Computational Latency
+1412,Normal,Figure,Figure 4.16. Breakdown of Warm Downstream K1 Computational Latency
+1415,Normal,Figure,"Figure 4.16. Breakdown of Warm Downstream K1 Computational Latency. The figure reports the Phase N post-feature computation benchmark for the frozen K1 architecture. The measurement begins after first-level probability information is available and summarizes Level-1 probability averaging, incident-level meta-feature construction, and Level-2 output ranking. It is therefore a POST-WINDOW INCIDENT CLASSIFICATION benchmark, not an end-to-end live BGP anomaly-detection latency measurement. The excluded stages include live BGP UPDATE collection, MRT parsing, five-minute observation-window accumulation, Behavioral feature generation, CAIDA enrichment, RPKI/ROV enrichment, model startup/loading, and complete live data-pipeline overhead."
+1441,Normal,Table,Table 4.23 Mapping of Experimental Results to Research Questions and Hypotheses

@@ -1,0 +1,12 @@
+item,value,source
+python_version,"3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 21:00:12) [Clang 16.0.6 ]",runtime
+python_executable,/opt/anaconda3/bin/python,runtime
+platform,macOS-15.7.5-x86_64-i386-64bit,runtime
+xgboost_version,3.4.1,runtime/config
+sklearn_version,1.5.1,runtime
+numpy_version,1.26.4,runtime
+pandas_version,2.2.2,runtime
+tree_method_selected,hist,fingerprint_equivalence
+random_seed,20260828,config/final_model_candidate_v3_1_xgb_refined.yaml
+feature_count,74,config/feature_variants_v1.yaml
+class_order,"[""HIJACK"", ""LEAK"", ""OUTAGE""]",src/bgp_incident_detection/model_baselines.py

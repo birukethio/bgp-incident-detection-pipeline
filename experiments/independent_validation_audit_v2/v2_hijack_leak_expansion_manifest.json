@@ -1,0 +1,18 @@
+{
+  "generated_utc": "2026-09-14T22:02:15.117917+00:00",
+  "disposition": "READY_FOR_V2_LOCK_WITH_LIMITATIONS",
+  "outputs": [
+    "v2_hijack_leak_expansion_candidates.csv",
+    "v2_hijack_leak_source_evidence_matrix.csv",
+    "v2_hijack_leak_expansion_sources.csv",
+    "v2_hijack_leak_expansion_overlap.csv",
+    "v2_hijack_leak_routeviews_availability.csv",
+    "v2_hijack_leak_evidence_packets.md",
+    "v2_expanded_class_counts_summary.csv",
+    "v2_expansion_feasibility_summary.md"
+  ],
+  "no_model_scoring": true,
+  "validation_accessed": false,
+  "final_holdout_accessed": false,
+  "outage_search_performed": false
+}

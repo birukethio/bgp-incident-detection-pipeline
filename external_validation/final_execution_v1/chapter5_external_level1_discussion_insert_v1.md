@@ -1,0 +1,3 @@
+## External Level-1 Validation Interpretation
+
+The source-separated experiment adds evidence that the preserved Level-1 classifier can be executed prospectively on independently labeled incidents, with observed Macro F1 of 0.412698 and Top-2 accuracy of 0.722222 in 18 incidents. Interpretation remains bounded by the small Hijack sample, IODA Outage concentration, 2021 concentration, archive-based eligibility, and shared underlying public-routing evidence. The result does not establish external generalization of the retrospective Level-2 stacker because its originally fitted artifact was never persisted.

@@ -1,0 +1,22 @@
+metric,partition,evaluation_design,point_estimate,std,ci_lower,ci_upper,sample_unit,sample_count,source_artifact,notes
+incident_macro_f1,Final Holdout,one-time terminal incident-level evaluation with bootstrap CI,0.920177,,0.880117,0.954402,incident,213,data/final_holdout/final_holdout_performance_summary_v1.csv,Do not mix with window-level uncertainty.
+top1,Final Holdout,one-time terminal incident-level evaluation with bootstrap CI,0.920188,,0.882629,0.957746,incident,213,data/final_holdout/final_holdout_performance_summary_v1.csv,Do not mix with window-level uncertainty.
+top2,Final Holdout,one-time terminal incident-level evaluation with bootstrap CI,0.990610,,0.976526,1.000000,incident,213,data/final_holdout/final_holdout_performance_summary_v1.csv,Do not mix with window-level uncertainty.
+mrr,Final Holdout,one-time terminal incident-level evaluation with bootstrap CI,0.958529,,0.938185,0.976545,incident,213,data/final_holdout/final_holdout_performance_summary_v1.csv,Do not mix with window-level uncertainty.
+hijack_f1,Final Holdout,one-time terminal incident-level evaluation,0.877698,,,,incident,71,data/final_holdout/final_holdout_per_class_metrics_v1.csv,Per-class F1.
+leak_f1,Final Holdout,one-time terminal incident-level evaluation,0.904110,,,,incident,71,data/final_holdout/final_holdout_per_class_metrics_v1.csv,Per-class F1.
+outage_f1,Final Holdout,one-time terminal incident-level evaluation,0.978723,,,,incident,71,data/final_holdout/final_holdout_per_class_metrics_v1.csv,Per-class F1.
+incident_macro_f1,TRAIN,fixed deployable K1 nested-CV reference,0.931653,0.002150,,,incident,993,data/final_prep/k1_fixed_second_level_verification_v1.csv,"TRAIN reference, not final generalization estimate."
+top1,TRAIN,fixed deployable K1 nested-CV reference,0.931521,0.002112,,,incident,993,data/final_prep/k1_fixed_second_level_verification_v1.csv,"TRAIN reference, not final generalization estimate."
+top2,TRAIN,fixed deployable K1 nested-CV reference,0.992346,0.001027,,,incident,993,data/final_prep/k1_fixed_second_level_verification_v1.csv,"TRAIN reference, not final generalization estimate."
+mrr,TRAIN,fixed deployable K1 nested-CV reference,0.964485,0.001116,,,incident,993,data/final_prep/k1_fixed_second_level_verification_v1.csv,"TRAIN reference, not final generalization estimate."
+hijack_f1,TRAIN,fixed deployable K1 nested-CV reference,0.909146,0.003926,,,incident,993,data/final_prep/k1_fixed_second_level_verification_v1.csv,"TRAIN reference, not final generalization estimate."
+leak_f1,TRAIN,fixed deployable K1 nested-CV reference,0.907998,0.003196,,,incident,993,data/final_prep/k1_fixed_second_level_verification_v1.csv,"TRAIN reference, not final generalization estimate."
+outage_f1,TRAIN,fixed deployable K1 nested-CV reference,0.977817,0.003139,,,incident,993,data/final_prep/k1_fixed_second_level_verification_v1.csv,"TRAIN reference, not final generalization estimate."
+incident_macro_f1,Validation,Phase J single predeclared confirmation,0.713904,,,,incident,213,data/validation/validation_confirmation_results_v1.csv,Pre-K1 validation; do not describe K1 as Validation-confirmed.
+top1,Validation,Phase J single predeclared confirmation,0.718310,,,,incident,213,data/validation/validation_confirmation_results_v1.csv,Pre-K1 validation; do not describe K1 as Validation-confirmed.
+top2,Validation,Phase J single predeclared confirmation,0.901408,,,,incident,213,data/validation/validation_confirmation_results_v1.csv,Pre-K1 validation; do not describe K1 as Validation-confirmed.
+mrr,Validation,Phase J single predeclared confirmation,0.842723,,,,incident,213,data/validation/validation_confirmation_results_v1.csv,Pre-K1 validation; do not describe K1 as Validation-confirmed.
+hijack_f1,Validation,Phase J single predeclared confirmation,0.634146,,,,incident,213,data/validation/validation_confirmation_results_v1.csv,Pre-K1 validation; do not describe K1 as Validation-confirmed.
+leak_f1,Validation,Phase J single predeclared confirmation,0.774648,,,,incident,213,data/validation/validation_confirmation_results_v1.csv,Pre-K1 validation; do not describe K1 as Validation-confirmed.
+outage_f1,Validation,Phase J single predeclared confirmation,0.732919,,,,incident,213,data/validation/validation_confirmation_results_v1.csv,Pre-K1 validation; do not describe K1 as Validation-confirmed.

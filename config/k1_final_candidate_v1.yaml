@@ -1,0 +1,89 @@
+candidate_id: K1-M2_XGB_K1-TEMPORAL
+status: K1_TRAIN_FORENSIC_VERIFIED_CANDIDATE
+methodological_status: POST_VALIDATION_VERSIONED_TRAIN_DEVELOPMENT_EXPERIMENT
+first_level_model: XGB_REFINED_TRAIN_CANDIDATE
+first_level_feature_schema: V4 frozen 74-feature schema
+first_level_hyperparameters:
+  n_estimators: 600
+  max_depth: 6
+  learning_rate: 0.125
+  subsample: 0.9
+  colsample_bytree: 0.9
+  min_child_weight: 1
+  gamma: 0
+  reg_alpha: 0.01
+  reg_lambda: 2.0
+first_level_weighting: I1 incident-aware sample weights on TRAIN folds only
+meta_feature_schema: config/k1_incident_meta_feature_schema_v1.yaml
+second_level_model: small XGBoost incident stacker
+second_level_hyperparameter_search_grid_size: 12
+incident_probability_output:
+- P(Hijack)
+- P(Leak)
+- P(Outage)
+ranking_rule: descending second-level class probability
+seed_policy:
+- 20260828
+- 20260829
+- 20260830
+- 20260831
+- 20260901
+nested_cv_performance:
+- metric: incident_macro_f1
+  mean: 0.9343041406552056
+  std: 0.0023092401102531
+  min: 0.9316787900039764
+  max: 0.9377335409573708
+  range: 0.0060547509533943
+  coefficient_of_variation: 0.0024716149803571
+- metric: top1
+  mean: 0.9341389728096676
+  std: 0.0023488225155469
+  min: 0.9315206445115812
+  max: 0.9375629405840886
+  range: 0.0060422960725075
+  coefficient_of_variation: 0.0025144251379237
+- metric: top2
+  mean: 0.9925478348439072
+  std: 0.0008056394763343
+  min: 0.9919436052366566
+  max: 0.9939577039274924
+  range: 0.0020140986908359
+  coefficient_of_variation: 0.0008116883116883
+- metric: mrr
+  mean: 0.9658274588788184
+  std: 0.0012269665580729
+  min: 0.9644175897952334
+  max: 0.9674387378314871
+  range: 0.0030211480362537
+  coefficient_of_variation: 0.0012703786238354
+- metric: hijack_f1
+  mean: 0.9128576166771364
+  std: 0.0037875423304864
+  min: 0.9071537290715372
+  max: 0.9176829268292684
+  range: 0.010529197757731
+  coefficient_of_variation: 0.0041491052506888
+- metric: leak_f1
+  mean: 0.9101250272654744
+  std: 0.0035526739165983
+  min: 0.9063893016344724
+  max: 0.9153046062407132
+  range: 0.0089153046062406
+  coefficient_of_variation: 0.0039035009588435
+- metric: outage_f1
+  mean: 0.9799297780230064
+  std: 0.0010882403606675
+  min: 0.9787234042553192
+  max: 0.981651376146789
+  range: 0.0029279718914698
+  coefficient_of_variation: 0.0011105289226571
+- metric: mean_true_class_rank
+  mean: 1.073313192346425
+  std: 0.0027320563879658
+  min: 1.0704934541792548
+  max: 1.0765357502517623
+  range: 0.0060422960725075
+  coefficient_of_variation: 0.002545441915228
+final_holdout_status: SEALED
+source_commit: 99fafc1037fa050fd2933ccc8c0f6f0bede45d05

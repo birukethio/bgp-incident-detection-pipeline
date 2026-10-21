@@ -1,135 +1,119 @@
-# BGP Incident Detection Pipeline
+# BGP Incident Classification and Ranking
 
-Research pipeline for building labeled BGP incident datasets and training a two-stage detector/classifier:
+This repository contains the completed doctoral Praxis pipeline for classifying and ranking three BGP incident types: **Hijack**, **Leak**, and **Outage**. The final architecture operates directly on incident evidence; the earlier experimental `Normal` versus `Incident` gate was not adopted as part of the final model.
 
-1. **Stage 1:** `Normal` vs `Incident`
-2. **Stage 2:** `Hijack` vs `Leak` vs `Outage`
+## Final Architecture
 
-The current repository starts with quality-controlled Cloudflare incident labels and supporting validation notes. Raw MRT archives and large generated feature matrices are intentionally excluded from Git.
+The frozen analytical path is:
 
-## Current Label Pool
+1. Historical RouteViews BGP UPDATE evidence is reconstructed into five-minute analytical windows.
+2. Each window is represented by the frozen **V4 74-feature schema**:
+   - 44 Behavioral BGP features
+   - 14 historical CAIDA AS-relationship features
+   - 16 historical RPKI/ROV features
+3. A five-model Level-1 XGBoost ensemble produces Hijack, Leak, and Outage probabilities for each window.
+4. Incident-level temporal summary features are constructed from the Level-1 probability sequence.
+5. The retrospective Level-2 XGBoost stacker produces the final incident classification and class ranking.
 
-The authoritative frozen incident corpus is Roster v2:
+The historical Normal-versus-Incident experiments are retained for auditability as a negative/auxiliary research branch. They are not the deployed final architecture and no Stage-1 threshold is used in the final Hijack/Leak/Outage classifier.
+
+## Frozen Corpus
+
+The authoritative incident corpus is Roster v2:
 
 `data/roster_v2/frozen_incident_roster_v2.csv`
 
-It contains:
-
 | Category | Incidents |
 |---|---:|
-| Leak | 473 |
 | Hijack | 473 |
+| Leak | 473 |
 | Outage | 473 |
 | **Total** | **1,419** |
 
-Roster v2 contains 1,419 independent incidents after duplicate remediation, timestamp-semantics review, and Leak prefix disposition review. v1 is retained only for audit history.
+The corpus was frozen after duplicate remediation, timestamp review, source normalization, and quality checks. Historical/developmental rosters remain in the repository only for provenance and must not be substituted for Roster v2.
 
-Leak and Hijack were selected using stratified, quality-focused sampling across year, ASN/network, country, duration, prefix count where available, and visibility metrics. Outages use the quality-controlled Cloudflare outage pool with affected ASNs listed where Cloudflare provides them.
+## Frozen Partitions
 
-## Core Design Rules
-
-- One real-world incident remains one incident.
-- Balancing is performed at the incident level first.
-- Splits must be by incident, not by 5-minute window.
-- All future 5-minute windows and feature rows must inherit the incident's frozen partition.
-- Never re-split after feature extraction.
-- The final holdout must never be used for threshold selection, feature selection, balancing decisions, hyperparameter tuning, or model comparison.
-- Long incidents may need window controls during feature extraction so they do not dominate training, but the cap has not been fixed yet.
-- RouteViews / RIPE RIS MRT archives are reserved for feature extraction, not label discovery.
-- API keys, tokens, raw MRT archives, raw Cloudflare dumps, and large feature matrices are not committed.
-
-## Frozen Incident Partitions
-
-The authoritative Roster v2 corpus is split once at the incident level using fixed random seed `20260828` and split version `v2`.
-
-The source `incident_id` is preserved in the partition outputs. Because source IDs may be schema-scoped, the frozen experimental unit is `incident_uid`.
+Partitions were assigned once at the incident level using seed `20260828`. All five-minute windows inherit their incident's partition.
 
 | Partition | Hijack | Leak | Outage | Total |
 |---|---:|---:|---:|---:|
-| Train | 331 | 331 | 331 | 993 |
+| TRAIN | 331 | 331 | 331 | 993 |
 | Validation | 71 | 71 | 71 | 213 |
 | Final Holdout | 71 | 71 | 71 | 213 |
 | **Total** | **473** | **473** | **473** | **1,419** |
 
-The v2 partition files live in `data/partitions_v2/`. The authoritative experimental manifest is `data/partitions_v2/frozen_partition_manifest_v2.csv`.
+The authoritative assignment is `data/partitions_v2/frozen_partition_manifest_v2.csv`. The independent experimental unit is `incident_uid`; partitions are never reassigned after feature extraction.
 
-v1 partition files in `data/partitions/` are retained only for audit history and must not be used as the final experimental split.
+## Evaluation Integrity
 
-## Final Holdout Protection
+- Model development and grouped/nested cross-validation use TRAIN only.
+- Validation is a separately controlled confirmation partition.
+- The sealed Final Holdout contains 213 incidents and was evaluated once after the architecture was frozen.
+- The Final Holdout was not used for feature selection, ablation decisions, balancing, hyperparameter tuning, threshold selection, or model selection.
+- Post-Holdout audits and sensitivity analyses are additive and do not replace or reinterpret the terminal result.
 
-The Final Holdout is used only after the complete pipeline is frozen. It must never be used for:
+## Terminal Final Holdout Result
 
-- feature selection
-- feature ablation decisions
-- Normal-rule threshold tuning
-- class/window balancing decisions
-- hyperparameter tuning
-- Stage 1 threshold selection
-- model selection
+| Metric | Value |
+|---|---:|
+| Macro F1 | 0.920177 |
+| Macro F1 95% CI | [0.880117, 0.954402] |
+| Top-1 accuracy | 0.920188 |
+| Top-2 accuracy | 0.990610 |
+| Mean reciprocal rank | 0.958529 |
 
-## Window Cap Status
+Per-class F1 scores were `0.877698` for Hijack, `0.904110` for Leak, and `0.978723` for Outage. These values are frozen and authoritative.
 
-No fixed `max_windows_per_incident` is defined yet. The window cap will be determined later from the observed duration and 5-minute window-count distribution after the incident roster is frozen and before model training.
+## Project Status
 
-## Pre-MRT Incident Integrity Audit
+The primary Praxis experiment is complete. The repository includes:
 
-Incident partitions are frozen before feature generation, then audited for duplicate-event risk, timestamp integrity, ASN/prefix overlap, and partition diversity before raw BGP data collection.
+- corpus and partition provenance;
+- RouteViews acquisition and parsing code;
+- five-minute Behavioral feature construction;
+- historical CAIDA and RPKI/ROV enrichment;
+- V1-V4 and feature-family ablation studies;
+- Random Forest and XGBoost comparisons;
+- TRAIN grouped/nested evaluation and forensic leakage checks;
+- Validation and terminal Final Holdout records;
+- calibration, error, latency, provenance, and reproducibility audits;
+- TRAIN-only retrospective early-classification/TTI sensitivity analyses;
+- publication-ready tables, figures, and manuscript deliverables.
 
-The audit is diagnostic only:
+There are no unfinished "next pipeline steps" for the frozen Praxis experiment. Future research directions are documented separately and are not required to reproduce the reported study.
 
-- Do not re-split the data.
-- Do not automatically remove incidents.
-- Do not change labels.
-- Do not download MRT data yet.
-- Do not create Normal labels yet.
-- Do not introduce a window cap.
-- Treat ASN/prefix overlap as a diagnostic, not automatically as leakage.
-- Treat the real-world incident as the independent experimental unit.
+## Repository Guide
 
-The current pre-MRT audit status is `REVIEW`: the frozen partition mechanics pass, but possible duplicate-event pairs, extreme-duration events, and completeness diagnostics should be reviewed before MRT acquisition.
-
-## Important Files
-
-| File | Purpose |
+| Path | Contents |
 |---|---|
-| `cloudflare_incidents/TRAINING_READY_INCIDENT_SCHEMA.md` | Canonical normalized schema and mapping rules |
-| `data/roster_v2/frozen_incident_roster_v2.csv` | Authoritative frozen Roster v2 incident corpus |
-| `data/partitions_v2/frozen_partition_manifest_v2.csv` | Authoritative v2 incident-level train/validation/holdout assignment |
-| `data/partitions_v2/partition_v2_quality_audit.csv` | PASS / REVIEW / FAIL audit for v2 partition mechanics and secondary balance |
-| `data/partitions_v2/partition_v2_distribution_summary.csv` | Duration, year, ASN/network, and country summaries by partition |
-| `cloudflare_incidents/balanced_incident_level_roster_473_each_leak_hijack_outage.csv` | v1 balanced roster retained for audit history |
-| `cloudflare_incidents/stratified_quality_leak_sample_473.csv` | Leak sample |
-| `cloudflare_incidents/stratified_quality_hijack_sample_473.csv` | Hijack sample |
-| `cloudflare_incidents/clean_cloudflare_outage_recommended_final_pool_all_asns.csv` | Outage pool with ASN lists |
-| `cloudflare_incidents/stratified_quality_sampling_summary.csv` | Sampling summary |
-| `cloudflare_incidents/clean_cloudflare_outage_asn_summary.csv` | Outage ASN completeness summary |
-| `cloudflare_incidents/timed_external_bgp_route_leak_label_candidates.csv` | External timed leak-label candidates used for spot validation |
-| `data/partitions/frozen_partition_manifest.csv` | Frozen incident-level train/validation/holdout assignment |
-| `notebooks/02_incident_partitioning.ipynb` | Reproducible incident partitioning notebook |
-| `notebooks/03_partition_integrity_and_roster_audit.ipynb` | Pre-MRT partition integrity and roster audit notebook |
-| `notebooks/05_freeze_roster_v2_and_partition.ipynb` | Freeze Roster v2 and create the final v2 incident-level partitions |
-| `data/partitions/partition_integrity_audit_v1.csv` | PASS / REVIEW / FAIL audit summary |
-| `data/partitions/incident_quality_audit_v1.csv` | One-row-per-incident quality audit |
-| `data/partitions/possible_duplicate_incidents.csv` | Possible real-world duplicate-event pairs for manual review |
+| `config/` | Frozen schemas, model configurations, and evaluation protocols |
+| `src/bgp_incident_detection/` | Reproducible pipeline and audit implementations |
+| `tests/` | Automated integrity and reproducibility checks |
+| `data/` | Compact rosters, manifests, summaries, and versioned result artifacts |
+| `docs/` | Evidence audits, methodology records, captions, and result tables |
+| `experiments/` | Additive forensic and sensitivity analyses |
+| `external_validation/` | Source-separated Level-1 validation protocols and records |
+| `figures/` | Publication-ready Chapter 3-5 figures |
+| `notebooks/` | Versioned experimental notebooks |
+| `deliverables/` | Final manuscript and related deliverables |
 
-## Rebuild Scripts
+## Reproducibility
 
-| Script | Purpose |
-|---|---|
-| `cloudflare_incidents/fetch_cloudflare_all_incidents_to_2026_01.mjs` | Fetch all available Cloudflare incidents up to 2026-02-01 |
-| `cloudflare_incidents/build_training_ready_all_cloudflare_roster.mjs` | Normalize full unsampled Cloudflare dump |
-| `cloudflare_incidents/build_clean_outage_asn_roster.mjs` | Deduplicate and QC outage records with ASN completeness |
-| `cloudflare_incidents/build_quality_controlled_outage_roster.mjs` | Build the initial outage QC roster |
-| `cloudflare_incidents/build_stratified_quality_leak_hijack_samples.mjs` | Build stratified leak/hijack samples and combined balanced roster |
-| `src/bgp_incident_detection/partitioning.py` | Validate and freeze incident-level partitions |
-| `src/bgp_incident_detection/partitioning_v2.py` | Freeze Roster v2 and create the final v2 incident-level partitions |
-| `src/bgp_incident_detection/audit.py` | Audit frozen partitions before MRT acquisition |
+Run the repository checks from the project root:
 
-## Next Pipeline Steps
+```bash
+pytest -q
+```
 
-1. Define normal-window selection rules.
-2. Analyze incident duration and window-count distribution to choose a window cap.
-3. Add MRT downloader for RouteViews and RIPE RIS.
-4. Add BGP UPDATE parser and 5-minute feature extractor.
-5. Train Stage 1 and Stage 2 models.
-6. Run feature ablation experiments.
+The current release passes **390 tests**. Authoritative model/configuration details and software environments are recorded in the versioned manifests under `config/`, `data/`, `docs/`, and `experiments/reproducibility_audit_v1/`.
+
+The original fitted Level-2 binary was not persisted historically. Its methodology and configuration are procedurally specified, while the exact originally fitted object is not recoverable. For that reason, source-separated external validation was limited to the reproducibly preserved Level-1 path; no claim of external Level-2 confirmation is made.
+
+## Data and Security
+
+Raw RouteViews MRT archives, large generated feature matrices, temporary caches, API credentials, and oversized serialized development models are intentionally excluded from Git. The repository retains compact provenance manifests, checksums, schemas, source URLs, code, and result summaries needed to audit the study without publishing local caches or secrets.
+
+## Scope and Interpretation
+
+The balanced corpus supports controlled comparison across Hijack, Leak, and Outage classes; it does not estimate global Internet-wide incident prevalence. Results are bounded by public-collector visibility, external label provenance, historical CAIDA/RPKI availability, and the retrospective nature of the Level-2 temporal stacker.

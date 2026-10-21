@@ -1,0 +1,2 @@
+feature_name,historical_definition,historical_formula,source_artifact,reproducible,notes
+RPKI/ROV feature group placeholder,Earlier local methodology referenced approximately 3 RPKI/ROV features but did not define a reproducible inventory.,,README.md; docs/model_baseline_and_ablation_plan_v1.md; config/feature_variants_v1.yaml,no,This controlled step defines the first reproducible RPKI/ROV inventory from historical VRP data and compact BGP evidence.

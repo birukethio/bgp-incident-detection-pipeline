@@ -1,0 +1,2 @@
+expected_incidents,included_incidents,excluded_incidents,PASS,KEEP_WITH_ZERO_OBSERVATIONS,KEEP_WITH_PARTIAL_SOURCE_COVERAGE,PASS_AFTER_RECOVERY,technical_exclusions,feature_rows,duplicate_window_ids,missing_source_windows,recovered_source_windows,schema_status,validation_contamination,holdout_contamination,overall_status,source_commit,notes
+993,993,0,983,9,0,1,0,68031,0,0,3,PASS,False,False,PASS,99fafc1037fa050fd2933ccc8c0f6f0bede45d05,Outage:605 06:00Z route-views2 source gap recovered with route-views.sg for three affected INCIDENT_ACTIVE windows; v1 preserved unchanged.

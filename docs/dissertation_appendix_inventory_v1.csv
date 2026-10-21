@@ -1,0 +1,12 @@
+appendix_candidate,reason,source_artifact,recommended_appendix
+Complete 44 Behavioral feature inventory,feature details are too wide for the main chapter,config/behavioral_feature_schema_v1.yaml,Appendix A
+Complete 14 CAIDA feature inventory,enrichment feature details,config/caida_feature_schema_v1.yaml,Appendix A
+Complete 16 RPKI feature inventory,historical ROV details,config/rpki_feature_schema_v1.yaml,Appendix A
+Feature formulas,full formulas support reproducibility,src/bgp_incident_detection/features.py,Appendix B
+Normal candidate qualification details,long engineering path with negative results,config/normal_ground_truth_method_v1.yaml,Appendix C
+RIB indexing benchmarks,implementation evidence,data/normal_scale/,Appendix C
+Complete hyperparameter search spaces,too detailed for main results,config/,Appendix D
+Detailed fold assignments,reproducibility evidence,data/modeling/,Appendix D
+Full quality-gate tables,audit traceability,data/,Appendix E
+Complete confusion/error records,error-analysis support,data/final_holdout/,Appendix F
+Reproducibility/environment information,defense and reproduction,docs/reproducibility_manifest_v1.csv,Appendix G

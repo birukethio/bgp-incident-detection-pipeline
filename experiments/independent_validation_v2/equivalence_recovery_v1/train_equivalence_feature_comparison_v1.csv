@@ -1,0 +1,10 @@
+incident_uid,stage,reference_rows,reference_feature_count,new_implementation_rows,new_implementation_feature_count,comparison_status,missing_reference_features,notes
+Hijack:131045,E2_V4_FEATURES,25,74,,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,,"Frozen V4 reference rows are available, but equivalence requires a newly assembled implementation output for comparison."
+Hijack:41142,E2_V4_FEATURES,52,74,,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,,"Frozen V4 reference rows are available, but equivalence requires a newly assembled implementation output for comparison."
+Hijack:115187,E2_V4_FEATURES,52,74,,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,,"Frozen V4 reference rows are available, but equivalence requires a newly assembled implementation output for comparison."
+Leak:462139,E2_V4_FEATURES,25,74,,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,,"Frozen V4 reference rows are available, but equivalence requires a newly assembled implementation output for comparison."
+Leak:442710,E2_V4_FEATURES,52,74,,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,,"Frozen V4 reference rows are available, but equivalence requires a newly assembled implementation output for comparison."
+Leak:415566,E2_V4_FEATURES,52,74,,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,,"Frozen V4 reference rows are available, but equivalence requires a newly assembled implementation output for comparison."
+Outage:1066,E2_V4_FEATURES,30,74,,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,,"Frozen V4 reference rows are available, but equivalence requires a newly assembled implementation output for comparison."
+Outage:532,E2_V4_FEATURES,63,74,,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,,"Frozen V4 reference rows are available, but equivalence requires a newly assembled implementation output for comparison."
+Outage:1178,E2_V4_FEATURES,2268,74,,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,,"Frozen V4 reference rows are available, but equivalence requires a newly assembled implementation output for comparison."

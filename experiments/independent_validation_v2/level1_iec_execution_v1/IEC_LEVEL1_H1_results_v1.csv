@@ -1,0 +1,2 @@
+analysis_label,status,n_evaluable,hijack_count,leak_count,outage_count,macro_f1,macro_f1_ci_lower,macro_f1_ci_upper,top1,top2,mrr,mean_true_class_rank,notes
+Source-Separated External Validation of the Level-1 BGP Incident Classifier,NOT_EXECUTED_NO_EVALUABLE_INCIDENTS_AFTER_PROSPECTIVE_GATE,0,0,0,0,,,,,,,,No model inference was run because all IEC candidates failed the prospective reconstruction/evaluability gate.

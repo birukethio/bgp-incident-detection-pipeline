@@ -1,0 +1,8 @@
+incident_uid,category,hijack_probability,leak_probability,outage_probability,predicted_class,aggregation_rule
+V2-HIJACK-006,Hijack,0.37076005,0.1180155,0.51122445,Outage,arithmetic mean class probability across all reconstructed five-minute windows
+V2-LEAK-002,Leak,0.25522724,0.17915003,0.5656227,Outage,arithmetic mean class probability across all reconstructed five-minute windows
+V2-LEAK-003,Leak,0.46284315,0.09556725,0.44158962,Hijack,arithmetic mean class probability across all reconstructed five-minute windows
+V2-LEAK-007,Leak,0.31337866,0.21431538,0.47230595,Outage,arithmetic mean class probability across all reconstructed five-minute windows
+V2-OUTAGE-001,Outage,0.09474071,0.0894924,0.8157669,Outage,arithmetic mean class probability across all reconstructed five-minute windows
+V2-OUTAGE-002,Outage,0.25507596,0.13842697,0.6064971,Outage,arithmetic mean class probability across all reconstructed five-minute windows
+V2-OUTAGE-003,Outage,0.17829517,0.12220065,0.69950414,Outage,arithmetic mean class probability across all reconstructed five-minute windows

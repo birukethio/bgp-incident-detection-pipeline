@@ -1,0 +1,7 @@
+# Section 4.9 Figure Captions
+
+**Figure 4.10. K1-B0 mean probability aggregation versus K1 temporal stacking.** This figure reports post-Validation TRAIN-only nested-CV results for the Phase K1 incident-level aggregation experiment. K1-B0 aggregates window probabilities by mean probability, whereas the K1 temporal stacker uses incident-level temporal probability summaries. Validation was not reused for K1 selection, Final Holdout remained sealed, and this comparison is not Final Holdout performance. The temporal stacker improved Macro F1 from 0.802937 to 0.934666, Top-1 from 0.804632 to 0.934542, Top-2 from 0.935549 to 0.992951, and MRR from 0.891574 to 0.966096. The paired grouped-fold comparison recorded a 5/5 fold win for the temporal stacker.
+
+**Supplementary Figure 4.10a. Paired grouped-fold Macro-F1 improvement for K1 temporal stacking.** This supplementary figure uses the exact fold-level Macro-F1 records from `data/modeling_k1/k1_fold_results_v1.csv` and connects K1-B0 to the temporal stacker within each grouped outer fold. It is included only as TRAIN-only development evidence; it does not use Validation or Final Holdout.
+
+Source artifacts: `data/modeling_k1/k1_model_results_v1.csv`, `data/modeling_k1/k1_paired_fold_comparison_v1.csv`, `data/modeling_k1/k1_fold_results_v1.csv`, `data/modeling_k1/k1_nested_cv_audit_v1.csv`, `config/post_validation_k1_candidate_v1.yaml`, and `data/modeling_k1/k1_decision_summary_v1.csv`.

@@ -1,0 +1,7 @@
+comparison,status,incident_count,feature_columns_used,exact_duplicate_incident_level_vectors_within_artifact,notes,exact_duplicate_incident_level_feature_vector_count
+train,ARTIFACT_SUMMARIZED,993.0,77.0,0.0,Source artifact: data/train_frozen/frozen_train_v4_behavioral_caida_rpki_v1.parquet,
+holdout,ARTIFACT_SUMMARIZED,213.0,77.0,0.0,Source artifact: data/final_holdout/final_holdout_v4_features_v1.parquet,
+validation_tti_horizon,ARTIFACT_SUMMARIZED,212.0,75.0,0.0,Source artifact: data/tti_validation_confirmation_v1/tti_validation_horizon_v4_v1.parquet,
+train↔holdout,PASS,,,,Mean incident-level numeric vector hash comparison; normal similarity is not leakage.,0.0
+train↔validation_tti_horizon,PASS,,,,Mean incident-level numeric vector hash comparison; normal similarity is not leakage.,0.0
+validation_tti_horizon↔holdout,PASS,,,,Mean incident-level numeric vector hash comparison; normal similarity is not leakage.,0.0

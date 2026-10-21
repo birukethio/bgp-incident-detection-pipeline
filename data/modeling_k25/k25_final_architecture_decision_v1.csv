@@ -1,0 +1,2 @@
+selected_architecture,recommendation,macro_f1_gain_vs_a0,scientific_interpretation,validation_used_for_k25,final_holdout_status,notes
+A0_XGB_TO_XGB,KEEP_XGB_XGB_K1,0.0,INCIDENT_LEVEL_STACKING_ARCHITECTURE,False,SEALED,A0 should only be replaced for a meaningful stable advantage.

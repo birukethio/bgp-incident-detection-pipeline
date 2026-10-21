@@ -1,0 +1,53 @@
+candidate_id: "XGB_REFINED_TRAIN_CANDIDATE"
+status: "XGB_REFINED_TRAIN_CANDIDATE"
+recommendation: "PROMOTE_PHASE_I2_XGB"
+refinement_classification: "MARGINAL_REFINEMENT"
+selected_source_candidate_id: "PHASEI2_XGB_LOCAL_004"
+xgboost_version: "3.4.1"
+selected_hyperparameters:
+  colsample_bytree: 0.9
+  gamma: 0
+  learning_rate: 0.125
+  max_depth: 6
+  min_child_weight: 1
+  n_estimators: 600
+  reg_alpha: 0.01
+  reg_lambda: 2.0
+  subsample: 0.9
+objective: "multi:softprob"
+num_class: 3
+eval_metric: "mlogloss"
+feature_variant: "V4"
+feature_count: 74
+feature_schema_version: "V4 frozen 74-feature Behavioral + CAIDA + RPKI schema"
+imbalance_condition: "I1"
+weighting: "I1 incident-aware sample weights computed from training rows only in each fold"
+seed_policy:
+  local_search_seed: 20260828
+  stability_seeds:
+    - 20260828
+    - 20260829
+    - 20260830
+    - 20260831
+    - 20260901
+  fold_assignments: "data/modeling/baseline_v1_grouped_cv_assignments_v1.csv"
+grouped_fold_semantics: "Existing grouped folds reused; no incident crosses TRAIN/test folds."
+incident_aggregation: "mean class probability across all eligible windows for each incident"
+ranking_rule: "sort P(Hijack), P(Leak), P(Outage) descending"
+train_multiseed_results:
+  mean_incident_macro_f1: 0.8056775087076607
+  std_incident_macro_f1: 0.002042452959979242
+  mean_top1: 0.8070493454179255
+  mean_top2: 0.9347432024169183
+  mean_mrr: 0.8926485397784489
+  hijack_f1_mean: 0.7561964090221941
+  leak_f1_mean: 0.8519226498985109
+  outage_f1_mean: 0.8089134672022773
+  window_macro_f1_mean: 0.6806190145403048
+  mean_fit_time_seconds: 32.9888
+  mean_inference_time_seconds: 0.21539999999999998
+  deterministic_status: "STOCHASTIC_OR_SEED_SENSITIVE"
+stage1_status: "UNRESOLVED_EXPERIMENTAL_AUXILIARY"
+validation_accessed: false
+final_holdout_accessed: false
+source_commit: "99fafc1037fa050fd2933ccc8c0f6f0bede45d05"

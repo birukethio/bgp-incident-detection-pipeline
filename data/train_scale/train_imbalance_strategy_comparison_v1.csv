@@ -1,0 +1,9 @@
+strategy,cap_definition,total_rows,rows_removed,hijack_rows,leak_rows,outage_rows,incidents_retained,median_rows_per_incident,p95_rows_per_incident,max_rows_per_incident,top_1pct_row_share,top_5pct_row_share,top_10pct_row_share,effective_weight_range,notes
+A_NATURAL_UNADJUSTED,none,68031,0,16616,16179,35236,993,52.0,163.9999999999999,2268,11.577,24.164,33.354,25.000000-2268.000000,All TRAIN rows retained equally.
+B_INCIDENT_AWARE_WEIGHTING,none,68031,0,16616,16179,35236,993,52.0,163.9999999999999,2268,11.577,24.164,33.354,1.000000-1.000000,All TRAIN rows retained; each incident contributes total weight about 1.
+C_CAP_PLUS_INCIDENT_AWARE_WEIGHTING,global_p90,54740,13291,16616,16179,21945,993,52.0,94.0,94,1.717,8.586,17.172,1.000000-1.000000,"Percentile cap with onset/middle/end/even temporal coverage, then incident-aware weights."
+D_CAP_ONLY,global_p90,54740,13291,16616,16179,21945,993,52.0,94.0,94,1.717,8.586,17.172,25.000000-94.000000,Diagnostic percentile cap only; no weights.
+C_CAP_PLUS_INCIDENT_AWARE_WEIGHTING,global_p95,59792,8239,16616,16179,26997,993,52.0,162.79999999999995,164,2.743,13.714,24.17,1.000000-1.000000,"Percentile cap with onset/middle/end/even temporal coverage, then incident-aware weights."
+D_CAP_ONLY,global_p95,59792,8239,16616,16179,26997,993,52.0,162.79999999999995,164,2.743,13.714,24.17,25.000000-164.000000,Diagnostic percentile cap only; no weights.
+C_CAP_PLUS_INCIDENT_AWARE_WEIGHTING,global_p99,62875,5156,16616,16179,30080,993,52.0,163.9999999999999,272,4.326,17.945,27.889,1.000000-1.000000,"Percentile cap with onset/middle/end/even temporal coverage, then incident-aware weights."
+D_CAP_ONLY,global_p99,62875,5156,16616,16179,30080,993,52.0,163.9999999999999,272,4.326,17.945,27.889,25.000000-272.000000,Diagnostic percentile cap only; no weights.

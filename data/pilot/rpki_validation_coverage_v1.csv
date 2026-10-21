@@ -1,0 +1,4 @@
+category,evidence_observations_evaluated,valid_observations,invalid_observations,not_found_observations,malformed_unevaluable,unique_prefixes_evaluated,unique_origin_asns_evaluated
+Hijack,68598,38167,1417,29014,2016,6984,706
+Leak,333649,281791,43,51815,0,40408,4937
+Outage,381709,34083,23,347603,0,15607,279

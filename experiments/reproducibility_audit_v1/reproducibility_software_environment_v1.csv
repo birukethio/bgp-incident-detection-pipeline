@@ -1,0 +1,5 @@
+component,version,source,status
+audit_python,3.12.2,current audit runtime,RECORDED
+platform,macOS-15.7.5-x86_64-i386-64bit,current audit runtime,RECORDED
+xgboost,3.4.1,data/modeling/xgboost_environment_v1.csv,AVAILABLE
+bgpdump,1.6.2,data/pilot/mrt_parser_environment_v1.csv,RECORDED

@@ -1,0 +1,36 @@
+claim,metric,value,source_file,source_field_or_row,authoritative_status
+Level-1 XGBoost ensemble probability averaging mean verified,mean,9.600850950671453e-06,data/performance/final_k1_inference_latency_v1.csv,component=Level-1 XGBoost ensemble probability averaging; field=mean,PASS_AUTHORITATIVE_PHASE_N
+Level-1 XGBoost ensemble probability averaging median verified,median,8.37654567211807e-06,data/performance/final_k1_inference_latency_v1.csv,component=Level-1 XGBoost ensemble probability averaging; field=median,PASS_AUTHORITATIVE_PHASE_N
+Level-1 XGBoost ensemble probability averaging p95 verified,p95,1.198121260470682e-05,data/performance/final_k1_inference_latency_v1.csv,component=Level-1 XGBoost ensemble probability averaging; field=p95,PASS_AUTHORITATIVE_PHASE_N
+Level-1 XGBoost ensemble probability averaging p99 verified,p99,1.2301627443159154e-05,data/performance/final_k1_inference_latency_v1.csv,component=Level-1 XGBoost ensemble probability averaging; field=p99,PASS_AUTHORITATIVE_PHASE_N
+Level-1 XGBoost ensemble probability averaging unit verified,unit,milliseconds/window,data/performance/final_k1_inference_latency_v1.csv,component=Level-1 XGBoost ensemble probability averaging; field=unit,PASS_AUTHORITATIVE_PHASE_N
+K1 meta-feature construction mean verified,mean,25.47103125,data/performance/final_k1_inference_latency_v1.csv,component=K1 meta-feature construction; field=mean,PASS_AUTHORITATIVE_PHASE_N
+K1 meta-feature construction median verified,median,24.6709895,data/performance/final_k1_inference_latency_v1.csv,component=K1 meta-feature construction; field=median,PASS_AUTHORITATIVE_PHASE_N
+K1 meta-feature construction p95 verified,p95,27.520333474999997,data/performance/final_k1_inference_latency_v1.csv,component=K1 meta-feature construction; field=p95,PASS_AUTHORITATIVE_PHASE_N
+K1 meta-feature construction p99 verified,p99,27.773608494999998,data/performance/final_k1_inference_latency_v1.csv,component=K1 meta-feature construction; field=p99,PASS_AUTHORITATIVE_PHASE_N
+K1 meta-feature construction unit verified,unit,milliseconds/incident,data/performance/final_k1_inference_latency_v1.csv,component=K1 meta-feature construction; field=unit,PASS_AUTHORITATIVE_PHASE_N
+Level-2 XGBoost output ranking mean verified,mean,0.10239925,data/performance/final_k1_inference_latency_v1.csv,component=Level-2 XGBoost output ranking; field=mean,PASS_AUTHORITATIVE_PHASE_N
+Level-2 XGBoost output ranking median verified,median,0.100427,data/performance/final_k1_inference_latency_v1.csv,component=Level-2 XGBoost output ranking; field=median,PASS_AUTHORITATIVE_PHASE_N
+Level-2 XGBoost output ranking p95 verified,p95,0.10726137499999999,data/performance/final_k1_inference_latency_v1.csv,component=Level-2 XGBoost output ranking; field=p95,PASS_AUTHORITATIVE_PHASE_N
+Level-2 XGBoost output ranking p99 verified,p99,0.107868875,data/performance/final_k1_inference_latency_v1.csv,component=Level-2 XGBoost output ranking; field=p99,PASS_AUTHORITATIVE_PHASE_N
+Level-2 XGBoost output ranking unit verified,unit,milliseconds/incident,data/performance/final_k1_inference_latency_v1.csv,component=Level-2 XGBoost output ranking; field=unit,PASS_AUTHORITATIVE_PHASE_N
+Complete measured K1 computational path from probabilities to ranking mean verified,mean,25.579447833333333,data/performance/final_k1_inference_latency_v1.csv,component=Complete measured K1 computational path from probabilities to ranking; field=mean,PASS_AUTHORITATIVE_PHASE_N
+Complete measured K1 computational path from probabilities to ranking median verified,median,24.7749895,data/performance/final_k1_inference_latency_v1.csv,component=Complete measured K1 computational path from probabilities to ranking; field=median,PASS_AUTHORITATIVE_PHASE_N
+Complete measured K1 computational path from probabilities to ranking p95 verified,p95,27.634936375,data/performance/final_k1_inference_latency_v1.csv,component=Complete measured K1 computational path from probabilities to ranking; field=p95,PASS_AUTHORITATIVE_PHASE_N
+Complete measured K1 computational path from probabilities to ranking p99 verified,p99,27.889153875,data/performance/final_k1_inference_latency_v1.csv,component=Complete measured K1 computational path from probabilities to ranking; field=p99,PASS_AUTHORITATIVE_PHASE_N
+Complete measured K1 computational path from probabilities to ranking unit verified,unit,milliseconds/incident,data/performance/final_k1_inference_latency_v1.csv,component=Complete measured K1 computational path from probabilities to ranking; field=unit,PASS_AUTHORITATIVE_PHASE_N
+Approximate downstream throughput verified,incidents_per_second_approx,39.09388531432138,data/performance/final_k1_inference_latency_v1.csv,complete path row; formula 1000 / mean_ms,PASS_AUTHORITATIVE_PHASE_N
+Python version recovered,python_version,3.12.2,data/performance/final_k1_inference_latency_v1.csv,complete path row; field=python_version,PASS_AUTHORITATIVE_PHASE_N
+XGBoost version recovered,xgboost_version,3.4.1,data/performance/final_k1_inference_latency_v1.csv,complete path row; field=xgboost_version,PASS_AUTHORITATIVE_PHASE_N
+OS/platform recovered,platform,macOS-15.7.5-x86_64-i386-64bit,data/performance/final_k1_inference_latency_v1.csv,complete path row; field=platform,PASS_AUTHORITATIVE_PHASE_N
+Recorded CPU field recovered,cpu,i386,data/performance/final_k1_inference_latency_v1.csv,complete path row; field=cpu,PASS_AUTHORITATIVE_PHASE_N
+Thread count recovered,thread_count,11,data/performance/final_k1_inference_latency_v1.csv,complete path row; field=thread_count,PASS_AUTHORITATIVE_PHASE_N
+Model loaded state recovered,model_loaded_state,MODEL_ALREADY_LOADED_OR_CACHED_PROBABILITIES,data/performance/final_k1_inference_latency_v1.csv,complete path row; field=model_loaded_state,PASS_AUTHORITATIVE_PHASE_N
+CPU model not recorded,cpu_model,NA,data/performance/final_k1_inference_latency_v1.csv,artifact records cpu=i386 but no CPU model string,PASS_AUTHORITATIVE_PHASE_N
+RAM not recorded,ram,NA,data/performance/final_k1_inference_latency_v1.csv,no RAM field in Phase N artifacts,PASS_AUTHORITATIVE_PHASE_N
+Post-window characterization verified,classification,POST_WINDOW_INCIDENT_CLASSIFICATION,docs/final_k1_latency_summary_v1.md,classification line,PASS_AUTHORITATIVE_PHASE_N
+Excluded pipeline stages documented,excluded_processing,live BGP UPDATE collection; MRT parsing; five-minute observation-window accumulation; Behavioral feature generation; CAIDA enrichment; RPKI/ROV enrichment; model startup/loading; complete live data-pipeline overhead,docs/final_k1_latency_summary_v1.md,warm computational path caveat,PASS_AUTHORITATIVE_PHASE_N
+57_tau_threshold_and_final_model_latency.ipynb present for cross-reference,artifact_present,present,notebooks/57_tau_threshold_and_final_model_latency.ipynb,exists,PASS_AUTHORITATIVE_PHASE_N
+authoritative_numbers_register_v1.csv present for cross-reference,artifact_present,present,docs/authoritative_numbers_register_v1.csv,exists,PASS_AUTHORITATIVE_PHASE_N
+final_statistical_results_register_v1.csv present for cross-reference,artifact_present,present,docs/final_statistical_results_register_v1.csv,exists,PASS_AUTHORITATIVE_PHASE_N
+master_praxis_results_summary_v1.yaml present for cross-reference,artifact_present,present,docs/master_praxis_results_summary_v1.yaml,exists,PASS_AUTHORITATIVE_PHASE_N

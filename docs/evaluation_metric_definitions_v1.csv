@@ -1,0 +1,6 @@
+metric,definition,sample_unit,usage
+Macro F1,unweighted mean of per-class F1,incident for final metrics,classification
+Top-1,proportion where highest-ranked class is true class,incident,ranking
+Top-2,proportion where true class is among top two ranked classes,incident,ranking
+MRR,mean reciprocal rank of the true class,incident,ranking
+Window Macro F1,window-level macro F1,window,"diagnostic only, not terminal incident metric"

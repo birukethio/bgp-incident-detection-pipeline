@@ -1,0 +1,111 @@
+candidate_id: "RF_TUNED_LOCK_CANDIDATE_V1"
+candidate_status: "TUNED_TRAIN_CV_CANDIDATE"
+architecture: "multiclass_stage2_random_forest"
+task: "Hijack vs Leak vs Outage"
+feature_variant: "V4"
+feature_count: 74
+feature_names_order:
+  - "update_count"
+  - "announcement_count"
+  - "withdrawal_count"
+  - "update_rate_per_minute"
+  - "announcement_rate_per_minute"
+  - "withdrawal_rate_per_minute"
+  - "announcement_ratio"
+  - "withdrawal_ratio"
+  - "announcement_to_withdrawal_ratio"
+  - "unique_prefix_count"
+  - "unique_announced_prefix_count"
+  - "unique_withdrawn_prefix_count"
+  - "prefix_churn_count"
+  - "prefix_with_both_announce_withdraw_count"
+  - "unique_peer_asn_count"
+  - "unique_origin_asn_count"
+  - "origin_diversity_ratio"
+  - "moas_prefix_count"
+  - "moas_prefix_ratio"
+  - "origin_change_event_count"
+  - "unique_as_path_count"
+  - "as_path_length_min"
+  - "as_path_length_max"
+  - "as_path_length_mean"
+  - "as_path_length_median"
+  - "as_path_length_std"
+  - "as_path_length_p95"
+  - "as_path_length_range"
+  - "path_prepending_observation_count"
+  - "path_prepending_ratio"
+  - "prepended_asn_repetition_count"
+  - "multi_path_prefix_count"
+  - "path_diversity_mean_per_prefix"
+  - "peer_prefix_pair_count"
+  - "peer_origin_pair_count"
+  - "peer_as_path_pair_count"
+  - "unique_next_hop_count"
+  - "community_observation_count"
+  - "community_observation_ratio"
+  - "unique_community_count"
+  - "med_observation_count"
+  - "unique_med_count"
+  - "local_pref_observation_count"
+  - "atomic_aggregate_count"
+  - "caida_path_observation_count"
+  - "caida_paths_with_no_as_path_count"
+  - "caida_paths_with_unknown_relationship_count"
+  - "caida_unknown_relationship_transition_count"
+  - "caida_customer_to_provider_transition_count"
+  - "caida_provider_to_customer_transition_count"
+  - "caida_peer_to_peer_transition_count"
+  - "caida_valley_free_valid_path_count"
+  - "caida_valley_free_violation_path_count"
+  - "caida_valley_free_violation_ratio"
+  - "caida_max_violation_count_per_path"
+  - "caida_mean_violation_count_per_path"
+  - "caida_customer_provider_transition_ratio"
+  - "caida_peer_transition_ratio"
+  - "rpki_evidence_observation_count"
+  - "rpki_evaluable_observation_count"
+  - "rpki_valid_observation_count"
+  - "rpki_invalid_observation_count"
+  - "rpki_not_found_observation_count"
+  - "rpki_unevaluable_observation_count"
+  - "rpki_invalid_origin_observation_count"
+  - "rpki_invalid_maxlength_observation_count"
+  - "rpki_valid_observation_ratio"
+  - "rpki_invalid_observation_ratio"
+  - "rpki_not_found_observation_ratio"
+  - "rpki_unique_valid_prefix_count"
+  - "rpki_unique_invalid_prefix_count"
+  - "rpki_unique_not_found_prefix_count"
+  - "rpki_state_diversity_count"
+  - "rpki_dominant_state_code"
+imbalance_treatment: "I1 incident-aware weighting"
+i1_weighting_formula: "sample_weight = 1 / number_of_training_windows_for_the_same model_group_id within the training fold"
+rf_hyperparameters:
+  bootstrap: false
+  criterion: "entropy"
+  max_depth: 40
+  max_features: 0.25
+  min_samples_leaf: 4
+  min_samples_split: 5
+  n_estimators: 800
+  class_weight: null
+  random_state: 20260828
+  n_jobs: -1
+probability_aggregation: "incident_probability = mean class probability across all eligible windows for that incident"
+ranking_rule: "sort P(Hijack), P(Leak), P(Outage) descending"
+random_seed: 20260828
+train_cv_performance:
+  incident_macro_f1: 0.7834431219430275
+  incident_mrr: 0.8821752265861023
+  incident_top2: 0.9335347432024169
+  incident_top1: 0.7865055387713998
+  incident_hijack_f1: 0.72
+  incident_leak_f1: 0.8417721518987342
+  incident_outage_f1: 0.7885572139303483
+  window_macro_f1: 0.6824616916683951
+  incident_macro_f1_fold_std: 0.028577673513902033
+  fit_time_seconds: 225.365
+validation_accessed: false
+final_holdout_status: "SEALED"
+source_commit: "99fafc1037fa050fd2933ccc8c0f6f0bede45d05"

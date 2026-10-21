@@ -1,0 +1,7 @@
+gate,criterion,artifact,status,notes
+v2 roster frozen,exact 1419 and 473/class,data/partitions_v2/frozen_partition_manifest_v2.csv,PASS,
+TRAIN behavioral corpus frozen,"68031 rows, 993 incidents",data/train_frozen/frozen_train_behavioral_corpus_v1.parquet,PASS,
+V4 schema frozen,74 features,config/feature_variants_v1.yaml,PASS,
+Normal corpus frozen,516 verified Normal windows,data/model_ready/frozen_normal_v4_v1.parquet,PASS,Stage 1 remains auxiliary.
+Validation confirmation,213 incidents evaluated once,data/validation/validation_confirmation_results_v1.csv,PASS,Pre-K1 candidate only.
+Final Holdout evaluation,213 incidents evaluated once,config/final_praxis_result_v1.yaml,PASS,One processing REVIEW disclosed for Hijack:68538.

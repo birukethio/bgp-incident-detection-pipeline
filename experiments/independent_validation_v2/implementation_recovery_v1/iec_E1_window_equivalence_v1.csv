@@ -1,0 +1,10 @@
+incident_uid,stage,reference_window_count,new_window_count,window_count_match,timestamp_and_id_exact_match,comparison_status,notes
+Hijack:131045,E1_WINDOW_RECONSTRUCTION,25,25,True,True,PASS,Compared reconstructed component-assembled window linkage against frozen V4 fixture windows.
+Hijack:41142,E1_WINDOW_RECONSTRUCTION,52,52,True,True,PASS,Compared reconstructed component-assembled window linkage against frozen V4 fixture windows.
+Hijack:115187,E1_WINDOW_RECONSTRUCTION,52,52,True,True,PASS,Compared reconstructed component-assembled window linkage against frozen V4 fixture windows.
+Leak:462139,E1_WINDOW_RECONSTRUCTION,25,25,True,True,PASS,Compared reconstructed component-assembled window linkage against frozen V4 fixture windows.
+Leak:442710,E1_WINDOW_RECONSTRUCTION,52,52,True,True,PASS,Compared reconstructed component-assembled window linkage against frozen V4 fixture windows.
+Leak:415566,E1_WINDOW_RECONSTRUCTION,52,52,True,True,PASS,Compared reconstructed component-assembled window linkage against frozen V4 fixture windows.
+Outage:1066,E1_WINDOW_RECONSTRUCTION,30,30,True,True,PASS,Compared reconstructed component-assembled window linkage against frozen V4 fixture windows.
+Outage:532,E1_WINDOW_RECONSTRUCTION,63,63,True,True,PASS,Compared reconstructed component-assembled window linkage against frozen V4 fixture windows.
+Outage:1178,E1_WINDOW_RECONSTRUCTION,2268,2268,True,True,PASS,Compared reconstructed component-assembled window linkage against frozen V4 fixture windows.

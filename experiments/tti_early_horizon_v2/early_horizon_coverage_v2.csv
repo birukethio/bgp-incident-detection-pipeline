@@ -1,0 +1,7 @@
+horizon_seconds,horizon,original_tti_evaluable_train_cohort,prediction_rows,coverage_percent_of_original_tti_cohort,missing_extended_coverage_count
+30,30 sec,983,983,100.0,0
+60,60 sec,983,983,100.0,0
+120,120 sec,983,983,100.0,0
+300,300 sec (5 min),983,983,100.0,0
+600,600 sec (10 min),983,973,98.98270600203459,10
+900,900 sec (15 min),983,972,98.88097660223805,11

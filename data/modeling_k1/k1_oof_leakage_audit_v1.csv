@@ -1,0 +1,8 @@
+check,observed,expected,status
+train_incidents_represented,993,993,PASS
+validation_rows,0,0,PASS
+holdout_rows,0,0,PASS
+incident_one_heldout_fold,1,1,PASS
+all_incident_windows_grouped,1,1,PASS
+no_in_sample_first_level_predictions,first-level model excludes predicted fold,first-level model excludes predicted fold,PASS
+window_rows_represented,68031,68031,PASS

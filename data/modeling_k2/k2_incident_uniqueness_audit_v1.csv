@@ -1,0 +1,7 @@
+check,observed,expected,status
+unique_incidents,993,993,PASS
+meta_rows,993,993,PASS
+duplicate_incident_uid,0,0,PASS
+hijack_count,331,331,PASS
+leak_count,331,331,PASS
+outage_count,331,331,PASS

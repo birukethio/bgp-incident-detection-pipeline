@@ -1,0 +1,2 @@
+expected_incidents,processed_incidents,PASS,REVIEW,FAIL,total_feature_rows,hijack_feature_rows,leak_feature_rows,outage_feature_rows,duplicate_window_ids,schema_count,validation_contamination,holdout_contamination,overall_status,notes,source_commit,audit_timestamp
+993,993,983,10,0,68031,16616,16179,35236,0,44,False,False,REVIEW,some incidents require review,99fafc1037fa050fd2933ccc8c0f6f0bede45d05,2026-08-31T07:07:09Z

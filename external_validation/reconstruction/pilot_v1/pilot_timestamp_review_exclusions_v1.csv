@@ -1,0 +1,2 @@
+candidate_id,normalized_start_utc,normalized_end_utc,timestamp_gate,notes,reconstruction_status
+V2-HIJACK-008,2020-04-01T19:28:00Z,,REVIEW,Source reports approximately one hour but no exact end timestamp; no end time invented.,EXCLUDED_TIMESTAMP_REVIEW

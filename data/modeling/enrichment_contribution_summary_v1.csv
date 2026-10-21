@@ -1,0 +1,17 @@
+contribution,scope,comparison,mean_delta,std_delta,ci95_low,ci95_high,positive_folds,notes
+Behavioral baseline,Stage 1,V1 baseline,0.0,0.0,0.0,0.0,,Reference behavioral-only baseline
+Behavioral baseline,Stage 2,V1 baseline,0.0,0.0,0.0,0.0,,Reference behavioral-only baseline
+Behavioral baseline,end-to-end H1,V1 baseline,0.0,0.0,0.0,0.0,,Reference behavioral-only baseline
+Behavioral baseline,B0,V1 baseline,0.0,0.0,0.0,0.0,,Reference behavioral-only baseline
+CAIDA incremental contribution,Stage 1,V2-V1 and V4-V3,0.002456218569865136,0.005152687869693681,-0.0007374504592048371,0.005649887598935109,3,Paired grouped-fold deltas; do not overinterpret tiny means
+CAIDA incremental contribution,Stage 2,V2-V1 and V4-V3,0.005244507277294264,0.004117962751831209,0.0026921675206520823,0.007796847033936445,10,Paired grouped-fold deltas; do not overinterpret tiny means
+CAIDA incremental contribution,end-to-end H1,V2-V1 and V4-V3,0.004679340703142349,0.0032196027097320255,0.002683810269316129,0.006674871136968569,10,Paired grouped-fold deltas; do not overinterpret tiny means
+CAIDA incremental contribution,B0,V2-V1 and V4-V3,0.004439350131214886,0.003825603087240541,0.002068216772042305,0.006810483490387468,9,Paired grouped-fold deltas; do not overinterpret tiny means
+RPKI incremental contribution,Stage 1,V3-V1 and V4-V2,0.002794971957399011,0.005872693276672542,-0.0008449610463541414,0.006434904961152163,3,Paired grouped-fold deltas; do not overinterpret tiny means
+RPKI incremental contribution,Stage 2,V3-V1 and V4-V2,0.011479772715398373,0.009101881732718477,0.005838367970699795,0.01712117746009695,9,Paired grouped-fold deltas; do not overinterpret tiny means
+RPKI incremental contribution,end-to-end H1,V3-V1 and V4-V2,0.010515362443738846,0.006600568913435255,0.006424287446344643,0.01460643744113305,9,Paired grouped-fold deltas; do not overinterpret tiny means
+RPKI incremental contribution,B0,V3-V1 and V4-V2,0.009855155692981826,0.005814338762101207,0.006251391192077257,0.013458920193886394,10,Paired grouped-fold deltas; do not overinterpret tiny means
+Combined CAIDA+RPKI contribution,Stage 1,V4-V1,0.005251190527264147,0.007216040672195638,-0.0010739480015374801,0.011576329056065773,2,Paired grouped-fold deltas; do not overinterpret tiny means
+Combined CAIDA+RPKI contribution,Stage 2,V4-V1,0.016724279992692638,0.009696796146859006,0.008224663416145408,0.025223896569239866,5,Paired grouped-fold deltas; do not overinterpret tiny means
+Combined CAIDA+RPKI contribution,end-to-end H1,V4-V1,0.015194703146881195,0.006001281859124765,0.009934347664738594,0.020455058629023797,5,Paired grouped-fold deltas; do not overinterpret tiny means
+Combined CAIDA+RPKI contribution,B0,V4-V1,0.014294505824196713,0.0063734510558595674,0.00870792965782615,0.019881081990567276,5,Paired grouped-fold deltas; do not overinterpret tiny means

@@ -1,0 +1,7 @@
+horizon_seconds,horizon,prediction_rows,unique_incidents,same_as_tti_denominator_983,missing_from_983_count,extra_vs_983_count
+30,30 sec,983,983,True,0,0
+60,60 sec,983,983,True,0,0
+120,120 sec,983,983,True,0,0
+300,300 sec (5 min),983,983,True,0,0
+600,600 sec (10 min),973,973,False,10,0
+900,900 sec (15 min),972,972,False,11,0

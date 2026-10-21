@@ -1,0 +1,10 @@
+incident_uid,stage,reference_rows,new_rows,meta_feature_count,schema_available,max_absolute_difference,max_relative_difference,comparison_status,notes
+Hijack:131045,E5_LEVEL2_META_FEATURES,1,1,74,True,0.0,0.0,PASS_EXACT,Recomputed frozen temporal meta-features with summarize_incident and compared to stored K1 meta-features.
+Hijack:41142,E5_LEVEL2_META_FEATURES,1,1,74,True,0.0,0.0,PASS_EXACT,Recomputed frozen temporal meta-features with summarize_incident and compared to stored K1 meta-features.
+Hijack:115187,E5_LEVEL2_META_FEATURES,1,1,74,True,0.0,0.0,PASS_EXACT,Recomputed frozen temporal meta-features with summarize_incident and compared to stored K1 meta-features.
+Leak:462139,E5_LEVEL2_META_FEATURES,1,1,74,True,0.0,0.0,PASS_EXACT,Recomputed frozen temporal meta-features with summarize_incident and compared to stored K1 meta-features.
+Leak:442710,E5_LEVEL2_META_FEATURES,1,1,74,True,0.0,0.0,PASS_EXACT,Recomputed frozen temporal meta-features with summarize_incident and compared to stored K1 meta-features.
+Leak:415566,E5_LEVEL2_META_FEATURES,1,1,74,True,0.0,0.0,PASS_EXACT,Recomputed frozen temporal meta-features with summarize_incident and compared to stored K1 meta-features.
+Outage:1066,E5_LEVEL2_META_FEATURES,1,1,74,True,0.0,0.0,PASS_EXACT,Recomputed frozen temporal meta-features with summarize_incident and compared to stored K1 meta-features.
+Outage:532,E5_LEVEL2_META_FEATURES,1,1,74,True,0.0,0.0,PASS_EXACT,Recomputed frozen temporal meta-features with summarize_incident and compared to stored K1 meta-features.
+Outage:1178,E5_LEVEL2_META_FEATURES,1,1,74,True,0.0,0.0,PASS_EXACT,Recomputed frozen temporal meta-features with summarize_incident and compared to stored K1 meta-features.

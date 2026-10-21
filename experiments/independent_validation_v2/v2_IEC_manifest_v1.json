@@ -1,0 +1,17 @@
+{
+  "candidate_count": 73,
+  "class_counts": {
+    "Hijack": 18,
+    "Leak": 25,
+    "Outage": 30
+  },
+  "evaluation_lock_created": false,
+  "final_holdout_accessed": false,
+  "final_roster_created": false,
+  "generated_utc": "2026-09-15T14:00:59.941219+00:00",
+  "human_qc_complete": false,
+  "model_scoring_performed": false,
+  "source_candidate_artifact": "/Users/biruk/Documents/New project/experiments/independent_validation_audit_v2/v2_expert_adjudication_form.csv",
+  "status": "WAITING_FOR_HUMAN_SOURCE_VERIFICATION",
+  "validation_accessed": false
+}

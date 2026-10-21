@@ -1,0 +1,1 @@
+python-docx unavailable; generated minimal OpenXML tables instead. Original error: No module named 'docx'

@@ -1,0 +1,2 @@
+source,cloudflare_rows_checked,unique_cloudflare_leak_segments_checked,matched_rows,cloudflare_incidents_with_match,audit_rows,match_rule,note
+Jared Mauch BGP Routing Leak Detection System,10,6,0,0,10,Mauch row timestamp falls inside Cloudflare min_ts/max_ts AND Cloudflare leak_seg appears as contiguous subsequence in Mauch AS_PATH,Mauch source timestamps are labeled US/Eastern by the source and converted to UTC here.

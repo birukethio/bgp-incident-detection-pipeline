@@ -1,0 +1,4 @@
+figure_title,purpose,source,exists,needs_generation,chapter_section
+Final confusion matrix,terminal errors,figures/final/final_holdout_confusion_matrix_v1.png,EXISTS,NO,Chapter 4 Final Holdout
+TRAIN vs Validation vs Holdout,compare evaluation populations,data/final_holdout/train_vs_final_holdout_comparison_v1.csv,NEEDS_GENERATION,YES,Chapter 4
+SHAP global/class-specific figures,explainability,,NEEDS_GENERATION,YES,Future explainability

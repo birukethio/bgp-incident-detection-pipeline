@@ -1,0 +1,15 @@
+config_id: k25_second_level_rf_v1
+status: FROZEN_FOR_K25_COMPARATOR
+methodological_status: POST_VALIDATION_VERSIONED_TRAIN_DEVELOPMENT_EXPERIMENT
+selection: single predeclared conservative RF meta-model; no tuning
+hyperparameters:
+  n_estimators: 500
+  max_depth: 8
+  max_features: sqrt
+  min_samples_leaf: 3
+  min_samples_split: 5
+  bootstrap: true
+  criterion: log_loss
+  class_weight: null
+validation_used: false
+final_holdout_status: SEALED

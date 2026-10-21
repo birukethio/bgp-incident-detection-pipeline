@@ -1,0 +1,3 @@
+## Prospective Source-Separated External Level-1 Validation Results
+
+Of 37 candidates reviewed, 18 met the frozen screening rules: 3 Hijacks, 5 Leaks, and 10 Outages. Exact V4 reconstruction and frozen Level-1 inference reached 18/18 incidents. Macro F1 was 0.412698, Top-1 was 0.555556 (10/18), Top-2 was 0.722222 (13/18), and MRR was 0.731481. The cohort is small and imbalanced: IODA supplied all 10 Outages, 11 incidents occurred in 2021, and only three Hijacks were available. One outage reconstruction lacked one of 1,055 requested MRT files, although exact V4 compatibility and inference completed; this warning remains in the audit. These results describe the external Level-1 path and do not replace the original full-architecture Final Holdout result.

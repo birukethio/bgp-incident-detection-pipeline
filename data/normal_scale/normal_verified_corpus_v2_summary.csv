@@ -1,0 +1,26 @@
+metric,value,details
+selected_candidates,100,"{""Outage"":33,""Hijack"":34,""Leak"":33}"
+selected_unique_asns,60,
+rib_prescreen_pass_candidates,80,"{""Outage"":29,""Hijack"":25,""Leak"":26}"
+rib_prescreen_status_counts,100,"{""RIB_PRESCREEN_PASS"":80,""ORIGIN_UNSTABLE"":6,""NO_OBSERVABILITY"":12,""ROUTE_PRESENCE_UNSTABLE"":2}"
+planned_update_files_for_rib_pass_candidates,931,
+downloaded_update_files,931,
+downloaded_update_bytes,1444930658,
+new_5_minute_windows_evaluated,531,
+new_normal_verified_windows,322,"{""Hijack"":132,""Leak"":82,""Outage"":108}"
+new_unknown_windows,209,
+new_normal_qualification_yield_percent,60.64,
+candidate_periods_producing_new_normal,49,"{""Outage"":18,""Leak"":12,""Hijack"":19}"
+previous_verified_windows_preserved,194,
+cumulative_verified_normal_windows,516,"{""Hijack"":198,""Leak"":144,""Outage"":174}"
+unique_asns_in_cumulative_corpus,43,
+largest_single_asn_contribution_percent,6.202,"{""23456"":32,""22359"":21,""48175"":21,""43260"":21,""46039"":21,""4847"":20,""37233"":18,""50223"":18,""29329"":18,""27774"":18}"
+asn_concentration_status,PASS,review threshold is >15.0%
+checkpoint_500_windows_reached,True,operational checkpoint only
+behavioral_feature_count_preserved,44,
+behavioral_feature_schema_preserved,True,
+minimum_sustained_stability_windows_preserved,6,6 windows = 30 minutes
+exclusion_buffer_minutes_preserved,60,
+context_buffer_minutes_preserved,60,
+methodology_rules_changed,NO,
+elapsed_seconds,676.932,

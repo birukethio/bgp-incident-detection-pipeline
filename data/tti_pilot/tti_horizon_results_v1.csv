@@ -1,0 +1,5 @@
+horizon_seconds,evaluable_incidents,macro_f1,hijack_f1,leak_f1,outage_f1,top1,top2,mrr,status,notes
+30,0,NA,NA,NA,NA,NA,NA,NA,NOT_EVALUATED,Scoring intentionally skipped because V4/model compatibility gate did not pass.
+60,0,NA,NA,NA,NA,NA,NA,NA,NOT_EVALUATED,Scoring intentionally skipped because V4/model compatibility gate did not pass.
+120,0,NA,NA,NA,NA,NA,NA,NA,NOT_EVALUATED,Scoring intentionally skipped because V4/model compatibility gate did not pass.
+300,0,NA,NA,NA,NA,NA,NA,NA,NOT_EVALUATED,Scoring intentionally skipped because V4/model compatibility gate did not pass.

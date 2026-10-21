@@ -1,0 +1,2 @@
+frozen_path,rows,incidents,behavioral_features,caida_features,rpki_features,total_model_features,status,freeze_date,source_commit
+data/train_frozen/frozen_train_v4_behavioral_caida_rpki_v1.parquet,68031,993,44,14,16,74,PASS,2026-09-01T23:01:58Z,99fafc1037fa050fd2933ccc8c0f6f0bede45d05

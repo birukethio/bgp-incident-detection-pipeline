@@ -1,0 +1,10 @@
+incident_uid,incident_id,category,partition,processing_status,review_reason,mrt_files_processed,mrt_files_downloaded_or_reused,raw_records_inspected,relevant_observations_retained,earliest_retained_timestamp,latest_retained_timestamp,timestamp_errors,malformed_records,missing_prefix_observations,missing_peer_asn_observations,evidence_path,evidence_size_bytes,elapsed_seconds
+Hijack:3930,3930,Hijack,train,INSUFFICIENT_EVIDENCE,no incident-relevant timestamped observations retained,14,14,4305679,0,,,0,0,0,0,,0,36.093
+Hijack:88054,88054,Hijack,train,INSUFFICIENT_EVIDENCE,no incident-relevant timestamped observations retained,21,21,3057368,0,,,0,0,0,0,,0,26.099
+Hijack:125603,125603,Hijack,train,INSUFFICIENT_EVIDENCE,no incident-relevant timestamped observations retained,20,20,3613271,0,,,0,0,0,0,,0,31.981
+Hijack:130023,130023,Hijack,train,INSUFFICIENT_EVIDENCE,no incident-relevant timestamped observations retained,21,21,2707621,0,,,0,0,0,0,,0,12.717
+Leak:467171,467171,Leak,train,INSUFFICIENT_EVIDENCE,no incident-relevant timestamped observations retained,20,20,3171911,0,,,0,0,0,0,,0,15.608
+Leak:468388,468388,Leak,train,INSUFFICIENT_EVIDENCE,no incident-relevant timestamped observations retained,20,20,3441915,0,,,0,0,0,0,,0,24.828
+Outage:696,696,Outage,train,INSUFFICIENT_EVIDENCE,no incident-relevant timestamped observations retained,16,16,3860457,0,,,0,0,0,0,,0,31.858
+Outage:1034,1034,Outage,train,INSUFFICIENT_EVIDENCE,no incident-relevant timestamped observations retained,104,104,43497599,0,,,0,0,0,0,,0,247.931
+Outage:1074,1074,Outage,train,INSUFFICIENT_EVIDENCE,no incident-relevant timestamped observations retained,48,48,6287622,0,,,0,0,0,0,,0,77.445

@@ -1,0 +1,55 @@
+horizon_seconds,horizon,true_class,predicted_class,count
+30,30 sec,Hijack,Hijack,288
+30,30 sec,Hijack,Leak,23
+30,30 sec,Hijack,Outage,16
+30,30 sec,Leak,Hijack,73
+30,30 sec,Leak,Leak,230
+30,30 sec,Leak,Outage,26
+30,30 sec,Outage,Hijack,52
+30,30 sec,Outage,Leak,16
+30,30 sec,Outage,Outage,259
+60,60 sec,Hijack,Hijack,295
+60,60 sec,Hijack,Leak,20
+60,60 sec,Hijack,Outage,12
+60,60 sec,Leak,Hijack,56
+60,60 sec,Leak,Leak,256
+60,60 sec,Leak,Outage,17
+60,60 sec,Outage,Hijack,38
+60,60 sec,Outage,Leak,12
+60,60 sec,Outage,Outage,277
+120,120 sec,Hijack,Hijack,297
+120,120 sec,Hijack,Leak,19
+120,120 sec,Hijack,Outage,11
+120,120 sec,Leak,Hijack,33
+120,120 sec,Leak,Leak,280
+120,120 sec,Leak,Outage,16
+120,120 sec,Outage,Hijack,36
+120,120 sec,Outage,Leak,10
+120,120 sec,Outage,Outage,281
+300,300 sec (5 min),Hijack,Hijack,299
+300,300 sec (5 min),Hijack,Leak,17
+300,300 sec (5 min),Hijack,Outage,11
+300,300 sec (5 min),Leak,Hijack,23
+300,300 sec (5 min),Leak,Leak,293
+300,300 sec (5 min),Leak,Outage,13
+300,300 sec (5 min),Outage,Hijack,25
+300,300 sec (5 min),Outage,Leak,11
+300,300 sec (5 min),Outage,Outage,291
+600,600 sec (10 min),Hijack,Hijack,292
+600,600 sec (10 min),Hijack,Leak,22
+600,600 sec (10 min),Hijack,Outage,11
+600,600 sec (10 min),Leak,Hijack,13
+600,600 sec (10 min),Leak,Leak,301
+600,600 sec (10 min),Leak,Outage,12
+600,600 sec (10 min),Outage,Hijack,25
+600,600 sec (10 min),Outage,Leak,10
+600,600 sec (10 min),Outage,Outage,287
+900,900 sec (15 min),Hijack,Hijack,288
+900,900 sec (15 min),Hijack,Leak,27
+900,900 sec (15 min),Hijack,Outage,10
+900,900 sec (15 min),Leak,Hijack,14
+900,900 sec (15 min),Leak,Leak,299
+900,900 sec (15 min),Leak,Outage,13
+900,900 sec (15 min),Outage,Hijack,26
+900,900 sec (15 min),Outage,Leak,14
+900,900 sec (15 min),Outage,Outage,281

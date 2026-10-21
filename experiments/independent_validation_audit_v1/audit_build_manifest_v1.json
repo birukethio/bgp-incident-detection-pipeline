@@ -1,0 +1,32 @@
+{
+  "audit": "independent_validation_audit_v1",
+  "created_files": [
+    "candidate_overlap_with_existing_corpus_v1.csv",
+    "current_frozen_study_inventory_v1.md",
+    "independent_dataset_candidate_audit_v1.md",
+    "independent_dataset_candidate_matrix_v1.csv",
+    "independent_validation_protocol_v1.md",
+    "locked_confirmation_set_design_v1.md",
+    "locked_hypothesis_specification_v1.md",
+    "paired_comparison_plan_v1.md",
+    "temporal_stacker_causality_audit_v1.md"
+  ],
+  "source_urls": {
+    "RouteLLM": "https://arxiv.org/abs/2608.22812",
+    "RouteLLM summary": "https://seekingsapiens.com/paper/the-surprising-effectiveness-of-llms-in-bgp-security-mining-an-unprecedented-amount-of-incidents-and-boosting-anomaly-detection/",
+    "MANRS data sources": "https://manrs.org/manrs-observatory/data-sources/",
+    "MANRS API docs": "https://docs.manrs.org/docs/getting-started/",
+    "IODA API": "https://api.ioda.inetintel.cc.gatech.edu/v2/",
+    "IODA APNIC overview": "https://blog.apnic.net/2024/09/11/ioda-internet-outage-detection-and-analysis/",
+    "IODA glossary": "https://ioda.inetintel.cc.gatech.edu/resources?tab=glossary",
+    "IODA curated outages repo": "https://github.com/InetIntel/internet_outages",
+    "BGPStream data access": "https://bgpstream.caida.org/docs/overview/data-access",
+    "Atlantic Council BGP incident data": "https://www.atlanticcouncil.org/resources/bgp-incident-data/",
+    "GLBAD paper": "https://www.mdpi.com/2079-9292/14/24/4940",
+    "RIPE RIS raw dataset": "https://labs.ripe.net/datarepository/data-sets/routing-information-service-ris-raw-dataset/",
+    "RIPEstat BGP Updates": "https://stat.ripe.net/docs/data-api/api-endpoints/bgp-updates"
+  },
+  "non_destructive": true,
+  "final_holdout_accessed_or_recomputed": false,
+  "model_scoring_performed": false
+}

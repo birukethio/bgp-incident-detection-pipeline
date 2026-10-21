@@ -1,0 +1,3 @@
+# Section 4.14 Figure Caption
+
+**Figure 4.16. Breakdown of Warm Downstream K1 Computational Latency.** The figure reports the Phase N post-feature computation benchmark for the frozen K1 architecture. The measurement begins after first-level probability information is available and summarizes Level-1 probability averaging, incident-level meta-feature construction, and Level-2 output ranking. It is therefore a POST-WINDOW INCIDENT CLASSIFICATION benchmark, not an end-to-end live BGP anomaly-detection latency measurement. The excluded stages include live BGP UPDATE collection, MRT parsing, five-minute observation-window accumulation, Behavioral feature generation, CAIDA enrichment, RPKI/ROV enrichment, model startup/loading, and complete live data-pipeline overhead.

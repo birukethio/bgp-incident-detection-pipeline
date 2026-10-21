@@ -1,0 +1,12 @@
+open_item,area,priority,source_artifact,status
+update methodology to final architecture,Chapter 3,ESSENTIAL,docs/final_architecture_flow_v1.md,TODO
+update feature counts to 44/14/16/74,Chapter 3,ESSENTIAL,config/feature_variants_v1.yaml,TODO
+include leakage controls,Chapter 3,ESSENTIAL,docs/leakage_control_register_v1.csv,TODO
+baseline and ablation tables,Chapter 4,ESSENTIAL,docs/chapter4_table_plan_v1.csv,TODO
+K1 and Holdout results,Chapter 4,ESSENTIAL,config/final_praxis_result_v1.yaml,TODO
+error/confusion analysis,Chapter 4,IMPORTANT,data/final_holdout/final_holdout_confusion_matrix_v1.csv,TODO
+interpret findings and limitations,Chapter 5,ESSENTIAL,docs/chapter5_findings_handoff_v1.md,TODO
+"key slides: architecture, ablation, leakage, final results",Defense,ESSENTIAL,docs/defense_evidence_index_v1.csv,TODO
+generate final publication-quality figures,Figures,IMPORTANT,docs/dissertation_figure_inventory_v1.csv,TODO
+SHAP explainability not completed unless existing artifacts are later supplied,Explainability,IMPORTANT,,TODO
+bibliography/source citations still needed,Citations,ESSENTIAL,,TODO

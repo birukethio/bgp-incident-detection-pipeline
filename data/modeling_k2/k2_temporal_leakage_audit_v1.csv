@@ -1,0 +1,23 @@
+temporal_feature,segmentation_basis,uses_label,uses_predicted_class_for_boundary,uses_post_incident_metadata,computed_from_own_incident_windows_only,status
+early_hijack_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+early_leak_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+early_outage_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+early_mean_max_confidence,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+early_mean_top1_top2_margin,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+middle_hijack_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+middle_leak_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+middle_outage_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+middle_mean_max_confidence,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+middle_mean_top1_top2_margin,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+late_hijack_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+late_leak_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+late_outage_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+late_mean_max_confidence,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+late_mean_top1_top2_margin,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+late_minus_early_hijack_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+late_minus_early_leak_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+late_minus_early_outage_prob_mean,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+late_minus_early_confidence,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+hijack_prob_linear_slope,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+leak_prob_linear_slope,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS
+outage_prob_linear_slope,"window timestamps, deterministic chronological ordering, window count",False,False,False,True,PASS

@@ -1,0 +1,6 @@
+Issue,Level,Method,Purpose,Evaluation Treatment
+Class count imbalance,Incident corpus,473 incidents selected per class,"Controlled scientific comparison across Hijack, Leak, and Outage",Used before train/validation/holdout partitioning
+Duplicate records,Incident corpus,V2 canonicalization and replacement plan,"Ensure 1,419 independent incidents",No source records deleted; noncanonical records excluded from v2 roster
+Unequal window counts per incident,Model training rows,I1 incident-aware sample weight = 1 / number of windows for that incident within the training fold,Prevent long incidents from dominating model fitting,Weights computed inside TRAIN folds only
+Temporal cap alternative,Model training rows,I2 p95 cap plus I1 weighting,Sensitivity check for long incident dominance,Historical experiment; I1 retained for final V4 modeling
+Natural collected-corpus prior,Evaluation sensitivity,Prevalence/prior reweighting of existing TRAIN nested-CV predictions,Advisor-facing sensitivity to observed source-corpus proportions,Does not replace balanced corpus or final Holdout

@@ -1,0 +1,4 @@
+class,eligible_incidents,evaluated_incidents,identified_by_30s_count,identified_by_30s_percent,identified_by_60s_count,identified_by_60s_percent,identified_by_120s_count,identified_by_120s_percent,identified_by_300s_count,identified_by_300s_percent,not_identified_within_300s_count,not_identified_within_300s_percent,median_checkpoint_tti,status,notes
+Hijack,331,0,0,0.0,0,0.0,0,0.0,0,0.0,331,100.0,,REVIEW_NOT_SCORED,full TRAIN timestamp-preserving incident-relevant observations are unavailable; compact evidence is aggregated to frozen 5-minute window grain
+Leak,331,0,0,0.0,0,0.0,0,0.0,0,0.0,331,100.0,,REVIEW_NOT_SCORED,full TRAIN timestamp-preserving incident-relevant observations are unavailable; compact evidence is aggregated to frozen 5-minute window grain
+Outage,331,0,0,0.0,0,0.0,0,0.0,0,0.0,331,100.0,,REVIEW_NOT_SCORED,full TRAIN timestamp-preserving incident-relevant observations are unavailable; compact evidence is aggregated to frozen 5-minute window grain

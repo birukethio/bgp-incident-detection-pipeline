@@ -1,0 +1,10 @@
+incident_uid,stage,reference_window_count,new_implementation_window_count,comparison_status,timestamp_reference_available,incident_linkage_reference_available,notes
+Hijack:131045,E1_WINDOW_LINKAGE,25,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,YES,YES,Stored frozen V4 window IDs/timestamps are available. No new implementation output was generated in this recovery step.
+Hijack:41142,E1_WINDOW_LINKAGE,52,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,YES,YES,Stored frozen V4 window IDs/timestamps are available. No new implementation output was generated in this recovery step.
+Hijack:115187,E1_WINDOW_LINKAGE,52,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,YES,YES,Stored frozen V4 window IDs/timestamps are available. No new implementation output was generated in this recovery step.
+Leak:462139,E1_WINDOW_LINKAGE,25,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,YES,YES,Stored frozen V4 window IDs/timestamps are available. No new implementation output was generated in this recovery step.
+Leak:442710,E1_WINDOW_LINKAGE,52,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,YES,YES,Stored frozen V4 window IDs/timestamps are available. No new implementation output was generated in this recovery step.
+Leak:415566,E1_WINDOW_LINKAGE,52,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,YES,YES,Stored frozen V4 window IDs/timestamps are available. No new implementation output was generated in this recovery step.
+Outage:1066,E1_WINDOW_LINKAGE,30,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,YES,YES,Stored frozen V4 window IDs/timestamps are available. No new implementation output was generated in this recovery step.
+Outage:532,E1_WINDOW_LINKAGE,63,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,YES,YES,Stored frozen V4 window IDs/timestamps are available. No new implementation output was generated in this recovery step.
+Outage:1178,E1_WINDOW_LINKAGE,2268,,REFERENCE_ARTIFACT_AVAILABLE_NEW_IMPLEMENTATION_NOT_RUN,YES,YES,Stored frozen V4 window IDs/timestamps are available. No new implementation output was generated in this recovery step.

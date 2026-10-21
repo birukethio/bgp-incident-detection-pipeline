@@ -1,0 +1,104 @@
+schema_version: v1
+feature_group: CAIDA AS-relationship
+source_inventory: data/enrichment/caida/caida_feature_inventory_v1.csv
+feature_count: 14
+row_grain: one row per frozen TRAIN 5-minute window_id
+features:
+  - order: 1
+    name: caida_path_observation_count
+    definition: "Number of parsed pilot observations with an AS_PATH containing at least two ASNs."
+    formula: "count(len(cleaned_as_path) >= 2)"
+    required_inputs: "parsed AS_PATH, CAIDA not required"
+    zero_behavior: "0"
+    missing_behavior: "0 when no AS_PATH observations"
+  - order: 2
+    name: caida_paths_with_no_as_path_count
+    definition: "Parsed observations without an evaluable AS_PATH."
+    formula: "count(len(cleaned_as_path) < 2)"
+    required_inputs: "parsed AS_PATH"
+    zero_behavior: "0"
+    missing_behavior: "separate from unknown CAIDA relationships"
+  - order: 3
+    name: caida_paths_with_unknown_relationship_count
+    definition: "AS paths containing at least one adjacent AS pair absent from the selected CAIDA snapshot."
+    formula: "count(path_unknown_transition_count > 0)"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "0"
+    missing_behavior: "explicit unknown-relationship state"
+  - order: 4
+    name: caida_unknown_relationship_transition_count
+    definition: "Adjacent AS transitions absent from the selected CAIDA snapshot."
+    formula: "sum(relationship == unknown)"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "0"
+    missing_behavior: "explicit unknown-relationship state"
+  - order: 5
+    name: caida_customer_to_provider_transition_count
+    definition: "Known customer-to-provider transitions in observed AS paths."
+    formula: "sum(relationship == c2p)"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "0"
+    missing_behavior: "0 if no known c2p transitions"
+  - order: 6
+    name: caida_provider_to_customer_transition_count
+    definition: "Known provider-to-customer transitions in observed AS paths."
+    formula: "sum(relationship == p2c)"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "0"
+    missing_behavior: "0 if no known p2c transitions"
+  - order: 7
+    name: caida_peer_to_peer_transition_count
+    definition: "Known peer-to-peer transitions in observed AS paths."
+    formula: "sum(relationship == p2p)"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "0"
+    missing_behavior: "0 if no known p2p transitions"
+  - order: 8
+    name: caida_valley_free_valid_path_count
+    definition: "Paths with known relationships and no valley-free violation."
+    formula: "count(unknowns == 0 and violations == 0)"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "0"
+    missing_behavior: "unknown paths not counted valid"
+  - order: 9
+    name: caida_valley_free_violation_path_count
+    definition: "Paths with known relationships and at least one valley-free violation."
+    formula: "count(unknowns == 0 and violations > 0)"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "0"
+    missing_behavior: "unknown paths not counted violation"
+  - order: 10
+    name: caida_valley_free_violation_ratio
+    definition: "Share of evaluable AS paths with a valley-free violation."
+    formula: "violation_path_count / path_observation_count"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "NaN if denominator is zero"
+    missing_behavior: "NaN when no AS_PATH observations"
+  - order: 11
+    name: caida_max_violation_count_per_path
+    definition: "Maximum valley-free violation count on any observed path."
+    formula: "max(path_violation_count)"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "NaN if no AS paths"
+    missing_behavior: "NaN when no AS_PATH observations"
+  - order: 12
+    name: caida_mean_violation_count_per_path
+    definition: "Mean valley-free violation count across observed paths."
+    formula: "mean(path_violation_count)"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "NaN if no AS paths"
+    missing_behavior: "NaN when no AS_PATH observations"
+  - order: 13
+    name: caida_customer_provider_transition_ratio
+    definition: "Share of known transitions that are customer/provider links."
+    formula: "(c2p+p2c)/(c2p+p2c+p2p)"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "NaN if no known transitions"
+    missing_behavior: "NaN when no known CAIDA transitions"
+  - order: 14
+    name: caida_peer_transition_ratio
+    definition: "Share of known transitions that are peer-to-peer links."
+    formula: "p2p/(c2p+p2c+p2p)"
+    required_inputs: "AS_PATH + CAIDA relationships"
+    zero_behavior: "NaN if no known transitions"
+    missing_behavior: "NaN when no known CAIDA transitions"

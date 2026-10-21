@@ -1,0 +1,4 @@
+category,window_rows,observations_represented,valid_count,valid_percent,invalid_count,invalid_percent,not_found_count,not_found_percent,origin_mismatch_invalid,maxlength_invalid,malformed_unevaluable,unique_prefixes_proxy,unique_origin_asns
+Hijack,16616,13344543,8106101,61.767,81605,0.622,4935936,37.611,70395,11210,220901,2355587,
+Leak,16179,84955223,53657661,63.753,59482,0.071,30447710,36.176,40334,19148,790370,18299700,
+Outage,35236,30819318,21379517,69.488,15720,0.051,9371875,30.461,1414,14306,52206,1291463,

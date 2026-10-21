@@ -1,0 +1,14 @@
+check,status,notes
+preaccess_audit_passed,PASS,data/final_holdout/final_preaccess_model_audit_v2.csv
+protocol_frozen_before_predictive_holdout_access,PASS,config/final_holdout_protocol_v1.yaml
+holdout_access_record_created,PASS,data/final_holdout/final_holdout_access_record_v1.csv
+train_only_model_fitting,PASS,TRAIN V4 and OOF TRAIN probabilities only
+validation_excluded,PASS,No Validation rows used in Phase L fitting or prediction
+holdout_excluded_from_fitting,PASS,Holdout used only for features/prediction/evaluation
+feature_count_74,PASS,74
+crossfit_ensemble_first_level_used,PASS,five TRAIN fold models averaged arithmetically
+k1_meta_rows_213,PASS,213
+second_level_hash_40df040321ef,PASS,40df040321ef
+stage1_unresolved_auxiliary,PASS,UNRESOLVED_EXPERIMENTAL_AUXILIARY
+model_tuning_permanently_complete,PASS,No post-Holdout tuning allowed
+final_holdout_terminal_evaluation,PASS,One-time terminal unbiased evaluation

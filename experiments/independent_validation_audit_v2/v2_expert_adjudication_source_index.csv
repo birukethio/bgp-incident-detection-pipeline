@@ -1,0 +1,28 @@
+source_type,primary_evidence_source,source_url_or_reference,candidate_count,classes,candidate_ids
+BGPHorizon,BGPHorizon incident analysis,https://www.bgphorizon.com/blog/telegram-bgp-hijack-june-2026,1,Hijack,V2-HIJACK-002
+IODA,IODA curated investigated outages CSV,https://github.com/InetIntel/internet_outages/blob/main/data/ioda/ioda_investigated_outages_cleaned_phase1+2.csv,30,Outage,V2-OUTAGE-001; V2-OUTAGE-002; V2-OUTAGE-003; V2-OUTAGE-004; V2-OUTAGE-005; V2-OUTAGE-006; V2-OUTAGE-007; V2-OUTAGE-008; V2-OUTAGE-009; V2-OUTAGE-010; V2-OUTAGE-011; V2-OUTAGE-012; V2-OUTAGE-013; V2-OUTAGE-014; V2-OUTAGE-015; V2-OUTAGE-016; V2-OUTAGE-017; V2-OUTAGE-018; V2-OUTAGE-019; V2-OUTAGE-020; V2-OUTAGE-021; V2-OUTAGE-022; V2-OUTAGE-023; V2-OUTAGE-024; V2-OUTAGE-025; V2-OUTAGE-026; V2-OUTAGE-027; V2-OUTAGE-028; V2-OUTAGE-029; V2-OUTAGE-030
+Kentik,Kentik route leak analysis,https://www.kentik.com/blog/ephemeral-leaks-and-automated-bgp-route-leak-detection/,1,Leak,V2-LEAK-017
+MANRS,Internet Society / MANRS article,https://www.internetsociety.org/blog/2017/08/google-leaked-prefixes-knocked-japan-off-internet/,1,Leak,V2-LEAK-013
+MANRS,MANRS / Oracle Internet Intelligence incident analysis,https://manrs.org/2019/06/large-european-routing-leak-sends-traffic-through-china-telecom/,1,Leak,V2-LEAK-011
+MANRS,MANRS 2017 year-in-review,https://manrs.org/2018/01/14000-incidents-a-2017-routing-security-year-in-review/,5,Hijack; Leak,V2-HIJACK-017; V2-HIJACK-018; V2-HIJACK-019; V2-LEAK-014; V2-LEAK-015
+MANRS,MANRS BGP Security in 2021,https://manrs.org/2022/02/bgp-security-in-2021/,12,Hijack; Leak,V2-HIJACK-011; V2-HIJACK-012; V2-HIJACK-013; V2-HIJACK-014; V2-HIJACK-015; V2-HIJACK-016; V2-LEAK-022; V2-LEAK-023; V2-LEAK-024; V2-LEAK-025; V2-LEAK-026; V2-LEAK-027
+MANRS,MANRS incident analysis,https://manrs.org/2020/04/not-just-another-bgp-hijack/,1,Hijack,V2-HIJACK-008
+MANRS,MANRS incident analysis,https://manrs.org/2020/07/another-bgp-incident-impacts-twc-rogers-charter-and-others/,1,Hijack,V2-HIJACK-006
+MANRS,MANRS incident analysis,https://manrs.org/2021/02/major-route-leak-by-as28548-another-bgp-optimizer/,1,Leak,V2-LEAK-007
+MANRS,MANRS incident analysis,https://manrs.org/2022/07/for-12-hours-was-part-of-apple-engineerings-network-hijacked-by-russias-rostelecom/,1,Hijack,V2-HIJACK-007
+MANRS,MANRS incident analysis,https://manrs.org/2023/05/bgp-route-leak-at-angola-cables-slows-connectivity-for-many-australians/,1,Leak,V2-LEAK-012
+NOG/NANOG,GitHub evidence archive and NANOG thread,https://github.com/miao-2011/bgp-hijack-evidence-AS202734; https://lists.nanog.org/archives/list/nanog@lists.nanog.org/thread/MI6VWOX7XOCDIS244RLJSMS2ITZWTGED/,1,Hijack,V2-HIJACK-001
+Qrator,Qrator Labs Q3 2024 BGP incident overview,https://blog.qrator.net/en/q3-2024-ddos-bots-and-bgp-incidents-statistics-and_209/,1,Leak,V2-LEAK-021
+Qrator,Qrator Labs Radar archive,https://blog.qrator.net/en/radar/?page=4,1,Leak,V2-LEAK-010
+Qrator,Qrator Labs Radar article,https://blog.qrator.net/en/as42910-leaking-hundreds-prefixes_89/,1,Leak,V2-LEAK-008
+Qrator,Qrator Labs Radar article,https://blog.qrator.net/en/as9304-leaking-8764-prefixes-through-as15412_111/,1,Leak,V2-LEAK-006
+Qrator,Qrator Labs Radar article,https://blog.qrator.net/en/lumen-aka-centurylink-generating-routing-incidents_101/,1,Hijack,V2-HIJACK-010
+Qrator,Qrator Labs Radar article,https://blog.qrator.net/en/moscow-traffic-jam_9/,1,Leak,V2-LEAK-009
+Qrator,Qrator Labs Radar article index,https://blog.qrator.net/en/radar/?page=2,1,Hijack,V2-HIJACK-009
+Qrator,Qrator Labs blog,https://blog.qrator.net/en/day-internet-survived_14/,1,Leak,V2-LEAK-002
+Qrator,Qrator Labs blog,https://blog.qrator.net/en/how-difficult-disrupt-service-nowadays_49/,1,Leak,V2-LEAK-003
+Qrator,Qrator Labs blog,https://blog.qrator.net/en/new-hijack-attack_42/,1,Hijack,V2-HIJACK-005
+Qrator,Qrator Labs blog,https://blog.qrator.net/en/prepending-trouble_115/,1,Leak,V2-LEAK-001
+Qrator,Qrator Labs quarterly BGP incidents report,https://blog.qrator.net/en/q3-2024-ddos-bots-and-bgp-incidents-statistics-and_209/,1,Leak,V2-LEAK-004
+Qrator,Qrator_Radar social feed mirror,https://twstalker.com/Qrator_Radar,3,Leak,V2-LEAK-018; V2-LEAK-019; V2-LEAK-020
+RouteCause,RouteCause reproducible demo using RIPE RIS/RouteViews raw MRT,https://github.com/dim-tsoukalas/RouteCause,1,Hijack,V2-HIJACK-003

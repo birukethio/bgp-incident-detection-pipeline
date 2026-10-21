@@ -1,0 +1,7 @@
+check_name,observed_value,status,notes
+frozen_normal_rows,516,PASS,Normal membership is not modified
+frozen_normal_train_only,['train'],PASS,Validation/Holdout not accessed
+parsed_normal_period_coverage,79 / 79,PASS,parsed Normal UPDATE artifacts cover every frozen Normal control period
+caida_inputs_available,parsed AS_PATH by Normal window,PASS,CAIDA can be calculated exactly from existing parsed Normal observations
+rpki_inputs_available,parsed prefix + origin_asn by Normal window,PASS,RPKI can be calculated exactly from existing parsed Normal observations
+incident_corpus_reprocessed,NO,PASS,Incident feature corpora are read only for schema/manifests

@@ -1,0 +1,35 @@
+metric,value,strategy,source_file,source_field_or_row,authoritative_status
+incident_macro_f1,0.462934,I0,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I0; field=group_macro_f1_mean,PASS_AUTHORITATIVE_TRAIN_ONLY
+top2_accuracy,0.918925,I0,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I0; field=top2,PASS_AUTHORITATIVE_TRAIN_ONLY
+mrr,0.841323,I0,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I0; field=mrr,PASS_AUTHORITATIVE_TRAIN_ONLY
+hijack_f1,0.389041,I0,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I0; field=hijack_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+leak_f1,0.774751,I0,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I0; field=leak_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+outage_f1,0.789220,I0,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I0; field=outage_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+window_macro_f1,0.488253,I0,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I0; field=window_macro_f1_mean,PASS_AUTHORITATIVE_TRAIN_ONLY
+windows_retained,54837.6,I0,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I0; field=train_rows_used,PASS_AUTHORITATIVE_TRAIN_ONLY
+top1_accuracy,NA,I0,data/modeling/imbalance_strategy_model_comparison_v1.csv,No top1_accuracy field in authoritative imbalance comparison artifact,PASS_NOT_MEASURED_LEFT_NA
+windows_removed,0.000000,I0,data/modeling/imbalance_strategy_model_comparison_v1.csv,Derived from RF_HIER I1 train_rows_used minus strategy train_rows_used; I0/I1 remove no windows,PASS_NOT_APPLICABLE_NO_CAP
+incident_macro_f1,0.524534,I1,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I1; field=group_macro_f1_mean,PASS_AUTHORITATIVE_TRAIN_ONLY
+top2_accuracy,0.918623,I1,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I1; field=top2,PASS_AUTHORITATIVE_TRAIN_ONLY
+mrr,0.843838,I1,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I1; field=mrr,PASS_AUTHORITATIVE_TRAIN_ONLY
+hijack_f1,0.396661,I1,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I1; field=hijack_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+leak_f1,0.776704,I1,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I1; field=leak_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+outage_f1,0.793125,I1,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I1; field=outage_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+window_macro_f1,0.491623,I1,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I1; field=window_macro_f1_mean,PASS_AUTHORITATIVE_TRAIN_ONLY
+windows_retained,54837.6,I1,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I1; field=train_rows_used,PASS_AUTHORITATIVE_TRAIN_ONLY
+top1_accuracy,NA,I1,data/modeling/imbalance_strategy_model_comparison_v1.csv,No top1_accuracy field in authoritative imbalance comparison artifact,PASS_NOT_MEASURED_LEFT_NA
+windows_removed,0.000000,I1,data/modeling/imbalance_strategy_model_comparison_v1.csv,Derived from RF_HIER I1 train_rows_used minus strategy train_rows_used; I0/I1 remove no windows,PASS_NOT_APPLICABLE_NO_CAP
+incident_macro_f1,0.536307,I2,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I2; field=group_macro_f1_mean,PASS_AUTHORITATIVE_TRAIN_ONLY
+top2_accuracy,0.917989,I2,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I2; field=top2,PASS_AUTHORITATIVE_TRAIN_ONLY
+mrr,0.841586,I2,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I2; field=mrr,PASS_AUTHORITATIVE_TRAIN_ONLY
+hijack_f1,0.406075,I2,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I2; field=hijack_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+leak_f1,0.773133,I2,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I2; field=leak_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+outage_f1,0.789768,I2,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I2; field=outage_f1,PASS_AUTHORITATIVE_TRAIN_ONLY
+window_macro_f1,0.492244,I2,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I2; field=window_macro_f1_mean,PASS_AUTHORITATIVE_TRAIN_ONLY
+windows_retained,48164.8,I2,data/modeling/imbalance_strategy_model_comparison_v1.csv,model=RF_HIER; imbalance_condition=I2; field=train_rows_used,PASS_AUTHORITATIVE_TRAIN_ONLY
+top1_accuracy,NA,I2,data/modeling/imbalance_strategy_model_comparison_v1.csv,No top1_accuracy field in authoritative imbalance comparison artifact,PASS_NOT_MEASURED_LEFT_NA
+windows_removed,6672.800000,I2,data/modeling/imbalance_strategy_model_comparison_v1.csv,Derived from RF_HIER I1 train_rows_used minus strategy train_rows_used; I0/I1 remove no windows,PASS_DERIVED_FROM_AUTHORITATIVE_TRAIN_ONLY
+p95_capped_group_windows_removed,32956,I2,data/modeling/p95_temporal_sampling_audit_v1.csv,Rows with model_task=RF_HIER_STAGE2; sum(discarded_rows) across capped groups/folds,PASS_CONTEXT_ONLY_CAP_AUDIT
+p95_capped_group_window_removal_percent,50.118620,I2,data/modeling/p95_temporal_sampling_audit_v1.csv,sum(discarded_rows) / sum(original_rows) for RF_HIER_STAGE2 capped groups/folds,PASS_CONTEXT_ONLY_CAP_AUDIT
+selection_decision,I1 selected,I1,data/modeling/experiment_decision_ledger_v1.csv,decision=I1 selected,PASS_AUTHORITATIVE_DECISION
+selection_reason,Incident is the independent unit; weighting reduces long-incident dominance without data removal.,I1,data/modeling/experiment_decision_ledger_v1.csv,decision=I1 selected; field=reason,PASS_AUTHORITATIVE_DECISION

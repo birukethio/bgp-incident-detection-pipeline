@@ -1,0 +1,20 @@
+phase,experiment,chapter3_methodology,chapter4_results,chapter5_discussion,appendix,defense_slide_candidate,priority
+P0,Incident roster and v2 partitions,YES,NO,NO,OPTIONAL,YES,ESSENTIAL
+P1,RouteViews acquisition and processing,YES,NO,NO,OPTIONAL,NO,IMPORTANT
+P2,Behavioral feature corpus,YES,NO,NO,OPTIONAL,NO,IMPORTANT
+P3,Normal ground-truth development,YES,NO,NO,OPTIONAL,NO,IMPORTANT
+P4,CAIDA enrichment,YES,NO,NO,OPTIONAL,NO,IMPORTANT
+P5,RPKI/ROV enrichment,YES,NO,NO,OPTIONAL,NO,IMPORTANT
+P6,Feature variants,NO,YES,NO,OPTIONAL,YES,ESSENTIAL
+P7,Imbalance strategies,YES,NO,NO,OPTIONAL,NO,ESSENTIAL
+P8,Baseline modeling,NO,YES,YES,YES,NO,SUPPORTING
+P9,Stage 1 experiments,NO,YES,YES,YES,NO,SUPPORTING
+P10,Domain-expert architecture,NO,YES,YES,YES,NO,SUPPORTING
+P11,Random Forest optimization,NO,YES,YES,YES,NO,SUPPORTING
+P12,XGBoost comparison/refinement,NO,YES,NO,OPTIONAL,NO,ESSENTIAL
+P13,Phase J Validation,NO,YES,NO,OPTIONAL,YES,ESSENTIAL
+P14,K1 incident-level stacking,NO,YES,NO,OPTIONAL,YES,ESSENTIAL
+P15,K2 forensic verification,NO,YES,NO,OPTIONAL,YES,ESSENTIAL
+P16,K2.5 architecture comparator,NO,YES,NO,OPTIONAL,YES,ESSENTIAL
+P17,L0 deployable freeze,YES,NO,NO,OPTIONAL,NO,ESSENTIAL
+P18,Final Holdout,NO,YES,NO,OPTIONAL,YES,ESSENTIAL

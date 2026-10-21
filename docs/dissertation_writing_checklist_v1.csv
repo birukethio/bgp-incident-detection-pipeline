@@ -1,0 +1,9 @@
+area,task,status,source_artifact,priority
+Chapter 3,update methodology to final architecture,TODO,docs/final_architecture_flow_v1.md,ESSENTIAL
+Chapter 3,update feature counts to 44/14/16/74,TODO,config/feature_variants_v1.yaml,ESSENTIAL
+Chapter 3,include leakage controls,TODO,docs/leakage_control_register_v1.csv,ESSENTIAL
+Chapter 4,baseline and ablation tables,TODO,docs/chapter4_table_plan_v1.csv,ESSENTIAL
+Chapter 4,K1 and Holdout results,TODO,config/final_praxis_result_v1.yaml,ESSENTIAL
+Chapter 4,error/confusion analysis,TODO,data/final_holdout/final_holdout_confusion_matrix_v1.csv,IMPORTANT
+Chapter 5,interpret findings and limitations,TODO,docs/chapter5_findings_handoff_v1.md,ESSENTIAL
+Defense,"key slides: architecture, ablation, leakage, final results",TODO,docs/defense_evidence_index_v1.csv,ESSENTIAL
