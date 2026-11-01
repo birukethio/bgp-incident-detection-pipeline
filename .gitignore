@@ -35,6 +35,14 @@ data/cache/
 *.parquet
 *.feather
 
+# Appendix E reproducibility exceptions. These compact prediction/meta-feature
+# artifacts are intentionally published; the frozen TRAIN V4 matrix remains excluded.
+!data/modeling_k1/k1_incident_level_predictions_v1.parquet
+!data/modeling_k1/k1_window_oof_probabilities_v1.parquet
+!data/modeling_k1/k1_incident_meta_features_v1.parquet
+!data/final_holdout/final_holdout_k1_meta_features_v1.parquet
+!experiments/xgboost_feature_family_ablation_v1/*.parquet
+
 # Large generated model/evidence artifacts (kept locally; reproducible from manifests)
 data/modeling/models/baseline_v1/
 data/modeling/models/domain_experts_v1/

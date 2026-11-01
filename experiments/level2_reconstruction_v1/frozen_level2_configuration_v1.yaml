@@ -1,0 +1,24 @@
+candidate_id: K1_FINAL_SECOND_LEVEL_XGB_V1
+status: FINAL_SECOND_LEVEL_FROZEN_BEFORE_HOLDOUT
+xgboost_version: 3.4.1
+n_estimators: 150
+max_depth: 3
+learning_rate: 0.03
+subsample: 1.0
+colsample_bytree: 0.8
+reg_lambda: 3.0
+reg_alpha: 0.05
+objective: multi:softprob
+num_class: 3
+eval_metric: mlogloss
+seed_random_state_policy:
+- 20260828
+- 20260829
+- 20260830
+- 20260831
+- 20260901
+meta_feature_schema_version: k1_incident_meta_feature_schema_v1
+candidate_parameter_hash: 40df040321ef
+selection_rule_version: k1_second_level_selection_rule_v1
+validation_used: false
+final_holdout_accessed: false

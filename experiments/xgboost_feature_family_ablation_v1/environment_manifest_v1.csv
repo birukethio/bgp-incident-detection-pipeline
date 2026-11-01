@@ -1,0 +1,15 @@
+item,value
+execution_label,POST-FEEDBACK SUPPLEMENTARY TRAIN-ONLY XGBOOST ABLATION EXPERIMENT
+python,"3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 21:00:12) [Clang 16.0.6 ]"
+platform,macOS-15.7.5-x86_64-i386-64bit
+xgboost,3.4.1
+scikit_learn,1.5.1
+numpy,1.26.4
+pandas,2.2.2
+pyarrow,16.1.0
+cpu_count,11
+seeds,"[20260828, 20260829, 20260830, 20260831, 20260901]"
+bootstrap_seed,20260828
+bootstrap_resamples,2000
+validation_accessed,False
+final_holdout_accessed,False
