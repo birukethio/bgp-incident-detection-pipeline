@@ -91,7 +91,13 @@ The confusion matrix summarizes the predictions of the frozen two-level XGBoost 
 
 ## Project Status
 
-The Praxis research and its primary experimental evaluation are complete. This repository preserves the final code, frozen experimental configurations, result artifacts, quality and reproducibility audits, manuscript-ready tables, and supporting documentation. Earlier developmental experiments are retained for transparency and provenance but do not replace the authoritative final results. Any remaining extensions are future research opportunities rather than incomplete steps in the reported study.
+The Doctor of Engineering Praxis research, two-level XGBoost framework, and primary experimental evaluation are complete.
+
+This repository preserves the research implementation, frozen model configurations, experimental results, evaluation protocols, quality-control and reproducibility audits, supporting documentation, and manuscript artifacts.
+
+The authoritative findings are based on the frozen experimental framework and its evaluation on the 213-incident Final Holdout dataset. Earlier developmental experiments are retained for transparency, traceability, and research provenance but do not supersede the final results.
+
+Future extensions, including prospective incident classification, broader external validation, and operational integration, are identified as opportunities for further research rather than unfinished components of the completed Praxis.
 
 ## Repository Guide
 
