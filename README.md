@@ -2,6 +2,16 @@
 
 This repository contains the completed doctoral Praxis pipeline for classifying and ranking three BGP incident types: **Hijack**, **Leak**, and **Outage**. The final architecture operates directly on incident evidence; the earlier experimental `Normal` versus `Incident` gate was not adopted as part of the final model.
 
+## End-to-End Framework Architecture
+
+The diagram illustrates the completed historical BGP processing and two-level XGBoost workflow, from incident reconstruction and feature engineering to retrospective incident classification, relative class ranking, and Final Holdout evaluation.
+
+![End-to-end retrospective BGP incident classification architecture, from historical routing evidence through Level-1 window scores and Level-2 incident aggregation to final classification and ranking](docs/images/bgp-incident-architecture.png)
+
+*Figure 1. Frozen two-level XGBoost framework. Level-1 uses 74 routing features per five-minute window; Level-2 uses a distinct set of 74 incident-level meta-features summarizing the Level-1 score sequence and structural information.*
+
+**Diagram clarification:** Validation provided one-time Level-1 confirmation, not Level-2 training, tuning, or model selection; the graphic's broader “confirmation / model-selection” wording should be read with this qualification. Final outputs are relative class scores, not established calibrated probabilities.
+
 ## Final Architecture
 
 The frozen analytical path is:
@@ -64,6 +74,14 @@ The authoritative assignment is `data/partitions_v2/frozen_partition_manifest_v2
 | Mean reciprocal rank | 0.958529 |
 
 Per-class F1 scores were `0.877698` for Hijack, `0.904110` for Leak, and `0.978723` for Outage. These values are frozen and authoritative.
+
+## Final Holdout Confusion Matrix
+
+The confusion matrix summarizes the predictions of the frozen two-level XGBoost framework on the 213-incident Final Holdout dataset. Rows represent actual incident classes, and columns represent predicted classes.
+
+![Final Holdout confusion matrix: actual Hijack predicted as Hijack, Leak, Outage: 61, 9, 1; actual Leak: 5, 66, 0; actual Outage: 2, 0, 69](docs/images/final-holdout-confusion-matrix.png)
+
+*Figure 2. Frozen Final Holdout results: 71 incidents per class, with 196 correct and 17 incorrect Top-1 predictions. The graphic rounds metrics to four decimal places; the authoritative values are reported above.*
 
 ## Project Status
 
