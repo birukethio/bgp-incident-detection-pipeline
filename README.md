@@ -1,6 +1,12 @@
 # BGP Incident Classification and Ranking
 
-This repository contains the completed doctoral Praxis pipeline for classifying and ranking three BGP incident types: **Hijack**, **Leak**, and **Outage**. The final architecture operates directly on incident evidence; the earlier experimental `Normal` versus `Incident` gate was not adopted as part of the final model.
+This repository contains the completed Doctor of Engineering Praxis research and implementation of **a machine-learning framework for BGP incident classification and relative class scoring using public route-collector data**.
+
+The framework integrates historical BGP routing behavior, CAIDA AS-relationship information, and RPKI/ROV evidence to classify and rank three BGP incident types: **Hijack, Route Leak, and Outage**.
+
+The final architecture uses a **two-level XGBoost approach**: Level-1 analyzes five-minute BGP observation windows using 74 engineered routing features, while Level-2 applies retrospective temporal stacking to produce incident-level classifications and ranked diagnostic hypotheses.
+
+The repository preserves the data-processing pipeline, feature-engineering methods, model configurations, experimental evaluations, reproducibility artifacts, and supporting research documentation.
 
 ## End-to-End Framework Architecture
 
