@@ -49,8 +49,8 @@ data/modeling/models/domain_experts_v1/
 data/tti_pilot/tti_timestamped_evidence_v1.csv
 experiments/natural_distribution_v1/natural_distribution_incident_roster_v1.csv
 
-# Document rendering scratch output; retain final DOCX/PDF deliverables
-deliverables/**/render*/
+# Manuscript deliverables and rendering output are kept locally
+deliverables/
 
 # Publication figures are maintained outside the public repository
 figures/

@@ -101,7 +101,6 @@ The confusion matrix summarizes the predictions of the frozen two-level XGBoost 
 | `experiments/` | Additive forensic and sensitivity analyses |
 | `external_validation/` | Source-separated Level-1 validation protocols and records |
 | `notebooks/` | Versioned experimental notebooks |
-| `deliverables/` | Final manuscript and related deliverables |
 
 ## Reproducibility
 
